@@ -1,0 +1,4 @@
+safe: true
+source: https://github.com/adicu/adicu.github.com
+destination: ~/working/adicu.github.com/
+lsi: false
