@@ -3,3 +3,4 @@ safe: true
 #destination: ~/working/adicu.github.com/
 lsi: false
 permalink: /:month-:day-:year/:title.html
+exclude: newpost.sh
