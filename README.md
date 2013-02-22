@@ -12,7 +12,7 @@ How to Post
 -----------
 1. In your favorite text editor, write your post in [markdown][md].
 2. Save your post in the form: `YYYY-MM-DD-your-post-title.md`
-3. Commit your post to the Github repo in the _posts folder.
+3. Commit your post to the Github repo in the `_posts` folder.
 
 [jekyll]: http://jekyllrb.com/
 [adi-old]: http://www.adicu.com/
