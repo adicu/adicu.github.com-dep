@@ -1,0 +1,6 @@
+---
+title: Test Post
+layout: post
+---
+
+Trying to see why github pages won't build this thing.

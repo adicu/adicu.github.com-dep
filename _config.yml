@@ -1,4 +1,6 @@
 safe: true
-source: https://github.com/adicu/adicu.github.com
-destination: ~/working/adicu.github.com/
+#source: https://github.com/adicu/adicu.github.com
+#destination: ~/working/adicu.github.com/
 lsi: false
+permalink: /:month-:day-:year/:title.html
+exclude: newpost.sh
