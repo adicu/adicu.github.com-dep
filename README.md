@@ -15,7 +15,7 @@ Installation
 4. Visit `http://localhost:4000/` in ~~Internet Explorer~~ your browser.
 
 For more installation instructions and information, check out [jekyll's installation page][5], or
-[this tutorial][6] for Windows users. To learn more about jekyll, check out its [GitHub repo][7].
+this [Windows installation tutorial][6]. To learn more about jekyll, check out its [GitHub repo][7].
 
 How to Post
 -----------
