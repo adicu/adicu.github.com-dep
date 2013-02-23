@@ -10,8 +10,8 @@ New Site: [adicu.github.com][adi-new]
 
 How to Post
 -----------
-1. In your favorite text editor, write your post in [markdown][md].
-2. Save your post in the form: `YYYY-MM-DD-your-post-title.md`
+1. Run `./newpost.sh your-post` to create a new post at `_posts/YYYY-MM-DD-your-post.md`
+2. In your favorite text editor, write your post in [markdown][md].
 3. Commit your post to the Github repo in the `_posts` folder.
 
 [jekyll]: http://jekyllrb.com/
