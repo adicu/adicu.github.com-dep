@@ -4,5 +4,5 @@ if [ -n "$1" ]; then
 	echo 'title:' >> $FNAME
 	echo 'layout: post' >> $FNAME
 	echo '---' >> $FNAME
-	$EDITOR $FNAME
+    echo "New post at $FNAME"
 fi
