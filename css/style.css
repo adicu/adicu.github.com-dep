@@ -1,12 +1,10 @@
 .header {
-  /*background: red;*/
   margin-left: 12%;
   margin-right: 12%;
 }
 
 .logo-land {
   display: inline;
-  /*background: green;*/
   width: 50%;
   float: left;
 }
@@ -14,7 +12,6 @@
 .logo {
   float: left;
   margin-right: 10px;
-  /*background: blue;*/
 }
 
 .nav-bar {
@@ -23,7 +20,17 @@
 }
 
 .name {
+ /* */
+}
 
+.content {
+  float: left;
+  width: 65%;
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
 }
 
 .meat {
@@ -38,3 +45,4 @@
   margin-left: 12%;
   margin-right: 12%;
 }
+
