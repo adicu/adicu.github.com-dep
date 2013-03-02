@@ -2,7 +2,12 @@
 layout: default
 title: Home
 ---
+<html>
+<head>
+	<link href="../css/foundation.css" rel="stylesheet">
+</head>
 
+<body>
 <div id="posts">
 
 {% for post in site.posts offset: 0 limit: 10 %}
@@ -13,3 +18,5 @@ title: Home
 {% endfor %}
 
 </div>
+</body>
+</html>
