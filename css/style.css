@@ -6,7 +6,7 @@
 .contact{
   width: 90%;
   float: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .logo-land {
@@ -19,6 +19,10 @@
   float: left;
   margin-right: 10px;
 
+}
+
+.calendar {
+  margin-bottom: 2%;
 }
 
 .nav-bar {
