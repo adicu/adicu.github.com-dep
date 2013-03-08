@@ -3,24 +3,30 @@
   margin-right: 12%;
 }
 
+.contact{
+  width: 90%;
+  float: center;
+  margin-bottom: 30px;
+}
+
 .logo-land {
   display: inline;
-  width: 50%;
+  width: 38%;
   float: left;
 }
 
 .logo {
   float: left;
   margin-right: 10px;
+
 }
 
 .nav-bar {
-  background: blue;
-  
+  float: bottom;
 }
 
 .name {
- /* */
+
 }
 
 .content {
@@ -29,12 +35,17 @@
 }
 
 .sidebar {
+  font-size: 15px;
+  margin-left: 28px;
   float: left;
   width: 25%;
 }
 
-.meat {
+.footer-wrapper {
   /*background: blue;*/
+}
+
+.meat {
   margin-left: 12%;
   margin-right: 12%;
 }
@@ -42,7 +53,6 @@
 .footer {
   /*background: green;*/
   margin-top: 2%;
-  margin-left: 12%;
   margin-right: 12%;
 }
 
