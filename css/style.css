@@ -43,6 +43,7 @@
   margin-left: 28px;
   float: left;
   width: 25%;
+  min-height: 101%;
 }
 
 .footer-wrapper {
