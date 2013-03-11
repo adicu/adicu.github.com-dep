@@ -18,8 +18,10 @@ body {
   padding: 0;
   margin: 1%;
   /*font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;*/
-  font-family: "Proxima Nova", proxima-nova, sans-serif;
-  font-weight: normal;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  /*font-family: "Proxima Nova", proxima-nova, sans-serif;*/
+  /*font-weight: normal;*/
   font-style: normal;
   line-height: 1;
   position: relative;
@@ -798,10 +800,12 @@ a {
 
 /* Default paragraph styles */
 p {
-  font-family: "Proxima Nova", proxima-nova, sans-serif;
-  font-weight: normal;
+  /*font-family: "Proxima Nova", proxima-nova, sans-serif;
+  font-weight: normal;*/
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 500;
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.4;
   margin-bottom: 1.25em; }
   p aside {
     font-size: 0.875em;
@@ -811,7 +815,9 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   /*font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;*/
-  font-family: "Proxima Nova", proxima-nova, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  /*font-weight: 300;*/
+  /*font-family: "Proxima Nova", proxima-nova, sans-serif;*/
   font-weight: bold;
   font-style: normal;
   color: #222222;
@@ -1058,7 +1064,8 @@ blockquote p {
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
-  font-family: "Proxima Nova", proxima-nova, sans-serif;
+  /*font-family: "Proxima Nova", proxima-nova, sans-serif;*/
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: bold;
   line-height: 1;
   margin: 0 0 1.25em;
