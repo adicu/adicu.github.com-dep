@@ -17,10 +17,8 @@ body {
   color: #222222;
   padding: 0;
   margin: 1%;
-  /*font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;*/
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 300;
-  /*font-family: "Proxima Nova", proxima-nova, sans-serif;*/
   /*font-weight: normal;*/
   font-style: normal;
   line-height: 1;
@@ -800,9 +798,8 @@ a {
 
 /* Default paragraph styles */
 p {
-  /*font-family: "Proxima Nova", proxima-nova, sans-serif;
+  font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: normal;*/
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 500;
   font-size: 1em;
   line-height: 1.4;
@@ -814,10 +811,8 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  /*font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;*/
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: Georgia, Times, "Times New Roman", serif;
   /*font-weight: 300;*/
-  /*font-family: "Proxima Nova", proxima-nova, sans-serif;*/
   font-weight: bold;
   font-style: normal;
   color: #222222;
