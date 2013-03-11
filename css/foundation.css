@@ -811,7 +811,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   /*font-weight: 300;*/
   font-weight: bold;
   font-style: normal;
