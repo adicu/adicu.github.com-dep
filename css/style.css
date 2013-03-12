@@ -66,3 +66,18 @@
   margin-right: 12%;
 }
 
+.project-image {
+  float: left;
+  width: 35%;
+}
+
+.project-description {
+  float: left;
+  width: 65%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.post {
+  margin-top: 1em;
+}
