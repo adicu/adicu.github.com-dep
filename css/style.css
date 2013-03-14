@@ -160,3 +160,19 @@ nav {
   margin-top: 0px;
   padding-top: 1px;
 }
+
+#eboard-roster {
+  border-collapse: collapse;
+}
+
+#eboard-roster td, #eboard-roster th {
+  padding: 10px;
+}
+
+.odd {
+  background-color: #E9E9E9;
+}
+
+.even {
+  background-color: #7BBEE9;
+}
