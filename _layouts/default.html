@@ -10,91 +10,33 @@
 
   <title>Application Development Initiative</title>
 
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/foundation.css">
-
-  <script src="js/vendor/custom.modernizr.js"></script>
 
 </head>
 <body>
  
-
-  <div class="header">
-  	<div class="logo-land">
-        <a href="/index.html"><img class="logo" src="/img/logo.png" />
-        <div class="name">
-            <h4>application<br />development<br />initiative<br /></h4></a>
-              <!--<br />
-              <small>A student-led initiative at Columbia University nurturing
-                student creativity and technological aptitude through project
-                development.</small>-->
- 
-        </div>
-      </div>
-    <div class="nav-bar">
-    <div class="large-9 columns">
-      <ul class="button-group right">
-        <li><a href="/events.html" class="button">Events</a></li>
-        <li><a href="/projects.html" class="button">Projects</a></li>
-        <li><a href="/board.html" class="button">Board</a></li>
-        <li><a href="http://jobs.coreatcu.com/" class="button">Jobs</a></li>
-        <li><a href="/contact.html" class="button">Contact</a></li>
-
-      </ul>
-    </div>
-    </div>
-    <hr/>
-  </div>
-
-  <div class="meat">
+  <div class="sidebar">
     <div class="content">
-	  {{ content }}
+      <img class="logo" src="/img/logo.png" />
+      <h1>application development initiative</h1>
     </div>
-
-    <div class="sidebar">
-        <h4>About</h4>
-        The primary goal of the Application Development Initiative is to nurture student creativity and technological aptitude by creating a communal resource for developers of all talents and interests.</br>
-        <br>Columbia University students of all backgrounds are invited and encouraged to take an active role in this initiative.<br></br>
-        <h4>Mailing List</h4>
-        Want to know more about what ADI is up to? Sign up for our weekly newsletter <a href="http://adicu.us4.list-manage.com/subscribe?u=62d8b690f349b99dd7e0f3205&id=01a495e6ed">here</a>!<br></br>
-        <h4>Social Links</h4>
-        <ul class="inline-list left">
-              <li><a href="https://www.facebook.com/ADICU"><img src="../img/fb.png"></a></li>
-              <li><a href="http://twitter.com/adicu"><img src="../img/twitter.png"></a></li>
-              <br><li><a href="https://plus.google.com/u/0/114984719719693601269/posts"><img src="../img/googleplus.png"></a>
-              </li>
-              <li><a href="https://github.com/adicu/"><img src="../img/github.png"></a></li>
-            </ul>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Events</a></li>
+        <li><a>Projects</a></li>
+        <li><a>Board</a></li>
+        <li><a>Jobs</a></li>
+        <li><a>Facebook</a></li>
+        <li><a>Twitter</a></li>
+        <li><a>Github</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </nav>
   </div>
-
-  <div class="footer-wrapper">
-
-  <hr />
-    <!--<div class="footer">-->
-	 <!-- Footer -->
-     <div class="large-12 columns">
-        <div class="row">
-          <div class="large-6 columns">
-            <p>&copy; The Application Development Initiative 2013</p>
-          </div>
-          <div class="large-6 columns">
-            <ul class="inline-list right">
-              <li><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="../img/cc-license.png" style="vertical-align: middle"></a></li>
-              <li><div class="creative">This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons License</a></div>
-              </li>
-            <!--<ul class="inline-list right">
-              <li><a href="https://www.facebook.com/ADICU"><img src="../img/fb.png"></a></li>
-              <li><a href="http://twitter.com/adicu"><img src="../img/twitter.png"></a></li>
-              <li><a href="https://plus.google.com/u/0/114984719719693601269/posts"><img src="../img/googleplus.png"></a></li>
-              <li><a href="https://github.com/adicu/"><img src="../img/github.png"></a></li>
-            </ul>-->
-          </div>
-        </div>
-      </div>
-    </div>
- <!-- </div>-->
-
+  <div class="main">
+    {{ content }}
+  </div>
 
 </body>
 <html>

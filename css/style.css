@@ -1,83 +1,154 @@
-.header {
-  margin-left: 12%;
-  margin-right: 12%;
+/*
+ * adi logo colors:
+ * 414142 dark gray in D, i
+ * 7bbee9 blue in gear
+ * 808285 middle gray in screwdriver, ruler tick marks
+ * 939598 lighter gray in wrench
+ * bcbdd0 lighest gray in one ruler
+ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  color: #000000;
 }
 
-.contact{
-  width: 90%;
-  float: center;
-  margin-bottom: 40px;
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26px;
 }
 
-.logo-land {
-  display: inline;
-  width: 38%;
-  float: left;
-}
-
-.logo {
-  float: left;
-  margin-right: 10px;
-
-}
-
-.calendar {
-  margin-bottom: 2%;
-}
-
-.creative {
-  font-size: 12px;
-  padding-top: 2%;
-  }
-
-.nav-bar {
-  float: bottom;
-}
-
-.name {
-
-}
-
-.content {
-  float: left;
-  width: 65%;
+a {
+  text-decoration: none;
 }
 
 .sidebar {
-  font-size: 15px;
-  margin-left: 28px;
-  float: left;
-  width: 30%;
-  min-height: 101%;
+  background: #E9E9E9;
+  position: fixed;
+  width: 240px;
+  border-right: 1px solid #C2C2C2;
+  height: 100%;
+  min-height: 750px;
+  color: #414142;
 }
 
-.footer-wrapper {
-  /*background: blue;*/
+.sidebar .content {
+  margin: 15px 35px 0px;
 }
 
-.meat {
-  margin-left: 12%;
-  margin-right: 12%;
+.sidebar h2 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 25px;
 }
 
-.footer {
-  /*background: green;*/
-  margin-top: 2%;
-  margin-right: 12%;
+nav {
+  margin: 20px 0px;
 }
 
-.project-image {
-  float: left;
-  width: 35%;
+.main-nav {
+  border-top: 1px solid #D2D2D2;
+  list-style: none outside none;
+  padding: 0px;
 }
 
-.project-description {
-  float: left;
-  width: 65%;
-  padding-left: 1em;
-  padding-right: 1em;
+.main-nav a {
+  display: block;
+  position: relative;
+  padding: 15px 30px;
+  margin: 0;
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.main-nav li a:visited {
+  color: #414142;
+}
+
+.main-nav li a:hover {
+  background: #7BBEE9;
+  border-bottom: 1px solid #7BBEE9;
+} 
+
+.main {
+  margin-left: 241px;
+  margin-top: -1px;
+  padding-top: 0px;
+  padding-left: 34px;
+  background: #FFFFFF;
 }
 
 .post {
-  margin-top: 1em;
+  top: 0px;
+  margin-top: 0px;
+  margin-left: -35px;
+  margin-bottom: 40px;
+  padding-left: 34px;
+  width: 100%;
+}
+
+.post-header {
+  margin-left: -35px;
+  padding: 10px 0px 0px 35px;
+  width: 100%;
+  border-top: 1px solid #D2D2D2;
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.post-header-content {
+  max-width: 700px;
+}
+
+.post-header-content h2 {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.post-header-content a, .post-header-content a:visited {
+  color: #000000;
+}
+
+.post-header-content a:hover {
+  color: #7BBEE9;
+}
+
+.post-header-content h3 {
+  float: right;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-right: 15px;
+}
+
+.post-content {
+  max-width: 700px;
+  clear: both;
+  color: #414142;
+}
+
+.post-content a {
+  text-decoration: underline;
+  color: #000000;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+  color: #7BBEE9;
+}
+
+.post-content p {
+  line-height: 25px;
+  margin: 20px 0px;
+}
+
+.post-content img {
+  margin-top: 20px;
+  border: 1px solid #414142;
+  padding: 2px;
 }
