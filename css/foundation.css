@@ -17,7 +17,8 @@ body {
   color: #222222;
   padding: 0;
   margin: 1%;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  /*font-family: Georgia, Times, "Times New Roman", serif;*/
+  font-family: Baskerville, Times, serif;
   font-weight: 300;
   /*font-weight: normal;*/
   font-style: normal;
@@ -798,7 +799,8 @@ a {
 
 /* Default paragraph styles */
 p {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  /*font-family: Georgia, Times, "Times New Roman", serif;*/
+  font-family: Baskerville, Times, serif;
   font-weight: normal;*/
   font-weight: 500;
   font-size: 1em;
