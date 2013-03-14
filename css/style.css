@@ -22,6 +22,11 @@ h1 {
   line-height: 26px;
 }
 
+h2 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
 a {
   text-decoration: none;
 }
@@ -104,8 +109,6 @@ nav {
 
 .post-header-content h2 {
   display: inline-block;
-  font-weight: 500;
-  font-size: 30px;
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -151,4 +154,9 @@ nav {
   margin-top: 20px;
   border: 1px solid #414142;
   padding: 2px;
+}
+
+.intro {
+  margin-top: 0px;
+  padding-top: 1px;
 }
