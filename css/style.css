@@ -52,6 +52,12 @@ a {
   line-height: 25px;
 }
 
+.inline-list {
+    display: inline-block;
+    position: relative;
+    float: center;
+}
+
 .footer {
   margin-left: 21%;
   margin-right: 10%;
