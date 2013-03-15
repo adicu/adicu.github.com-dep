@@ -37,6 +37,10 @@ a {
   text-decoration: none;
 }
 
+.social-icon {
+  padding: 2%;
+}
+
 .sidebar {
   background: #E9E9E9;
   position: fixed;
