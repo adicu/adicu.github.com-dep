@@ -168,28 +168,27 @@ nav {
   margin-right: 15px;
 }
 
-.post-content {
+.text-content {
   max-width: 700px;
   clear: both;
   color: #414142;
 }
-
-.post-content a {
+.text-content a {
   text-decoration: underline;
   color: #000000;
 }
 
-.post-content a:hover {
+.text-content a:hover {
   text-decoration: underline;
   color: #7BBEE9;
 }
 
-.post-content p {
+p {
   line-height: 25px;
   margin: 20px 0px;
 }
 
-.post-content img {
+.text-content img {
   margin-top: 20px;
   border: 1px solid #414142;
   padding: 2px;
