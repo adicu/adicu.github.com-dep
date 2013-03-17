@@ -209,7 +209,11 @@ p {
 }
 
 #eboard-roster td, #eboard-roster th {
-  padding: 10px;
+  padding: 10px 15px;
+}
+
+#eboard-roster tr {
+  border: 2px solid #E9E9E9;
 }
 
 .odd {
@@ -217,5 +221,5 @@ p {
 }
 
 .even {
-  background-color: #7BBEE9;
+  background-color: #FFFFFF;
 }
