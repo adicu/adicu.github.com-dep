@@ -38,7 +38,7 @@ a {
 }
 
 .social-icon {
-  padding: 2%;
+  margin: 0px 1px;
 }
 
 .sidebar {
@@ -67,12 +67,17 @@ a {
     float: center;
 }
 
-.footer {
-  margin-left: 21%;
-  margin-right: 10%;
-  margin-top: 3%;
-  margin-bottom: 2%;
-  float: bottom;
+#footer {
+  margin-left: -35px;
+  padding: 10px 0px 0px 35px;
+  width: 100%;
+  border-top: 1px solid #D2D2D2;
+  border-bottom: 1px solid #D2D2D2;
+  min-height: 46px;
+}
+
+#footer-content {
+  max-width: 700px;
 }
 
 .contact {
@@ -169,28 +174,27 @@ nav {
   margin-right: 15px;
 }
 
-.post-content {
+.text-content {
   max-width: 700px;
   clear: both;
   color: #414142;
 }
-
-.post-content a {
+.text-content a {
   text-decoration: underline;
   color: #000000;
 }
 
-.post-content a:hover {
+.text-content a:hover {
   text-decoration: underline;
   color: #7BBEE9;
 }
 
-.post-content p {
+p {
   line-height: 25px;
   margin: 20px 0px;
 }
 
-.post-content img {
+.text-content img {
   margin-top: 20px;
   border: 1px solid #414142;
   padding: 2px;

@@ -21,7 +21,7 @@ How to Post
 -----------
 1. Run `./newpost.sh your-post` to create a new post at `_posts/YYYY-MM-DD-your-post.md`.
 2. In your favorite text editor, write your post in [markdown][7].
-3. If posting to the site, commit your post to the git repo and then push to github. If your are
+3. If posting to the site, commit your post to the git repo and then push to github. If you are
    running a test, run `jekyll --server` to run the site at `http://localhost:4000//`.
 
 [1]: http://jekyllrb.com/

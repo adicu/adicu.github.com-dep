@@ -2,6 +2,10 @@
 layout: default
 title: Home
 ---
+<div class="intro">
+  <h2>Application Development Initiative</h2>
+</div>
+
 {% for post in site.posts offset: 0 limit: 10 %}
   <div class="post">
     <div class="post-header">
@@ -10,7 +14,7 @@ title: Home
         <h3><a href="{{ post.url }}">{{ post.date | date_to_string }}</a></h3>
       </div>
     </div>
-    <div class="post-content">
+    <div class="text-content">
       {{ post.content }}
     </div>
   </div>
