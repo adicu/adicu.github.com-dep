@@ -45,6 +45,10 @@ a:link, a:visited {
     text-decoration: none;
 }
 
+a:hover {
+    color: #666;
+}
+
 .social-icon {
   margin: 0px 1px;
 }
