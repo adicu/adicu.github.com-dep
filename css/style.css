@@ -51,6 +51,37 @@ a {
   color: #414142;
 }
 
+#mc_embed_signup {
+  //margin: 15px 35px 0px;
+}
+
+#mc_embed_signup label {
+  font-size: 12px;
+  block: inline;
+}
+
+#mce-EMAIL {
+  //width: 170px;
+  border: 1px solid #414142;
+  padding: 2px;
+  color: #414142;
+  margin-top: 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+#mc-embedded-subscribe {
+  border: 1px solid #414142;
+  border-radius: 5px;
+  background: #C2C2C2;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+#mc-embedded-subscribe:hover{
+  background: #7BBEE9;
+}
+
 .sidebar .content {
   margin: 15px 35px 0px;
 }
