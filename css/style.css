@@ -33,6 +33,13 @@ h3 {
   font-size: 20px;
 }
 
+h4 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 a:link, a:visited {
     color: #76bfe5;
     text-decoration: none;
@@ -209,7 +216,7 @@ p {
   margin-top: 0px;
   padding-top: 1px;
   max-width: 700px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 #eboard-roster {
