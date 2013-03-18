@@ -33,8 +33,9 @@ h3 {
   font-size: 20px;
 }
 
-a {
-  text-decoration: none;
+a:link, a:visited {
+    color: #76bfe5;
+    text-decoration: none;
 }
 
 .social-icon {
@@ -87,6 +88,7 @@ a {
 .contact {
   margin-top: 0px;
   padding-top: 1px;
+  margin-bottom: 40px;
   width: 50%;
   line-height: 25px;
 
@@ -216,10 +218,12 @@ p {
 
 #eboard-roster td, #eboard-roster th {
   padding: 10px 15px;
+  font-size: 15px;
 }
 
 #eboard-roster tr {
   border: 2px solid #E9E9E9;
+  
 }
 
 .odd {
