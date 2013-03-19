@@ -106,7 +106,7 @@ a:hover {
 }
 
 nav {
-  margin: 20px 0px;
+  margin-top: 20px 0px 0px 0px;
 }
 
 .main-nav {
@@ -244,3 +244,33 @@ p {
 .even {
   background-color: #FFFFFF;
 }
+
+#mc_embed_signup {
+  margin-left: 35px;
+  margin-top: 0px;
+}
+
+#mc_embed_signup label {
+  font-size: 12px;
+  block: inline;
+}
+
+#mce-EMAIL {
+  width: 130px;
+  border: 1px solid #414142;
+  padding: 2px;
+  color: #414142;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+#mc-embedded-subscribe {
+  border: 1px solid #414142;
+  border-radius: 5px;
+  background: #C2C2C2;
+  margin-top: 5px;
+}
+
+#mc-embedded-subscribe:hover{
+  background: #7BBEE9;
+} 
