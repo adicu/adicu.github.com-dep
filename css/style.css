@@ -275,4 +275,21 @@ p {
 
 #post_links li {
   line-height: 25px;
+
+#post-pagination {
+  margin-bottom: 10px;
+}
+
+#post-pagination * {
+  display: inline;
+}
+
+#post-pagination .pages{
+  list-style: none;
+  padding: 0;
+}
+
+#post-pagination .page {
+  display: inline;
+  padding: 0.5em;
 }

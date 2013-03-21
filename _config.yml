@@ -4,3 +4,4 @@ safe: true
 lsi: false
 permalink: /:month-:day-:year/:title.html
 exclude: newpost.sh
+paginate: 10
