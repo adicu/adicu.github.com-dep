@@ -294,3 +294,7 @@ p {
   display: inline;
   padding: 0.5em;
 }
+
+.external {
+  margin-left: 5px;
+}
