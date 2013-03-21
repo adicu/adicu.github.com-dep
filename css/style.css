@@ -274,3 +274,7 @@ p {
 #mc-embedded-subscribe:hover{
   background: #7BBEE9;
 } 
+
+#post_links li {
+  line-height: 25px;
+}
