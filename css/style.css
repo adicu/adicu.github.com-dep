@@ -210,6 +210,18 @@ p {
   margin: 20px 0px;
 }
 
+.logos.varied img {
+  max-width: 175px;
+  max-height: 125px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.logos .logo-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .text-content img {
   border: 1px solid #414142;
   padding: 2px;
@@ -234,6 +246,10 @@ p {
 #eboard-roster tr {
   border: 2px solid #E9E9E9;
   
+}
+
+#devfest-text li, #devfest-text p {
+  line-height: 25px;
 }
 
 .odd {
