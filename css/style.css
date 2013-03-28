@@ -295,6 +295,11 @@ p {
   padding: 0.5em;
 }
 
+#post-pagination .archive {
+  display: block;
+  margin: 1em 0;
+}
+
 .external {
   margin-left: 5px;
 }
