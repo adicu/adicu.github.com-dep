@@ -249,16 +249,12 @@ p {
   margin-top: 0px;
 }
 
-#mc_embed_signup label {
-  font-size: 12px;
-}
-
 #mce-EMAIL {
   width: 130px;
   border: 1px solid #414142;
   padding: 2px;
   color: #414142;
-  margin-top: 5px;
+  margin-top: 0.75em;
 }
 
 #mc-embedded-subscribe {
