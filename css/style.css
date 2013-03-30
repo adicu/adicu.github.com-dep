@@ -205,7 +205,7 @@ nav {
   color: #7BBEE9;
 }
 
-p {
+p, ul {
   line-height: 25px;
   margin: 20px 0px;
 }
