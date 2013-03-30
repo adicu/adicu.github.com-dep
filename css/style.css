@@ -73,7 +73,8 @@ a:hover {
   line-height: 25px;
 }
 
-.inline-list {
+ul .inline-list {
+    line-height: 0;
     display: inline-block;
     position: relative;
 }
@@ -205,7 +206,7 @@ nav {
   color: #7BBEE9;
 }
 
-p, ul {
+p {
   line-height: 25px;
   margin: 20px 0px;
 }
