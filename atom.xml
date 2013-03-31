@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
   <title>The Application Development Initiative</title>
-  <link href="http://adicu.github.com/atom.xml" rel="self"/>
-  <link href="http://adicu.github.com/"/>
+  <link href="http://adicu.com/atom.xml" rel="self"/>
+  <link href="http://adicu.com/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://adicu.github.com/</id>
+  <id>http://adicu.com/</id>
   <author>
     <name>Application Development Initiative</name>
     <email>infrastructure@adicu.com</email>
@@ -17,9 +17,9 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://adicu.github.com{{ post.url }}"/>
+   <link href="http://adicu.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://adicu.github.com{{ post.id }}</id>
+   <id>http://adicu.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
