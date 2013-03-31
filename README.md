@@ -19,13 +19,11 @@ this [Windows installation tutorial][6]. To learn more about jekyll, check out i
 
 How to Post
 -----------
-1. Copy one of the template posts from the \_templates directory into the 
-	\_posts directory, or create a new file in the _posts directory.
-2. The name of the new post should be of the form `YYYY-MM-DD-short-name.ext`
-	where ext is the proper extension (.md for markdown, .html for html).
-	You can use the command `date +%Y-%m-%d` to generate the correct date
-	prefix for the post file.
-4. Fill out the new file with your post, commit it, then push
+1. Run `./newpost.sh title type` where title is the short title of your
+   post (which will be used in the URL), and type is one of the template
+   types in the \_templates directory.
+2. Fill out your post in the newly created file.
+3. Commit and push the file.
 
 [1]: http://jekyllrb.com/
 [2]: http://pages.github.com/
