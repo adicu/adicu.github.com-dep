@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ -z "$2" ]; then
 	echo "Usage: $0 title type"
@@ -7,8 +7,8 @@ fi
 
 TITLE=$1
 TYPE=$2
-TEMPLATE="_templates/$TYPE.html"
-POST="_posts/`date +%Y-%m-%d`-$TITLE.html"
+TEMPLATE="_templates/$TYPE"
+POST="_posts/$(date +%Y-%m-%d)-$TITLE.${TYPE##*.}"
 
 cp "$TEMPLATE" "$POST"
 
