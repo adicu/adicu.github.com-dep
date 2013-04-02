@@ -226,6 +226,7 @@ p {
 .text-content img {
   border: 1px solid #414142;
   padding: 2px;
+  margin-bottom: 1em;
 }
 
 #intro {
