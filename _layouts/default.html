@@ -13,18 +13,22 @@
   <link rel="stylesheet" href="/css/style.css"/>
   <link rel="alternate" href="http://adicu.com/atom.xml" type="application/atom+xml"/>
 
+  <meta property="og:image" content="http://adicu.com/img/logo.png" />
+
 </head>
 <body>
 
   <!-- Facebook JS for Like -->
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
+  <script>
+    (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=110370835827671";
-                fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=110370835827671";
+        fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+  </script>
   
   <div id="sidebar">
     <div id="sidebar-content">
