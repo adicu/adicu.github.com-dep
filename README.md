@@ -3,9 +3,8 @@ adicu.github.com
 
 The new ADI internet experience developed with [jekyll][1] and [GitHub Pages][2].
 
-Old Site: [adicu.com][3]
-
-New Site: [adicu.github.com][4]
+Site: [adicu.com][3]
+Alternative Address: [adicu.github.com][4]
 
 Installation
 ------------
