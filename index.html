@@ -13,7 +13,8 @@ title: Home
       <div class="post-header-content">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <h3><a href="{{ post.url }}">{{ post.date | date_to_string }}</a></h3>
-      </div>
+        <div class="fb-like" data-href="{{ site.base }}{{ post.url }}" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
+    </div>
     </div>
     <div class="text-content">
       {{ post.content }}
