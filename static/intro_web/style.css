@@ -1,0 +1,19 @@
+#not-boring{
+	font-size: 30px;
+	color: green;
+	border: 1px black solid;
+	margin-left: 15px;
+	padding: 5px;
+}
+
+.red{
+	color: red;
+}
+
+.red:hover{
+	font-weight: bold;
+}
+
+#not-boring .red{
+	background-color: orange;
+}
