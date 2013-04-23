@@ -15,6 +15,7 @@ title: Home
         <h3><a href="{{ post.url }}">{{ post.date | date_to_string }}</a></h3>
     </div>
     <div class="fb-like" data-href="{{ site.base }}{{ post.url }}" data-    send="true" data-layout="button_count" data-width="450" data-show-faces="true"  data-font="arial"></div>
+    &nbsp; <div class="g-plusone" data-href="{{ site.base }}{{ post.url }}" data-size="small"></div>
     </div>
     <div class="text-content">
       {{ post.content }}

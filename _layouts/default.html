@@ -10,9 +10,9 @@
 
   <title>ADI - {{ page.title }}</title>
 
+  <link rel="canonical" href="{{ site.base }}{{ post.url }}" />
   <link rel="stylesheet" href="/css/style.css"/>
   <link rel="alternate" href="http://adicu.com/atom.xml" type="application/atom+xml"/>
-
   <meta property="og:image" content="http://adicu.com/img/logo.png" />
 
 </head>
@@ -29,7 +29,16 @@
         fjs.parentNode.insertBefore(js, fjs);
         } (document, 'script', 'facebook-jssdk'));
   </script>
-  
+
+  <!-- Google+ JS for +1 -->
+  <script type="text/javascript">
+      (function() {
+          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+          po.src = 'https://apis.google.com/js/plusone.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+  </script>
+
   <div id="sidebar">
     <div id="sidebar-content">
       <a href="/"><img id="logo" src="/img/logo.png" /></a>
