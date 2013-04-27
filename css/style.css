@@ -281,9 +281,9 @@ p {
   margin-top: 5px;
 }
 
-#mc-embedded-subscribe:hover{
+#mc-embedded-subscribe:hover {
   background: #7BBEE9;
-} 
+}
 
 #post_links li {
   line-height: 25px;
@@ -312,6 +312,20 @@ p {
   margin: 1em 0;
 }
 
+.social span {
+  display: inline-block;
+}
+.social .facebook {
+  width: 150px;
+}
+.social .twitter {
+  width: 100px;
+}
+.social .google {
+  width: 75px;
+}
+
 .external {
   margin-left: 5px;
 }
+
