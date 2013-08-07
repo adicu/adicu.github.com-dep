@@ -129,6 +129,7 @@ nav {
 }
 
 #main-nav li a:hover {
+  color: #FFFFFF;
   background: #7BBEE9;
   border-bottom: 1px solid #7BBEE9;
 } 
