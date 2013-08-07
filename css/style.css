@@ -277,13 +277,15 @@ p {
 }
 
 #mc-embedded-subscribe {
-  border: 1px solid #414142;
-  background: #C2C2C2;
   margin-top: 5px;
+  border: none;
+  background: transparent;
+  color: #8F8F8F;
+  cursor: pointer;
 }
 
 #mc-embedded-subscribe:hover {
-  background: #7BBEE9;
+  color: #196A9E;
 }
 
 #post_links li {
