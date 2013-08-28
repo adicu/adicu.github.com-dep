@@ -19,13 +19,6 @@
   font-weight: 300;
 }
 
-@font-face {
-  font-style: normal;
-  font-family: 'Old Standard TT';
-  src: url('/assets/old-standard-tt/OldStandard-Regular.ttf');
-  font-weight: 400;
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -37,28 +30,23 @@ html, body {
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   line-height: 26px;
   font-weight: 300;
 }
 
 h2 {
-  font-family: 'Old Standard TT', serif;
   font-size: 28px;
   line-height: 28px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 h3 {
-  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 300;
 }
 
 h4 {
-  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: normal;
   margin-top: 10px;
@@ -66,12 +54,12 @@ h4 {
 }
 
 a:link, a:visited {
-    color: #76bfe5;
-    text-decoration: none;
+  color: #76bfe5;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #666;
+  color: #666;
 }
 
 .social-icon {
