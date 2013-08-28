@@ -7,23 +7,24 @@
  * bcbdd0 lighest gray in one ruler
  */
 
- @font-face {
+@font-face {
   font-family: 'Open Sans';
   src: url('/assets/open-sans/OpenSans-Regular.ttf');
   font-weight: 400;
- }
+}
 
- @font-face {
+@font-face {
   font-family: 'Open Sans';
   src: url('/assets/open-sans/OpenSans-Light.ttf');
   font-weight: 300;
- }
+}
 
-  @font-face {
-  font-family: 'Open Sans';
-  src: url('/assets/open-sans/OpenSans-Bold.ttf');
-  font-weight: 700;
- }
+@font-face {
+  font-style: normal;
+  font-family: 'Old Standard TT';
+  src: url('/assets/old-standard-tt/OldStandard-Regular.ttf');
+  font-weight: 400;
+}
 
 html, body {
   margin: 0;
@@ -36,22 +37,28 @@ html, body {
 }
 
 h1 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
-  font-weight: 300;
   line-height: 26px;
+  font-weight: 300;
 }
 
 h2 {
-  font-weight: 300;
-  font-size: 30px;
+  font-family: 'Old Standard TT', serif;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  font-weight: 300;
 }
 
 h4 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: normal;
   margin-top: 10px;
@@ -262,6 +269,7 @@ p {
 #eboard-roster td, #eboard-roster th {
   padding: 10px 15px;
   font-size: 15px;
+  font-weight: 300;
 }
 
 #eboard-roster tr {
