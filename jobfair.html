@@ -1,8 +1,181 @@
 <!DOCTYPE HTML>
 <html>
-	<title>ADI Startup Job Fair</title>
+	<meta charset="utf-8" />
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+    
+    <title>ADI Startup Job Fair</title>
 <head>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(window).scroll(function() {
+		    if ($(this).scrollTop() > 125) { 
+		        $('#nav-title').css({
+		            'display': 'block'
+		        });
+		    } else {
+		    	$('#nav-title').css({
+		            'display': 'none'
+		        });
+		    }
+		});
+	});
+</script>	
+
+
+<style type="text/css">
+#top-bar-background {
+	height: 50px;
+	background-color:black;
+}
+#top-bar {
+	text-align: center;
+	height: 30px;
+	position:fixed;
+	padding:10px;
+	width:100%;
+	background-color:black;
+	opacity:0.85;
+}
+#top-logo {
+	height:100%;
+	float:left;
+	margin-right:60px;
+}
+#bottom-logo {
+	height:100%;
+}
+
+/* large panels */
+div[class*="panel"] {	
+	
+}
+.content {
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align:center;
+	max-width: 1000px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+.dark {
+	background-color:#08080b;
+	color:white;
+}
+.light {
+	min-height:300px;
+	
+	opacity: 1;
+	background-color:#FFF2C4;
+}
+.bottom-bar {
+	height:100px;
+}
+.bottom-bar .logo {
+	margin: 5px;
+}
+.nav-link {
+	float: right;
+	color: white;
+	margin-right:20px;
+	text-align: center;
+	height: 30px;
+	text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+}
+#nav-title {
+	color:white;
+	text-decoration: none;
+	display: none;
+}
+#nav-title>h2{
+	width: auto;
+	margin:0;
+	margin-right:20px;
+}
+body {
+	background: black;
+	margin:0;
+}
+.panel-1 {
+	padding-top:50px;
+	color:white;
+	background: black url("http://emilyjsimpson.files.wordpress.com/2011/04/img_6170.jpg") no-repeat top center;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	background-size: 100% auto;
+}
+</style>
 </head>
 <body>
+	<div id="top-bar">
+		<a href="http://adicu.com">
+			<img id="top-logo" src="img/logo.png" />
+			<a class="nav-link" href="#sponsors">Sponsors</a>
+			<a class="nav-link" href="#about">About</a>
+			<a id="nav-title" href="#top">
+				<h2>Startup Job Fair</h2>
+			</a>
+		</a>
+	</div>
+	<div id="top-bar-background"></div>
+	<div class="panel-1" id="top">
+		<div class="content">
+			<h1 id="title">Startup Job Fair</h1>
+			<h2>Come to chillax with the hottest startups you've ever lain your eyes on.  Presented by the Application Development Initiative.</h2>	
+		</div>
+	</div>
+	<div class="dark" id="about">
+		<div class="content">
+			<h1>About</h1>	
+		</div>
+	</div>
+	<div class="light" id="sponsors">
+		<div class="content">
+			<h1>Sponsors</h1>
+			<a href="#">
+				<img class="sponsor-image" src="http://placehold.it/247x150">
+			</a>	
+			<a href="#">
+				<img class="sponsor-image" src="http://placehold.it/247x150">
+			</a>
+			<a href="#">
+				<img class="sponsor-image" src="http://placehold.it/247x150">
+			</a>
+			<a href="#">
+				<img class="sponsor-image" src="http://placehold.it/247x150">
+			</a>
+			<a href="#">
+				<img class="sponsor-image" src="http://placehold.it/247x150">
+			</a>
+			<a href="#">
+				<img class="sponsor-image" src="http://placehold.it/247x150">
+			</a>
+			<a href="#">
+				<img class="sponsor-image" src="http://placehold.it/247x150">
+			</a>
+			<a href="#">
+				<img class="sponsor-image" src="http://placehold.it/247x150">
+			</a>
+			<a href="#">
+				<img class="sponsor-image" src="http://placehold.it/247x150">
+			</a>
+			<a href="#">
+				<img class="sponsor-image" src="http://placehold.it/247x150">
+			</a>
+
+		</div>
+	</div>
+	<div class="dark bottom-bar">
+		<div class="content">
+			<a href="http://adicu.com">
+			<img class="bottom-logo" src="img/logo.png" />
+		</a>
+		</div>
+	</div>
 </body>
 </html>
