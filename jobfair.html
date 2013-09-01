@@ -6,149 +6,76 @@
     <meta name="viewport" content="width=device-width" />
     
     <title>ADI Startup Job Fair</title>
-<head>
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$(window).scroll(function() {
-		    if ($(this).scrollTop() > 125) { 
-		        $('#nav-title').css({
-		            'display': 'block'
-		        });
-		    } else {
-		    	$('#nav-title').css({
-		            'display': 'none'
-		        });
-		    }
-		});
-	});
-</script>	
+<head>	
 
 <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
 <style type="text/css">
 
+@media only screen and (max-width: 700px) {
+	.panel {
+		width:100% !important;
+	}
+}
+
+html, body {
+	margin:0;
+	height: 100%;
+}
+
 body {
+	background: url(http://farm3.staticflickr.com/2233/2268241434_c7891cc9c2_z.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	font-family: "Lato", sans-serif;
 }
-#top-bar-background {
-	height: 50px;
-	background-color:#191916;
-}
-#top-bar {
-	text-align: center;
-	height: 30px;
-	position:fixed;
-	padding:10px;
-	width:100%;
-	background-color:#191916;
-	opacity:0.9;
-}
-#top-bar .content {
-	margin:0;
-	padding:0;
-}
-#top-logo {
-	height:30px;
-	float:left;
-	margin-right:110px;
-}
-#bottom-logo {
-	height:100%;
-}
 
-/* large panels */
-div[class*="panel"] {	
+/* Panel Styling and Positioning */
+.right {
+	width:67%;
+	float:right;
 	
 }
-.content {
-	padding-top:20px;
-	padding-bottom:20px;
-	text-align:center;
-	max-width: 1000px;
-	margin-left:auto;
-	margin-right:auto;
+.left {
+	width:33%;
+	float:left;
+}
 
-}
-.dark {
-	background-color:#191916;
-	color:#eee;
-}
-.light {
-	min-height:300px;
-	color: #191916;
-	background: url("img/greyzz.png") repeat center center;
-}
-.bottom-bar {
-	height:100px;
-}
-.bottom-bar .logo {
-	margin: 5px;
-}
-.nav-link {
-	float: right;
+.panel {
+	display: inline-block;
 	color: #eee;
-	margin-right:20px;
-	text-align: center;
-	font-size: 1.4em;
-	text-decoration: none;
-    -webkit-transition: all 0.5s ease;
 }
-#nav-title {
-	color:#eee;
-	text-decoration: none;
-	display: none;
+
+.content {
+	background: rgba(0,0,0,0.5);
+	height:100%;
+	text-align:center;
+	padding:20px;
+	margin:20px;
 }
-#nav-title h2{
-	width: auto;
-	margin:0;
-	margin-right:20px;
-}
-body {
-	margin:0;
-	background: #191916 url("http://emilyjsimpson.files.wordpress.com/2011/04/img_6170.jpg") no-repeat top center;
-	-webkit-background-size: 100% auto;
-	-moz-background-size: 100% auto;
-	background-size: 100% auto;
-}
-.panel-1 {
-	padding-top:50px;
-	color:#eee;
-	background-color: rgba(0,0,0,0.5);
-}
-.panel-1 > .content {
-	opacity: 1;
+
+/*Avoid overflow on very small screens*/
+
+img {
+	max-width:95%;
 }
 </style>
+
 </head>
 <body>
-	<div id="top-bar">
+	<div class="left panel" id="info">
 		<div class="content">
 			<a href="http://adicu.com">
-				<img id="top-logo" src="img/logo.png" />
-				<a class="nav-link" href="#sponsors">Sponsors</a>
-				<a class="nav-link" href="#about">About</a>
-				<a id="nav-title" href="#top">
-					<h2>Startup Job Fair</h2>
-				</a>
+				<img id="logo" src="img/logo.png" />
 			</a>
-		</div>
-	</div>
-	<div id="top-bar-background"></div>
-	<div class="panel-1" id="top">
-		<div class="content">
 			<h1 id="title">Startup Job Fair</h1>
-			<h2>Come to chillax with the hottest startups you've ever lain your eyes on.  Presented by the Application Development Initiative.</h2>	
+			<h2>Come to chillax with the hottest startups you've ever lain your eyes on.  Presented by the Application Development Initiative.</h2>
 		</div>
 	</div>
-	<div class="dark" id="about">
+	<div class="right panel" id="sponsors">
 		<div class="content">
-			<h1>About</h1>	
-		</div>
-	</div>
-	<div class="light" id="sponsors">
-		<div class="content">
-			<h1>Sponsors</h1>
+			<h1 id="sponsors-title">Sponsors</h1>
 			<a href="#">
 				<img class="sponsor-image" src="http://placehold.it/247x150">
 			</a>	
@@ -179,14 +106,6 @@ body {
 			<a href="#">
 				<img class="sponsor-image" src="http://placehold.it/247x150">
 			</a>
-
-		</div>
-	</div>
-	<div class="dark bottom-bar">
-		<div class="content">
-			<a href="http://adicu.com">
-			<img class="bottom-logo" src="img/logo.png" />
-		</a>
 		</div>
 	</div>
 </body>
