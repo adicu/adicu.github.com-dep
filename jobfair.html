@@ -8,7 +8,7 @@
     <title>ADI Startup Job Fair</title>
 <head>
 
-<link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:700,400,300' rel='stylesheet' type='text/css'>
 <style type="text/css">
 
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
@@ -26,13 +26,23 @@ html, body {
 }
 
 body {
-	background: url(/img/columbia-street.jpg
+	background: url(img/columbia-street.jpg
 		) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-family: "Lato", sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 1.8em;
+	font-weight: 700;
+	margin: 0.4em 0;
+}
+
+h2 {
+	font-weight: 300;
 }
 
 /* Panel Styling and Positioning */
@@ -60,6 +70,15 @@ body {
 	margin:20px;
 }
 
+.content h2 {
+	margin: 0 0.2em;
+	text-align: justify;
+}
+
+.sponsors-title {
+	margin: 0 0 0.4em 0;
+}
+
 /*Avoid overflow on very small screens*/
 
 img {
@@ -80,7 +99,7 @@ img {
 	</div>
 	<div class="right panel" id="sponsors">
 		<div class="content">
-			<h1 id="sponsors-title">Sponsors</h1>
+			<h1 class="sponsors-title">Sponsors</h1>
 			<a href="#">
 				<img class="sponsor-image" src="http://placehold.it/247x150">
 			</a>
