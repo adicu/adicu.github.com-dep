@@ -10,15 +10,29 @@
 
 <link href='http://fonts.googleapis.com/css?family=Roboto:700,400,300' rel='stylesheet' type='text/css'>
 <style type="text/css">
+/*Webfonts*/
+@font-face{
+	font-family:Batch;
+	src:url('fonts/batch-icons-webfont.eot');
+	src:url('fonts/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/batch-icons-webfont.woff') format('woff'),
+		url('fonts/batch-icons-webfont.ttf') format('truetype'),
+		url('fonts/batch-icons-webfont.svg#batchregular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+.icon {
+	font-family:"Batch"; /*or whatever you've decalred your font name as*/
+    font-size:32px;
+    line-height:1;
+    display:inline-block;
+}
+
 
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
-@media only screen and (max-width: 700px) {
-	.panel {
-		width:100% !important;
-	}
-}
+
 
 html, body {
 	margin:0;
@@ -26,6 +40,7 @@ html, body {
 }
 
 body {
+	position: relative;
 	background: url(img/columbia-street.jpg
 		) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -42,23 +57,49 @@ h1 {
 }
 
 h2 {
-	font-weight: 300;
+	font-weight: 500;
+	font-size: 1.4em;
 }
 
 /* Panel Styling and Positioning */
 .right {
-	width:67%;
-	float:right;
+	left:33%;
+	top:0;
 
 }
 .left {
-	width:33%;
-	float:left;
+	width: 33%;
+	left:0;
 }
 
 .panel {
+	position: absolute;
 	display: inline-block;
 	color: #eee;
+}
+
+
+.details {
+	margin: 20px auto 0;
+	display: block;
+	width:175px;
+}
+
+.detail {
+	position: relative;
+	height: 40px;
+}
+
+.detail > .icon {
+	position: absolute;
+	left:0;
+	font-style: normal;
+}
+
+.detail > h2 {
+	position: absolute;
+	margin:0;
+	left:40px;
 }
 
 .content {
@@ -84,6 +125,27 @@ h2 {
 img {
 	max-width:95%;
 }
+
+@media only screen and (max-width: 640px) {
+	.panel {
+		max-width:100%;
+		width:100% !important;
+		position: relative;
+		left:0;
+	}
+	.body {
+		color: blue!important;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.right {
+		left:400px;
+	}
+	.left {
+		width: 400px;
+	}
+}
+
 </style>
 
 </head>
@@ -94,7 +156,16 @@ img {
 				<img id="logo" src="img/logo.png" />
 			</a>
 			<h1 id="title">Startup Job Fair</h1>
-			<h2>Come to chillax with the hottest startups you've ever lain your eyes on.  Presented by the Application Development Initiative.</h2>
+			<div class="details">
+				<div class="detail" id="date">
+					<i class="icon">&#xf05b;</i>
+					<h2>October 11</h2>
+				</div>
+				<div class="detail" id="time">
+					<i class="icon">&#xf090;</i>
+					<h2>1-4pm</h2>
+				</div>	
+			</div>
 		</div>
 	</div>
 	<div class="right panel" id="sponsors">
