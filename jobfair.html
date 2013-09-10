@@ -53,7 +53,7 @@ body {
 h1 {
 	font-size: 1.8em;
 	font-weight: 700;
-	margin: 0.4em 0;
+	margin: 0 0 0.4em 0;
 }
 
 h2 {
@@ -62,27 +62,35 @@ h2 {
 }
 
 /* Panel Styling and Positioning */
-.right {
-	left:33%;
-	top:0;
 
+#info> .content {
+	height:120px;
 }
-.left {
-	width: 33%;
-	left:0;
-}
-
 .panel {
-	position: absolute;
-	display: inline-block;
 	color: #eee;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	max-width: 1000px;
+}
+.left, .right {
+	margin: 0;
+	overflow: hidden;
+	float:left;
+	width: 47%;
+	height: 100%;
+	padding: 0 10px;
 }
 
-
+.left {
+	text-align: right;
+}
+.right {
+	text-align: left;
+}
 .details {
-	margin: 20px auto 0;
 	display: block;
-	width:175px;
+	width:175px; 
 }
 
 .detail {
@@ -105,13 +113,13 @@ h2 {
 .content {
 	background: rgba(0,0,0,0.5);
 	border-radius: 3px;
-	height:100%;
 	text-align:center;
 	padding:20px;
 	margin:20px;
 }
 
 .content h2 {
+	height: 100%;
 	margin: 0 0.2em;
 	text-align: justify;
 }
@@ -123,6 +131,7 @@ h2 {
 /*Avoid overflow on very small screens*/
 
 img {
+	height: 100%;
 	max-width:95%;
 }
 
@@ -133,42 +142,35 @@ img {
 		position: relative;
 		left:0;
 	}
-	.body {
-		color: blue!important;
-	}
-}
-@media only screen and (min-width: 1200px){
-	.right {
-		left:400px;
-	}
-	.left {
-		width: 400px;
-	}
 }
 
 </style>
 
 </head>
 <body>
-	<div class="left panel" id="info">
+	<div class="panel" id="info">
 		<div class="content">
-			<a href="http://adicu.com">
-				<img id="logo" src="img/logo.png" />
-			</a>
-			<h1 id="title">Startup Job Fair</h1>
-			<div class="details">
-				<div class="detail" id="date">
-					<i class="icon">&#xf05b;</i>
-					<h2>October 11</h2>
+			<div class="left">
+				<a href="http://adicu.com">
+					<img id="logo" src="img/logo.png" />
+				</a>
+			</div>
+			<div class="right">
+				<h1 id="title">Startup Job Fair</h1>
+				<div class="details">
+					<div class="detail" id="date">
+						<i class="icon">&#xf05b;</i>
+						<h2>October 11</h2>
+					</div>
+					<div class="detail" id="time">
+						<i class="icon">&#xf090;</i>
+						<h2>1-4pm</h2>
+					</div>	
 				</div>
-				<div class="detail" id="time">
-					<i class="icon">&#xf090;</i>
-					<h2>1-4pm</h2>
-				</div>	
 			</div>
 		</div>
 	</div>
-	<div class="right panel" id="sponsors">
+	<div class="panel" id="sponsors">
 		<div class="content">
 			<h1 class="sponsors-title">Sponsors</h1>
 			<a href="#">
