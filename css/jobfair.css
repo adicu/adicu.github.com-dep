@@ -1,11 +1,11 @@
 /*Webfonts*/
 @font-face{
 	font-family:Batch;
-	src:url('/fonts/batch-icons-webfont.eot');
-	src:url('/fonts/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/batch-icons-webfont.woff') format('woff'),
-		url('/fonts/batch-icons-webfont.ttf') format('truetype'),
-		url('/fonts/batch-icons-webfont.svg#batchregular') format('svg');
+	src:url('../fonts/batch-icons-webfont.eot');
+	src:url('../fonts/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/batch-icons-webfont.woff') format('woff'),
+		url('../fonts/batch-icons-webfont.ttf') format('truetype'),
+		url('../fonts/batch-icons-webfont.svg#batchregular') format('svg');
 	font-weight:normal;
 	font-style:normal;
 }
@@ -27,9 +27,32 @@ html, body {
 	height: 100%;
 }
 
+#sponsors .sponsor-wrapper-outer {
+	background-color: white;
+	width: 247px;
+	height: 150px;
+	display: inline-block;
+	margin:10px;
+	padding: 0 10px;
+}
+#sponsors .sponsor-wrapper-inner {
+	display: table-cell;
+	vertical-align: middle;
+	height: 150px;
+	width: 247px;
+}
+#sponsors a {
+	height: 100%;
+}
+#sponsors img {
+
+	width:100%;
+
+}
+
 body {
 	position: relative;
-	background: url(/img/columbia-street.jpg
+	background: url(../img/columbia-street.jpg
 		) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -118,11 +141,6 @@ h3 {
 }
 
 /*Avoid overflow on very small screens*/
-
-img {
-	height: 100%;
-	max-width:95%;
-}
 
 @media only screen and (max-width: 640px) {
 	.panel {
