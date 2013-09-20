@@ -27,7 +27,11 @@ html, body {
 	height: 100%;
 }
 
-#sponsors .sponsor-wrapper-outer {
+#logo {
+	height: 124px;
+}
+
+#companies .company-wrapper-outer {
 	background-color: white;
 	width: 247px;
 	height: 150px;
@@ -35,16 +39,16 @@ html, body {
 	margin:10px;
 	padding: 0 10px;
 }
-#sponsors .sponsor-wrapper-inner {
+#companies .company-wrapper-inner {
 	display: table-cell;
 	vertical-align: middle;
 	height: 150px;
 	width: 247px;
 }
-#sponsors a {
+#companies a {
 	height: 100%;
 }
-#sponsors img {
+#companies img {
 
 	width:100%;
 
@@ -62,9 +66,15 @@ body {
 }
 
 h1 {
-	font-size: 1.8em;
+	font-size: 2em;
 	font-weight: 700;
 	margin: 0 0 0.4em 0;
+}
+
+h2 {
+	font-size: 1.8em;
+	font-weight: 700;
+
 }
 
 h3 {
@@ -76,29 +86,31 @@ h3 {
 
 #info> .content {
 	height:165px;
+	text-align: center;
 }
 .panel {
 	color: #eee;
 	margin-right: auto;
 	margin-left: auto;
+	padding: 20px;
 	width: 100%;
 	max-width: 1000px;
 }
 .left, .right {
 	margin: 0;
-	overflow: hidden;
-	float:left;
-	width: 47%;
-	height: 100%;
-	padding: 0 10px;
+	display: inline-block;
+	height: 165px;
+	width: 49%;
 }
 
 .left {
 	text-align: right;
+	margin-right: 5px;
 }
 .right {
 	line-height: 2em;
 	text-align: left;
+	margin-left: 5px;
 }
 
 .detail {
@@ -121,9 +133,14 @@ h3 {
 .content {
 	background: rgba(0,0,0,0.5);
 	border-radius: 3px;
+	margin:20px;
+}
+#info .content {
+	padding: 20px 0;
+}
+#companies .content {
 	text-align:center;
 	padding:20px;
-	margin:20px;
 }
 
 .content h3 {
@@ -132,14 +149,14 @@ h3 {
 	text-align: justify;
 }
 
-.sponsors-title {
+.companies-title {
 	margin: 0 0 0.4em 0;
 }
 
 .btn {
   display: inline-block;
   padding: 6px 20px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: normal;
   line-height: 1.428571429;
@@ -193,11 +210,50 @@ h3 {
 
 /*Avoid overflow on very small screens*/
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 685px) {
 	.panel {
 		max-width:100%;
 		width:100% !important;
 		position: relative;
+		padding: 0;
+		text-align: center !important;
 		left:0;
+	}
+	.left, .right {
+		height: 175px;
+		text-align: center;
+		width: 100%;
+	}
+	.left {
+		display: block;
+	}
+	.right {
+		width: 100%;
+	}
+	#info > .content {
+		height: 335px;
+	}
+	#companies > .content {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.detail {
+		margin: 0 auto;
+		width: 175px;
+	}
+}
+@media only screen and (max-width: 760px) {
+	.right {
+		width: 45%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.company-wrapper-outer, .company-wrapper-inner, .company-image {
+		width: 80% !important;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.panel {
+		padding: 0;
 	}
 }
