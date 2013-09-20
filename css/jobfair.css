@@ -1,0 +1,259 @@
+/*Webfonts*/
+@font-face{
+	font-family:Batch;
+	src:url('../fonts/batch-icons-webfont.eot');
+	src:url('../fonts/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/batch-icons-webfont.woff') format('woff'),
+		url('../fonts/batch-icons-webfont.ttf') format('truetype'),
+		url('../fonts/batch-icons-webfont.svg#batchregular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+.icon {
+	font-family:"Batch"; /*or whatever you've decalred your font name as*/
+    font-size:32px;
+    line-height:1;
+    display:inline-block;
+}
+
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+
+html, body {
+	margin:0;
+	height: 100%;
+}
+
+#logo {
+	height: 124px;
+}
+
+#companies .company-wrapper-outer {
+	background-color: white;
+	width: 247px;
+	height: 150px;
+	display: inline-block;
+	margin:10px;
+	padding: 0 10px;
+}
+#companies .company-wrapper-inner {
+	display: table-cell;
+	vertical-align: middle;
+	height: 150px;
+	width: 247px;
+}
+#companies a {
+	height: 100%;
+}
+#companies img {
+
+	width:100%;
+
+}
+
+body {
+	position: relative;
+	background: url(../img/columbia-street.jpg
+		) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: 700;
+	margin: 0 0 0.4em 0;
+}
+
+h2 {
+	font-size: 1.8em;
+	font-weight: 700;
+
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 1.4em;
+}
+
+/* Panel Styling and Positioning */
+
+#info> .content {
+	height:165px;
+	text-align: center;
+}
+.panel {
+	color: #eee;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	width: 100%;
+	max-width: 1000px;
+}
+.left, .right {
+	margin: 0;
+	display: inline-block;
+	height: 165px;
+	width: 49%;
+}
+
+.left {
+	text-align: right;
+	margin-right: 5px;
+}
+.right {
+	line-height: 2em;
+	text-align: left;
+	margin-left: 5px;
+}
+
+.detail {
+	position: relative;
+	height: 40px;
+}
+
+.detail > .icon {
+	position: absolute;
+	left:0;
+	font-style: normal;
+}
+
+.detail > h3 {
+	position: absolute;
+	margin:0;
+	left:40px;
+}
+
+.content {
+	background: rgba(0,0,0,0.5);
+	border-radius: 3px;
+	margin:20px;
+}
+#info .content {
+	padding: 20px 0;
+}
+#companies .content {
+	text-align:center;
+	padding:20px;
+}
+
+.content h3 {
+	height: 100%;
+	margin: 0 0.2em;
+	text-align: justify;
+}
+
+.companies-title {
+	margin: 0 0 0.4em 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+.btn-outline {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  text-shadow: 2px 3px 1px rgba(0,0,0,0.4);
+  font-weight: 700;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border-color: #fff;
+  outline-width: 0;
+}
+
+.btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+
+/*Avoid overflow on very small screens*/
+
+@media only screen and (max-width: 685px) {
+	.panel {
+		max-width:100%;
+		width:100% !important;
+		position: relative;
+		padding: 0;
+		text-align: center !important;
+		left:0;
+	}
+	.left, .right {
+		height: 175px;
+		text-align: center;
+		width: 100%;
+	}
+	.left {
+		display: block;
+	}
+	.right {
+		width: 100%;
+	}
+	#info > .content {
+		height: 335px;
+	}
+	#companies > .content {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.detail {
+		margin: 0 auto;
+		width: 175px;
+	}
+}
+@media only screen and (max-width: 760px) {
+	.right {
+		width: 45%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.company-wrapper-outer, .company-wrapper-inner, .company-image {
+		width: 80% !important;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.panel {
+		padding: 0;
+	}
+}
