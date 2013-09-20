@@ -75,7 +75,7 @@ h3 {
 /* Panel Styling and Positioning */
 
 #info> .content {
-	height:120px;
+	height:165px;
 }
 .panel {
 	color: #eee;
@@ -134,6 +134,61 @@ h3 {
 
 .sponsors-title {
 	margin: 0 0 0.4em 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 20px;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+.btn-outline {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  text-shadow: 2px 3px 1px rgba(0,0,0,0.4);
+  font-weight: 700;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border-color: #fff;
+  outline-width: 0;
+}
+
+.btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
 }
 
 /*Avoid overflow on very small screens*/
