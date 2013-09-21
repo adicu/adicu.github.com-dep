@@ -66,6 +66,10 @@ a:hover {
   margin: 0px 1px;
 }
 
+#logo {
+  max-width: 100px;
+}
+
 #sidebar {
   background: #E9E9E9;
   position: fixed;
