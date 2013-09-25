@@ -145,7 +145,7 @@ nav {
   color: #FFFFFF;
   background: #7BBEE9;
   border-bottom: 1px solid #7BBEE9;
-} 
+}
 
 #main {
   margin-left: 241px;
@@ -262,7 +262,7 @@ p {
 
 #eboard-roster tr {
   border: 2px solid #E9E9E9;
-  
+
 }
 
 #devfest-text li, #devfest-text p {
@@ -283,11 +283,17 @@ p {
 }
 
 #mce-EMAIL {
-  width: 130px;
+  width: 150px;
+  height: 28px;
   border: 1px solid #414142;
-  padding: 2px;
+  padding: 0px 8px;
   color: #414142;
   margin-top: 0.75em;
+  font-size: 14px;
+}
+
+.icon-email {
+  color: #75AAFC;
 }
 
 #mc-embedded-subscribe {
