@@ -22,7 +22,7 @@ How to Post
    post (which will be used in the URL), and type is one of the template
    types in the \_templates directory.
 2. Fill out your post in the newly created file.
-3. Commit and push the file.
+3. Commit and push the file to `origin/master`.
 
 [1]: http://jekyllrb.com/
 [2]: http://pages.github.com/
@@ -32,4 +32,3 @@ How to Post
 [6]: http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html
 [7]: https://github.com/mojombo/jekyll
 [8]: http://daringfireball.net/projects/markdown/basics
-
