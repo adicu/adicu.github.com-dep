@@ -266,7 +266,7 @@ Timeline.Bubble = function(timeline) {
 
     this.onMouseLeave = function(event) {
     
-        $(this).animate({bottom: $(window).height() - $("#timeline").offset().top}, 300);
+        $(this).animate({bottom: $(window).height() - $("#timeline").offset().top + $(window).scrollTop()}, 300);
 		
         event.data.hide();
     }
@@ -297,7 +297,7 @@ Timeline.Bubble = function(timeline) {
                 $(element).children(":first").animate({opacity: "toggle"}, 200);
                 
                 var bubble = $(this).parent().parent().parent();
-                bubble.animate({bottom: $(window).height() - $("#timeline").offset().top}, 300);
+                bubble.animate({bottom: $(window).height() - $("#timeline").offset().top + $(window).scrollTop()}, 300);
 				
             });    
 
@@ -309,7 +309,7 @@ Timeline.Bubble = function(timeline) {
 
     this.show = function(at){
         this.container.animate({opacity: "show"}, 250);
-        this.container.animate({left: at - (this.container.outerWidth() / 2), bottom: $(window).height() - $("#timeline").offset().top}, 300);
+        this.container.animate({left: at - (this.container.outerWidth() / 2), bottom: $(window).height() - $("#timeline").offset().top + $(window).scrollTop()}, 300);
     }
 
     this.hide = function(){
