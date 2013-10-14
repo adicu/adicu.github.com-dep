@@ -83,7 +83,7 @@
 .timeline_top li, 
 .timeline_bottom li {
     float: left;
-    margin-right: 5px;
+    margin-right: 3px;
     padding: 3px 2px 0px 2px;
     border-bottom: 1px solid #FFF;
 }
