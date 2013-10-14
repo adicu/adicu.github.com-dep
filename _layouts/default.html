@@ -12,10 +12,17 @@
 
   <link rel="canonical" href="{{ site.base }}{{ page.url }}" />
   <link rel="stylesheet" href="/css/style.css"/>
+  <link rel="stylesheet" href="/css/timeline.css"/>
   <link rel="alternate" href="http://adicu.com/atom.xml" type="application/atom+xml"/>
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <meta property="og:image" content="http://adicu.com/img/logo.png" />
-
+  
+  
+  
+  <script src="js/jquery-1.7.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/events.js"></script>
+  
 </head>
 <body>
 
@@ -74,6 +81,17 @@
        </form>
     </div>
   </div>
+  
+  
+  <div id="events">
+  	
+  	<h3 style="float:left;">ADI Events This Month!</h3>
+  	<div id="timeline"> 
+  		<ul id="eventsList">
+		</ul> 
+	</div>
+  </div>
+  
   <div id="main">
     {{ content }}
       <div id="footer">
@@ -84,6 +102,7 @@
         </div>
       </div>
   </div>
+  
 
 </body>
 <html>
