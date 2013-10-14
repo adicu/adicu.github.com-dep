@@ -29,5 +29,20 @@ $(document).ready(function(){
 		
 		var timeline = new Timeline("timeline");
 		
+		$("#month").html(timeline.getDateString());
+		
+		$("#nextButton").click(function(){
+			timeline.nextMonth();
+			$("#month").html(timeline.getDateString());
+		});
+		
+		$("#prevButton").click(function(){
+			timeline.previousMonth();
+			$("#month").html(timeline.getDateString());
+		});
+		
 	});
+	
+	
+	
 });

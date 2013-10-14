@@ -105,7 +105,7 @@ var Timeline = function(container, date) {
         nameEl = topRow   .find("div:last");
         numbEl = bottomRow.find("div:last");
 
-        if (data.events.length == 0) 
+        if (data.events.length == 0)
             return;
 
         var self         = this;
@@ -236,6 +236,10 @@ var Timeline = function(container, date) {
     this.previousYear = function(){
         this.date.setYear(this.date.getFullYear() - 1);
         this.render();
+    }
+    
+    this.getDateString = function(){
+	    return this.monthsOfYear[this.date.getMonth()];
     }
     
     this.initialize();

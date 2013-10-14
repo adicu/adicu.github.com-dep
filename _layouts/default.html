@@ -19,9 +19,9 @@
   
   
   
-  <script src="js/jquery-1.7.js"></script>
-  <script src="js/timeline.js"></script>
-  <script src="js/events.js"></script>
+  <script src="/js/jquery-1.7.js"></script>
+  <script src="/js/timeline.js"></script>
+  <script src="/js/events.js"></script>
   
 </head>
 <body>
@@ -84,8 +84,15 @@
   
   
   <div id="events">
+  	<div id="events-left">
+	  	<h3 id="events-header">Upcoming ADI Events</h3>
+		<div id="controls">
+			<span><a id="prevButton" href="#">&lt;</a></span>
+			<span id="month"></span>
+			<span><a id="nextButton" href="#">&gt;</a></span>
+		</div>
+  	</div>
   	
-  	<h3 style="float:left;">ADI Events This Month!</h3>
   	<div id="timeline"> 
   		<ul id="eventsList">
 		</ul> 

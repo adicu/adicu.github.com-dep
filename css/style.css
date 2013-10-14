@@ -106,9 +106,33 @@ ul .inline-list {
 	border-color: #CCC;
 }
 
+#events-left{
+	float: left;
+	border-style: solid;
+	border-width: 0px 2px 0px 0px;
+	border-right-color: #CCC;
+	height: 100%;
+	padding-right: 13px;
+}
+
+#events-header{
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
+#controls{
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 10px;
+	float: left;
+	width: 100%;
+}
+
 #timeline{
-	margin-top:9px;
+	margin-top:10px;
 	padding-left:10px;
+	float: left;
 }
 
 .timeline_arrows{
