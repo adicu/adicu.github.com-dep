@@ -10,7 +10,7 @@ Installation
 ------------
 1. With Ruby installed, open terminal and run `gem install jekyll`.
 2. Clone this repo to your favorite directory.
-3. In the root of that directory, run `jekyll --server`.
+3. In the root of that directory, run `jekyll server`.
 4. Visit `http://localhost:4000/` in ~~Internet Explorer~~ your browser.
 
 For more installation instructions and information, check out [jekyll's installation page][5], or
