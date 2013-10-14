@@ -101,7 +101,7 @@ ul .inline-list {
 	background-color: #E9E9E9;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-top-width: 2px;
+	border-width: 2px 0px 0px 1px;
 	border-style: solid;
 	border-color: #CCC;
 }

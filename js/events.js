@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+	if($(window).height() < 740)
+		$("#events").css("left", "240px"); 
+	$(window).resize(function(){
+		if($(window).height() < 740)
+			$("#events").css("left", "240px");
+		else
+			$("#events").css("left", "0px"); 
+	});
+
+
 	var url = "https://www.googleapis.com/calendar/v3/calendars/adicu.com_tud5etmmo5mfmuvdfb54u733i4%40group.calendar.google.com/events?maxResults=10000&singleEvents=true&key=AIzaSyBztZfIH_qcLxRBsjcJN5Q5-7YAlfyLovE";
 	
 	$.get(url, function(response){
