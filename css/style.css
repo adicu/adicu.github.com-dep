@@ -71,7 +71,7 @@ a:hover {
   position: fixed;
   width: 240px;
   border-right: 1px solid #C2C2C2;
-  height: 90%;
+  height: 100%;
   min-height: 750px;
   color: #414142;
 }
