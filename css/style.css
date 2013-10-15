@@ -92,9 +92,57 @@ ul .inline-list {
     position: relative;
 }
 
+#events{
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	bottom: 0px;
+	background-color: #E9E9E9;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-width: 2px 0px 0px 1px;
+	border-style: solid;
+	border-color: #CCC;
+}
+
+#events-left{
+	float: left;
+	border-style: solid;
+	border-width: 0px 2px 0px 0px;
+	border-right-color: #CCC;
+	height: 100%;
+	padding-right: 13px;
+}
+
+#events-header{
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
+#controls{
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 8px;
+	float: left;
+	width: 100%;
+}
+
+#timeline{
+	margin-top:10px;
+	padding-left:10px;
+	float: left;
+}
+
+.timeline_arrows{
+	display: none;
+}
+
+
 #footer {
   margin-left: -35px;
-  padding: 30px 0px 20px 35px;
+  padding: 30px 0px 80px 35px;
   width: 100%;
   border-top: 1px solid #D2D2D2;
   min-height: 46px;

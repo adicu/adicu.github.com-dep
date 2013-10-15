@@ -2,9 +2,18 @@
 layout: default
 title: Events
 ---
+ 
+<link href="css/RegalCalendar.css" rel="stylesheet" type="text/css" />
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+<script src="js/RegalCalendar.js"></script>
+
+<script src="js/events.js"></script>
+
 <div id="intro">
-  <h2>Events Calendar</h2>
-  <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=adicu.com_tud5etmmo5mfmuvdfb54u733i4%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FNew_York" style=" border:solid 1px #777 " width="600" height="400" frameborder="0" scrolling="no"></iframe>
+  <h2>Events Calendar</h2><br><br><br>
+  
+  <div id="calendar" class="regalcalendar">
+  </div>
 
   <h3>Major Past Events</h3>
   	<ul>
