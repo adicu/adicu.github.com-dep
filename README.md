@@ -8,10 +8,15 @@ Alternative Address: [adicu.github.com][4]
 
 Installation
 ------------
-1. With Ruby installed, open terminal and run `gem install jekyll`.
-2. Clone this repo to your favorite directory.
-3. In the root of that directory, run `jekyll server`.
-4. Visit `http://localhost:4000/` in ~~Internet Explorer~~ your browser.
+1. Ruby - Jekyll requires the ruby language. If you've got a Mac, you've most likely already got Ruby. If you open up the terminal application, and run the command ruby --version you can confirm this. Your Ruby version should begin with 1.9.3 or '2.0.0'. If you've got that, you're all set. Skip to step #2. Otherwise, follow these (https://www.ruby-lang.org/en/downloads/) instructions to install Ruby.
+
+2. Bundler - Bundler is a package manager that makes versioning Ruby software like Jekyll a heck of a lot easier and is highly recommended if you're going to be building GitHub Pages sites locally. If you don't already have Bunder installed, you can install it by running the command "gem install bundler".
+
+3. Jekyll - The main event. Simply run the command, "bundle install" and you're good to go.
+
+4. Run the server by executing "bundle exec jekyll serve" in the root directory of the site.
+
+5. Visit `http://localhost:4000/` in ~~Internet Explorer~~ your browser.
 
 For more installation instructions and information, check out [jekyll's installation page][5], or
 this [Windows installation tutorial][6]. To learn more about jekyll, check out its [GitHub repo][7].
