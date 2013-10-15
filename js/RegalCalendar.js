@@ -278,7 +278,7 @@ function setTooltip($events, $this, enter, exit, theme, tooltip, twitter, toolti
 		date[1] = (parseInt(date[1]) - 1).toString();
 		var $found = $this.find("td[data-month='" + date[1] + "'][data-year='" + date[2] + "'] a:containsNumber(" + date[0] + ")").data({ title: title, location: location });
 
-		$found.qtip({
+		$found.parent().qtip({
 				content: {
 					text: txtbutton +
 						  '<div class="tooltip-body">' + text + '</div>' +
@@ -293,7 +293,7 @@ function setTooltip($events, $this, enter, exit, theme, tooltip, twitter, toolti
 				},
 				position: {
 					my: oposite + ' center', 
-					at: tooltipPosition + ' center'
+					at: 'center'//tooltipPosition + ' center'
 				},
 				show: {
 					event: show
@@ -321,7 +321,10 @@ function setTooltip($events, $this, enter, exit, theme, tooltip, twitter, toolti
 							},
 							position: {
 								my: 'bottom center', 
-								at: 'up center'
+								at: tooltipPosition + ' center',
+	                            adjust:{
+		                            y:10
+	                            }
 							},
 							hide: false,
 							style: {
@@ -375,7 +378,10 @@ function setTooltip($events, $this, enter, exit, theme, tooltip, twitter, toolti
 	        },
 	        position: {
 	            my: 'left' + ' center',
-	            at: 'right' + ' center'
+	            at: 'center',//tooltipPosition + ' center',
+                adjust:{
+                    y:0
+                }
 	        },
 	        show: {
 	            event: show
@@ -459,7 +465,10 @@ function setTooltip($events, $this, enter, exit, theme, tooltip, twitter, toolti
 	                        },
 	                        position: {
 	                            my: oposite + ' center', 
-	                            at: tooltipPosition + ' center'
+	                            at: 'center',//tooltipPosition + ' center',
+	                            adjust:{
+		                            x:10
+	                            }
 	                        },
 	                        show: {
 	                            event: show

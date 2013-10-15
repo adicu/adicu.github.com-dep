@@ -214,7 +214,7 @@ a.ui-state-default
 	left: -28000px;
 	top: -28000px;
 	display: none;
-	max-width: 280px;
+	max-width: 320px;
 	min-width: 50px;
 	font: 10.5px/20px "Helvetica Neue",Helvetica,Arial,sans-serif
 }
@@ -222,7 +222,6 @@ a.ui-state-default
 .qtip-content
 {
 	position: relative;
-	width: 200px;
 	text-align: left;
 	word-wrap: break-word;
 	padding: 5px 9px
@@ -230,12 +229,18 @@ a.ui-state-default
 
 .qtip-title
 {
-	margin-left: 10px
+	margin-left: 10px;
+}
+
+.qtip-titlebar
+{
+	width: 292px !important
 }
 
 .qtip-titlebar+.qtip-content
 {
-	border-top-width: 0  !important
+	border-top-width: 0  !important;
+	width: 292px !important;
 }
 
 .qtip-close
