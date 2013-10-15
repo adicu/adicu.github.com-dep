@@ -97,7 +97,7 @@ var Timeline = function(container, date) {
     this.renderDay = function(topRow, bottomRow, data){
         var cssClass = "";
         cssClass += (this.isToday(data.number)) ? "today"  : "";
-        cssClass += (data.events.length       ) ? " event" : "";
+        cssClass += (data.events.length       ) ? " t_event" : "";
         
         topRow   .append("<li><div class=\"" + cssClass + "\">" + data.name   + "</div></li>");
         bottomRow.append("<li><div class=\"" + cssClass + "\">" + data.number + "</div></li>");
@@ -287,14 +287,14 @@ Timeline.Bubble = function(timeline) {
 
         var html = "";
         for (var i = 0; i < events.length; i++)
-            html += "<a href=" + events[i].link + "><div><div class=\"event_title\">" + events[i].name + "<p class=\"event_data\">" + events[i].content + "</p></div></div></a>";
+            html += "<a href=" + events[i].link + "><div><div class=\"t_event_title\">" + events[i].name + "<p class=\"t_event_data\">" + events[i].content + "</p></div></div></a>";
             
         var midSection = $(this.container.children()[1]);
         
         midSection.empty();
         midSection.append(html);
 
-        var titles = midSection.find(".event_title");
+        var titles = midSection.find(".t_event_title");
         
         titles.each(function(inx, element){
             $(element).bind("mouseenter", function(event) {
@@ -313,7 +313,7 @@ Timeline.Bubble = function(timeline) {
 
     this.show = function(at){
         this.container.animate({opacity: "show"}, 250);
-        this.container.animate({left: at - (this.container.outerWidth() / 2), bottom: $(window).height() - $("#timeline").offset().top + $(window).scrollTop()}, 300);
+        this.container.animate({left: at - (this.container.outerWidth() / 2 + $("#events").offset().left), bottom: $(window).height() - $("#timeline").offset().top + $(window).scrollTop()}, 300);
     }
 
     this.hide = function(){
