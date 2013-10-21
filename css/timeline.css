@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     overflow: hidden;
-    color: #FFF;
+    color: #212121;
     font-family: "Lucida Grande", Lucida Sans Unicode, Tahoma, Arial;
     font-size: 8pt;
 }
@@ -20,7 +20,7 @@
 
 .timeline_date {
     height: 20px;
-    color: #fff;
+    color: #212121;
     background-color: #000;
     padding: 0px 15px 0px 15px;
     line-height: 1.6em;
@@ -85,7 +85,7 @@
     float: left;
     margin-right: 3px;
     padding: 3px 2px 0px 2px;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #CACACA;
 }
 
 .timeline_bottom li {
@@ -125,7 +125,7 @@
 
 .timeline_top .t_event, 
 .timeline_bottom .t_event {
-    color: #a0d2f5;
+    color: #0096ff;
     cursor: pointer;
 }
 

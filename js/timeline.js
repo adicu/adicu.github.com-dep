@@ -270,7 +270,7 @@ Timeline.Bubble = function(timeline) {
 
     this.onMouseLeave = function(event) {
     
-        $(this).animate({bottom: $(window).height() - $("#timeline").offset().top + $(window).scrollTop()}, 300);
+        $(this).animate({bottom: $(window).height() - $("#timeline").offset().top + $(window).scrollTop()}, {duration: 300, queue: false});
 		
         event.data.hide();
     }
@@ -298,28 +298,28 @@ Timeline.Bubble = function(timeline) {
         
         titles.each(function(inx, element){
             $(element).bind("mouseenter", function(event) {
-                $(element).children(":first").animate({opacity: "toggle"}, 200);
+                $(element).children(":first").animate({opacity: "toggle"}, {duration: 200, queue: false});
                 
                 var bubble = $(this).parent().parent().parent();
-                bubble.animate({bottom: $(window).height() - $("#timeline").offset().top + $(window).scrollTop()}, 300);
+                bubble.animate({bottom: $(window).height() - $("#timeline").offset().top + $(window).scrollTop()}, {duration: 200, queue: false});
 				
             });    
 
             $(element).bind("mouseleave", function(event) {
-                $(element).children(":first").animate({opacity: "hide"}, 200);
+                $(element).children(":first").animate({opacity: "hide"}, {duration: 200, queue: false});
             });    
         });
     }
 
     this.show = function(at){
         this.container.animate({opacity: "show"}, 250);
-        this.container.animate({left: at - (this.container.outerWidth() / 2 + $("#events").offset().left), bottom: $(window).height() - $("#timeline").offset().top + $(window).scrollTop()}, 300);
+        this.container.animate({left: at - (this.container.outerWidth() / 2 + $("#events").offset().left), bottom: $(window).height() - $("#timeline").offset().top + $(window).scrollTop()}, {duration: 200, queue: false});
     }
 
     this.hide = function(){
         var self = this;
         this.goingOffHandle = setTimeout(function(){
-            self.container.animate({opacity: "hide"}, 250);
+            self.container.animate({opacity: "hide"}, {duration: 200, queue: false});
         }, 700);
     }
 
