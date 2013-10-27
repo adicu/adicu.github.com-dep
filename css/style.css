@@ -340,20 +340,16 @@ p {
   font-size: 14px;
 }
 
-.icon-email {
-  color: #75AAFC;
-}
-
 #mc-embedded-subscribe {
   margin-top: 5px;
   border: none;
   background: transparent;
-  color: #8F8F8F;
+  color: #2777AB;
   cursor: pointer;
 }
 
 #mc-embedded-subscribe:hover {
-  color: #196A9E;
+  color: #34ADFA;
 }
 
 #post_links li {
