@@ -29,10 +29,6 @@ html, body {
   color: #000000;
 }
 
-body {
-  padding-top: 50px;
-}
-
 h1 {
   font-size: 24px;
   line-height: 26px;
@@ -82,7 +78,7 @@ ul .inline-list {
 
 #footer {
   margin-left: -35px;
-  padding: 30px 0px 80px 35px;
+  padding: 30px 0 80px 35px;
   width: 100%;
   border-top: 1px solid #D2D2D2;
   min-height: 46px;
@@ -110,21 +106,56 @@ nav {
   margin-top: 0px;
 }
 
+.top {
+  position: relative;
+  height:50%;
+}
+
 .adi-banner {
+  position:absolute;
+  top:0;
+  bottom: 50px;
   background: black url("../img/columbia-street.jpg") no-repeat center center fixed;
   text-align: center;
-  height: 400px;
   width: 100%;
   padding: 50px 0;
 }
 
 .adi-banner .logo {
-  height: 300px;
+  width: 300px;
+  max-width: 90%;
+  max-height: 100%;
+}
+
+.adi-banner.spacer-active {
+  position:relative;
+  top: auto;
+  bottom: auto;
+}
+
+.navbar {
+  position:absolute;
+  height: 50px;
+  width: 100%;
+  bottom:0;
+  border-radius: 0 !important;
+  margin:0;
 }
 
 .navbar .logo {
   height: 50px;
   padding:10px;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  bottom: auto;
+}
+
+.navbar-spacer.spacer-active {
+  height: 50px;
+  width: 100%;
+  bottom: 0;
 }
 
 .adi-section {
@@ -140,7 +171,7 @@ nav {
 .events-carousel-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 250px;
+  height: 50%;
   width: 100%;
 }
 
@@ -197,7 +228,7 @@ nav {
 
 .post-header-content h2 {
   display: inline-block;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -235,7 +266,7 @@ nav {
 
 p {
   line-height: 25px;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .logos.varied img {
