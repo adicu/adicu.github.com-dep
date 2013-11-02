@@ -2,83 +2,62 @@
 layout: default
 title: Home
 ---
-<div id="intro">
-  <h2>Home</h2>
-  <p>All things tech at Columbia. <a href="/about.html">Learn more.</a></p>
+<div class="adi-section adi-banner">
+  <div class="adi-section-content">
+    <img <img class="logo" src="/img/adi-logo-large.png"/>
+    <p>All things tech at Columbia. <a href="/about.html">Learn more.</a></p>
+  </div>
 </div>
 
-{% for post in paginator.posts %}
-  <div class="post">
-    <div class="post-header">
-      <div class="post-header-content">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <h3><a href="{{ post.url }}">{{ post.date | date_to_string }}</a></h3>
+<div class="adi-section events-carousel-wrapper">
+  <div class="events-carousel">
+  {% for event in site.categories.event limit:10 %}
+    <div class="event">
+      <div class="event-card">
+        <div class="event-header">
+          <div class="event-header-content">
+           <h2><a href="{{ event.link }}">{{ event.title }}</a></h2>
+          </div>
+        </div>
+        <div class="text-content">
+         {{ event.content }}
+        </div>
       </div>
-    
-    <div class="social">
-      <span class = "facebook">
-        <div class="fb-like" data-href="{{ site.base }}{{ post.url }}" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
-      </span>
-      <span class = "google">
-        <div class="g-plusone" data-href="{{ site.base }}{{ post.url }}" data-size="medium"></div>
-      </span>
-      <span class = "twitter">
-       <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.base }}{{ post.url }}" data-text="ADI - {{ post.title }}" data-lang="en">Tweet</a>
-      </span>
     </div>
-
-    <div class="text-content">
-      {{ post.content }}
-    </div>
+  {% endfor %}
   </div>
-{% endfor %}
+</div>
+<div class="adi-section">
+  <div class="adi-section-content">
+    <h2>What We Do</h2>
+    <p>The primary goal of the Application Development Initiative is to nurture student creativity and technological aptitude by creating a communal resource for developers of all talents and interests.</p>
+  </div>
+</div>
 
-<div id="post-pagination" class="pagination">
+<div class="adi-section">
+  <div class="adi-section-content">
+    <h2>Contact</h2>
+    <p>Want to share your expertise and teach a workshop? Interested in cosponsoring an on or off campus event? Itching to demo and discuss your cool new project? Tell us!</p>
 
-  {% if paginator.previous_page %}
-  <p class="previous">
-    {% if paginator.previous_page == 1 %}
-    <a href="/">&laquo;</a>
-    {% else %}
-    <a href="/page{{paginator.previous_page}}">&laquo;</a>
-    {% endif %}
-  </p>
-  {% else %}
-  <p class="previous disabled">
-    <span>&laquo;</span>
-  </p>
-  {% endif %}
+    <h4>Networking</h4>
+    <a href="mailto:networking@adicu.com">networking@adicu.com</a>
+    <p>Are you a member of the NYC startup community or an established business looking to reach out to Columbia hackers? Talk to our fine folks in Networking.</p>
 
-  <ul class="pages">
-    <li class="page">
-      {% if paginator.page == 1 %}
-      <span class="current-page">1</span>
-      {% else %}
-      <a href="/">1</a>
-      {% endif %}
-    </li>
+    <h4>Social</h4>
+    <a href="mailto:social@adicu.com">social@adicu.com</a>
 
-    {% for count in (2..paginator.total_pages) %}
-    <li class="page">
-      {% if count == paginator.page %}
-      <span class="current-page">{{count}}</span>
-      {% else %}
-      <a href="/page{{count}}">{{count}}</a>
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
+    <p>Our friends in Social put the "fun" in "fundamentals of computer science". Get in touch if you want to cosponsor an on-campus event, or need advice on how to throw a real rager.</p>
 
-  {% if paginator.next_page %}
-  <p class="next">
-  <a href="/page{{paginator.next_page}}">&raquo;</a>
-  </p>
-  {% else %}
-  <p class="next disabled">
-    <span>&raquo;</span>
-  </p>
-  {% endif %}
+    <h4>Workshops</h4>
+    <a href="mailto:workshops@adicu.com">workshops@adicu.com</a>
 
-  <div class="archive">View our <a href="/archive.html">archives.</a></div>
+    <p>Want to share your passion and expertise with the community? Host a workshop with us. Our workshop masters will take care of the details so you can focus on what's important: teaching.</p>
 
+    <h4>Infrastructure</h4>
+    <a href="mailto:infrastructure@adicu.com">infrastructure@adicu.com</a>
+
+    <p>The Infrastructure team is working night and day to build the core operational foundations of the initiative. Help us achieve our goal by suggesting cool features.</p>
+    </div>
+
+  </div>
 </div>

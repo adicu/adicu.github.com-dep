@@ -29,6 +29,10 @@ html, body {
   color: #000000;
 }
 
+body {
+  padding-top: 50px;
+}
+
 h1 {
   font-size: 24px;
   line-height: 26px;
@@ -66,79 +70,15 @@ a:hover {
   margin: 0px 1px;
 }
 
-#sidebar {
-  background: #E9E9E9;
-  position: fixed;
-  width: 240px;
-  border-right: 1px solid #C2C2C2;
-  height: 100%;
-  min-height: 750px;
-  color: #414142;
-}
-
-#sidebar #sidebar-content {
-  margin: 15px 35px 0px;
-}
-
-#sidebar h2 {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 25px;
+ul.inline-list > li > a {
+  padding: 7px 5px;
 }
 
 ul .inline-list {
-    line-height: 0;
-    display: inline-block;
-    position: relative;
+  line-height: 0;
+  display: inline-block;
+   position: relative;
 }
-
-#events{
-	height: 70px;
-	width: 100%;
-	position: fixed;
-	z-index: 100;
-	bottom: 0px;
-	background-color: #E9E9E9;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-width: 2px 0px 0px 1px;
-	border-style: solid;
-	border-color: #CCC;
-}
-
-#events-left{
-	float: left;
-	border-style: solid;
-	border-width: 0px 2px 0px 0px;
-	border-right-color: #CCC;
-	height: 100%;
-	padding-right: 13px;
-}
-
-#events-header{
-	margin-top: 8px;
-	margin-bottom: 0px;
-}
-
-#controls{
-	text-align: center;
-	font-size: 20px;
-	font-weight: 600;
-	margin-top: 8px;
-	float: left;
-	width: 100%;
-}
-
-#timeline{
-	margin-top:10px;
-	padding-left:10px;
-	float: left;
-}
-
-.timeline_arrows{
-	display: none;
-}
-
 
 #footer {
   margin-left: -35px;
@@ -167,40 +107,65 @@ ul .inline-list {
 }
 
 nav {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
-#main-nav {
-  border-top: 1px solid #D2D2D2;
-  list-style: none outside none;
-  padding: 0px;
+.adi-banner {
+  background: black url("../img/columbia-street.jpg") no-repeat center center fixed;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+  padding: 50px 0;
 }
 
-#main-nav a {
-  display: block;
-  position: relative;
-  padding: 15px 30px;
-  margin: 0;
-  border-bottom: 1px solid #D2D2D2;
-  color: #414142;
+.adi-banner .logo {
+  height: 300px;
 }
 
-#main-nav li a:visited {
-  color: #414142;
+.navbar .logo {
+  height: 50px;
+  padding:10px;
 }
 
-#main-nav li a:hover {
-  color: #FFFFFF;
-  background: #7BBEE9;
-  border-bottom: 1px solid #7BBEE9;
+.adi-section {
+  width: 100%;
 }
 
-#main {
-  margin-left: 241px;
-  margin-top: -1px;
-  padding-top: 0px;
-  padding-left: 34px;
-  background: #FFFFFF;
+.adi-section-content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.events-carousel-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 250px;
+  width: 100%;
+}
+
+.events-carousel {
+  width:200%;
+
+}
+
+.events-carousel > .event {
+  width: 10%;
+  padding: 10px;
+  display: inline-block;
+  float: left;
+}
+
+.event > .event-card {
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: black;
 }
 
 .post {
