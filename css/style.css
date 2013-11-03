@@ -62,9 +62,8 @@ a:hover {
   color: #666;
 }
 
-.social-icon {
-  margin: 0px 1px;
-}
+
+
 
 ul.inline-list > li > a {
   padding: 7px 5px;
@@ -76,25 +75,8 @@ ul .inline-list {
    position: relative;
 }
 
-#footer {
-  margin-left: -35px;
-  padding: 30px 0 80px 35px;
-  width: 100%;
-  border-top: 1px solid #D2D2D2;
-  min-height: 46px;
-}
-
-#footer-content {
-  max-width: 700px;
-}
-
-#footer-content img {
-  float: left;
-  margin-right: 20px;
-}
-
 .contact {
-  margin-top: 0px;
+  margin-top: 0;
   padding-top: 1px;
   margin-bottom: 40px;
   width: 50%;
@@ -103,21 +85,22 @@ ul .inline-list {
 }
 
 nav {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .top {
-  position: relative;
   height:50%;
+}
+.bottom {
+  height:50%;
+  position: relative;
 }
 
 .adi-banner {
-  position:absolute;
-  top:0;
-  bottom: 50px;
   background: black url("../img/columbia-street.jpg") no-repeat center center fixed;
   text-align: center;
   width: 100%;
+  height:100%;
   padding: 50px 0;
 }
 
@@ -127,17 +110,18 @@ nav {
   max-height: 100%;
 }
 
-.adi-banner.spacer-active {
-  position:relative;
-  top: auto;
-  bottom: auto;
+.fa-adi-1-5x {
+  font-size: 1.5em;
+}
+
+.navbar-right li {
+  margin: 6px;
 }
 
 .navbar {
   position:absolute;
-  height: 50px;
   width: 100%;
-  bottom:0;
+  top:0;
   border-radius: 0 !important;
   margin:0;
 }
@@ -156,7 +140,7 @@ nav {
   position: absolute;
   height: 50px;
   width: 100%;
-  bottom: 0;
+  top: 0;
 }
 
 .adi-section {
@@ -172,7 +156,8 @@ nav {
 .events-carousel-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 50%;
+  padding-top:50px;
+  height: 100%;
   width: 100%;
 }
 
@@ -197,12 +182,11 @@ nav {
   text-align: center;
   padding: 20px;
   color: white;
-  background-color: black;
 }
 
 .post {
-  top: 0px;
-  margin-top: 0px;
+  top: 0;
+  margin-top: 0;
   margin-left: -35px;
   margin-bottom: 40px;
   padding-left: 34px;
@@ -210,7 +194,7 @@ nav {
 }
 
 .post-page {
-  margin-top: 0px;
+  margin-top: 0;
   padding-top: 1px;
   width: 70%;
   line-height: 25px;
@@ -218,7 +202,7 @@ nav {
 
 .post-header {
   margin-left: -35px;
-  padding: 30px 0px 0px 35px;
+  padding: 30px 0 0 35px;
   width: 100%;
   border-top: 1px solid #D2D2D2;
 }
@@ -289,7 +273,7 @@ p {
 }
 
 #intro {
-  margin-top: 0px;
+  margin-top: 0;
   padding-top: 1px;
   max-width: 700px;
   margin-bottom: 30px;
@@ -324,14 +308,14 @@ p {
 
 #mc_embed_signup {
   margin-left: 35px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 #mce-EMAIL {
   width: 150px;
   height: 28px;
   border: 1px solid #414142;
-  padding: 0px 8px;
+  padding: 0 8px;
   color: #414142;
   margin-top: 0.75em;
   font-size: 14px;
@@ -392,4 +376,16 @@ p {
 .external {
   margin-left: 5px;
 }
+
+@media only screen and (max-width: 480px) {
+  .top {
+    height:75%;
+  }
+  .events-carousel {
+    height:75%;
+  }
+  }
+}
+
+
 

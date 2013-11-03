@@ -9,27 +9,30 @@ title: Home
       <p>All things tech at Columbia. <a href="/about.html">Learn more.</a></p>
     </div>
   </div>
-  {% include navbar.html %}
 </div>
 <div class="main">
-  <div class="events-carousel-wrapper">
-    <div class="events-carousel">
-    {% for event in site.categories.event limit:10 %}
-      <div class="event">
-        <div class="event-card">
-          <div class="event-header">
-            <div class="event-header-content">
-             <h2><a href="{{ event.link }}">{{ event.title }}</a></h2>
+  <div class="bottom">
+    {% include navbar.html %}
+    <div class="events-carousel-wrapper">
+      <div class="events-carousel">
+      {% for event in site.categories.event limit:10 %}
+        <div class="event">
+          <div class="event-card">
+            <div class="event-header">
+              <div class="event-header-content">
+               <h2><a href="{{ event.link }}">{{ event.title }}</a></h2>
+              </div>
+            </div>
+            <div class="text-content">
+             {{ event.content }}
             </div>
           </div>
-          <div class="text-content">
-           {{ event.content }}
-          </div>
         </div>
+      {% endfor %}
       </div>
-    {% endfor %}
     </div>
   </div>
+
   <div class="adi-section">
     <div class="adi-section-content">
       <h2>What We Do</h2>
