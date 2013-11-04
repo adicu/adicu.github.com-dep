@@ -95,10 +95,50 @@ nav {
   padding: 50px 0;
 }
 
+.adi-banner-container {
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
 .adi-banner .logo {
   width: 300px;
   max-width: 90%;
-  max-height: 100%;
+  margin-top:10px;
+}
+
+.banner-tagline {
+  color:#EEE;
+  margin-bottom: 10px;
+}
+
+.banner-newsletter-box {
+    width:40%;
+    max-width: 450px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.banner-newsletter-info {
+    color:#CCC;
+    font-size: 13;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.banner-newsletter-email {
+    width:75%;
+    height: 25px;
+    font-size: 13;
+    font-weight: 400;
+}
+
+.banner-newsletter-signup-button {
+    background-color: #76bfe5;
+    padding: 4px 8px 4px 6px;
+    color: #EEE !important;
+    font-size: 13;
+    width:20%;
+    margin-left:10px;
 }
 
 .fa-adi-1-5x {
@@ -134,12 +174,13 @@ nav {
   top: 0;
 }
 
-.adi-section {
+.adi-section-content {
+  max-width: 1000px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .adi-section-content {
-  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   padding: 10px 0;
