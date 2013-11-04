@@ -20,10 +20,24 @@ title: Home
           <div class="event-card">
             <div class="event-header">
               <div class="event-header-content">
-               <h2><a href="{{ event.link }}">{{ event.title }}</a></h2>
+               <h2 class="event-title"><a href="{{ event.link }}">{{ event.title }}</a></h2>
               </div>
             </div>
-            <div class="text-content">
+            <div class="event-details">
+              <div class="event-detail">
+                <i class="event-deatil-icon fa fa-lg fa-calendar"></i>
+                <p class="event-detail-text">{{event.event_date}}</p>
+              </div>
+              <div class="event-detail">
+                <i class="event-detail-icon fa fa-lg fa-clock-o"></i>
+                <p class="event-detail-text">{{event.event_time}}</p>
+              </div>
+              <div class="event-detail">
+                <i class="event-detail-icon fa fa-lg fa-map-marker"></i>
+                <p class="event-detail-text">{{event.event_location}}</p>
+              </div>
+            </div>
+            <div class="event-description">
              {{ event.content }}
             </div>
           </div>
@@ -40,7 +54,7 @@ title: Home
     </div>
   </div>
 
-  <div class="adi-section">
+  <div class="adi-section contact">
     <div class="adi-section-content">
       <h2>Contact</h2>
       <p>Want to share your expertise and teach a workshop? Interested in cosponsoring an on or off campus event? Itching to demo and discuss your cool new project? Tell us!</p>
@@ -67,7 +81,10 @@ title: Home
 
     </div>
   </div>
+  
   {% include footer.html %}
 </div>
+
+
 <script type="text/javascript" src="/js/navbar.js"></script>
 

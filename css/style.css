@@ -75,15 +75,6 @@ ul .inline-list {
    position: relative;
 }
 
-.contact {
-  margin-top: 0;
-  padding-top: 1px;
-  margin-bottom: 40px;
-  width: 50%;
-  line-height: 25px;
-
-}
-
 nav {
   margin-top: 0;
 }
@@ -151,6 +142,7 @@ nav {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  padding: 10px 0;
 }
 
 .events-carousel-wrapper {
@@ -167,7 +159,7 @@ nav {
 }
 
 .events-carousel > .event {
-  width: 10%;
+  width: 12.5%;
   padding: 10px;
   display: inline-block;
   float: left;
@@ -176,6 +168,23 @@ nav {
 .event > .event-card {
   background-color: #eee;
   border: 1px solid #ddd;
+}
+
+.event-title {
+  margin:5px;
+  text-align: center;
+}
+
+.event-detail {
+  margin: 0 5px;
+}
+.event-detail-icon {
+  display: inline-block;
+  width: 20px;
+}
+.event-detail-text {
+  display: inline-block;
+  margin: 5px 0;
 }
 
 .footer {
