@@ -16,7 +16,7 @@ title: Home
 </div>
 <div class="main">
   <div class="bottom">
-    {% include navbar.html %}
+    {% include navbar.html listserv_class="hidden"%}
     <div class="events-carousel-wrapper">
       <div class="events-carousel">
       {% for event in site.categories.event limit:10 %}
@@ -42,7 +42,7 @@ title: Home
               </div>
             </div>
             <div class="event-description">
-             {{ event.content }}
+             <!-- {{ event.content }} -->
             </div>
           </div>
         </div>
