@@ -61,9 +61,11 @@ $(document).ready(function(){
             var startTime = formatDate(events[x].start.dateTime.substring(11,16));
             var endTime = formatDate(events[x].end.dateTime.substring(11,16));
 
+            var image = "http://farm8.staticflickr.com/7413/9811119153_59e8514d31_n.jpg";
+
             var html =
                 '<li class="event">'+
-                  '<div class="event-header">'+
+                  '<div class="event-header" style="background-image: url(' + image + ');">'+
                     '<div class="event-header-content">'+
                      '<h2 class="event-title"><a href="' + events[x].htmlLink + '">' +  events[x].summary +'</a></h2>'+
                     '</div>'+

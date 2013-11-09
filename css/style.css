@@ -221,6 +221,49 @@ nav {
   position:relative;
 }
 
+.event-header {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.event-header-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0px;
+}
+
+.event-details {
+  height: 50%;
+  border-top: 5px solid #222;
+  padding-top: 10px;
+}
+
+.past-event-details {
+  color: #888;
+}
+
+.event-detail {
+  margin: 0 5px;
+}
+.event-detail-icon {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+.event-detail-text {
+  display: inline-block;
+  margin: 5px 0;
+  margin-left: 5px;
+}
+
+.event-header {
+  height: 50%;
+}
+
+.event-title {
+  margin: 0 5px;
+  text-align: center;
+}
+
 .event-buttons {
   color: white;
   position: absolute;
@@ -258,34 +301,7 @@ nav {
     z-index: 0;
 }
 
-.event-details {
-  height: 50%;
-}
 
-.past-event-details {
-  color: #888;
-}
-
-.event-detail {
-  margin: 0 5px;
-}
-.event-detail-icon {
-  display: inline-block;
-  width: 20px;
-}
-.event-detail-text {
-  display: inline-block;
-  margin: 5px 0;
-}
-
-.event-header {
-  height: 50%;
-}
-
-.event-title {
-  margin: 0 5px;
-  text-align: center;
-}
 
 .footer {
   text-align: center;
