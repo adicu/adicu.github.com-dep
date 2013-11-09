@@ -1083,6 +1083,8 @@
 		 * ===================================================================================
 		 */
 
+
+
 		/**
 		 * Performs slide transition to the specified slide
 		 *
@@ -1204,6 +1206,11 @@
 			var pagerIndex = parseInt(slider.active.index) - 1;
 			el.goToSlide(pagerIndex, 'prev');
 		}
+
+
+		 el.getNumSlidesShowing = function(){
+    		 return getNumberSlidesShowing();
+		 }
 
 		/**
 		 * Starts the auto show

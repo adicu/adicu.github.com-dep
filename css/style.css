@@ -262,6 +262,10 @@ nav {
   height: 50%;
 }
 
+.past-event-details {
+  color: #888;
+}
+
 .event-detail {
   margin: 0 5px;
 }
