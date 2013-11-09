@@ -14,15 +14,9 @@ title: Blog
       </div>
     
     <div class="social">
-      <span class = "facebook">
-        <div class="fb-like" data-href="{{ site.base }}{{ post.url }}" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
-      </span>
-      <span class = "google">
-        <div class="g-plusone" data-href="{{ site.base }}{{ post.url }}" data-size="medium"></div>
-      </span>
-      <span class = "twitter">
-       <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.base }}{{ post.url }}" data-text="ADI - {{ post.title }}" data-lang="en">Tweet</a>
-      </span>
+      <a target="_blank" href="https://twitter.com/intent/tweet?text={{ post.title }}&url=http://adicu.com{{ post.url }}&via=adicu"><button class="ss-btn ss-btn-tweet">Tweet</button></a>
+      <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-facebook">Share</button></a>
+      <a target="_blank" href="https://plus.google.com/share?url=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-google">Google+</button></a>
     </div>
 
     <div class="text-content">
