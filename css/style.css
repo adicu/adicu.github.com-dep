@@ -176,6 +176,7 @@ nav {
   top:0;
   border-radius: 0 !important;
   margin:0;
+  z-index: 10001;
 }
 
 .navbar .logo {
