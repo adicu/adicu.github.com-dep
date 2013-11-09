@@ -2,6 +2,7 @@
 layout: post
 title: ADI Interview Workshop
 category: event
+code: adicu/interview_help
 event_date: Tuesday, October 15
 event_time: 6:00 - 8:00 PM
 event_location: CS Lounge
