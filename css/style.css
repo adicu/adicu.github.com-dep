@@ -125,7 +125,7 @@ nav {
     min-height: 90%;
     margin: auto;
     position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0; 
+    top: 0; left: 0; bottom: 0; right: 0;
 }
 
 .adi-banner .logo {
@@ -232,16 +232,30 @@ nav {
   height: 50px;
 }
 
+
+.events-carousel-wrapper {
+  padding: 0 50px;
+  padding-top: 82px !important;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-top:52px;
+  height: 514px;
+  width: 100%;
+  background-color: #D5D5D5;
+}
+
 .events-carousel {
   height:400px;
 }
 
-.events-carousel-wrapper {
-  padding: 52px 50px 0;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  height: 452px;
-  width: 100%;
+.bx-next {
+    margin-right: -50px !important;
+    z-index: 0;
+}
+
+.bx-prev {
+    margin-left: -53px !important;
+    z-index: 0;
 }
 
 .event-details {
@@ -415,7 +429,7 @@ nav {
   .adi-banner-container {
     margin:0 auto;
   }
-  
+
 }
 
 /* Extra-large desktops */
