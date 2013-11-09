@@ -2,6 +2,13 @@
 layout: imports
 title: Home
 ---
+<!-- bxSlider Javascript file -->
+<script src="/js/jquery.bxslider/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="/js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+<!-- our own script.js -->
+<script type="text/javascript" src="js/script.js"></script>
+
 <div class="top">
   <div class="adi-banner">
     <div class="adi-banner-container">
@@ -17,37 +24,36 @@ title: Home
 <div class="main">
   <div class="bottom">
     {% include navbar.html listserv_class="hidden"%}
+    
+
     <div class="events-carousel-wrapper">
-      <div class="events-carousel">
+      <ul class="events-carousel bxslider">
       {% for event in site.categories.event limit:10 %}
-        <div class="event">
-          <div class="event-card">
-            <div class="event-header">
-              <div class="event-header-content">
-               <h2 class="event-title"><a href="{{ event.link }}">{{ event.title }}</a></h2>
-              </div>
-            </div>
-            <div class="event-details">
-              <div class="event-detail">
-                <i class="event-deatil-icon fa fa-lg fa-calendar"></i>
-                <p class="event-detail-text">{{event.event_date}}</p>
-              </div>
-              <div class="event-detail">
-                <i class="event-detail-icon fa fa-lg fa-clock-o"></i>
-                <p class="event-detail-text">{{event.event_time}}</p>
-              </div>
-              <div class="event-detail">
-                <i class="event-detail-icon fa fa-lg fa-map-marker"></i>
-                <p class="event-detail-text">{{event.event_location}}</p>
-              </div>
-            </div>
-            <div class="event-description">
-             <!-- {{ event.content }} -->
+        <li class="event">
+          <div class="event-header">
+            <div class="event-header-content">
+             <h2 class="event-title"><a href="{{ event.link }}">{{ event.title }}</a></h2>
             </div>
           </div>
-        </div>
+          <div class="event-details">
+            <div class="event-detail">
+              <i class="event-deatil-icon fa fa-lg fa-calendar"></i>
+              <p class="event-detail-text">{{event.event_date}}</p>
+            </div>
+            <div class="event-detail">
+              <i class="event-detail-icon fa fa-lg fa-clock-o"></i>
+              <p class="event-detail-text">{{event.event_time}}</p>
+            </div>
+            <div class="event-detail">
+              <i class="event-detail-icon fa fa-lg fa-map-marker"></i>
+              <p class="event-detail-text">{{event.event_location}}</p>
+            </div>
+          </div>
+          <div class="event-buttons navbar-inverse">
+          </div>
+        </li>
       {% endfor %}
-      </div>
+      </ul>
     </div>
   </div>
 

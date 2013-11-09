@@ -30,8 +30,8 @@ html, body {
 }
 
 h1 {
-  font-size: 24px;
-  line-height: 26px;
+  font-size: 36px;
+  line-height: 36px;
   font-weight: 300;
 }
 
@@ -62,8 +62,22 @@ a:hover {
   color: #666;
 }
 
+.footer ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  height: 50px;
+  width: 100%;
+  max-width: 205px;
+  margin: 0 auto;
+}
 
-
+.footer li {
+  display: inline block;
+  width: 25%;
+  text-align: center;
+  float: left;
+}
 
 ul.inline-list > li > a {
   padding: 7px 5px;
@@ -88,7 +102,7 @@ nav {
   height:50%;
 }
 .bottom {
-  height:50%;
+  height:450px;
   position: relative;
 }
 
@@ -165,7 +179,7 @@ nav {
 }
 
 .navbar .logo {
-  height: 50px;
+  height: 48px;
   padding:10px;
 }
 
@@ -194,35 +208,48 @@ nav {
 }
 
 .events-carousel-wrapper {
+  padding: 0 50px;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding-top:50px;
-  height: 100%;
+  padding-top:52px;
+  height: 452px;
   width: 100%;
 }
 
 .events-carousel {
-  width:250%;
-  height:100%;
+  height:400px;
 }
 
-.events-carousel > .event {
-  width: 10%;
-  height: 100%;
-  padding: 10px;
-  display: inline-block;
-  float: left;
-}
-
-.event > .event-card {
+.event {
   height: 100%;
   background-color: #eee;
   border: 1px solid #ddd;
+  padding-bottom: 50px;
+  position:relative;
+}
+
+.event-buttons {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid #101010;
+  margin: 0 -1px -1px -1px;
+  height: 50px;
+}
+
+.event-header {
+  height: 50%;
 }
 
 .event-title {
-  margin:5px;
+  margin: 0 5px;
   text-align: center;
+}
+
+.event-details {
+  height: 50%;
 }
 
 .event-detail {
@@ -243,52 +270,40 @@ nav {
   color: white;
 }
 
+.page-title {
+  text-align: center;
+}
+
 .post {
-  top: 0;
-  margin-top: 0;
-  margin-left: -35px;
-  margin-bottom: 40px;
-  padding-left: 34px;
-  width: 100%;
+  
 }
 
 .post-page {
-  margin-top: 0;
-  padding-top: 1px;
-  width: 70%;
-  line-height: 25px;
+  
 }
 
 .post-header {
-  margin-left: -35px;
-  padding: 30px 0 0 35px;
-  width: 100%;
-  border-top: 1px solid #D2D2D2;
+  
 }
 
 .post-header-content {
-  max-width: 700px;
+  
 }
 
 .post-header-content h2 {
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 10px;
+  
 }
 
 .post-header-content a, .post-header-content a:visited {
-  color: #000000;
+  
 }
 
 .post-header-content a:hover {
-  color: #7BBEE9;
+  
 }
 
 .post-header-content h3 {
-  font-weight: 500;
-  font-size: 16px;
-  margin-top: 10px;
-  margin-right: 15px;
+  
 }
 
 .text-content {
@@ -450,40 +465,26 @@ p {
 
 /* Extra-large desktops */
 @media only screen and (min-width: 1279px) {
-  /* Let 5 events on screen at a time*/
-  .events-carousel {
-    width: 200%;
-  }
+
 }
 
 /* Small desktops */
-@media only screen and (min-width: 768px) and (max-width: 940px) {
-  /* Only let 3 events on screen at a time */
-  .events-carousel {
-    width: 334%;
-  }
+@media only screen and (max-width: 940px) {
+
 }
 
 /* Tablets */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  /* Only let 2 events on screen at a time */
-  .events-carousel {
-    width: 500%;
+@media only screen and (max-width: 767px) {
+  /* All mobile devices have social hidden in the dropdown menu */
+  .navbar-right {
+    display: none;
   }
 }
 
 /* Phones */
 @media only screen and (max-width: 480px) {
-  /* Only let 1 event on screen at a time */
-  .events-carousel {
-    width: 1000%;
-  }
-  
   /* Adjust height of the banner and events to be readable */
   .top {
-    height:75%;
-  }
-  .events-carousel {
     height:75%;
   }
 }
