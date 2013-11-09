@@ -53,6 +53,11 @@ h4 {
   margin-bottom: 10px;
 }
 
+p {
+  line-height: 25px;
+  margin: 20px 0;
+}
+
 a:link, a:visited {
   color: #76bfe5;
   text-decoration: none;
@@ -181,7 +186,7 @@ nav {
 
 .navbar .logo {
   height: 48px;
-  padding:10px;
+  padding: 10px;
 }
 
 .navbar-fixed-top {
@@ -208,19 +213,6 @@ nav {
   padding: 10px 0;
 }
 
-.events-carousel-wrapper {
-  padding: 0 50px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  padding-top:52px;
-  height: 452px;
-  width: 100%;
-}
-
-.events-carousel {
-  height:400px;
-}
-
 .event {
   height: 100%;
   background-color: #eee;
@@ -240,13 +232,16 @@ nav {
   height: 50px;
 }
 
-.event-header {
-  height: 50%;
+.events-carousel {
+  height:400px;
 }
 
-.event-title {
-  margin: 0 5px;
-  text-align: center;
+.events-carousel-wrapper {
+  padding: 52px 50px 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 452px;
+  width: 100%;
 }
 
 .event-details {
@@ -265,6 +260,15 @@ nav {
   margin: 5px 0;
 }
 
+.event-header {
+  height: 50%;
+}
+
+.event-title {
+  margin: 0 5px;
+  text-align: center;
+}
+
 .footer {
   text-align: center;
   padding: 20px;
@@ -273,38 +277,6 @@ nav {
 
 .page-title {
   text-align: center;
-}
-
-.post {
-  
-}
-
-.post-page {
-  
-}
-
-.post-header {
-  
-}
-
-.post-header-content {
-  
-}
-
-.post-header-content h2 {
-  
-}
-
-.post-header-content a, .post-header-content a:visited {
-  
-}
-
-.post-header-content a:hover {
-  
-}
-
-.post-header-content h3 {
-  
 }
 
 .text-content {
@@ -322,11 +294,6 @@ nav {
 .text-content a:hover {
   text-decoration: underline;
   color: #7BBEE9;
-}
-
-p {
-  line-height: 25px;
-  margin: 20px 0;
 }
 
 .logos.varied img {
@@ -435,19 +402,6 @@ p {
   margin: 1em 0;
 }
 
-.social span {
-  display: inline-block;
-}
-.social .facebook {
-  width: 134px;
-}
-.social .twitter {
-  width: 100px;
-}
-.social .google {
-  width: 60px;
-}
-
 .external {
   margin-left: 5px;
 }
@@ -476,7 +430,6 @@ p {
 
 /* Tablets */
 @media only screen and (max-width: 767px) {
-  /* All mobile devices have social hidden in the dropdown menu */
   .navbar-right {
     display: none;
   }
@@ -484,7 +437,6 @@ p {
 
 /* Phones */
 @media only screen and (max-width: 480px) {
-  /* Adjust height of the banner and events to be readable */
   .top {
     height:75%;
   }
