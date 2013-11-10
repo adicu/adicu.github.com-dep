@@ -20,8 +20,27 @@ $(document).ready(function(){
 
 		response.items.forEach(function(event){
 
-			if(event != undefined && event.start != undefined && event.start.dateTime != undefined)
+			if(event != undefined && event.start != undefined && event.start.dateTime != undefined && event.description != undefined)
 			{
+			    var parts = event.description.split("---");
+
+                event.description = parts[0];
+
+                if(parts.length == 3)
+                {
+                    event.longDescription = parts[1];
+
+                    var resources = parts[2];
+
+                    resources = resources.split("-->");
+                    event.resources = {};
+
+                    for(var x=0; x<resources.length; x+=2)
+                    {
+                        event.resources[resources[x].toLowerCase().trim()] = resources[x+1];
+                    }
+                }
+
                 events.push(event);
 			}
 		});
@@ -61,7 +80,13 @@ $(document).ready(function(){
             var startTime = formatDate(events[x].start.dateTime.substring(11,16));
             var endTime = formatDate(events[x].end.dateTime.substring(11,16));
 
-            var image = "http://farm8.staticflickr.com/7413/9811119153_59e8514d31_n.jpg";
+            var image = "http://farm3.staticflickr.com/2825/9811069256_4613a2d22d_h.jpg";
+
+            if(events[x].resources != undefined)
+            {
+                if(events[x].resources.image != undefined)
+                    image = events[x].resources.image;
+            }
 
             var html =
                 '<li class="event">'+
