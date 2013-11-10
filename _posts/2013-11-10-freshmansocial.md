@@ -9,7 +9,7 @@ Socializing around ice cream<br />
 ![socializing](/img/socializing.jpg)
 
 Due to some burnt popcorn, firefighters joined in on the party<br />
-![firefighters](//img/fire.jpg)
+![firefighters](//img/firefighter.jpg)
 
 Smiling attendees <br />
 ![smiling attendees](//img/sahil.jpg)
