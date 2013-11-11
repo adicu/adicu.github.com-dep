@@ -9,9 +9,6 @@ module.exports = (grunt) ->
         ['generated']
 
     concat:
-      # js:
-        # src:  ['js/**/*.js']
-        # dest: 'generated/app.concat.js'
       less:
         src: ['less/**/*.less']
         dest: 'generated/style.less'
@@ -39,3 +36,7 @@ module.exports = (grunt) ->
   # default
   grunt.registerTask 'default', ['build', 'clean']
 
+# todos
+# minify css
+# concat lib css files
+# concat, minify, uglify js
