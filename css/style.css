@@ -222,7 +222,7 @@ input {
   font-size: 1.5em;
 }
 #body-content {
-  margin: 10% 0 8% 0;
+  margin: 6em 0 4em 0;
 }
 section,
 article {
@@ -235,6 +235,9 @@ article {
   margin-bottom: 30px;
   padding-top: 1px;
   max-width: 700px;
+}
+.text-content {
+  line-height: 1.4em;
 }
 .odd {
   background-color: #E9E9E9;
@@ -322,10 +325,14 @@ article {
   color: #7bbee9;
 }
 .post h2 {
-  display: inline;
+  display: inline-block;
+  line-height: 0;
 }
-.post h3 {
-  display: inline;
+.post .title {
+  color: #4fa8e2;
+}
+.post .date {
+  color: #cccccc;
 }
 .post a {
   color: #000;
@@ -339,6 +346,9 @@ article {
   margin-bottom: 1em;
   padding: 2px;
   border: 1px solid #414142;
+}
+.post .social {
+  margin: 10px 0 10px -5px;
 }
 #post-pagination {
   margin-bottom: 10px;

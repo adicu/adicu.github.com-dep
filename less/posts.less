@@ -1,13 +1,13 @@
 .post{
   h2 {
-    display: inline;
-    margin-right: 1em;
-    color: @blue;
-    line-height: 2em;
+    display: inline-block;
+    line-height: 0;
   }
-  h3 {
-    display: inline;
-    color: @ltBlue;
+  .title {
+    color: @dkBlue;
+  }
+  .date {
+    color: @gray;
   }
   a {
     color: #000;
@@ -22,8 +22,10 @@
     padding: 2px;
     border: 1px solid #414142;
   }
+  .social {
+    margin: 10px 0 10px -5px;
+  }
 }
-
 
 #post-pagination {
   margin-bottom: 10px;

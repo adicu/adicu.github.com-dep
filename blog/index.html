@@ -6,26 +6,25 @@ title: Blog
 <h1>{{page.title}}</h1>
 
 {% for post in paginator.posts %}
-  <div class="post">
-    <div class="post-header">
-      <div class="post-header-content">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <h3><a href="{{ post.url }}">{{ post.date | date_to_string }}</a></h3>
-      </div>
+<article class="post">
 
-    <div class="social">
-      <a target="_blank" href="https://twitter.com/intent/tweet?text={{ post.title }}&url=http://adicu.com{{ post.url }}&via=adicu"><button class="ss-btn ss-btn-tweet">Tweet</button></a>
-      <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-facebook">Share</button></a>
-      <a target="_blank" href="https://plus.google.com/share?url=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-google">Google+</button></a>
-      {% if post.code %}
-        <a target="_blank" href="https://github.com/{{ post.code }}"><button class='ss-btn ss-btn-github'>Github</button></a>
-			{% endif %}
-    </div>
+  <h2 class="title">{{ post.title }}</h2>
+  <h2 class="date">{{ post.date | date_to_string }}</h2>
 
-    <div class="text-content">
-      {{ post.content }}
-    </div>
+  <div class="social">
+    <a target="_blank" href="https://twitter.com/intent/tweet?text={{ post.title }}&url=http://adicu.com{{ post.url }}&via=adicu"><button class="ss-btn ss-btn-tweet">Tweet</button></a>
+    <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-facebook">Share</button></a>
+    <a target="_blank" href="https://plus.google.com/share?url=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-google">Google+</button></a>
+    {% if post.code %}
+    <a target="_blank" href="https://github.com/{{ post.code }}"><button class='ss-btn ss-btn-github'>Github</button></a>
+    {% endif %}
   </div>
+
+  <div class="text-content">
+    {{ post.content }}
+  </div>
+
+</article>
 {% endfor %}
 
 <div id="post-pagination" class="pagination">

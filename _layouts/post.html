@@ -3,8 +3,9 @@ layout: default
 ---
 
 <article class="post">
-  <h2>{{ page.title }}</h2>
-  <h3>{{ page.date | date_to_string }}</h3>
+
+  <h2 class="title">{{ page.title }}</h2>
+  <h2 class="date">{{ page.date | date_to_string }}</h2>
 
   <div class="social">
     <a target="_blank" href="https://twitter.com/intent/tweet?text={{ post.title }}&url=http://adicu.com{{ post.url }}&via=adicu"><button class="ss-btn ss-btn-tweet">Tweet</button></a>
