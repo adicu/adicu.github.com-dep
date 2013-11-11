@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400,300.css);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-weight: 300;
+  font-size: 15px;
+  font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1em;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.1em;
+}
+
+// replacing .page-title
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+a:link, a:visited {
+  color: @dkBlue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: @gray;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin: 0 2px;
+  padding: 0.6em;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: @dkBlue;
+  color: #fff;
+  font-weight: 300;
+  &:hover {
+    background: @blue;
+  }
+}
+
+input {
+  margin: 0 2px;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.fa-adi-1-5x {
+  font-size: 1.5em;
+}
+
+#body-content {
+  margin: 6em 0 4em 0;
+}
+
+section, article {
+  margin: 20px auto;
+  max-width: 1000px;
+  width: 95%;
+}
+
+.text-content {
+  line-height: 1.4em;
+}
+
+.big p{
+  font-size: 1.3em;
+}
+
+// zebra stripes
+.odd {
+  background-color: #E9E9E9;
+}
+
+.even {
+  background-color: #FFFFFF;
+}

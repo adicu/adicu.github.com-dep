@@ -1,0 +1,51 @@
+.post{
+  h2 {
+    display: inline-block;
+    line-height: 0;
+  }
+  .title {
+    color: @dkBlue;
+  }
+  .date {
+    color: @gray;
+  }
+  a {
+    color: #000;
+    text-decoration: underline;
+    &:hover {
+      color: #7BBEE9;
+      text-decoration: underline;
+    }
+  }
+  img {
+    margin-bottom: 1em;
+    padding: 2px;
+    border: 1px solid #414142;
+  }
+  .social {
+    margin: 10px 0 10px -5px;
+  }
+}
+
+#post-pagination {
+  margin-bottom: 10px;
+}
+
+#post-pagination * {
+  display: inline;
+}
+
+#post-pagination .pages{
+  padding: 0;
+  list-style: none;
+}
+
+#post-pagination .page {
+  display: inline;
+  padding: 0.5em;
+}
+
+#post-pagination .archive {
+  display: block;
+  margin: 1em 0;
+}
