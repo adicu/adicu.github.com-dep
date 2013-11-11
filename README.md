@@ -14,9 +14,11 @@ Installation
 
 3. Jekyll - The main event. Simply run the command, `bundle install` and you're good to go.
 
-4. Run the server by executing `jekyll serve` in the root directory of the site.
+4. Grunt - run `npm install` and then `grunt` to concatenate and compile LESS. Use `grunt watch` to automatically update CSS files.
 
-5. Visit `http://localhost:4000/` in ~~Internet Explorer~~ your browser.
+5. Run the server by executing `jekyll serve --watch` in the root directory of the site.
+
+6. Visit `http://localhost:4000/` in ~~Internet Explorer~~ your browser.
 
 For more installation instructions and information, check out [jekyll's installation page][5], or
 this [Windows installation tutorial][6]. To learn more about jekyll, check out its [GitHub repo][7].
