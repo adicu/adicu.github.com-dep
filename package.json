@@ -1,6 +1,10 @@
 {
   "name": "adicu",
   "description": "ADI's website hosted on GitHub Pages",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/adicu/adicu.github.com.git"
+  },
   "dependencies": {
     "grunt": "~0.4.1",
     "grunt-cli": "~0.1.9",
