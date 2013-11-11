@@ -2,25 +2,17 @@
 layout: default
 title: Projects
 ---
-<div id="intro">
-  <h1>{{page.title}}</h1>
+<h1>{{page.title}}</h1>
 
-  <p>At the end of the day, we're all about building things. Here are few
-  awesome apps built by Columbia students, past and present.</p>
-
-  <p>Have a project you'd like added to this list? Email us at
-  <a href="mailto:infrastructure@adicu.com">infrastructure@adicu.com.</a></p>
-</div>
+<section class="big">
+  <p align="center">At the end of the day, we're all about building things. Here are few awesome apps built by Columbia students, past and present. Have a project you'd like added to this list? Email us at <a href="mailto:infrastructure@adicu.com">infrastructure@adicu.com.</a></p>
+</section>
 
 {% for project in site.categories.project offset: 0 %}
-  <div class="post">
-    <div class="post-header">
-      <div class="post-header-content">
-        <h2><a href="{{ project.link }}">{{ project.title }}</a></h2>
-      </div>
-    </div>
-    <div class="text-content">
-      {{ project.content }}
-    </div>
+<article class="post">
+  <h2 class="title"><a href="{{ project.link }}">{{ project.title }}</a></h2>
+  <div class="text-content">
+    {{ project.content }}
   </div>
+</article>
 {% endfor %}
