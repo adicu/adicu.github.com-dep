@@ -1,109 +1,35 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300.css);
-
-html, body {
-  margin: 0;
-  padding: 0;
-  color: #000;
-  font-weight: 300;
-  font-size: 15px;
-  font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1em;
-}
-
-h1, h2, h3, h4 {
-  font-weight: 400;
-  line-height: 1.1em;
-}
-
-// replacing .page-title
-h1 {
+#main {
   text-align: center;
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-h4 {
-  font-size: 1.3em;
-}
-
-p {
-  line-height: 1.4em;
-}
-
-a:link, a:visited {
-  color: @dkBlue;
-  text-decoration: none;
-}
-
-a:hover {
-  color: @gray;
-}
-
-.hidden {
-  display: none;
-}
-
-button {
-  margin: 0 2px;
-  padding: 10px 14px;
-  border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background: @dkBlue;
-  color: #fff;
-  font-weight: 300;
-  &:hover {
-    background: @blue;
+  h1, h2 {
+    margin-top: 2em;
+    color: @dkBlue;
+    font-weight: 400;
+    line-height: 0;
+  }
+  h2 {
+    color: #000;
+  }
+  p {
+    font-size: 1.7em;
   }
 }
 
-input {
-  margin: 0 2px;
-  padding: 16px 4px 18px 8px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-
-.fa-adi-1-5x {
-  font-size: 1.5em;
-}
-
-#body-content {
-  margin: 6em 0 4em 0;
-}
-
-section, article {
-  margin: 20px auto;
-  max-width: 1000px;
-  width: 95%;
-}
-
-#intro {
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding-top: 1px;
-  max-width: 700px;
-}
-
-.text-content {
-  line-height: 1.4em;
-}
-
-// zebra stripes
-.odd {
-  background-color: #E9E9E9;
-}
-
-.even {
-  background-color: #FFFFFF;
+#tiles {
+  margin: 4em 0 30em -3em;
+  h4 {
+    margin: 14px;
+    line-height: 0;
+  }
+  p {
+    font-size: 1em;
+  }
+  li {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    width: 50%;
+    p {
+      text-align: left;
+    }
+  }
 }

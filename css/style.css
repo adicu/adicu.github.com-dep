@@ -15,6 +15,99 @@
 #devfest-text p {
   line-height: 25px;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-weight: 300;
+  font-size: 15px;
+  font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1em;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  line-height: 1.1em;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.3em;
+}
+p {
+  line-height: 1.4em;
+}
+a:link,
+a:visited {
+  color: #4fa8e2;
+  text-decoration: none;
+}
+a:hover {
+  color: #cccccc;
+}
+.hidden {
+  display: none;
+}
+button {
+  margin: 0 2px;
+  padding: 0.6em;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #4fa8e2;
+  color: #fff;
+  font-weight: 300;
+}
+button:hover {
+  background: #7bbee9;
+}
+input {
+  margin: 0 2px;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.fa-adi-1-5x {
+  font-size: 1.5em;
+}
+#body-content {
+  margin: 6em 0 4em 0;
+}
+section,
+article {
+  margin: 20px auto;
+  max-width: 1000px;
+  width: 95%;
+}
+#intro {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 1px;
+  max-width: 700px;
+}
+.text-content {
+  line-height: 1.4em;
+}
+.odd {
+  background-color: #E9E9E9;
+}
+.even {
+  background-color: #FFFFFF;
+}
 .events-carousel-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -147,103 +240,45 @@ header {
 }
 .adi-banner-container .newsletter p {
   color: #eeeeee;
-  line-height: 0.1em;
+  line-height: 1em;
 }
 .adi-banner-container .newsletter input {
   width: 70%;
 }
-html,
-body {
-  margin: 0;
-  padding: 0;
-  color: #000;
-  font-weight: 300;
-  font-size: 15px;
-  font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1em;
-}
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 400;
-  line-height: 1.1em;
-}
-h1 {
+#main {
   text-align: center;
-  font-size: 2.5em;
 }
-h2 {
-  font-size: 2em;
-}
-h3 {
-  font-size: 1.5em;
-}
-h4 {
-  font-size: 1.3em;
-}
-p {
-  line-height: 1.4em;
-}
-a:link,
-a:visited {
+#main h1,
+#main h2 {
+  margin-top: 2em;
   color: #4fa8e2;
-  text-decoration: none;
+  font-weight: 400;
+  line-height: 0;
 }
-a:hover {
-  color: #cccccc;
+#main h2 {
+  color: #000;
 }
-.hidden {
-  display: none;
+#main p {
+  font-size: 1.7em;
 }
-button {
-  margin: 0 2px;
-  padding: 10px 14px;
-  border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background: #4fa8e2;
-  color: #fff;
-  font-weight: 300;
+#tiles {
+  margin: 4em 0 30em -3em;
 }
-button:hover {
-  background: #7bbee9;
+#tiles h4 {
+  margin: 14px;
+  line-height: 0;
 }
-input {
-  margin: 0 2px;
-  padding: 16px 4px 18px 8px;
-  border: none;
-  border-radius: 5px;
+#tiles p {
   font-size: 1em;
-  line-height: 1.5em;
 }
-.fa-adi-1-5x {
-  font-size: 1.5em;
+#tiles li {
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  width: 50%;
 }
-#body-content {
-  margin: 6em 0 4em 0;
-}
-section,
-article {
-  margin: 20px auto;
-  max-width: 1000px;
-  width: 95%;
-}
-#intro {
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding-top: 1px;
-  max-width: 700px;
-}
-.text-content {
-  line-height: 1.4em;
-}
-.odd {
-  background-color: #E9E9E9;
-}
-.even {
-  background-color: #FFFFFF;
+#tiles li p {
+  text-align: left;
 }
 /* Short Desktop Screens*/
 @media only screen and (max-height: 500px) and (min-width: 481px) {
