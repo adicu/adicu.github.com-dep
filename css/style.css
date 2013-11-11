@@ -349,6 +349,10 @@ nav {
   margin-bottom: 1em;
 }
 
+#body_content {
+  margin-left: 50px;
+}
+
 #intro {
   margin-top: 0;
   padding-top: 1px;
