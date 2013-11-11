@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300.css);
+
 html, body {
   margin: 0;
   padding: 0;
@@ -10,79 +12,40 @@ html, body {
 
 h1, h2, h3, h4 {
   font-weight: 400;
+  line-height: 1.1em;
 }
 
 h1 {
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 2em;
 }
 
 h3 {
-  font-weight: 300;
-  font-size: 20px;
+  font-size: 1.5em;
 }
 
 h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 300;
-  font-size: 20px;
+  font-size: 1.3em;
 }
 
 p {
-  margin: 20px 0;
-  line-height: 25px;
+  line-height: 1.4em;
 }
 
 a:link, a:visited {
-  color: #76bfe5;
+  color: @blue;
   text-decoration: none;
 }
 
 a:hover {
-  color: #666;
-}
-
-footer ul {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 205px;
-  width: 100%;
-  height: 50px;
-  list-style-type: none;
-  text-align: center;
-}
-
-footer li {
-  display: inline block;
-  float: left;
-  width: 25%;
-  text-align: center;
-}
-
-ul.inline-list > li > a {
-  padding: 7px 5px;
-}
-
-ul .inline-list {
-  position: relative;
-  display: inline-block;
-  line-height: 0;
-}
-
-nav {
-  margin-top: 0;
+  color: @gray;
 }
 
 .hidden {
-  display:none;
+  display: none;
 }
 
 .top {
@@ -105,7 +68,7 @@ nav {
 .adi-banner-container {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  margin: 5% auto;
+  margin: 3em auto;
   min-height: 90%;
   width: 100%;
 }
@@ -156,35 +119,6 @@ nav {
   font-size: 1.5em;
 }
 
-.navbar-right li {
-  margin: 6px;
-}
-
-.navbar {
-  position:absolute;
-  top:0;
-  z-index: 10001;
-  margin:0;
-  width: 100%;
-  border-radius: 0 !important;
-}
-
-.navbar .logo {
-  padding: 10px;
-  height: 48px;
-}
-
-.navbar-fixed-top {
-  position: fixed;
-  bottom: auto;
-}
-
-.navbar-spacer.spacer-active {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 50px;
-}
 
 .adi-section-content {
   margin: 0 auto;
@@ -333,7 +267,7 @@ footer {
   border: 1px solid #414142;
 }
 
-#body_content {
+#body-content {
   margin-left: 50px;
 }
 
@@ -369,21 +303,6 @@ footer {
 
 .even {
   background-color: #FFFFFF;
-}
-
-#mc_embed_signup {
-  margin-top: 0;
-  margin-left: 35px;
-}
-
-#mce-EMAIL {
-  margin-top: 0.75em;
-  padding: 0 8px;
-  width: 150px;
-  height: 28px;
-  border: 1px solid #414142;
-  color: #414142;
-  font-size: 14px;
 }
 
 #mc-embedded-subscribe {
@@ -429,38 +348,3 @@ footer {
   margin-left: 5px;
 }
 
-/* Short Desktop Screens*/
-@media only screen and (max-height: 500px) and (min-width: 481px){
-  /* Squeeze everything into the banner */
-  .banner-tagline {
-    margin: 0;
-  }
-  .adi-banner-container {
-    margin:0 auto;
-  }
-
-}
-
-/* Extra-large desktops */
-@media only screen and (min-width: 1279px) {
-
-}
-
-/* Small desktops */
-@media only screen and (max-width: 940px) {
-
-}
-
-/* Tablets */
-@media only screen and (max-width: 767px) {
-  .navbar-right {
-    display: none;
-  }
-}
-
-/* Phones */
-@media only screen and (max-width: 480px) {
-  .top {
-    height:75%;
-  }
-}

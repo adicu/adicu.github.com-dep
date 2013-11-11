@@ -988,8 +988,8 @@ textarea.input-lg {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
+  /*margin-bottom: 20px;*/
+  /*border: 1px solid transparent;*/
 }
 .navbar:before,
 .navbar:after {
@@ -1423,7 +1423,7 @@ textarea.input-lg {
 }
 .navbar-inverse {
   background-color: #222222;
-  border-color: #080808;
+  /*border-color: #080808;*/
 }
 .navbar-inverse .navbar-brand {
   color: #999999;
