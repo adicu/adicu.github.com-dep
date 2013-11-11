@@ -14,7 +14,7 @@ Installation
 
 3. Jekyll - The main event. Simply run the command, `bundle install` and you're good to go.
 
-4. Run the server by executing `jekyll serve` in the root directory of the site.
+4. Run the server by executing `jekyll serve --watch` in the root directory of the site.
 
 5. Visit `http://localhost:4000/` in ~~Internet Explorer~~ your browser.
 
