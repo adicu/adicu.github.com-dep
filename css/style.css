@@ -250,10 +250,9 @@ header {
 }
 #main h1,
 #main h2 {
-  margin-top: 2em;
   color: #4fa8e2;
   font-weight: 400;
-  line-height: 0;
+  line-height: 1em;
 }
 #main h2 {
   color: #000;
