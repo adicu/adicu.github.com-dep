@@ -15,7 +15,9 @@ h1, h2, h3, h4 {
   line-height: 1.1em;
 }
 
+// replacing .page-title
 h1 {
+  text-align: center;
   font-size: 2.5em;
 }
 
@@ -36,7 +38,7 @@ p {
 }
 
 a:link, a:visited {
-  color: @blue;
+  color: @dkBlue;
   text-decoration: none;
 }
 
@@ -48,227 +50,40 @@ a:hover {
   display: none;
 }
 
-.top {
-  height:50%;
-  background: black url("../img/columbia-street.jpg") no-repeat center center fixed;
-}
-.bottom {
-  position: relative;
-  height:450px;
-}
-
-.adi-banner {
-  position: relative;
-  width: 100%;
-  height:100%;
-  background-color: rgba(0,0,0,0.5);
-  text-align: center;
+button {
+  margin: 0 2px;
+  padding: 10px 14px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: @dkBlue;
+  color: #fff;
+  font-weight: 300;
+  &:hover {
+    background: @blue;
+  }
 }
 
-.adi-banner-container {
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  margin: 3em auto;
-  min-height: 90%;
-  width: 100%;
-}
-
-.adi-banner .logo {
-  max-width: 90%;
-  max-height: 50%;
-}
-
-.banner-tagline {
-  color:#EEE;
-  font-weight: 400;
-  font-size: 1.5em;
-  line-height: 1em;
-}
-
-.banner-newsletter-box {
-  margin: auto;
-  max-width: 450px;
-  width:100%;
-}
-
-.banner-newsletter-info {
-  margin-top: 0;
-  margin-bottom: 5px;
-  color:#CCC;
-  font-size: 13;
-}
-
-.banner-newsletter-email {
-  width:75%;
-  height: 26px;
-  font-weight: 400;
-  font-size: 13;
-  line-height: 20px;
-}
-
-.banner-newsletter-signup-button {
-  margin-left:10px;
-  padding: 4px 8px 4px 6px;
-  width:20%;
-  background-color: #76bfe5;
-  color: #EEE !important;
-  font-size: 13;
+input {
+  margin: 0 2px;
+  padding: 16px 4px 18px 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 .fa-adi-1-5x {
   font-size: 1.5em;
 }
 
-
-.adi-section-content {
-  margin: 0 auto;
-  max-width: 1000px;
-  width: 100%;
-}
-
-.adi-section-content {
-  margin: 0 auto;
-  padding: 10px 0;
-  width: 100%;
-}
-
-.event {
-  position:relative;
-  padding-bottom: 50px;
-  height: 100%;
-  border: 1px solid #ddd;
-  background-color: #eee;
-}
-
-.event-header {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.event-header-content {
-  padding: 10px 0px;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.event-details {
-  padding-top: 10px;
-  height: 50%;
-  border-top: 5px solid #222;
-}
-
-.past-event-details {
-  color: #888;
-}
-
-.event-detail {
-  margin: 0 5px;
-}
-.event-detail-icon {
-  display: inline-block;
-  width: 20px;
-  text-align: center;
-}
-.event-detail-text {
-  display: inline-block;
-  margin: 5px 0;
-  margin-left: 5px;
-}
-
-.event-header {
-  height: 50%;
-}
-
-.event-title {
-  margin: 0 5px;
-  text-align: center;
-}
-
-.event-buttons {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 0 -1px -1px -1px;
-  height: 50px;
-  border: 1px solid #101010;
-  color: white;
-}
-
-
-.events-carousel-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  padding: 0 50px;
-  padding-top: 82px !important;
-  padding-top:52px;
-  width: 100%;
-  height: 514px;
-  background-color: #D5D5D5;
-}
-
-.events-carousel {
-  height:400px;
-}
-
-.bx-next {
-  z-index: 0;
-  margin-right: -50px !important;
-}
-
-.bx-prev {
-  z-index: 0;
-  margin-left: -53px !important;
-}
-
-
-
-footer {
-  padding: 20px;
-  color: white;
-  text-align: center;
-}
-
-.page-title {
-  text-align: center;
-}
-
-.text-content {
-  clear: both;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  max-width: 700px;
-  color: #414142;
-}
-.text-content a {
-  color: #000000;
-  text-decoration: underline;
-}
-
-.text-content a:hover {
-  color: #7BBEE9;
-  text-decoration: underline;
-}
-
-.logos.varied img {
-  margin-right: 10px;
-  margin-bottom: 10px;
-  max-width: 175px;
-  max-height: 125px;
-}
-
-.logos .logo-wrapper {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.text-content img {
-  margin-bottom: 1em;
-  padding: 2px;
-  border: 1px solid #414142;
-}
-
-#body-content {
-  margin-left: 50px;
+.main {
+  section {
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 95%;
+  }
 }
 
 #intro {
@@ -305,17 +120,6 @@ footer {
   background-color: #FFFFFF;
 }
 
-#mc-embedded-subscribe {
-  margin-top: 5px;
-  border: none;
-  background: transparent;
-  color: #2777AB;
-  cursor: pointer;
-}
-
-#mc-embedded-subscribe:hover {
-  color: #34ADFA;
-}
 
 #post_links li {
   line-height: 25px;

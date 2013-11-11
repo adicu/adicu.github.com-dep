@@ -16,21 +16,36 @@
     font-size: 1.1em;
   }
   .dropdown-menu {
+    width: 170px;
     background: #080808;
   }
 }
 
-.nav > li > a {
+.navbar-inverse .navbar-nav > li > a {
   padding: 14px;
+  &:hover {
+    color: @dkBlue;
+  }
 }
 
 #mc-embed-signup {
-  margin: 10px 20px;
-  width: 100%;
+  margin: 10px;
+  width: 13em;
   label {
     color: #fff;
   }
   input {
     margin-top: 0.8em;
+    width: 70%;
+  }
+  button {
+    position: absolute;
+    margin-top: 1em;
+    border: none;
+    background: none;
+    color: #4fa8e2;
+    &:hover {
+      color: @blue;
+    }
   }
 }
