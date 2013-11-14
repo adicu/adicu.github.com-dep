@@ -12,9 +12,58 @@
   }
 }
 
-#contact {
-  padding-top: 1em;
-  text-align: center;
+
+#initiatives {
+  .initiative {
+    height: 400px;
+
+    section {
+      margin: 0 auto;
+      padding: 40px 0;
+      height: 100%;
+
+      .left, .right{
+        width: 50%;
+        padding: 10px 20px;
+        display: inline-block;
+        float: left;
+        height: 100%;
+
+        h3 {
+          font-size: 2em;
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+        }
+
+        img {
+          max-height: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .dark {
+    background-color: @ltGray;
+
+    section {
+      background-color: @gray;
+    }
+  }
+  .light {
+    background-color: @blue;
+
+    section {
+      background-color: @dkBlue
+    }
+  }
+
+}
+
+#tiles {
+  margin: 4em 0 30em -3em;
   h4 {
     margin: 14px;
     line-height: 0;
