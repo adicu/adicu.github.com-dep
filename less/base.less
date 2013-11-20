@@ -52,7 +52,8 @@ a:hover {
 
 button {
   margin: 0 2px;
-  padding: 0.6em;
+  padding: 0.5em 0.8em;
+  height: 35px;
   border: none;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -67,7 +68,8 @@ button {
 
 input {
   margin: 0 2px;
-  padding: 0.5em;
+  padding-left: 10px;
+  height: 35px;
   border: none;
   border-radius: 5px;
   font-size: 1em;
@@ -103,4 +105,51 @@ section, article {
 
 .even {
   background-color: #FFFFFF;
+}
+
+// 2 grid
+.section {
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+}
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 2%;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.group:before,
+.group:after {
+  display:table;
+  content:"";
+}
+.group:after {
+  clear:both;
+}
+
+.span_2_of_2 {
+  width: 100%;
+}
+.span_1_of_2 {
+  width: 48%;
+}
+
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .span_2_of_2 {
+    width: 100%;
+  }
+  .span_1_of_2 {
+    width: 100%;
+  }
 }

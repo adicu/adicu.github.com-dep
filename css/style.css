@@ -61,7 +61,8 @@ a:hover {
 }
 button {
   margin: 0 2px;
-  padding: 0.6em;
+  padding: 0.5em 0.8em;
+  height: 35px;
   border: none;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -75,7 +76,8 @@ button:hover {
 }
 input {
   margin: 0 2px;
-  padding: 0.5em;
+  padding-left: 10px;
+  height: 35px;
   border: none;
   border-radius: 5px;
   font-size: 1em;
@@ -104,6 +106,46 @@ article {
 }
 .even {
   background-color: #FFFFFF;
+}
+.section {
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+}
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 2%;
+}
+.col:first-child {
+  margin-left: 0;
+}
+.group:before,
+.group:after {
+  display: table;
+  content: "";
+}
+.group:after {
+  clear: both;
+}
+.span_2_of_2 {
+  width: 100%;
+}
+.span_1_of_2 {
+  width: 48%;
+}
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .span_2_of_2 {
+    width: 100%;
+  }
+  .span_1_of_2 {
+    width: 100%;
+  }
 }
 .events-carousel-wrapper {
   overflow-x: scroll;
@@ -141,9 +183,8 @@ article {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .event-title {
-  margin: 10px 0;
+  margin-left: 10px;
   text-align: center;
-  line-height: 1.1em;
 }
 .event-details {
   padding-top: 10px;
@@ -162,9 +203,9 @@ article {
   text-align: center;
 }
 .event-detail-text {
-  display: inline-block;
-  margin-left: 1em;
-  line-height: 0.5em;
+  display: inline;
+  margin: 1em;
+  line-height: 2em;
 }
 .event-buttons {
   position: absolute;
@@ -177,7 +218,8 @@ article {
   color: white;
 }
 footer {
-  padding: 3em;
+  padding: 45px 10px;
+  width: 100%;
   color: #eeeeee;
   text-align: center;
 }
@@ -200,7 +242,7 @@ footer a {
   color: #cccccc;
 }
 header {
-  height: 50%;
+  height: 54%;
   background: #000000 url("../img/columbia-street.jpg") no-repeat center center fixed;
 }
 .adi-banner {
@@ -225,7 +267,7 @@ header {
   max-height: 50%;
 }
 .adi-banner-container .tagline {
-  color: #eee;
+  color: #eeeeee;
   font-weight: 300;
   font-size: 1.5em;
   line-height: 1em;
@@ -242,43 +284,36 @@ header {
 .adi-banner-container .newsletter input {
   width: 70%;
 }
-#goal,
-#contact {
+#goal {
   text-align: center;
 }
 #goal h1,
-#contact h1,
-#goal h2,
-#contact h2 {
+#goal h2 {
   color: #4fa8e2;
   line-height: 1em;
 }
-#goal h2,
-#contact h2 {
+#goal h2 {
   color: #000;
 }
-#goal p,
-#contact p {
+#goal p {
   font-size: 1.7em;
 }
-#tiles {
-  margin: 4em 0 30em -3em;
+#contact {
+  padding-top: 1em;
+  text-align: center;
 }
-#tiles h4 {
+#contact h4 {
   margin: 14px;
   line-height: 0;
+}
+#contact p {
+  font-size: 1.3em;
 }
 #tiles p {
   font-size: 1em;
 }
-#tiles li {
-  display: inline-block;
-  float: left;
-  padding: 10px;
-  width: 50%;
-}
-#tiles li p {
-  text-align: left;
+#tiles h4 {
+  margin: 10px;
 }
 /* Short Desktop Screens*/
 @media only screen and (max-height: 500px) and (min-width: 481px) {
