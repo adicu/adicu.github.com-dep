@@ -239,7 +239,10 @@ footer p {
   font-size: 0.8em;
 }
 footer a {
-  color: #cccccc;
+  color: #cccccc !important;
+}
+footer a:hover {
+  color: #7bbee9 !important;
 }
 header {
   height: 54%;
