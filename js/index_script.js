@@ -1,12 +1,8 @@
----
----
 
 var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var numSliderEvents = 20;
 
-var numSliderEvents = 30;
-
-$(document).ready(function(){
-
+$(document).ready(function() {
   var events = new Array();
 
   var now = new Date();
@@ -19,37 +15,28 @@ $(document).ready(function(){
                     +"&timeMin=" + lastMonthString
                     +"&key=AIzaSyBztZfIH_qcLxRBsjcJN5Q5-7YAlfyLovE";
 
-	$.get(url, function(response){
-
-		if (typeof response == 'string' || response instanceof String)
-		{
+	$.get(url, function(response) {
+		if (typeof response == 'string' || response instanceof String) {
 			response = $.parseJSON(response);
 		}
 
-		response.items.forEach(function(event){
-
-			if(event != undefined && event.start != undefined && event.start.dateTime != undefined && event.description != undefined)
-			{
+		response.items.forEach(function(event) {
+			if(event != undefined && event.start != undefined && event.start.dateTime != undefined && event.description != undefined) {
 			    var parts = event.description.split("---");
+          event.description = parts[0];
 
-                event.description = parts[0];
+          if(parts.length == 3) {
+              event.longDescription = parts[1];
+              var resources = parts[2];
+              resources = resources.split("-->");
+              event.resources = {};
 
-                if(parts.length == 3)
-                {
-                    event.longDescription = parts[1];
+              for(var x=0; x<resources.length; x+=2) {
+                  event.resources[resources[x].toLowerCase().trim()] = resources[x+1];
+              }
+          }
 
-                    var resources = parts[2];
-
-                    resources = resources.split("-->");
-                    event.resources = {};
-
-                    for(var x=0; x<resources.length; x+=2)
-                    {
-                        event.resources[resources[x].toLowerCase().trim()] = resources[x+1];
-                    }
-                }
-
-                events.push(event);
+          events.push(event);
 			}
 		});
 
@@ -67,21 +54,17 @@ $(document).ready(function(){
         });
 
         var nowIndex = events.length;
-        for(var x=0; x<events.length; x++)
-        {
-            if(Date.parse(events[x].start.dateTime) > new Date())
-            {
+        for(var x=0; x<events.length; x++) {
+            if(Date.parse(events[x].start.dateTime) > new Date()) {
                 nowIndex = x;
                 break;
             }
         }
 
-
         var startIndex = nowIndex - numSliderEvents/2;
         var outIndex = startIndex+numSliderEvents > events.length ? events.length : startIndex+numSliderEvents;
 
-        for(var x=startIndex; x<outIndex; x++)
-        {
+        for(var x=startIndex; x<outIndex; x++) {
             var month = events[x].start.dateTime.substring(5, 7);
             var day = events[x].start.dateTime.substring(8, 10);
 
@@ -90,8 +73,7 @@ $(document).ready(function(){
 
             var image = "http://farm3.staticflickr.com/2825/9811069256_4613a2d22d_h.jpg";
 
-            if(events[x].resources != undefined)
-            {
+            if(events[x].resources != undefined) {
                 if(events[x].resources.image != undefined)
                     image = events[x].resources.image;
             }
@@ -99,32 +81,32 @@ $(document).ready(function(){
             var html =
                 '<li class="event">'+
                   '<div class="event-header" style="background-image: url(' + image + ');">'+
-                    '<div class="event-header-content">'+
-                     '<h2 class="event-title"><a href="' + events[x].htmlLink + '">' +  events[x].summary +'</a></h2>'+
-                    '</div>'+
+                    '<div class="event-opacity">'+
+                      '<div class="event-header-content">'+
+                        '<h2 class="event-title"><a href="' + events[x].htmlLink + '">' +  events[x].summary +'</a></h2>'+
+                      '</div>'+
+                    '</div>' +
                   '</div>'+
-                  (x < nowIndex ? '<div class="past-event-details event-details">' : '<div class="event-details">')
-                    +'<div class="event-detail">'+
+                  (x < nowIndex ? '<ul class="past event-details">' : '<ul class="event-details">')
+                    +'<li class="event-detail">'+
                       '<i class="event-deatil-icon fa fa-lg fa-calendar"></i>'+
                       '<p class="event-detail-text">'+ months[month-1] +' '+ day +'</p>'+
-                    '</div>'+
-                    '<div class="event-detail">'+
+                    '</li>'+
+                    '<li class="event-detail">'+
                       '<i class="event-detail-icon fa fa-lg fa-clock-o"></i>'+
                       '<p class="event-detail-text">'+ startTime +' - '+ endTime +'</p>'+
-                    '</div>'+
-                    '<div class="event-detail">'+
+                    '</li>'+
+                    '<li class="event-detail">'+
                       '<i class="event-detail-icon fa fa-lg fa-map-marker"></i>'+
                       '<p class="event-detail-text">'+events[x].location+'</p>'+
-                    '</div>'+
-                  '</div>'+
-                  '<div class="event-buttons navbar-inverse">'+
-                  '</div>'+
+                    '</li>'+
+                  '</ul>'+
                 '</li>';
 
             $(".events-carousel").append(html);
         }
 
-    	/* Configure bxSlider */
+    	  /* Configure bxSlider */
       	var slider = $('.bxslider').bxSlider( {
       		minSlides: 1,
       		maxSlides: 10,
