@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Coding on Windows: A tutorial</title>
+
+</head>
+<body>
+<h1>Coding on Windows: A tutorial</h1>
+
+<p><em>Us Windows people get a hard time.  Let's make some of the hard stuff easier.</em></p>
+
+<h2>Good Practices: Installing Languages</h2>
+
+<ul>
+<li><p>Download an executable from the official website for the language.</p></li>
+<li><p>Do your very best to only only install one version of a given language at a time on your computer.  This saves a lot of heartache.</p></li>
+<li><p>Be consistent about where you install them.  Choose a directory close to the root and without spaces.  Choose either:</p>
+
+<ul>
+<li><p><code>C:\dev\Python27</code>, <code>C:\dev\Ruby191</code>, etc. OR</p></li>
+<li><p><code>C:\Python27</code>, <code>C:\Ruby191</code>, etc.</p></li>
+</ul>
+</li>
+<li><p><strong>Run the installer yourself</strong></p></li>
+<li><p>Verify installation success in CMD (be sure the executable is <a href="#path">in your PATH</a>).</p></li>
+<li><p>Integrate with Eclipse or any other development environment using plugins for that development environment.</p></li>
+</ul>
+
+
+<h3>Installing Git</h3>
+
+<p>Please.  <em>Please</em>. <strong><em>Please</em></strong>. Do <a href="https://help.github.com/articles/set-up-git">this entire tutorial</a>. And don't skip any steps. It's really good.  The <code>Password caching</code> section is a great tip too.</p>
+
+<h3>Installing Python</h3>
+
+<p>Unless you really know better, install Python 2.7.5 proper MSI installer from <a href="http://www.python.org/download/releases/2.7.5/">the <code>Downloads</code> section of <code>python.org</code></a>.  Please note that Python 2.7.5 is <strong>not</strong> the latest version of Python (that version is not as well supported / used as Python 2.7.*).</p>
+
+<h2>CMD Tips:</h2>
+
+<ol>
+<li><p>Open <code>cmd.exe</code> from the Start Menu.</p></li>
+<li><p>Press <code>Alt + Space + D</code> to open the default settings.</p></li>
+<li><p>Under the "Options" tab, check all three boxes in the "Edit Options" section.</p></li>
+<li><p>Restart CMD.</p></li>
+<li><p>Click and drag to select, <code>Enter</code> to copy, and right click to paste.</p></li>
+</ol>
+
+
+<p><a href="./images/CMD_Tips_1.png"><img src="./images/CMD_Tips_1.png" alt="CMD_Tips_1" /></a></p>
+
+<h3>Beautify CMD</h3>
+
+<ol>
+<li><p>In the same window, switch to the "Colors" tab.</p></li>
+<li><p>Edit "Screen Background" and "Screen Text".</p></li>
+<li><p>Restart CMD</p></li>
+</ol>
+
+
+<p><a href="./images/CMD_Tips_2.png"><img src="./images/CMD_Tips_2.png" alt="CMD_Tips_2" /></a></p>
+
+<h2>CMD Tips: Adding to Your PATH</h2>
+
+<h3>Through the GUI</h3>
+
+<ol>
+<li><p>Navigate to <code>Control Panel\All Control Panel Items\System</code></p></li>
+<li><p>Click "Advanced system settings" on the left panel</p></li>
+<li><p>Click "Environment Variables..."</p></li>
+<li><p>Select the "Path" row in the "User variables for %YourName%" box.</p></li>
+<li><p>Click "Edit..."</p></li>
+<li><p>Change the "Variable value" to look like this:</p></li>
+</ol>
+
+
+<pre><code>
+"C:\OtherPaths\";"C:\MorePaths\";"C:\Full Path\To\scripts"
+</code></pre>
+
+<ol>
+<li>Click OK 3 times.</li>
+</ol>
+
+
+<p><a href="./images/CMD_Tips_4.png"><img src="./images/CMD_Tips_4.png" alt="CMD_Tips_4" /></a></p>
+
+<h3>Using CMD</h3>
+
+<ol>
+<li><p>To view your <code>PATH</code> type <code>echo %PATH%</code></p></li>
+<li><p>To set your <code>PATH</code> type <code>SET PATH=%PATH%;"C:\Full Path\To\scripts"</code></p></li>
+</ol>
+
+
+<h2>Good Practices: Keeep a Working Directory</h2>
+
+<ul>
+<li><p>A directory for all of your coding projects</p></li>
+<li><p>Should be located at <code>C:\working\</code> for easy access. You can get there in CMD by typing <code>cd/working</code> from <strong>anywhere</strong>.</p></li>
+<li><p>This should be your Eclipse workspace, and the place where you called <code>git init</code>.</p></li>
+</ul>
+
+
+<p><a href="./images/Keep_a_Working_Directory.png"><img src="./images/Keep_a_Working_Directory.png" alt="Keep_a_Working_Directory" /></a></p>
+
+<h2>Helpful Applications for Programmers</h2>
+
+<ul>
+<li><p><a href="http://7-zip.org/">7-Zip</a> - Unpackage any package, period.</p></li>
+<li><p><a href="https://www.dropbox.com/">Dropbox</a> - File syncronization across multiple computers for free.</p></li>
+<li><p><a href="http://www.eclipse.org/">Eclipse</a> - Full featured, heavy-duty IDE.</p></li>
+<li><p><a href="http://git-scm.com/">Git</a> - Version control system used by the likes of Linux and Android.</p></li>
+<li><p><a href="http://www.google.com/chrome/">Google Chrome</a> and <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> - Use one as your main browser, and another as a fallback.  I pity the fool who falls back onto <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">IE</a>.</p></li>
+<li><p><a href="http://getgreenshot.org/">Greenshot</a> - Simple tools for professional looking screenshots.</p></li>
+<li><p><a href="http://markdownpad.com/">MarkdownPad</a> - For editing markdown documents like this slideshow and GitHub READMEs.</p></li>
+<li><p><a href="http://windows.microsoft.com/en-us/windows/security-essentials-download">Microsoft Security Essentials</a> or <a href="http://www.avast.com/index?ClickID=dozhctrtms0cr0hrrbhsb0cbssybmc2s2roy">Avast Antivirus</a> - Antivirus software</p></li>
+<li><p><a href="http://notepad-plus-plus.org/">Notepad++</a> - Lightweight, versitile, and free text editor for programmers.  Some people use <a href="http://www.sublimetext.com/">SublimeText</a>, which is slightly less feature rich, but much more beautiful.</p></li>
+</ul>
+
+</body>
+</html>
