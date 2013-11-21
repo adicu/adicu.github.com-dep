@@ -3,9 +3,17 @@ var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov",
 var numSliderEvents = 20;
 
 $(document).ready(function() {
-    var events = new Array();
+  var events = new Array();
 
-	var url = "https://www.googleapis.com/calendar/v3/calendars/adicu.com_tud5etmmo5mfmuvdfb54u733i4%40group.calendar.google.com/events?maxResults=2000&singleEvents=true&key=AIzaSyBztZfIH_qcLxRBsjcJN5Q5-7YAlfyLovE";
+  var now = new Date();
+  var lastMonth = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
+  var lastMonthString = lastMonth.getFullYear() + "-" + lastMonth.getMonth() + "-" + lastMonth.getDate() + "T00:00:00.000Z";
+
+	var url = "https://www.googleapis.com/calendar/v3/calendars/adicu.com_tud5etmmo5mfmuvdfb54u733i4%40group.calendar.google.com/events"
+                    +"?maxResults=100"
+                    +"&singleEvents=true"
+                    +"&timeMin=" + lastMonthString
+                    +"&key=AIzaSyBztZfIH_qcLxRBsjcJN5Q5-7YAlfyLovE";
 
 	$.get(url, function(response) {
 		if (typeof response == 'string' || response instanceof String) {
