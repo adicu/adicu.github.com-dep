@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Setting up your Mac for Development</title>
+
+</head>
+<body>
+<h1>Setting up your Mac for Development</h1>
+
+<p>These instructions work for OS X 10.8. You might need to google around for certain steps if you have an older version.</p>
+
+<h3>Xcode</h3>
+
+<p>Download from the Apple App Store.
+This will take a while, 1.5 gb.<br/>
+When Xcode has finished, go to Xcode Preferences</p>
+
+<ul>
+<li><p>Choose the Downloads pane</p></li>
+<li><p>Hit install for "Command Line Tools"</p>
+
+<ul>
+<li>This installs various compilers that allow your computer to build software from source code.</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>Sublime Text 2</h3>
+
+<p>Sublime is a popular text editor that has many easily configurable packages to help you find your ideal workflow.
+It will prompt you to pay for a license often but never forces you to pay.</p>
+
+<ul>
+<li><p>Install from http://www.sublimetext.com/2</p></li>
+<li><p>Then install package control for Sublime</p>
+
+<ul>
+<li><p>Install from http://wbond.net/sublime_packages/package_control</p></li>
+<li><p>To install packages, use Sublime's Command Pallete (shift-command-p)</p></li>
+</ul>
+</li>
+</ul>
+
+
+<p>Useful packages:</p>
+
+<ul>
+<li><p>Dayle Rees Color Schemes</p>
+
+<ul>
+<li>more color schemes to choose from</li>
+</ul>
+</li>
+<li><p>Bracket Highlighter</p></li>
+<li><p>Sublime Linter</p>
+
+<ul>
+<li>Will find most of your errors and style mistakes</li>
+</ul>
+</li>
+<li><p>Git Gutter</p>
+
+<ul>
+<li>Displays modified/added/modified next to the line number for git tracked files</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>HomeBrew</h3>
+
+<p>Homebrew is a package manager for OS X. It allows you to install various software bundles easily from the command line.</p>
+
+<ul>
+<li>Install @ http://mxcl.github.io/homebrew/</li>
+</ul>
+
+
+<p>Run this in the terminal</p>
+
+<pre><code>ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+</code></pre>
+
+<h3>git</h3>
+
+<p>Git is a version control system for software.
+If you're going to collaborate with anyone you'll likely be using this software.</p>
+
+<p>Use HomeBrew to install git.</p>
+
+<p>Run this in the terminal</p>
+
+<pre><code>brew install git
+</code></pre>
+
+<ul>
+<li><p>Allow the command line to use your keychain. You won't be prompted for a username and password while using git.</p>
+
+<pre><code>  # run this in the terminal
+  git config --global credential.helper osxkeychain
+</code></pre></li>
+<li><p>Make an education account to get free private repos</p>
+
+<ul>
+<li>Sign up @ https://github.com/edu</li>
+</ul>
+</li>
+<li><p>update your gitconfig</p>
+
+<ul>
+<li>https://github.com/edu</li>
+</ul>
+</li>
+<li><p>OPTIONAL: Download and install the GitHub GUI.</p>
+
+<ul>
+<li>Install @ http://mac.github.com/</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>Oh-my-zshell</h3>
+
+<p>Zsh is an alternative to bash. It offers auto completion and easily configurable command prompts.
+<a href="https://github.com/robbyrussell/oh-my-zsh">More information</a></p>
+
+<p>Run this in the terminal</p>
+
+<pre><code>curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+</code></pre>
+
+<p>Add a command prompt syntax highlighter.<br/>
+This shows you if the command line utility you're trying to use is installed on your computer by highlighting it as green or red.</p>
+
+<p>Ran this in the terminal</p>
+
+<pre><code>git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+</code></pre>
+
+<p>In your .zshrc, add zsh-syntax-highlighting to the plugins</p>
+
+<h2>Extras</h2>
+
+<h3>Increase your key-repeat rate and Remap your capslock key</h3>
+
+<p>Install @ http://pqrs.org/macosx/keyremap4macbook/</p>
+
+<ul>
+<li>Lower the "Delay to Key Repeat" and "Key Repeat", test it and figure out what's comfortable to you.</li>
+</ul>
+
+
+<p>Install @ http://pqrs.org/macosx/keyremap4macbook/pckeyboardhack.html.en</p>
+
+<ul>
+<li>Remap your ESC to capslock if you want to, very helpful if you are a vim user.</li>
+</ul>
+
+</body>
+</html>
