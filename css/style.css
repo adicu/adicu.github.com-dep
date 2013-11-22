@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400,300.css);
 #eboard-roster {
   border-collapse: collapse;
 }
@@ -15,6 +14,13 @@
 #devfest-text p {
   line-height: 25px;
 }
+@font-face {
+  font-family: 'League Gothic';
+  src: url('/fonts/leaguegothic-regular-webfont.eot');
+  src: url('/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/leaguegothic-regular-webfont.woff') format('woff'), url('/fonts/leaguegothic-regular-webfont.ttf') format('truetype'), url('/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 html,
 body {
   margin: 0;
@@ -22,7 +28,7 @@ body {
   color: #000;
   font-weight: 300;
   font-size: 15px;
-  font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
 }
 h1,
@@ -258,9 +264,11 @@ header .adi-banner-container .logo {
 }
 header .adi-banner-container .tagline {
   color: #eeeeee;
+  font-family: "League Gothic", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3.5em;
   font-weight: 300;
-  font-size: 1.5em;
   line-height: 1em;
+  margin: 1em 0 0.6em 0;
 }
 header .adi-banner-container .newsletter {
   margin: auto;
@@ -289,10 +297,15 @@ section {
   margin-top: -49px;
   position: relative;
 }
+section#about p {
+  font-family: "League Gothic", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  line-height: 1.2em;
+}
 section .strip .content {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 25px 0;
+  padding: 25px 3em;
 }
 section .strip .content h1.section-title {
   margin: 0;
