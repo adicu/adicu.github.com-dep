@@ -1,6 +1,6 @@
 $(function(){
   if (Modernizr.touch){
-       $('.responsive-block.contact').addClass("touch");
+       $('.responsive-block').addClass("touch");
   }
 
   var $win = $(window);
@@ -8,6 +8,7 @@ $(function(){
   var $navbar = $('.navbar');
   var $spacer = $('.navbar-spacer');
   var $bannerListserv = $('.listserv');
+  var $bottom = $('#bottom');
 
   $win.scroll( function() {
     if(!$navbar.hasClass('navbar-fixed-top') && $win.scrollTop() > $navbar.offset().top){
@@ -15,6 +16,7 @@ $(function(){
       $banner.addClass("spacer-active");
       $spacer.addClass("spacer-active");
       $navbar.addClass("navbar-fixed-top");
+      $bottom.removeClass("hidden");
       $bannerListserv.removeClass("hidden");
 
     } else if ($navbar.hasClass('navbar-fixed-top')  && $win.scrollTop() < $spacer.offset().top){
@@ -22,6 +24,7 @@ $(function(){
       $navbar.removeClass("navbar-fixed-top");
       $banner.removeClass("spacer-active");
       $spacer.removeClass("spacer-active");
+      $bottom.addClass("hidden");
       if (! $bannerListserv.hasClass("open")) {
         $bannerListserv.addClass("hidden");
       }

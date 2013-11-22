@@ -12,7 +12,7 @@ title: Home
 
 <div class="header-spacer">
 </div>
-<header class="fixed">
+<header>
   <div class="adi-banner">
     <div class="adi-banner-container">
       <img class="logo" src="/img/adi-logo-large.png"/>
@@ -28,7 +28,7 @@ title: Home
   </div>
 </header>
 <div id="events" ></div>
-<div id="bottom">
+<div id="main-wrapper">
   {% include navbar.html listserv_class="hidden" scroll="scroll" %}
   <div id="main">
     <div class="events-carousel-wrapper">
@@ -55,42 +55,70 @@ title: Home
               <li>ADI hosts a yearly job fair in the fall for student developers to connect with New York tech startups in a low-key and casual environment. Last year we hosted twenty companies and over 250 students.</li>
               <li>ADI hosts weekly workshops and tech talks, bringing professional developers to campus to teach students their expertise. In addition, ADI hosts student-run talks, during which students teach each other skills they have developed.</li>
           </ul>
-          <p>ADI hosts and manages technical projects for the Columbia community.</p>
-          <ul>
-              <li> ADI curates <a href="learn.adicu.com">learn.adicu.com</a>, a resources page for people interested in learning to program.</li>
-              <li>Students in ADI build <a href="courses.adicu.com">courses.adicu.com,</a> a schedule builder for Columbia students.</li>
-              <li>ADI built <a href="data.adicu.com">data.adicu.com</a>, an API for accessing Columbia's data, from housing to dining to athletics.</li>
-          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="blue strip">
+        <div class="content">
+          <h1 class="section-title">ADI Infrastructure Projects</h1>
+          <div class="row">
+            <div class="responsive-block infra">
+              <i class="fa fa-adi-8x fa-book "></i>
+              <h4 class="infra-title">ADI Resources</h4>
+              <p class="infra-desc">A resources page for people interested in learning to program, but might not know where to start.</p>
+              <div class="button-spacer"></div>
+              <div class="button"><a href="/learn">Launch</a></div>
+            </div>
+            <div class="responsive-block infra">
+              <i class="fa fa-adi-8x fa-calendar "></i>
+              <h4 class="infra-title">Courses</h4>
+              <p class="infra-desc">A scheduler builder for and by Columbia Students</p>
+              <div class="button-spacer"></div>
+              <div class="button"><a href="http://courses.adicu.com">Launch</a></div>
+            </div>
+            <div class="responsive-block infra">
+              <i class="fa fa-adi-8x fa-terminal "></i>
+              <h4 class="infra-title">data.adicu.com</h4>
+              <p class="infra-desc">An API for accessing Columbia's open-source data sets, from housing to dining to athletics.</p>
+              <div class="button-spacer"></div>
+              <div class="button"><a href="http://data.adicu.com">Launch</a></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="blue strip">
-        <div class="content">
-          <h1 class="section-title">Get Involved</h1>
-          <div class="row">
-            <div class="responsive-block involved">
-              <h4 class="involved-title">Come eat cookies with us</h4>
-              <ul class="event-details">
-                <li class="event-detail">
-                  <i class="event-detail-icon fa fa-lg fa-2x fa-fw fa-check"></i>
-                  <p class="event-detail-text">Delicious cookies and milk</p>
-                </li>
-                <li class="event-detail">
-                  <i class="event-detail-icon fa fa-lg fa-2x fa-fw fa-check"></i>
-                  <p class="event-detail-text">Collaborative work space</p>
-                </li>
-                <li class="event-detail">
-                  <i class="event-detail-icon fa fa-lg fa-2x fa-fw fa-check"></i>
-                  <p class="event-detail-text">Work on your personal projects</p>
-                </li>
-              </ul>
-              <a class="scroll" href="/#events"><div class="button">Go to Events</div></a>
-            </div>
-            <div class="responsive-block involved">
-              <h4 class="involved-title">Sign up for our newsletter</h4>
-              <p>Get weekly updates about our workshops and events.</p>
-              <input class="banner-newsletter-email" type="text" placeholder="Email address..." /> <button type="submit" name="subscribe">Sign Up!</button>
+      <div class="photo strip">
+        <div class="opaque">
+          <div class="content">
+            <h1 class="section-title">Get Involved</h1>
+            <div class="row">
+              <div class="responsive-block involved">
+                <h4 class="involved-title">Come to Cookies and Code</h4>
+                <p>Eat cookies with us Wednesdays nights in Learner Hall room 569.</p>
+                <ul class="event-details">
+                  <li class="event-detail">
+                    <i class="event-detail-icon fa fa-lg fa-2x fa-fw fa-check"></i>
+                    <p class="event-detail-text">Delicious cookies and milk</p>
+                  </li>
+                  <li class="event-detail">
+                    <i class="event-detail-icon fa fa-lg fa-2x fa-fw fa-check"></i>
+                    <p class="event-detail-text">Collaborative work space</p>
+                  </li>
+                  <li class="event-detail">
+                    <i class="event-detail-icon fa fa-lg fa-2x fa-fw fa-check"></i>
+                    <p class="event-detail-text">Work on your personal projects</p>
+                  </li>
+                </ul>
+                <a class="scroll" href="/#events"><div class="button">Go to Events</div></a>
+              </div>
+              <div class="responsive-block involved">
+                <h4 class="involved-title">Sign up for our newsletter</h4>
+                <p>Get weekly updates about our workshops and events.</p>
+                <input class="banner-newsletter-email" type="text" placeholder="Email address..." /> <button type="submit" name="subscribe">Sign Up!</button>
+              </div>
             </div>
           </div>
         </div>
@@ -98,42 +126,44 @@ title: Home
     </section>
     <section id="contact">
       <div class="gray strip">
-        <div class="content">
-          <h1 class="section-title">Contact</h1>
-
-          <!-- tile the diff contact info sections -->
-          <div class="row">
-            <div class="responsive-block contact">
-              <i class="fa fa-adi-8x fa-comments "></i>
-              <h4 class="contact-title">Networking</h4>
-              <p class="contact-desc">Part of the NYC startup community or an established business? Reach out to Columbia hackers. </p>
-              <div class="button-spacer"></div>
-              <div class="button"><a href="mailto:networking@adicu.com">networking@</a></div>
-            </div>
-            <div class="responsive-block contact">
-              <i class="fa fa-adi-8x fa-group "></i>
-              <h4 class="contact-title">Social</h4>
-              <p class="contact-desc">Co-sponsor an campus event with us, we put the "Fun" in "Fundamentals of Computer Science".</p>
-              <div class="button-spacer"></div>
-              <div class="button"><a href="mailto:social@adicu.com">social@</a></div>
-            </div>
-            <div class="responsive-block contact">
-              <i class="fa fa-adi-8x fa-code "></i>
-              <h4 class="contact-title">Workshops</h4>
-              <p class="contact-desc">Host a workshop with us. We'll take care of the details so you can focus on what's important: teaching.</p>
-              <div class="button-spacer"></div>
-              <div class="button"><a href="mailto:workshops@adicu.com">workshops@</a></div>
-            </div>
-            <div class="responsive-block contact">
-              <i class="fa fa-adi-8x fa-gears "></i>
-              <h4 class="contact-title">Infrastructure</h4>
-              <p class="contact-desc">Help make ADI's technical projects better by suggesting cool features and providing feedback.</p>
-              <div class="button-spacer"></div>
-              <div class="button"><a href="mailto:infrastructure@adicu.com">infrastructure@</a></div>
+        <div class="opaque">
+          <div class="content">
+            <h1 class="section-title">Contact</h1>
+            <div class="row">
+              <div class="responsive-block contact">
+                <i class="fa fa-adi-8x fa-comments "></i>
+                <h4 class="contact-title">Networking</h4>
+                <p class="contact-desc">Part of the NYC startup community or an established business? Reach out to Columbia hackers. </p>
+                <div class="button-spacer"></div>
+                <div class="button"><a href="mailto:networking@adicu.com">networking@</a></div>
+              </div>
+              <div class="responsive-block contact">
+                <i class="fa fa-adi-8x fa-group "></i>
+                <h4 class="contact-title">Social</h4>
+                <p class="contact-desc">Co-sponsor an campus event with us, we put the "Fun" in "Fundamentals of Computer Science".</p>
+                <div class="button-spacer"></div>
+                <div class="button"><a href="mailto:social@adicu.com">social@</a></div>
+              </div>
+              <div class="responsive-block contact">
+                <i class="fa fa-adi-8x fa-code "></i>
+                <h4 class="contact-title">Workshops</h4>
+                <p class="contact-desc">Host a workshop with us. We'll take care of the details so you can focus on what's important: teaching.</p>
+                <div class="button-spacer"></div>
+                <div class="button"><a href="mailto:workshops@adicu.com">workshops@</a></div>
+              </div>
+              <div class="responsive-block contact">
+                <i class="fa fa-adi-8x fa-gears "></i>
+                <h4 class="contact-title">Infrastructure</h4>
+                <p class="contact-desc">Help make ADI's technical projects better by suggesting cool features and providing feedback.</p>
+                <div class="button-spacer"></div>
+                <div class="button"><a href="mailto:infrastructure@adicu.com">infrastructure@</a></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <section class="contact-spacer">
     </section>
   </div>
   {% include footer.html %}

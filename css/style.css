@@ -209,6 +209,7 @@ input {
   }
 }
 footer {
+  margin-top: -2px;
   padding: 45px 10px;
   width: 100%;
   color: #eeeeee;
@@ -300,7 +301,7 @@ header .adi-banner-container .newsletter input {
     margin: 0 auto;
   }
 }
-#bottom {
+#main-wrapper {
   background-color: white;
   position: relative;
   z-index: 100;
@@ -335,6 +336,32 @@ section .strip.blue {
 section .strip.blue .content {
   background-color: #7bbee9;
 }
+section .strip.dark-gray {
+  background-color: #eeeeee;
+}
+section .strip.dark-gray .content {
+  background-color: #cccccc;
+}
+section .strip.photo {
+  background: url("../img/columbia-street.jpg") no-repeat bottom center;
+  color: white;
+}
+section .strip.photo .opaque {
+  background: rgba(0, 0, 0, 0.5);
+}
+#footer {
+  bottom: 0;
+}
+#bottom-spacer {
+  height: 630px;
+  position: relative;
+}
+#bottom {
+  position: fixed;
+  height: 630px;
+  bottom: 0;
+  width: 100%;
+}
 .row {
   position: relative;
   display: block;
@@ -363,10 +390,6 @@ section .strip.blue .content {
   display: inline;
   padding: 0.5em 0.2em;
   margin: 0 0 0 5%;
-}
-.row .responsive-block.involved button:hover {
-  background-color: white;
-  color: #4fa8e2;
 }
 .row .responsive-block.involved .event-details {
   list-style: none;
@@ -401,45 +424,59 @@ section .strip.blue .content {
   height: 35px;
   padding: 0.5em 0.2em;
 }
-.row .responsive-block.involved .button:hover {
-  background-color: white;
-  color: #4fa8e2;
-}
 .row .responsive-block.involved .button a {
   line-height: 20px;
 }
 .row .responsive-block.contact {
   width: 25%;
-  border-radius: 4px;
-}
-.row .responsive-block.contact i.fa-adi-8x {
-  font-size: 8em;
-  width: 100%;
-}
-.row .responsive-block.contact .button-spacer {
-  height: 35px;
-  display: block;
-}
-.row .responsive-block.contact .button {
-  height: 35px;
-  display: none;
-  bottom: 0;
-  padding: 0.5em 0.2em;
-}
-.row .responsive-block.contact .button a {
-  color: white;
-  line-height: 20px;
 }
 .row .responsive-block.contact:hover,
 .row .responsive-block.contact.touch {
   background-color: #cccccc;
 }
+.row .responsive-block.infra {
+  width: 33.3333333333%;
+}
+.row .responsive-block.infra:hover,
+.row .responsive-block.infra.touch {
+  background-color: #a7d4f0;
+}
+.row .responsive-block.contact,
+.row .responsive-block.infra {
+  border-radius: 4px;
+}
+.row .responsive-block.contact i.fa-adi-8x,
+.row .responsive-block.infra i.fa-adi-8x {
+  font-size: 8em;
+  width: 100%;
+}
+.row .responsive-block.contact .button-spacer,
+.row .responsive-block.infra .button-spacer {
+  height: 35px;
+  display: block;
+}
+.row .responsive-block.contact .button,
+.row .responsive-block.infra .button {
+  height: 35px;
+  display: none;
+  bottom: 0;
+  padding: 0.5em 0.2em;
+}
+.row .responsive-block.contact .button a,
+.row .responsive-block.infra .button a {
+  color: white;
+  line-height: 20px;
+}
 .row .responsive-block.contact:hover .button-spacer,
-.row .responsive-block.contact.touch .button-spacer {
+.row .responsive-block.infra:hover .button-spacer,
+.row .responsive-block.contact.touch .button-spacer,
+.row .responsive-block.infra.touch .button-spacer {
   display: none;
 }
 .row .responsive-block.contact:hover .button,
-.row .responsive-block.contact.touch .button {
+.row .responsive-block.infra:hover .button,
+.row .responsive-block.contact.touch .button,
+.row .responsive-block.infra.touch .button {
   display: block;
 }
 /* Tablets */
@@ -453,10 +490,15 @@ section .strip.blue .content {
   .row .responsive-block.involved .event-details {
     width: 100%;
   }
+  #bottom,
+  #bottom-spacer {
+    height: 1000px;
+  }
 }
 /* Phones */
 @media only screen and (max-width: 480px) {
-  .top {
+  header,
+  .header-spacer {
     height: 75%;
   }
   .row .responsive-block {

@@ -1,4 +1,4 @@
-#bottom {
+#main-wrapper {
   background-color: white;
   position: relative;
   z-index: 100;
@@ -36,7 +36,6 @@ section {
         background-color: @ltGray;
       }
     }
-
     &.blue {
       background-color: @ltBlue;
 
@@ -44,8 +43,36 @@ section {
         background-color: @blue;
       }
     }
+    &.dark-gray {
+      background-color: @ltGray;
 
+      .content {
+        background-color: @gray;
+      }
+    }
+    &.photo {
+      background: url("../img/columbia-street.jpg") no-repeat bottom center ;
+      color: white;
+      .opaque {
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
   }
+}
+
+#footer {
+  bottom: 0;
+}
+
+#bottom-spacer {
+  height:630px;
+  position:relative;
+}
+#bottom {
+  position: fixed;
+  height: 630px;
+  bottom: 0;
+  width:100%;
 }
 
 .row {
@@ -76,11 +103,6 @@ section {
         display: inline;
         padding: 0.5em 0.2em;
         margin: 0 0 0 5%;
-
-        &:hover {
-          background-color: white;
-          color: @dkBlue;
-        }
       }
 
       .event-details {
@@ -119,11 +141,6 @@ section {
         height: 35px;
         padding: 0.5em 0.2em;
 
-        &:hover {
-          background-color: white;
-          color: @dkBlue;
-        }
-
         a {
           line-height: 20px;
         }
@@ -132,6 +149,21 @@ section {
 
     &.contact {
       width: 25%;
+
+      &:hover, &.touch {
+        background-color: @gray;
+      }
+    }
+
+    &.infra {
+      width: 33.3333333333%;
+
+      &:hover, &.touch {
+        background-color: @ltBlue;
+      }
+    }
+
+    &.contact, &.infra {
       border-radius: 4px;
 
       i.fa-adi-8x {
@@ -157,7 +189,6 @@ section {
       }
 
       &:hover, &.touch {
-        background-color: @gray;
 
         .button-spacer {
           display: none;
@@ -187,13 +218,18 @@ section {
       }
     }
   }
+
+  #bottom, #bottom-spacer {
+    height: 1000px;
+  }
 }
 
 /* Phones */
 @media only screen and (max-width: 480px) {
-  .top {
+  header, .header-spacer {
     height:75%;
   }
+
 
   .row {
     .responsive-block {
