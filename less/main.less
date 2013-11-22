@@ -25,7 +25,13 @@ section {
       padding: 25px 1em 50px;
 
       h1.section-title {
-        margin:0 0 1em 0;
+        margin: 0;
+      }
+      h2.section-tagline {
+        margin: 0.5em 0 1em 0;
+        font-weight: 300;
+        font-style: italic;
+        text-align: center;
       }
     }
 
@@ -78,7 +84,7 @@ section {
 .row {
   position: relative;
   display: block;
-  margin: -1em auto;
+  margin: 0 -1em;
   width: 100%;
   overflow: hidden;
 
@@ -88,6 +94,33 @@ section {
     float: left;
     position: relative;
     text-align: center;
+
+    &.about-photo {
+      width: 40%;
+
+      img {
+        width: 100%;
+        max-height: 100%;
+      }
+
+      &.pull {
+        right: 60%;
+      }
+    }
+
+    &.about-desc {
+      width: 60%;
+
+      p {
+        font-size: 1.4em;
+        text-align: left;
+      }
+
+      &.push {
+        left: 40%;
+        right: 0;
+      }
+    }
 
     &.involved {
       width: 50%;
@@ -210,6 +243,12 @@ section {
   .row {
     .responsive-block {
       width: 50% !important;
+
+      &.about-photo, &.about-desc {
+        width: 100% !important;
+        right: 0 !important;
+        left: 0 !important;
+      }
 
       &.involved {
         .event-details {

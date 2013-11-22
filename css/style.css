@@ -30,6 +30,7 @@ body {
   font-size: 15px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
+  height: 100%;
 }
 h1,
 h2,
@@ -238,6 +239,7 @@ footer a:hover {
 }
 header {
   height: 54%;
+  max-height: 500px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -289,6 +291,7 @@ header .adi-banner-container .newsletter input {
 .header-spacer {
   width: 100%;
   height: 54%;
+  max-height: 500px;
   z-index: -101;
 }
 /* Short Desktop Screens*/
@@ -322,7 +325,13 @@ section .strip .content {
   padding: 25px 1em 50px;
 }
 section .strip .content h1.section-title {
-  margin: 0 0 1em 0;
+  margin: 0;
+}
+section .strip .content h2.section-tagline {
+  margin: 0.5em 0 1em 0;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
 }
 section .strip.gray {
   background-color: white;
@@ -365,7 +374,7 @@ section .strip.photo .opaque {
 .row {
   position: relative;
   display: block;
-  margin: -1em auto;
+  margin: 0 -1em;
   width: 100%;
   overflow: hidden;
 }
@@ -375,6 +384,27 @@ section .strip.photo .opaque {
   float: left;
   position: relative;
   text-align: center;
+}
+.row .responsive-block.about-photo {
+  width: 40%;
+}
+.row .responsive-block.about-photo img {
+  width: 100%;
+  max-height: 100%;
+}
+.row .responsive-block.about-photo.pull {
+  right: 60%;
+}
+.row .responsive-block.about-desc {
+  width: 60%;
+}
+.row .responsive-block.about-desc p {
+  font-size: 1.4em;
+  text-align: left;
+}
+.row .responsive-block.about-desc.push {
+  left: 40%;
+  right: 0;
 }
 .row .responsive-block.involved {
   width: 50%;
@@ -486,6 +516,12 @@ section .strip.photo .opaque {
   }
   .row .responsive-block {
     width: 50% !important;
+  }
+  .row .responsive-block.about-photo,
+  .row .responsive-block.about-desc {
+    width: 100% !important;
+    right: 0 !important;
+    left: 0 !important;
   }
   .row .responsive-block.involved .event-details {
     width: 100%;
