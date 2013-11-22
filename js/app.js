@@ -1,4 +1,8 @@
 $(function(){
+  if (Modernizr.touch){
+       $('.responsive-block.contact').addClass("touch");
+  }
+
   var $win = $(window);
   var $banner = $('.adi-banner');
   var $navbar = $('.navbar');
@@ -42,4 +46,6 @@ $(function(){
     var elem = '#' + $(this).attr("href").replace(/(^#|^\/#)/g, '');
     scrollToElement(elem, 500, 0);
   });
+
+
 });

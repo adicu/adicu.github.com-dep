@@ -27,7 +27,7 @@ title: Home
     </div>
   </div>
 </header>
-
+<div id="events" ></div>
 <div id="bottom">
   {% include navbar.html listserv_class="hidden" scroll="scroll" %}
   <div id="main">
@@ -68,7 +68,31 @@ title: Home
       <div class="blue strip">
         <div class="content">
           <h1 class="section-title">Get Involved</h1>
-          <p>Interested in getting involved? To get a taste of ADI, come to Cookies & Code on Wednesday night for an opportunity to talk to community members and work in a collaborative environment. <a href="">Sign up for our newsletter</a> to learn about weekly workshops and events.</p>
+          <div class="row">
+            <div class="responsive-block involved">
+              <h4 class="involved-title">Come eat cookies with us</h4>
+              <ul class="event-details">
+                <li class="event-detail">
+                  <i class="event-detail-icon fa fa-lg fa-2x fa-fw fa-check"></i>
+                  <p class="event-detail-text">Delicious cookies and milk</p>
+                </li>
+                <li class="event-detail">
+                  <i class="event-detail-icon fa fa-lg fa-2x fa-fw fa-check"></i>
+                  <p class="event-detail-text">Collaborative work space</p>
+                </li>
+                <li class="event-detail">
+                  <i class="event-detail-icon fa fa-lg fa-2x fa-fw fa-check"></i>
+                  <p class="event-detail-text">Work on your personal projects</p>
+                </li>
+              </ul>
+              <a class="scroll" href="/#events"><div class="button">Go to Events</div></a>
+            </div>
+            <div class="responsive-block involved">
+              <h4 class="involved-title">Sign up for our newsletter</h4>
+              <p>Get weekly updates about our workshops and events.</p>
+              <input class="banner-newsletter-email" type="text" placeholder="Email address..." /> <button type="submit" name="subscribe">Sign Up!</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -76,43 +100,43 @@ title: Home
       <div class="gray strip">
         <div class="content">
           <h1 class="section-title">Contact</h1>
-          <p>Want to share your expertise and teach a workshop? Interested in cosponsoring an on or off campus event? Itching to demo and discuss your cool new project? Tell us!</p>
 
           <!-- tile the diff contact info sections -->
-          <div class="section group" id="tiles">
-            <div class="col span_1_of_2">
-              <h4>Networking</h4>
-              <a href="mailto:networking@adicu.com">networking@adicu.com</a>
-              <p>Are you a member of the NYC startup community or an established business looking to reach out to Columbia hackers? Talk to our fine folks in Networking.</p>
+          <div class="row">
+            <div class="responsive-block contact">
+              <i class="fa fa-adi-8x fa-comments "></i>
+              <h4 class="contact-title">Networking</h4>
+              <p class="contact-desc">Part of the NYC startup community or an established business? Reach out to Columbia hackers. </p>
+              <div class="button-spacer"></div>
+              <div class="button"><a href="mailto:networking@adicu.com">networking@</a></div>
             </div>
-            <div class="col span_1_of_2">
-
-              <h4>Social</h4>
-              <a href="mailto:social@adicu.com">social@adicu.com</a>
-
-              <p>Our friends in Social put the "fun" in "fundamentals of computer science". Get in touch if you want to cosponsor an on-campus event, or need advice on how to throw a real rager.</p>
+            <div class="responsive-block contact">
+              <i class="fa fa-adi-8x fa-group "></i>
+              <h4 class="contact-title">Social</h4>
+              <p class="contact-desc">Co-sponsor an campus event with us, we put the "Fun" in "Fundamentals of Computer Science".</p>
+              <div class="button-spacer"></div>
+              <div class="button"><a href="mailto:social@adicu.com">social@</a></div>
             </div>
-            <div class="col span_1_of_2">
-              <h4>Workshops</h4>
-              <a href="mailto:workshops@adicu.com">workshops@adicu.com</a>
-
-              <p>Want to share your passion and expertise with the community? Host a workshop with us. Our workshop masters will take care of the details so you can focus on what's important: teaching.</p>
+            <div class="responsive-block contact">
+              <i class="fa fa-adi-8x fa-code "></i>
+              <h4 class="contact-title">Workshops</h4>
+              <p class="contact-desc">Host a workshop with us. We'll take care of the details so you can focus on what's important: teaching.</p>
+              <div class="button-spacer"></div>
+              <div class="button"><a href="mailto:workshops@adicu.com">workshops@</a></div>
             </div>
-            <div class="col span_1_of_2">
-              <h4>Infrastructure</h4>
-              <a href="mailto:infrastructure@adicu.com">infrastructure@adicu.com</a>
-
-              <p>The Infrastructure team manages and powers ADI's technical projects. Help us make them better by suggesting cool features and providing feedback.of the initiative.</p>
+            <div class="responsive-block contact">
+              <i class="fa fa-adi-8x fa-gears "></i>
+              <h4 class="contact-title">Infrastructure</h4>
+              <p class="contact-desc">Help make ADI's technical projects better by suggesting cool features and providing feedback.</p>
+              <div class="button-spacer"></div>
+              <div class="button"><a href="mailto:infrastructure@adicu.com">infrastructure@</a></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+  {% include footer.html %}
 </div>
 
-{% include footer.html %}
-
-</div>
-
-<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/app.js"></script>

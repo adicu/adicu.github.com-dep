@@ -22,10 +22,10 @@ section {
     .content {
       max-width: 1000px;
       margin: 0 auto;
-      padding: 25px 3em;
+      padding: 25px 1em 50px;
 
       h1.section-title {
-        margin:0;
+        margin:0 0 1em 0;
       }
     }
 
@@ -45,5 +45,160 @@ section {
       }
     }
 
+  }
+}
+
+.row {
+  position: relative;
+  display: block;
+  margin: -1em auto;
+  width: 100%;
+  overflow: hidden;
+
+  .responsive-block {
+    padding: 1em;
+    display: block;
+    float: left;
+    position: relative;
+    text-align: center;
+
+    &.involved {
+      width: 50%;
+
+      input {
+        width: 65%;
+        display: inline;
+        margin: 0;
+      }
+      button {
+        width: 25%;
+        max-width: 80px;
+        display: inline;
+        padding: 0.5em 0.2em;
+        margin: 0 0 0 5%;
+
+        &:hover {
+          background-color: white;
+          color: @dkBlue;
+        }
+      }
+
+      .event-details {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 80%;
+        min-width: 200px;
+        text-align: left;
+
+        .event-detail {
+          margin: 5px;
+          width: 100%;
+          overflow: hidden;
+
+          .event-detail-icon {
+            display: inline-block;
+            float: left;
+            text-align: center;
+            margin-top: 5px;
+            margin-right: 10px;
+          }
+          .event-detail-text {
+            display:inline-block;
+            line-height: 2em;
+            margin: 0 .2em;
+            float: left;
+            width: 75%;
+          }
+        }
+      }
+
+      .button {
+        width: 150px;
+        margin: 10px auto 0;
+        height: 35px;
+        padding: 0.5em 0.2em;
+
+        &:hover {
+          background-color: white;
+          color: @dkBlue;
+        }
+
+        a {
+          line-height: 20px;
+        }
+      }
+    }
+
+    &.contact {
+      width: 25%;
+      border-radius: 4px;
+
+      i.fa-adi-8x {
+        font-size: 8em;
+        width: 100%;
+      }
+
+      .button-spacer{
+        height: 35px;
+        display: block;
+      }
+
+      .button {
+        height: 35px;
+        display: none;
+        bottom: 0;
+        padding: 0.5em 0.2em;
+
+        a {
+          color: white;
+          line-height: 20px;
+        }
+      }
+
+      &:hover, &.touch {
+        background-color: @gray;
+
+        .button-spacer {
+          display: none;
+        }
+        .button {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* Tablets */
+@media only screen and (max-width: 767px) {
+  .navbar-right {
+    display: none;
+  }
+
+  .row {
+    .responsive-block {
+      width: 50% !important;
+
+      &.involved {
+        .event-details {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* Phones */
+@media only screen and (max-width: 480px) {
+  .top {
+    height:75%;
+  }
+
+  .row {
+    .responsive-block {
+      width: 100% !important;
+
+    }
   }
 }

@@ -65,7 +65,8 @@ a:hover {
 .hidden {
   display: none;
 }
-button {
+button,
+.button {
   margin: 0 2px;
   padding: 0.5em 0.8em;
   height: 35px;
@@ -76,8 +77,10 @@ button {
   background: #4fa8e2;
   color: #fff;
   font-weight: 300;
+  cursor: pointer;
 }
-button:hover {
+button:hover,
+.button:hover {
   background: #7bbee9;
 }
 input {
@@ -287,6 +290,16 @@ header .adi-banner-container .newsletter input {
   height: 54%;
   z-index: -101;
 }
+/* Short Desktop Screens*/
+@media only screen and (max-height: 500px) and (min-width: 481px) {
+  /* Squeeze everything into the banner */
+  .banner-tagline {
+    margin: 0;
+  }
+  .adi-banner-container {
+    margin: 0 auto;
+  }
+}
 #bottom {
   background-color: white;
   position: relative;
@@ -305,10 +318,10 @@ section#about p {
 section .strip .content {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 25px 3em;
+  padding: 25px 1em 50px;
 }
 section .strip .content h1.section-title {
-  margin: 0;
+  margin: 0 0 1em 0;
 }
 section .strip.gray {
   background-color: white;
@@ -322,34 +335,132 @@ section .strip.blue {
 section .strip.blue .content {
   background-color: #7bbee9;
 }
-/* Short Desktop Screens*/
-@media only screen and (max-height: 500px) and (min-width: 481px) {
-  /* Squeeze everything into the banner */
-  .banner-tagline {
-    margin: 0;
-  }
-  .adi-banner-container {
-    margin: 0 auto;
-  }
+.row {
+  position: relative;
+  display: block;
+  margin: -1em auto;
+  width: 100%;
+  overflow: hidden;
 }
-/* Extra-large desktops */
-@media only screen and (min-width: 1279px) {
-  
+.row .responsive-block {
+  padding: 1em;
+  display: block;
+  float: left;
+  position: relative;
+  text-align: center;
 }
-/* Small desktops */
-@media only screen and (max-width: 940px) {
-  
+.row .responsive-block.involved {
+  width: 50%;
+}
+.row .responsive-block.involved input {
+  width: 65%;
+  display: inline;
+  margin: 0;
+}
+.row .responsive-block.involved button {
+  width: 25%;
+  max-width: 80px;
+  display: inline;
+  padding: 0.5em 0.2em;
+  margin: 0 0 0 5%;
+}
+.row .responsive-block.involved button:hover {
+  background-color: white;
+  color: #4fa8e2;
+}
+.row .responsive-block.involved .event-details {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+  min-width: 200px;
+  text-align: left;
+}
+.row .responsive-block.involved .event-details .event-detail {
+  margin: 5px;
+  width: 100%;
+  overflow: hidden;
+}
+.row .responsive-block.involved .event-details .event-detail .event-detail-icon {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.row .responsive-block.involved .event-details .event-detail .event-detail-text {
+  display: inline-block;
+  line-height: 2em;
+  margin: 0 .2em;
+  float: left;
+  width: 75%;
+}
+.row .responsive-block.involved .button {
+  width: 150px;
+  margin: 10px auto 0;
+  height: 35px;
+  padding: 0.5em 0.2em;
+}
+.row .responsive-block.involved .button:hover {
+  background-color: white;
+  color: #4fa8e2;
+}
+.row .responsive-block.involved .button a {
+  line-height: 20px;
+}
+.row .responsive-block.contact {
+  width: 25%;
+  border-radius: 4px;
+}
+.row .responsive-block.contact i.fa-adi-8x {
+  font-size: 8em;
+  width: 100%;
+}
+.row .responsive-block.contact .button-spacer {
+  height: 35px;
+  display: block;
+}
+.row .responsive-block.contact .button {
+  height: 35px;
+  display: none;
+  bottom: 0;
+  padding: 0.5em 0.2em;
+}
+.row .responsive-block.contact .button a {
+  color: white;
+  line-height: 20px;
+}
+.row .responsive-block.contact:hover,
+.row .responsive-block.contact.touch {
+  background-color: #cccccc;
+}
+.row .responsive-block.contact:hover .button-spacer,
+.row .responsive-block.contact.touch .button-spacer {
+  display: none;
+}
+.row .responsive-block.contact:hover .button,
+.row .responsive-block.contact.touch .button {
+  display: block;
 }
 /* Tablets */
 @media only screen and (max-width: 767px) {
   .navbar-right {
     display: none;
   }
+  .row .responsive-block {
+    width: 50% !important;
+  }
+  .row .responsive-block.involved .event-details {
+    width: 100%;
+  }
 }
 /* Phones */
 @media only screen and (max-width: 480px) {
   .top {
     height: 75%;
+  }
+  .row .responsive-block {
+    width: 100% !important;
   }
 }
 .navbar-right {
