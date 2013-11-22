@@ -1,34 +1,49 @@
-#goal{
-  text-align: center;
-  h1, h2 {
-    color: @dkBlue;
-    line-height: 1em;
-  }
-  h2 {
-    color: #000;
-  }
-  p {
-    font-size: 1.7em;
-  }
+#bottom {
+  background-color: white;
+  position: relative;
+  z-index: 100;
 }
 
-#contact {
-  padding-top: 1em;
-  text-align: center;
-  h4 {
-    margin: 14px;
-    line-height: 0;
-  }
-  p {
-    font-size: 1.3em;
-  }
-}
+section {
+  padding-top: 49px;
+  margin-top: -49px;
+  position: relative;
 
-#tiles {
-  p {
-    font-size: 1em;
+  &#about {
+    p {
+      font-family: @headingFonts;
+      font-size: 3em;
+      line-height: 1.2em;
+    }
   }
-  h4 {
-    margin: 10px;
+
+  .strip {
+
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 25px 3em;
+
+      h1.section-title {
+        margin:0;
+      }
+    }
+
+    &.gray {
+      background-color: white;
+
+      .content {
+        background-color: @ltGray;
+      }
+    }
+
+    &.blue {
+      background-color: @ltBlue;
+
+      .content {
+        background-color: @blue;
+      }
+    }
+
   }
 }

@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400,300.css);
 #eboard-roster {
   border-collapse: collapse;
 }
@@ -15,6 +14,13 @@
 #devfest-text p {
   line-height: 25px;
 }
+@font-face {
+  font-family: 'League Gothic';
+  src: url('/fonts/leaguegothic-regular-webfont.eot');
+  src: url('/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/leaguegothic-regular-webfont.woff') format('woff'), url('/fonts/leaguegothic-regular-webfont.ttf') format('truetype'), url('/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 html,
 body {
   margin: 0;
@@ -22,7 +28,7 @@ body {
   color: #000;
   font-weight: 300;
   font-size: 15px;
-  font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
 }
 h1,
@@ -86,15 +92,6 @@ input {
 .fa-adi-1-5x {
   font-size: 25px;
 }
-#body-content {
-  margin: 6em 0 4em 0;
-}
-section,
-article {
-  margin: 20px auto;
-  max-width: 1000px;
-  width: 95%;
-}
 .text-content {
   line-height: 1.4em;
 }
@@ -106,46 +103,6 @@ article {
 }
 .even {
   background-color: #FFFFFF;
-}
-.section {
-  clear: both;
-  margin: 0px;
-  padding: 0px;
-}
-.col {
-  display: block;
-  float: left;
-  margin: 1% 0 1% 2%;
-}
-.col:first-child {
-  margin-left: 0;
-}
-.group:before,
-.group:after {
-  display: table;
-  content: "";
-}
-.group:after {
-  clear: both;
-}
-.span_2_of_2 {
-  width: 100%;
-}
-.span_1_of_2 {
-  width: 48%;
-}
-@media only screen and (max-width: 480px) {
-  .col {
-    margin: 1% 0 1% 0%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .span_2_of_2 {
-    width: 100%;
-  }
-  .span_1_of_2 {
-    width: 100%;
-  }
 }
 .events-carousel-wrapper {
   overflow-x: scroll;
@@ -277,16 +234,20 @@ footer a:hover {
 }
 header {
   height: 54%;
-  background: #000000 url("../img/columbia-street.jpg") no-repeat center center fixed;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  background: url("../img/columbia-street.jpg") no-repeat center center;
 }
-.adi-banner {
+header .adi-banner {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
-.adi-banner-container {
+header .adi-banner-container {
   position: absolute;
   top: 0;
   right: 0;
@@ -297,58 +258,69 @@ header {
   max-height: 500px;
   width: 100%;
 }
-.adi-banner-container .logo {
+header .adi-banner-container .logo {
   max-width: 90%;
   max-height: 50%;
 }
-.adi-banner-container .tagline {
+header .adi-banner-container .tagline {
   color: #eeeeee;
+  font-family: "League Gothic", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3.5em;
   font-weight: 300;
-  font-size: 1.5em;
   line-height: 1em;
+  margin: 1em 0 0.6em 0;
 }
-.adi-banner-container .newsletter {
+header .adi-banner-container .newsletter {
   margin: auto;
   max-width: 500px;
   width: 100%;
 }
-.adi-banner-container .newsletter p {
+header .adi-banner-container .newsletter p {
   color: #eeeeee;
   line-height: 1em;
 }
-.adi-banner-container .newsletter input {
+header .adi-banner-container .newsletter input {
   width: 70%;
 }
-#goal {
-  text-align: center;
+.header-spacer {
+  width: 100%;
+  height: 54%;
+  z-index: -101;
 }
-#goal h1,
-#goal h2 {
-  color: #4fa8e2;
-  line-height: 1em;
+#bottom {
+  background-color: white;
+  position: relative;
+  z-index: 100;
 }
-#goal h2 {
-  color: #000;
+section {
+  padding-top: 49px;
+  margin-top: -49px;
+  position: relative;
 }
-#goal p {
-  font-size: 1.7em;
+section#about p {
+  font-family: "League Gothic", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  line-height: 1.2em;
 }
-#contact {
-  padding-top: 1em;
-  text-align: center;
+section .strip .content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 25px 3em;
 }
-#contact h4 {
-  margin: 14px;
-  line-height: 0;
+section .strip .content h1.section-title {
+  margin: 0;
 }
-#contact p {
-  font-size: 1.3em;
+section .strip.gray {
+  background-color: white;
 }
-#tiles p {
-  font-size: 1em;
+section .strip.gray .content {
+  background-color: #eeeeee;
 }
-#tiles h4 {
-  margin: 10px;
+section .strip.blue {
+  background-color: #a7d4f0;
+}
+section .strip.blue .content {
+  background-color: #7bbee9;
 }
 /* Short Desktop Screens*/
 @media only screen and (max-height: 500px) and (min-width: 481px) {
