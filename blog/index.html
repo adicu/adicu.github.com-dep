@@ -25,8 +25,8 @@ title: Blog
     <br>
     {{ post.content | strip_html | truncatewords: 50 }}
   </div>
-
-  <a href="{{ post.url }}">Read more</a>
+  <br>
+  <a href="{{ post.url }}"><button class="ss-btn ss-btn-readmore">Read more</button></a>
 
 </article>
 {% endfor %}
