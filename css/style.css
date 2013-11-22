@@ -86,15 +86,6 @@ input {
 .fa-adi-1-5x {
   font-size: 25px;
 }
-#body-content {
-  margin: 6em 0 4em 0;
-}
-section,
-article {
-  margin: 20px auto;
-  max-width: 1000px;
-  width: 95%;
-}
 .text-content {
   line-height: 1.4em;
 }
@@ -106,46 +97,6 @@ article {
 }
 .even {
   background-color: #FFFFFF;
-}
-.section {
-  clear: both;
-  margin: 0px;
-  padding: 0px;
-}
-.col {
-  display: block;
-  float: left;
-  margin: 1% 0 1% 2%;
-}
-.col:first-child {
-  margin-left: 0;
-}
-.group:before,
-.group:after {
-  display: table;
-  content: "";
-}
-.group:after {
-  clear: both;
-}
-.span_2_of_2 {
-  width: 100%;
-}
-.span_1_of_2 {
-  width: 48%;
-}
-@media only screen and (max-width: 480px) {
-  .col {
-    margin: 1% 0 1% 0%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .span_2_of_2 {
-    width: 100%;
-  }
-  .span_1_of_2 {
-    width: 100%;
-  }
 }
 .events-carousel-wrapper {
   overflow-x: scroll;
@@ -328,69 +279,35 @@ header .adi-banner-container .newsletter input {
   height: 54%;
   z-index: -101;
 }
-h1.section-title {
-  margin-top: -50px;
-  padding-top: 75px;
-}
 #bottom {
   background-color: white;
   position: relative;
   z-index: 100;
 }
-#initiatives .initiative {
-  height: 400px;
+section {
+  padding-top: 49px;
+  margin-top: -49px;
+  position: relative;
 }
-#initiatives .initiative section {
+section .strip .content {
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 0;
-  height: 100%;
+  padding: 25px 0;
 }
-#initiatives .initiative section .left,
-#initiatives .initiative section .right {
-  width: 50%;
-  padding: 10px 20px;
-  display: inline-block;
-  float: left;
-  height: 100%;
+section .strip .content h1.section-title {
+  margin: 0;
 }
-#initiatives .initiative section .left h3,
-#initiatives .initiative section .right h3 {
-  font-size: 2em;
-  text-align: center;
+section .strip.gray {
+  background-color: white;
 }
-#initiatives .initiative section .left p,
-#initiatives .initiative section .right p {
-  text-align: center;
-}
-#initiatives .initiative section .left img,
-#initiatives .initiative section .right img {
-  max-height: 100%;
-  max-width: 100%;
-}
-#initiatives .dark {
+section .strip.gray .content {
   background-color: #eeeeee;
 }
-#initiatives .dark section {
-  background-color: #cccccc;
+section .strip.blue {
+  background-color: #a7d4f0;
 }
-#initiatives .light {
+section .strip.blue .content {
   background-color: #7bbee9;
-}
-#initiatives .light section {
-  background-color: #4fa8e2;
-}
-#tiles h4 {
-  margin: 14px;
-  line-height: 0;
-}
-#tiles p {
-  font-size: 1.3em;
-}
-#tiles p {
-  font-size: 1em;
-}
-#tiles h4 {
-  margin: 10px;
 }
 /* Short Desktop Screens*/
 @media only screen and (max-height: 500px) and (min-width: 481px) {

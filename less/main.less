@@ -1,78 +1,41 @@
-h1.section-title {
-  margin-top: -50px;
-  padding-top: 75px;
-}
-
 #bottom {
   background-color: white;
   position: relative;
   z-index: 100;
 }
 
-#initiatives {
-  .initiative {
-    height: 400px;
+section {
+  padding-top: 49px;
+  margin-top: -49px;
+  position: relative;
 
-    section {
+  .strip {
+
+    .content {
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 40px 0;
-      height: 100%;
+      padding: 25px 0;
 
-      .left, .right{
-        width: 50%;
-        padding: 10px 20px;
-        display: inline-block;
-        float: left;
-        height: 100%;
-
-        h3 {
-          font-size: 2em;
-          text-align: center;
-        }
-
-        p {
-          text-align: center;
-        }
-
-        img {
-          max-height: 100%;
-          max-width: 100%;
-        }
+      h1.section-title {
+        margin:0;
       }
     }
-  }
-  .dark {
-    background-color: @ltGray;
 
-    section {
-      background-color: @gray;
+    &.gray {
+      background-color: white;
+
+      .content {
+        background-color: @ltGray;
+      }
     }
-  }
-  .light {
-    background-color: @blue;
 
-    section {
-      background-color: @dkBlue
+    &.blue {
+      background-color: @ltBlue;
+
+      .content {
+        background-color: @blue;
+      }
     }
-  }
 
-}
-
-#tiles {
-  h4 {
-    margin: 14px;
-    line-height: 0;
-  }
-  p {
-    font-size: 1.3em;
-  }
-}
-
-#tiles {
-  p {
-    font-size: 1em;
-  }
-  h4 {
-    margin: 10px;
   }
 }
