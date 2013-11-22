@@ -40,6 +40,6 @@ $(function(){
     event.preventDefault();
     console.log("target: ", $(this), $(this).attr("href"));
     var elem = '#' + $(this).attr("href").replace(/(^#|^\/#)/g, '');
-    scrollToElement(elem, 500, -75);
+    scrollToElement(elem, 500, 0);
   });
 });

@@ -277,16 +277,20 @@ footer a:hover {
 }
 header {
   height: 54%;
-  background: #000000 url("../img/columbia-street.jpg") no-repeat center center fixed;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  background: url("../img/columbia-street.jpg") no-repeat center center;
 }
-.adi-banner {
+header .adi-banner {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
-.adi-banner-container {
+header .adi-banner-container {
   position: absolute;
   top: 0;
   right: 0;
@@ -297,41 +301,41 @@ header {
   max-height: 500px;
   width: 100%;
 }
-.adi-banner-container .logo {
+header .adi-banner-container .logo {
   max-width: 90%;
   max-height: 50%;
 }
-.adi-banner-container .tagline {
+header .adi-banner-container .tagline {
   color: #eeeeee;
   font-weight: 300;
   font-size: 1.5em;
   line-height: 1em;
 }
-.adi-banner-container .newsletter {
+header .adi-banner-container .newsletter {
   margin: auto;
   max-width: 500px;
   width: 100%;
 }
-.adi-banner-container .newsletter p {
+header .adi-banner-container .newsletter p {
   color: #eeeeee;
   line-height: 1em;
 }
-.adi-banner-container .newsletter input {
+header .adi-banner-container .newsletter input {
   width: 70%;
 }
-#goal {
-  text-align: center;
+.header-spacer {
+  width: 100%;
+  height: 54%;
+  z-index: -101;
 }
-#goal h1,
-#goal h2 {
-  color: #4fa8e2;
-  line-height: 1em;
+h1.section-title {
+  margin-top: -50px;
+  padding-top: 75px;
 }
-#goal h2 {
-  color: #000;
-}
-#goal p {
-  font-size: 1.7em;
+#bottom {
+  background-color: white;
+  position: relative;
+  z-index: 100;
 }
 #initiatives .initiative {
   height: 400px;
@@ -374,9 +378,6 @@ header {
 }
 #initiatives .light section {
   background-color: #4fa8e2;
-}
-#tiles {
-  margin: 4em 0 30em -3em;
 }
 #tiles h4 {
   margin: 14px;
