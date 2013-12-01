@@ -374,12 +374,12 @@ section .strip.photo .opaque {
 .row {
   position: relative;
   display: block;
+  padding: 0.5em;
   margin: 0 -1em;
-  width: 100%;
   overflow: hidden;
 }
 .row .responsive-block {
-  padding: 1em;
+  padding: 0.5em;
   display: block;
   float: left;
   position: relative;
@@ -596,6 +596,15 @@ section .strip.photo .opaque {
 }
 #mc-embed-signup button:hover {
   color: #7bbee9;
+}
+#blog-wrapper {
+  padding-top: 50px;
+}
+.post {
+  max-width: 800px;
+  width: 100%;
+  margin: 0.5em auto;
+  padding: 0.5em;
 }
 .post h2 {
   display: inline-block;
