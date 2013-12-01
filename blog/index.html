@@ -21,8 +21,12 @@ title: Blog
   </div>
 
   <div class="text-content">
-    {{ post.content }}
+    <img src="/img/{{ post.image }}" height=200px style="border-style: none"></img>
+    <br>
+    {{ post.content | strip_html | truncatewords: 50 }}
   </div>
+  <br>
+  <a href="{{ post.url }}"><button class="ss-btn ss-btn-readmore">Read more</button></a>
 
 </article>
 {% endfor %}
