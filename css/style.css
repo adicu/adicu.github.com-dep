@@ -316,6 +316,7 @@ section {
 }
 section#about p {
   font-family: "League Gothic", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
   font-size: 3em;
   line-height: 1.2em;
 }
@@ -382,13 +383,15 @@ section .strip.photo .opaque {
   background-size: 100%;
   color: white;
   text-align: center;
-  height: 210px;
+  min-height: 210px;
+  background-position: center;
+  background-size: 100% auto;
 }
 .row.bg-img .opaque {
-  height: 210px;
+  min-height: 210px;
   background: rgba(0, 0, 0, 0.5);
   margin: -0.5em;
-  padding: 1.5em 0.5em;
+  padding: 2.5em 0.5em;
 }
 .row.bg-img .opaque p,
 .row.bg-img .opaque h4 {
@@ -404,19 +407,15 @@ section .strip.photo .opaque {
   font-size: 1.4em;
 }
 .row.bg-img.devfest {
-  background-position-y: -60px;
   background-image: url(/img/devfest/logos/devfest.png);
 }
 .row.bg-img.c-and-c {
-  background-position-y: -270px;
   background-image: url(/img/cookiesandcode.jpg);
 }
 .row.bg-img.jobfair {
-  background-position-y: -75px;
   background-image: url(/img/jobfair.jpg);
 }
 .row.bg-img.weeklies {
-  background-position-y: -180px;
   background-image: url(/img/weeklies.jpg);
 }
 .row .responsive-block {
@@ -531,17 +530,14 @@ section .strip.photo .opaque {
 }
 /* Tablets */
 @media only screen and (max-width: 767px) {
+  .row.bg-img {
+    background-size: auto 100%;
+  }
   .navbar-right {
     display: none;
   }
   .row .responsive-block {
     width: 50% !important;
-  }
-  .row .responsive-block.about-photo,
-  .row .responsive-block.about-desc {
-    width: 100% !important;
-    right: 0 !important;
-    left: 0 !important;
   }
   .row .responsive-block.involved .event-details {
     width: 100%;
@@ -559,6 +555,10 @@ section .strip.photo .opaque {
   }
   .row .responsive-block {
     width: 100% !important;
+  }
+  .row .responsive-block.infra,
+  .row .responsive-block.contact {
+    margin: 0.5em 0;
   }
 }
 .navbar-right {
