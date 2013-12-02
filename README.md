@@ -46,7 +46,7 @@ etc.
 ```
 All of the resource links will be made available in a javascript object to implement features on the website. Resources currently used on the website are:
 1. image-->image link | A cover image for the events slider. If this is not provided a default image will be used.
-2. slides-->slides link | A link to presentation slides relevant to the event. 
+2. slides-->slides link | A link to presentation slides relevant to the event.
 
 
 [1]: http://jekyllrb.com/
