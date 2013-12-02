@@ -31,6 +31,24 @@ How to Post
 2. Fill out your post in the newly created file.
 3. Commit and push the file to `origin/master`.
 
+Event Resources
+---------------
+Events posted to Google Calendar should have the following format:
+
+```
+[short description]
+-----------
+[long description]
+-----------
+resource1 name-->resource1 link
+resource2 name-->resource2 link
+etc.
+```
+All of the resource links will be made available in a javascript object to implement features on the website. Resources currently used on the website are:
+1. image-->image link | A cover image for the events slider. If this is not provided a default image will be used.
+2. slides-->slides link | A link to presentation slides relevant to the event. 
+
+
 [1]: http://jekyllrb.com/
 [2]: http://pages.github.com/
 [3]: http://www.adicu.com/

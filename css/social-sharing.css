@@ -87,3 +87,16 @@ a .ss-btn-github:hover {
     border-color: #1d1c1c;
 }
 
+/*  Read more button color */
+.ss-btn-readmore {
+    background-color: #4fa8e2;
+    border-color: #4fa8e2;
+}
+
+/*  Read more button color on hover */
+.ss-btn-readmore:hover,
+a .ss-btn-readmore:hover {
+    background-color: #2D89C4;
+    border-color: #2D89C4;
+}
+
