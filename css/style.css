@@ -25,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   color: #000;
   font-weight: 300;
   font-size: 15px;
@@ -305,6 +306,7 @@ header .adi-banner-container .newsletter input {
 }
 #main-wrapper {
   position: relative;
+  width: 100%;
   z-index: 100;
   background-color: white;
 }
