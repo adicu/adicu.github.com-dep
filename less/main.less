@@ -13,7 +13,7 @@ section {
     p {
       font-family: @headingFonts;
       text-align: center;
-      font-size: 3em;
+      font-size: 2.5em;
       line-height: 1.2em;
     }
   }
@@ -27,11 +27,17 @@ section {
 
       h1.section-title {
         margin: 0;
+        font-family: "roboto slab";
+        font-size: 3.3em;
       }
       h2.section-tagline {
         margin: 0.5em 0 1em 0;
         font-weight: 300;
-        font-style: italic;
+        text-align: center;
+      }
+      h2.sub-section-tagline {
+        margin: 1.2em 0 0.5em 0;
+        font-weight: 300;
         text-align: center;
       }
     }
@@ -143,6 +149,10 @@ section {
     position: relative;
     text-align: center;
 
+    p {
+      font-size: 1.2em;
+    }
+
     &.involved {
       width: 50%;
 
@@ -185,6 +195,7 @@ section {
             margin: 0 .2em;
             float: left;
             width: 75%;
+            font-size: 1.2em;
           }
         }
       }
@@ -230,15 +241,15 @@ section {
         display: block;
       }
 
-      .button {
-        height: 35px;
-        display: none;
-        bottom: 0;
-        padding: 0.5em 0.2em;
+      a {
+        color: white;
+        line-height: 20px;
 
-        a {
-          color: white;
-          line-height: 20px;
+        .button {
+          height: 35px;
+          display: none;
+          bottom: 0;
+          padding: 0.5em 0.2em;
         }
       }
 

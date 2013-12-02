@@ -270,10 +270,10 @@ header .adi-banner-container .logo {
 header .adi-banner-container .tagline {
   color: #eeeeee;
   font-family: "Roboto Slab", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 3.5em;
+  font-size: 2em;
   font-weight: 300;
   line-height: 1em;
-  margin: 1em 0 0.6em 0;
+  margin: 0.4em 0 0.4em 0;
 }
 header .adi-banner-container .newsletter {
   margin: auto;
@@ -316,7 +316,7 @@ section {
 section#about p {
   font-family: "Roboto Slab", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1.2em;
 }
 section .strip .content {
@@ -326,11 +326,17 @@ section .strip .content {
 }
 section .strip .content h1.section-title {
   margin: 0;
+  font-family: "roboto slab";
+  font-size: 3.3em;
 }
 section .strip .content h2.section-tagline {
   margin: 0.5em 0 1em 0;
   font-weight: 300;
-  font-style: italic;
+  text-align: center;
+}
+section .strip .content h2.sub-section-tagline {
+  margin: 1.2em 0 0.5em 0;
+  font-weight: 300;
   text-align: center;
 }
 section .strip.gray {
@@ -424,6 +430,9 @@ section .strip.photo .opaque {
   position: relative;
   text-align: center;
 }
+.row .responsive-block p {
+  font-size: 1.2em;
+}
 .row .responsive-block.involved {
   width: 50%;
 }
@@ -465,6 +474,7 @@ section .strip.photo .opaque {
   margin: 0 .2em;
   float: left;
   width: 75%;
+  font-size: 1.2em;
 }
 .row .responsive-block.involved .button {
   width: 150px;
@@ -503,17 +513,17 @@ section .strip.photo .opaque {
   height: 35px;
   display: block;
 }
-.row .responsive-block.contact .button,
-.row .responsive-block.infra .button {
+.row .responsive-block.contact a,
+.row .responsive-block.infra a {
+  color: white;
+  line-height: 20px;
+}
+.row .responsive-block.contact a .button,
+.row .responsive-block.infra a .button {
   height: 35px;
   display: none;
   bottom: 0;
   padding: 0.5em 0.2em;
-}
-.row .responsive-block.contact .button a,
-.row .responsive-block.infra .button a {
-  color: white;
-  line-height: 20px;
 }
 .row .responsive-block.contact:hover .button-spacer,
 .row .responsive-block.infra:hover .button-spacer,
