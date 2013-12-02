@@ -1,34 +1,311 @@
-#goal{
-  text-align: center;
-  h1, h2 {
-    color: @dkBlue;
-    line-height: 1em;
+#main-wrapper {
+  background-color: white;
+  position: relative;
+  z-index: 100;
+}
+
+section {
+  padding-top: 49px;
+  margin-top: -49px;
+  position: relative;
+
+  &#about {
+    p {
+      font-family: @headingFonts;
+      text-align: center;
+      font-size: 3em;
+      line-height: 1.2em;
+    }
   }
-  h2 {
-    color: #000;
-  }
-  p {
-    font-size: 1.7em;
+
+  .strip {
+
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 25px 1em 50px;
+
+      h1.section-title {
+        margin: 0;
+      }
+      h2.section-tagline {
+        margin: 0.5em 0 1em 0;
+        font-weight: 300;
+        text-align: center;
+      }
+      h2.sub-section-tagline {
+        margin: 1.2em 0 0.5em 0;
+        font-weight: 300;
+        text-align: center;
+      }
+    }
+
+    &.gray {
+      background-color: white;
+
+      .content {
+        background-color: @ltGray;
+      }
+    }
+    &.blue {
+      background-color: @ltBlue;
+
+      .content {
+        background-color: @blue;
+      }
+    }
+    &.dark-gray {
+      background-color: @ltGray;
+
+      .content {
+        background-color: @gray;
+      }
+    }
+    &.photo {
+      background: url("../img/columbia-street.jpg") no-repeat bottom center ;
+      color: white;
+      .opaque {
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
   }
 }
 
-#contact {
-  padding-top: 1em;
-  text-align: center;
-  h4 {
-    margin: 14px;
-    line-height: 0;
+#footer {
+  bottom: 0;
+}
+
+#bottom-spacer {
+  height:630px;
+  position:relative;
+}
+#bottom {
+  position: fixed;
+  height: 630px;
+  bottom: 0;
+  width:100%;
+}
+
+.row {
+  position: relative;
+  display: block;
+  padding: 0.5em;
+  margin: 0 -1em;
+  overflow: hidden;
+
+  &.bg-img {
+    background-size: 100%;
+    color: white;
+    text-align: center;
+    min-height: 210px;
+    background-position: center;
+    background-size: 100% auto;
+
+    .opaque {
+      min-height: 210px;
+      background: rgba(0, 0, 0, 0.5);
+      margin: -0.5em;
+      padding: 2.5em 0.5em;
+
+      p, h4 {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 600px;
+        text-shadow: 1px 1px black;
+      }
+      h4 {
+        margin-bottom: 1.5em;
+      }
+      p {
+        font-size: 1.4em;
+
+      }
+    }
+
+    &.devfest {
+      // background-position-y: -60px;
+      background-image: url(/img/devfest/logos/devfest.png);
+    }
+    &.c-and-c {
+      // background-position-y: -270px;
+      background-image: url(/img/cookiesandcode.jpg);
+    }
+    &.jobfair {
+      // background-position-y: -75px;
+      background-image: url(/img/jobfair.jpg);
+    }
+    &.weeklies {
+      // background-position-y: -180px;
+      background-image: url(/img/weeklies.jpg);
+    }
   }
-  p {
-    font-size: 1.3em;
+
+  .responsive-block {
+    padding: 0.5em;
+    display: block;
+    float: left;
+    position: relative;
+    text-align: center;
+
+    p {
+      font-size: 1.2em;
+    }
+
+    &.involved {
+      width: 50%;
+
+      input {
+        width: 65%;
+        display: inline;
+        margin: 0;
+      }
+      button {
+        width: 25%;
+        max-width: 80px;
+        display: inline;
+        padding: 0.5em 0.2em;
+        margin: 0 0 0 5%;
+      }
+
+      .event-details {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 80%;
+        min-width: 200px;
+        text-align: left;
+
+        .event-detail {
+          margin: 5px;
+          width: 100%;
+          overflow: hidden;
+
+          .event-detail-icon {
+            display: inline-block;
+            float: left;
+            text-align: center;
+            margin-top: 5px;
+            margin-right: 10px;
+          }
+          .event-detail-text {
+            display:inline-block;
+            line-height: 2em;
+            margin: 0 .2em;
+            float: left;
+            width: 75%;
+            font-size: 1.2em;
+          }
+        }
+      }
+
+      .button {
+        width: 150px;
+        margin: 10px auto 0;
+        height: 35px;
+        padding: 0.5em 0.2em;
+
+        a {
+          line-height: 20px;
+        }
+      }
+    }
+
+    &.contact {
+      width: 25%;
+
+      &:hover, &.touch {
+        background-color: @gray;
+      }
+    }
+
+    &.infra {
+      width: 33.3333333333%;
+
+      &:hover, &.touch {
+        background-color: @ltBlue;
+      }
+    }
+
+    &.contact, &.infra {
+      border-radius: 4px;
+
+      i.fa-adi-8x {
+        font-size: 8em;
+        width: 100%;
+      }
+
+      .button-spacer{
+        height: 35px;
+        display: block;
+      }
+
+      a {
+        color: white;
+        line-height: 20px;
+
+        .button {
+          height: 35px;
+          display: none;
+          bottom: 0;
+          padding: 0.5em 0.2em;
+        }
+      }
+
+      &:hover, &.touch {
+
+        .button-spacer {
+          display: none;
+        }
+        .button {
+          display: block;
+        }
+      }
+    }
   }
 }
 
-#tiles {
-  p {
-    font-size: 1em;
+/* Tablets */
+@media only screen and (max-width: 767px) {
+
+  .row.bg-img {
+    background-size: auto 100%;
   }
-  h4 {
-    margin: 10px;
+
+  .navbar-right {
+    display: none;
+  }
+
+  .row {
+    .responsive-block {
+      width: 50% !important;
+
+      &.involved {
+        .event-details {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #bottom, #bottom-spacer {
+    height: 1000px;
+  }
+}
+
+/* Phones */
+@media only screen and (max-width: 480px) {
+  header, .header-spacer {
+    height:75%;
+  }
+
+
+  .row {
+    .responsive-block {
+      width: 100% !important;
+
+      &.infra, &.contact {
+        margin: 0.5em 0;
+      }
+    }
   }
 }

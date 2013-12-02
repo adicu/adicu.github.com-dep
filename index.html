@@ -3,23 +3,29 @@ layout: imports
 title: Home
 ---
 
+<div class="header-spacer">
+</div>
 <header>
   <div class="adi-banner">
     <div class="adi-banner-container">
       <img class="logo" src="/img/adi-logo-large.png"/>
-      <p class="tagline">All things tech at Columbia. <a href="/about">Learn more.</a></p>
+      <p class="tagline">
+        All things tech at Columbia.
+        <a class="scroll" href="/#about">Learn more.</a>
+      </p>
       <div class="newsletter">
         <p class="info"><em>Sign up for our newsletter for info on workshops, social events, and more:</em></p>
-        <input class="banner-newsletter-email" type="text" placeholder="Email address..." /> <button type="submit" name="subscribe">Sign Up!</button>
+        <form action="http://adicu.us4.list-manage.com/subscribe/post?u=62d8b690f349b99dd7e0f3205&amp;id=01a495e6ed" method="post" id="gi-embedded-subscribe-form" name="gi-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <input class="banner-newsletter-email" type="email" value="" name="EMAIL" id="gi-EMAIL" type="text" placeholder="Email address..." />
+          <button type="submit" id="gi-embedded-subscribe" name="subscribe">Sign Up!</button>
+        </form>
       </div>
     </div>
   </div>
 </header>
-
-<div id="bottom">
-
+<div id="events" ></div>
+<div id="main-wrapper">
   {% include navbar.html listserv_class="hidden" scroll="scroll" %}
-
   <div id="main">
     <div class="events-carousel-wrapper">
       <ul class="events-carousel bxslider">
@@ -27,65 +33,165 @@ title: Home
     </div>
 
     <section id="about">
-      <h1>Who We are</h1>
-      <p>The Application Development Initiative (ADI) seeks to nurture student creativity and technological aptitude by creating a community and resources for student developers of all talents and interests.</p>
-      <h1>What We Do</h1>
-      <p>ADI tries to cultivate a culture of learning and innovatin among students at Columbia. We want students to feel empowered to build anything, and hold events to help them in the process:<p>
-      <ul>
-      <li>Every spring, ADI hosts DevFest, a week-long series of technical workshops culminating in a 24-hour hackathon. DevFest focuses on fostering community, and helping new developers end the week with a completed project. </li>
-      <li>ADI coordinates a communal, on-campus living space, where students interested in technology and innovation live together and learn from one another.</li>
-      <li>Every Wednesday night, ADI hosts Cookies & Code, where student developers meet one another, share feedback on code, and eat cookies.</li>
-      <li>ADI hosts a yearly job fair in the fall for student developers to connect with New York tech startups in a low-key and casual environment. Last year we hosted twenty companies and over 250 students.</li>
-      <li>ADI hosts weekly workshops and tech talks, bringing professional developers to campus to teach students their expertise. In addition, ADI hosts student-run talks, during which students teach each other skills they have developed.</li>
-  </ul>
-  <p>ADI hosts and manages technical projects for the Columbia community.</p>
-  <ul>
-      <li> ADI curates <a href="learn.adicu.com">learn.adicu.com</a>, a resources page for people interested in learning to program.</li>
-      <li>Students in ADI build <a href="courses.adicu.com">courses.adicu.com,</a> a schedule builder for Columbia students.</li>
-      <li>ADI built <a href="data.adicu.com">data.adicu.com</a>, an API for accessing Columbia's data, from housing to dining to athletics.</li>
-  </ul>
-  <h1>Get Involved</h1>
-  <p>Interested in getting involved? To get a taste of ADI, come to Cookies & Code on Wednesday night for an opportunity to talk to community members and work in a collaborative environment. <a href="">Sign up for our newsletter</a> to learn about weekly workshops and events.
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Want to share your expertise and teach a workshop? Interested in cosponsoring an on or off campus event? Itching to demo and discuss your cool new project? Tell us!</p>
-
-      <!-- tile the diff contact info sections -->
-      <div class="section group" id="tiles">
-        <div class="col span_1_of_2">
-          <h4>Networking</h4>
-          <a href="mailto:networking@adicu.com">networking@adicu.com</a>
-          <p>Are you a member of the NYC startup community or an established business looking to reach out to Columbia hackers? Talk to our fine folks in Networking.</p>
-        </div>
-        <div class="col span_1_of_2">
-
-          <h4>Social</h4>
-          <a href="mailto:social@adicu.com">social@adicu.com</a>
-
-          <p>Our friends in Social put the "fun" in "fundamentals of computer science". Get in touch if you want to cosponsor an on-campus event, or need advice on how to throw a real rager.</p>
-        </div>
-        <div class="col span_1_of_2">
-          <h4>Workshops</h4>
-          <a href="mailto:workshops@adicu.com">workshops@adicu.com</a>
-
-          <p>Want to share your passion and expertise with the community? Host a workshop with us. Our workshop masters will take care of the details so you can focus on what's important: teaching.</p>
-        </div>
-        <div class="col span_1_of_2">
-          <h4>Infrastructure</h4>
-          <a href="mailto:infrastructure@adicu.com">infrastructure@adicu.com</a>
-
-          <p>The Infrastructure team manages and powers ADI's technical projects. Help us make them better by suggesting cool features and providing feedback.of the initiative.</p>
+      <div class="blue strip">
+        <div class="content">
+          <p>The Application Development Initiative seeks to nurture student creativity and technological aptitude by creating a community and resources for student developers of all talents and interests.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section>
+      <div class="gray strip">
+        <div class="content">
+          <h1 class="section-title">What We Do</h1>
+          <h2 class="sub-section-tagline">A Culture of Learning and Innovation</h2>
+          <div class="row bg-img c-and-c">
+            <div class="opaque">
+              <h4>Cookies and Code</h4>
+              <p>Every Wednesday night, ADI hosts Cookies & Code, where student developers meet one another, share feedback on code, and eat cookies.</p>
+            </div>
+          </div>
+          <h2 class="sub-section-tagline">Tech Talks, Workshops, and Events</h2>
+          <div class="row bg-img weeklies">
+            <div class="opaque">
+              <h4>Weekly Events</h4>
+              <p>ADI hosts weekly workshops and tech talks, bringing professional developers to campus to teach students their expertise. In addition, ADI hosts student-run talks, during which students teach each other skills they have developed.</p>
+            </div>
+          </div>
+          <h2 class="sub-section-tagline">Learn. Build. Demo. Anyone. Seriously.</h2>
+          <div class="row bg-img devfest">
+            <div class="opaque">
+              <h4>DevFest</h4>
+              <p>Every spring, ADI hosts DevFest, a week-long series of technical workshops culminating in a 24-hour hackathon. DevFest focuses on fostering community, and helping new developers end the week with a completed project.</p>
+            </div>
+          </div>
+          <h2 class="sub-section-tagline">Connected with the New York Startup Community</h2>
+          <div class="row bg-img jobfair">
+            <div class="opaque">
+              <h4>Startup Job Fair</h4>
+              <p>ADI hosts a yearly job fair in the fall for student developers to connect with New York tech startups in a low-key and casual environment. Last year we hosted twenty companies and over 250 students.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="blue strip">
+        <div class="content">
+          <h1 class="section-title">ADI Infrastructure Projects</h1>
+          <h2 class="section-tagline">Open source projects build for and by Columbia students.</h2>
+          <div class="row">
+            <div class="responsive-block infra">
+              <i class="fa fa-adi-8x fa-book "></i>
+              <h4 class="infra-title">ADI Resources</h4>
+              <p class="infra-desc">A resources page for people interested in learning to program, but might not know where to start.</p>
+              <div class="button-spacer"></div>
+              <a href="/learn"><div class="button">Launch</div></a>
+            </div>
+            <div class="responsive-block infra">
+              <i class="fa fa-adi-8x fa-calendar "></i>
+              <h4 class="infra-title">Courses</h4>
+              <p class="infra-desc">A scheduler builder for planning your semester's classes.  Powered by data.adicu.com!</p>
+              <div class="button-spacer"></div>
+              <a href="http://courses.adicu.com"><div class="button">Launch</div></a>
+            </div>
+            <div class="responsive-block infra">
+              <i class="fa fa-adi-8x fa-terminal "></i>
+              <h4 class="infra-title">data.adicu.com</h4>
+              <p class="infra-desc">An API for accessing Columbia's open-source data sets, from housing to dining to athletics.</p>
+              <div class="button-spacer"></div>
+              <a href="http://data.adicu.com"><div class="button">Launch</div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="photo strip">
+        <div class="opaque">
+          <div class="content">
+            <h1 class="section-title">Get Involved</h1>
+            <h2 class="section-tagline">Join our community</h2>
+            <div class="row">
+              <div class="responsive-block involved">
+                <h4 class="involved-title">Come to Cookies and Code</h4>
+                <p>Eat cookies with us Wednesdays nights in Learner Hall room 569.</p>
+                <ul class="event-details">
+                  <li class="event-detail">
+                    <i class="event-detail-icon fa fa-lg fa-2x fa-fw fa-check"></i>
+                    <p class="event-detail-text">Delicious cookies and milk</p>
+                  </li>
+                  <li class="event-detail">
+                    <i class="event-detail-icon fa fa-lg fa-2x fa-fw fa-check"></i>
+                    <p class="event-detail-text">Collaborative work space</p>
+                  </li>
+                  <li class="event-detail">
+                    <i class="event-detail-icon fa fa-lg fa-2x fa-fw fa-check"></i>
+                    <p class="event-detail-text">Work on your personal projects</p>
+                  </li>
+                </ul>
+                <a class="scroll" href="/#events"><div class="button">Go to Events</div></a>
+              </div>
+              <div class="responsive-block involved">
+                <h4 class="involved-title">Sign up for our newsletter</h4>
+                <p>Get weekly updates about our workshops and events.</p>
+                <form action="http://adicu.us4.list-manage.com/subscribe/post?u=62d8b690f349b99dd7e0f3205&amp;id=01a495e6ed" method="post" id="gi-embedded-subscribe-form" name="gi-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <input type="email" value="" name="EMAIL" id="gi-EMAIL" class="banner-newsletter-email" type="text" placeholder="Email address..." />
+                  <button type="submit" id="gi-embedded-subscribe" name="subscribe">Sign Up!</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="gray strip">
+        <div class="opaque">
+          <div class="content">
+            <h1 class="section-title">Contact</h1>
+            <h2 class="section-tagline">We'd love to hear from you!</h2>
+            <div class="row">
+              <div class="responsive-block contact">
+                <i class="fa fa-adi-8x fa-comments "></i>
+                <h4 class="contact-title">Networking</h4>
+                <p class="contact-desc">Part of the NYC startup community or an established business? Reach out to Columbia hackers. </p>
+                <div class="button-spacer"></div>
+                <a href="mailto:networking@adicu.com"><div class="button">networking@</div></a>
+              </div>
+              <div class="responsive-block contact">
+                <i class="fa fa-adi-8x fa-group "></i>
+                <h4 class="contact-title">Social</h4>
+                <p class="contact-desc">Co-sponsor an campus event with us, we put the "Fun" in "Fundamentals of Computer Science".</p>
+                <div class="button-spacer"></div>
+                <a href="mailto:social@adicu.com"><div class="button">social@</div></a>
+              </div>
+              <div class="responsive-block contact">
+                <i class="fa fa-adi-8x fa-code "></i>
+                <h4 class="contact-title">Workshops</h4>
+                <p class="contact-desc">Host a workshop with us. We'll take care of the details so you can focus on what's important: teaching.</p>
+                <div class="button-spacer"></div>
+               <a href="mailto:workshops@adicu.com"> <div class="button">workshops@</div></a>
+              </div>
+              <div class="responsive-block contact">
+                <i class="fa fa-adi-8x fa-gears "></i>
+                <h4 class="contact-title">Infrastructure</h4>
+                <p class="contact-desc">Help make ADI's technical projects better by suggesting cool features and providing feedback.</p>
+                <div class="button-spacer"></div>
+                <a href="mailto:infrastructure@adicu.com"><div class="button">infrastructure@</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-spacer">
+    </section>
+  </div>
+  {% include footer.html %}
 </div>
 
-{% include footer.html %}
-
-</div>
-
+<script type="text/javascript" src="/js/app.js"></script>
 <!-- bxSlider Javascript file -->
 <script src="/js/jquery.bxslider/jquery.bxslider.js"></script>
 <!-- bxSlider CSS file -->

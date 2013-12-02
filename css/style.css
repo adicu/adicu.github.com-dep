@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400,300.css);
 #eboard-roster {
   border-collapse: collapse;
 }
@@ -15,6 +14,13 @@
 #devfest-text p {
   line-height: 25px;
 }
+@font-face {
+  font-family: 'League Gothic';
+  src: url('/fonts/leaguegothic-regular-webfont.eot');
+  src: url('/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/leaguegothic-regular-webfont.woff') format('woff'), url('/fonts/leaguegothic-regular-webfont.ttf') format('truetype'), url('/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 html,
 body {
   margin: 0;
@@ -22,8 +28,9 @@ body {
   color: #000;
   font-weight: 300;
   font-size: 15px;
-  font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
+  height: 100%;
 }
 h1,
 h2,
@@ -59,7 +66,8 @@ a:hover {
 .hidden {
   display: none;
 }
-button {
+button,
+.button {
   margin: 0 2px;
   padding: 0.5em 0.8em;
   height: 35px;
@@ -70,8 +78,10 @@ button {
   background: #4fa8e2;
   color: #fff;
   font-weight: 300;
+  cursor: pointer;
 }
-button:hover {
+button:hover,
+.button:hover {
   background: #7bbee9;
 }
 input {
@@ -86,15 +96,6 @@ input {
 .fa-adi-1-5x {
   font-size: 25px;
 }
-#body-content {
-  margin: 6em 0 4em 0;
-}
-section,
-article {
-  margin: 20px auto;
-  max-width: 1000px;
-  width: 95%;
-}
 .text-content {
   line-height: 1.4em;
 }
@@ -106,46 +107,6 @@ article {
 }
 .even {
   background-color: #FFFFFF;
-}
-.section {
-  clear: both;
-  margin: 0px;
-  padding: 0px;
-}
-.col {
-  display: block;
-  float: left;
-  margin: 1% 0 1% 2%;
-}
-.col:first-child {
-  margin-left: 0;
-}
-.group:before,
-.group:after {
-  display: table;
-  content: "";
-}
-.group:after {
-  clear: both;
-}
-.span_2_of_2 {
-  width: 100%;
-}
-.span_1_of_2 {
-  width: 48%;
-}
-@media only screen and (max-width: 480px) {
-  .col {
-    margin: 1% 0 1% 0%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .span_2_of_2 {
-    width: 100%;
-  }
-  .span_1_of_2 {
-    width: 100%;
-  }
 }
 .events-carousel-wrapper {
   overflow-x: scroll;
@@ -249,6 +210,7 @@ article {
   }
 }
 footer {
+  margin-top: -2px;
   padding: 45px 10px;
   width: 100%;
   color: #eeeeee;
@@ -277,16 +239,21 @@ footer a:hover {
 }
 header {
   height: 54%;
-  background: #000000 url("../img/columbia-street.jpg") no-repeat center center fixed;
+  max-height: 500px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  background: url("../img/columbia-street.jpg") no-repeat center center;
 }
-.adi-banner {
+header .adi-banner {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
-.adi-banner-container {
+header .adi-banner-container {
   position: absolute;
   top: 0;
   right: 0;
@@ -297,58 +264,35 @@ header {
   max-height: 500px;
   width: 100%;
 }
-.adi-banner-container .logo {
+header .adi-banner-container .logo {
   max-width: 90%;
   max-height: 50%;
 }
-.adi-banner-container .tagline {
+header .adi-banner-container .tagline {
   color: #eeeeee;
+  font-family: "League Gothic", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3.0em;
   font-weight: 300;
-  font-size: 1.5em;
   line-height: 1em;
+  margin: 0.4em 0 0.4em 0;
 }
-.adi-banner-container .newsletter {
+header .adi-banner-container .newsletter {
   margin: auto;
   max-width: 500px;
   width: 100%;
 }
-.adi-banner-container .newsletter p {
+header .adi-banner-container .newsletter p {
   color: #eeeeee;
   line-height: 1em;
 }
-.adi-banner-container .newsletter input {
+header .adi-banner-container .newsletter input {
   width: 70%;
 }
-#goal {
-  text-align: center;
-}
-#goal h1,
-#goal h2 {
-  color: #4fa8e2;
-  line-height: 1em;
-}
-#goal h2 {
-  color: #000;
-}
-#goal p {
-  font-size: 1.7em;
-}
-#contact {
-  padding-top: 1em;
-  text-align: center;
-}
-#contact h4 {
-  margin: 14px;
-  line-height: 0;
-}
-#contact p {
-  font-size: 1.3em;
-}
-#tiles p {
-  font-size: 1em;
-}
-#tiles h4 {
-  margin: 10px;
+.header-spacer {
+  width: 100%;
+  height: 54%;
+  max-height: 500px;
+  z-index: -101;
 }
 /* Short Desktop Screens*/
 @media only screen and (max-height: 500px) and (min-width: 481px) {
@@ -360,24 +304,269 @@ header {
     margin: 0 auto;
   }
 }
-/* Extra-large desktops */
-@media only screen and (min-width: 1279px) {
-  
+#main-wrapper {
+  background-color: white;
+  position: relative;
+  z-index: 100;
 }
-/* Small desktops */
-@media only screen and (max-width: 940px) {
-  
+section {
+  padding-top: 49px;
+  margin-top: -49px;
+  position: relative;
+}
+section#about p {
+  font-family: "League Gothic", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.2em;
+}
+section .strip .content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 25px 1em 50px;
+}
+section .strip .content h1.section-title {
+  margin: 0;
+}
+section .strip .content h2.section-tagline {
+  margin: 0.5em 0 1em 0;
+  font-weight: 300;
+  text-align: center;
+}
+section .strip .content h2.sub-section-tagline {
+  margin: 1.2em 0 0.5em 0;
+  font-weight: 300;
+  text-align: center;
+}
+section .strip.gray {
+  background-color: white;
+}
+section .strip.gray .content {
+  background-color: #eeeeee;
+}
+section .strip.blue {
+  background-color: #a7d4f0;
+}
+section .strip.blue .content {
+  background-color: #7bbee9;
+}
+section .strip.dark-gray {
+  background-color: #eeeeee;
+}
+section .strip.dark-gray .content {
+  background-color: #cccccc;
+}
+section .strip.photo {
+  background: url("../img/columbia-street.jpg") no-repeat bottom center;
+  color: white;
+}
+section .strip.photo .opaque {
+  background: rgba(0, 0, 0, 0.5);
+}
+#footer {
+  bottom: 0;
+}
+#bottom-spacer {
+  height: 630px;
+  position: relative;
+}
+#bottom {
+  position: fixed;
+  height: 630px;
+  bottom: 0;
+  width: 100%;
+}
+.row {
+  position: relative;
+  display: block;
+  padding: 0.5em;
+  margin: 0 -1em;
+  overflow: hidden;
+}
+.row.bg-img {
+  background-size: 100%;
+  color: white;
+  text-align: center;
+  min-height: 210px;
+  background-position: center;
+  background-size: 100% auto;
+}
+.row.bg-img .opaque {
+  min-height: 210px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: -0.5em;
+  padding: 2.5em 0.5em;
+}
+.row.bg-img .opaque p,
+.row.bg-img .opaque h4 {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+  text-shadow: 1px 1px black;
+}
+.row.bg-img .opaque h4 {
+  margin-bottom: 1.5em;
+}
+.row.bg-img .opaque p {
+  font-size: 1.4em;
+}
+.row.bg-img.devfest {
+  background-image: url(/img/devfest/logos/devfest.png);
+}
+.row.bg-img.c-and-c {
+  background-image: url(/img/cookiesandcode.jpg);
+}
+.row.bg-img.jobfair {
+  background-image: url(/img/jobfair.jpg);
+}
+.row.bg-img.weeklies {
+  background-image: url(/img/weeklies.jpg);
+}
+.row .responsive-block {
+  padding: 0.5em;
+  display: block;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+.row .responsive-block p {
+  font-size: 1.2em;
+}
+.row .responsive-block.involved {
+  width: 50%;
+}
+.row .responsive-block.involved input {
+  width: 65%;
+  display: inline;
+  margin: 0;
+}
+.row .responsive-block.involved button {
+  width: 25%;
+  max-width: 80px;
+  display: inline;
+  padding: 0.5em 0.2em;
+  margin: 0 0 0 5%;
+}
+.row .responsive-block.involved .event-details {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+  min-width: 200px;
+  text-align: left;
+}
+.row .responsive-block.involved .event-details .event-detail {
+  margin: 5px;
+  width: 100%;
+  overflow: hidden;
+}
+.row .responsive-block.involved .event-details .event-detail .event-detail-icon {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.row .responsive-block.involved .event-details .event-detail .event-detail-text {
+  display: inline-block;
+  line-height: 2em;
+  margin: 0 .2em;
+  float: left;
+  width: 75%;
+  font-size: 1.2em;
+}
+.row .responsive-block.involved .button {
+  width: 150px;
+  margin: 10px auto 0;
+  height: 35px;
+  padding: 0.5em 0.2em;
+}
+.row .responsive-block.involved .button a {
+  line-height: 20px;
+}
+.row .responsive-block.contact {
+  width: 25%;
+}
+.row .responsive-block.contact:hover,
+.row .responsive-block.contact.touch {
+  background-color: #cccccc;
+}
+.row .responsive-block.infra {
+  width: 33.3333333333%;
+}
+.row .responsive-block.infra:hover,
+.row .responsive-block.infra.touch {
+  background-color: #a7d4f0;
+}
+.row .responsive-block.contact,
+.row .responsive-block.infra {
+  border-radius: 4px;
+}
+.row .responsive-block.contact i.fa-adi-8x,
+.row .responsive-block.infra i.fa-adi-8x {
+  font-size: 8em;
+  width: 100%;
+}
+.row .responsive-block.contact .button-spacer,
+.row .responsive-block.infra .button-spacer {
+  height: 35px;
+  display: block;
+}
+.row .responsive-block.contact a,
+.row .responsive-block.infra a {
+  color: white;
+  line-height: 20px;
+}
+.row .responsive-block.contact a .button,
+.row .responsive-block.infra a .button {
+  height: 35px;
+  display: none;
+  bottom: 0;
+  padding: 0.5em 0.2em;
+}
+.row .responsive-block.contact:hover .button-spacer,
+.row .responsive-block.infra:hover .button-spacer,
+.row .responsive-block.contact.touch .button-spacer,
+.row .responsive-block.infra.touch .button-spacer {
+  display: none;
+}
+.row .responsive-block.contact:hover .button,
+.row .responsive-block.infra:hover .button,
+.row .responsive-block.contact.touch .button,
+.row .responsive-block.infra.touch .button {
+  display: block;
 }
 /* Tablets */
 @media only screen and (max-width: 767px) {
+  .row.bg-img {
+    background-size: auto 100%;
+  }
   .navbar-right {
     display: none;
+  }
+  .row .responsive-block {
+    width: 50% !important;
+  }
+  .row .responsive-block.involved .event-details {
+    width: 100%;
+  }
+  #bottom,
+  #bottom-spacer {
+    height: 1000px;
   }
 }
 /* Phones */
 @media only screen and (max-width: 480px) {
-  .top {
+  header,
+  .header-spacer {
     height: 75%;
+  }
+  .row .responsive-block {
+    width: 100% !important;
+  }
+  .row .responsive-block.infra,
+  .row .responsive-block.contact {
+    margin: 0.5em 0;
   }
 }
 .navbar-right {
@@ -435,6 +624,15 @@ header {
 }
 #mc-embed-signup button:hover {
   color: #7bbee9;
+}
+#blog-wrapper {
+  padding-top: 50px;
+}
+.post {
+  max-width: 800px;
+  width: 100%;
+  margin: 0.5em auto;
+  padding: 0.5em;
 }
 .post h2 {
   display: inline-block;
