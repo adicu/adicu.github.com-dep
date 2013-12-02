@@ -464,6 +464,7 @@ header {
 }
 #post-pagination {
   margin-bottom: 10px;
+  text-align: center;
 }
 #post-pagination * {
   display: inline;
