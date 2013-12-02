@@ -36,9 +36,9 @@ title: Blog
   {% if paginator.previous_page %}
   <p class="previous">
     {% if paginator.previous_page == 1 %}
-    <a href="/">&laquo;</a>
+    <a href="/blog">&laquo;</a>
     {% else %}
-    <a href="/page{{paginator.previous_page}}">&laquo;</a>
+    <a href="/blog/page{{paginator.previous_page}}">&laquo;</a>
     {% endif %}
   </p>
   {% else %}
@@ -52,7 +52,7 @@ title: Blog
       {% if paginator.page == 1 %}
       <span class="current-page">1</span>
       {% else %}
-      <a href="/">1</a>
+      <a href="/blog">1</a>
       {% endif %}
     </li>
 
