@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 #eboard-roster {
   border-collapse: collapse;
 }
@@ -15,10 +16,8 @@
   line-height: 25px;
 }
 @font-face {
-  font-family: 'League Gothic';
-  src: url('/fonts/leaguegothic-regular-webfont.eot');
-  src: url('/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/leaguegothic-regular-webfont.woff') format('woff'), url('/fonts/leaguegothic-regular-webfont.ttf') format('truetype'), url('/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
-  font-weight: normal;
+  font-family: 'Roboto Slab';
+  font-weight: 400;
   font-style: normal;
 }
 html,
@@ -270,8 +269,8 @@ header .adi-banner-container .logo {
 }
 header .adi-banner-container .tagline {
   color: #eeeeee;
-  font-family: "League Gothic", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 3.0em;
+  font-family: "Roboto Slab", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;
   font-weight: 300;
   line-height: 1em;
   margin: 0.4em 0 0.4em 0;
@@ -315,9 +314,9 @@ section {
   position: relative;
 }
 section#about p {
-  font-family: "League Gothic", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1.2em;
 }
 section .strip .content {
@@ -327,6 +326,8 @@ section .strip .content {
 }
 section .strip .content h1.section-title {
   margin: 0;
+  font-family: "roboto slab";
+  font-size: 3.3em;
 }
 section .strip .content h2.section-tagline {
   margin: 0.5em 0 1em 0;
