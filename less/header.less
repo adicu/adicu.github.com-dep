@@ -1,10 +1,10 @@
 header {
-  height: 54%;
-  max-height: 500px;
-  width: 100%;
   position:fixed;
   top: 0;
   z-index:0;
+  max-height: 500px;
+  width: 100%;
+  height: 54%;
   background: url("../img/columbia-street.jpg") no-repeat center center;
 
   .adi-banner {
@@ -30,12 +30,12 @@ header {
       max-height: 50%;
     }
     .tagline {
-      color: @ltGray;
-      font-family: @headingFonts;
-      font-size: 2em;
-      font-weight: 300;
-      line-height: 1em;
       margin: 0.4em 0 0.4em 0;
+      color: @ltGray;
+      font-weight: 300;
+      font-size: 2em;
+      font-family: @headingFonts;
+      line-height: 1em;
     }
     .newsletter {
       margin: auto;
@@ -53,10 +53,10 @@ header {
 }
 
 .header-spacer {
+  z-index: -101;
+  max-height: 500px;
   width:100%;
   height: 54%;
-  max-height: 500px;
-  z-index: -101;
 }
 
 /* Short Desktop Screens*/

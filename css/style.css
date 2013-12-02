@@ -16,20 +16,20 @@
   line-height: 25px;
 }
 @font-face {
-  font-family: 'Roboto Slab';
   font-weight: 400;
   font-style: normal;
+  font-family: 'Roboto Slab';
 }
 html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   color: #000;
   font-weight: 300;
   font-size: 15px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
-  height: 100%;
 }
 h1,
 h2,
@@ -116,12 +116,12 @@ input {
   background-color: #eeeeee;
 }
 .events-carousel-wrapper .bx-wrapper .bx-viewport {
-  border: 0;
   left: 0;
+  border: 0;
 }
 .events-carousel-wrapper .bx-wrapper .bx-viewport .events-carousel {
-  height: 400px;
   margin: 0;
+  height: 400px;
 }
 .events-carousel-wrapper .bx-wrapper .bx-viewport .events-carousel .event {
   position: relative;
@@ -135,22 +135,22 @@ input {
   background-repeat: no-repeat;
 }
 .events-carousel-wrapper .bx-wrapper .bx-viewport .events-carousel .event .event-header .event-opacity {
-  background-color: rgba(0, 0, 0, 0.6);
   position: relative;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .events-carousel-wrapper .bx-wrapper .bx-viewport .events-carousel .event .event-header .event-opacity .event-header-content {
-  height: 100%;
-  width: 100%;
   display: table;
+  width: 100%;
+  height: 100%;
 }
 .events-carousel-wrapper .bx-wrapper .bx-viewport .events-carousel .event .event-header .event-opacity .event-header-content .event-title {
   display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  margin: 0 auto;
   width: 100%;
   height: 220px;
-  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
 }
 .events-carousel-wrapper .bx-wrapper .bx-viewport .events-carousel .event .event-details {
   padding-top: 10px;
@@ -237,12 +237,12 @@ footer a:hover {
   color: #7bbee9 !important;
 }
 header {
-  height: 54%;
-  max-height: 500px;
-  width: 100%;
   position: fixed;
   top: 0;
   z-index: 0;
+  max-height: 500px;
+  width: 100%;
+  height: 54%;
   background: url("../img/columbia-street.jpg") no-repeat center center;
 }
 header .adi-banner {
@@ -268,12 +268,12 @@ header .adi-banner-container .logo {
   max-height: 50%;
 }
 header .adi-banner-container .tagline {
-  color: #eeeeee;
-  font-family: "Roboto Slab", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  font-weight: 300;
-  line-height: 1em;
   margin: 0.4em 0 0.4em 0;
+  color: #eeeeee;
+  font-weight: 300;
+  font-size: 2em;
+  font-family: "Roboto Slab", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1em;
 }
 header .adi-banner-container .newsletter {
   margin: auto;
@@ -288,10 +288,10 @@ header .adi-banner-container .newsletter input {
   width: 70%;
 }
 .header-spacer {
+  z-index: -101;
+  max-height: 500px;
   width: 100%;
   height: 54%;
-  max-height: 500px;
-  z-index: -101;
 }
 /* Short Desktop Screens*/
 @media only screen and (max-height: 500px) and (min-width: 481px) {
@@ -304,40 +304,41 @@ header .adi-banner-container .newsletter input {
   }
 }
 #main-wrapper {
-  background-color: white;
   position: relative;
   z-index: 100;
+  background-color: white;
 }
 section {
-  padding-top: 49px;
-  margin-top: -49px;
   position: relative;
+  margin-top: -49px;
+  padding-top: 49px;
 }
 section#about p {
-  font-family: "Roboto Slab", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 10px;
   text-align: center;
   font-size: 2.5em;
+  font-family: "Roboto Slab", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.2em;
 }
 section .strip .content {
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 25px 1em 50px;
+  padding: 4em 1em;
+  max-width: 1000px;
 }
 section .strip .content h1.section-title {
   margin: 0;
-  font-family: "roboto slab";
   font-size: 3.3em;
+  font-family: "roboto slab";
 }
 section .strip .content h2.section-tagline {
   margin: 0.5em 0 1em 0;
-  font-weight: 300;
   text-align: center;
+  font-weight: 300;
 }
 section .strip .content h2.sub-section-tagline {
   margin: 1.2em 0 0.5em 0;
-  font-weight: 300;
   text-align: center;
+  font-weight: 300;
 }
 section .strip.gray {
   background-color: white;
@@ -368,41 +369,41 @@ section .strip.photo .opaque {
   bottom: 0;
 }
 #bottom-spacer {
-  height: 630px;
   position: relative;
+  height: 630px;
 }
 #bottom {
   position: fixed;
-  height: 630px;
   bottom: 0;
   width: 100%;
+  height: 630px;
 }
 .row {
   position: relative;
   display: block;
-  padding: 0.5em;
-  margin: 0 -1em;
   overflow: hidden;
+  margin: 0 -1em;
+  padding: 0.5em;
 }
 .row.bg-img {
-  background-size: 100%;
-  color: white;
-  text-align: center;
   min-height: 210px;
   background-position: center;
+  background-size: 100%;
   background-size: 100% auto;
+  color: white;
+  text-align: center;
 }
 .row.bg-img .opaque {
-  min-height: 210px;
-  background: rgba(0, 0, 0, 0.5);
   margin: -0.5em;
   padding: 2.5em 0.5em;
+  min-height: 210px;
+  background: rgba(0, 0, 0, 0.5);
 }
 .row.bg-img .opaque p,
 .row.bg-img .opaque h4 {
   margin: 0 auto;
-  text-align: center;
   max-width: 600px;
+  text-align: center;
   text-shadow: 1px 1px black;
 }
 .row.bg-img .opaque h4 {
@@ -424,10 +425,10 @@ section .strip.photo .opaque {
   background-image: url(/img/weeklies.jpg);
 }
 .row .responsive-block {
-  padding: 0.5em;
+  position: relative;
   display: block;
   float: left;
-  position: relative;
+  padding: 0.5em;
   text-align: center;
 }
 .row .responsive-block p {
@@ -437,50 +438,50 @@ section .strip.photo .opaque {
   width: 50%;
 }
 .row .responsive-block.involved input {
-  width: 65%;
   display: inline;
   margin: 0;
+  width: 65%;
 }
 .row .responsive-block.involved button {
-  width: 25%;
-  max-width: 80px;
   display: inline;
-  padding: 0.5em 0.2em;
   margin: 0 0 0 5%;
+  padding: 0.5em 0.2em;
+  max-width: 80px;
+  width: 25%;
 }
 .row .responsive-block.involved .event-details {
-  list-style: none;
-  padding: 0;
   margin: 0 auto;
-  width: 80%;
+  padding: 0;
   min-width: 200px;
+  width: 80%;
+  list-style: none;
   text-align: left;
 }
 .row .responsive-block.involved .event-details .event-detail {
+  overflow: hidden;
   margin: 5px;
   width: 100%;
-  overflow: hidden;
 }
 .row .responsive-block.involved .event-details .event-detail .event-detail-icon {
   display: inline-block;
   float: left;
-  text-align: center;
   margin-top: 5px;
   margin-right: 10px;
+  text-align: center;
 }
 .row .responsive-block.involved .event-details .event-detail .event-detail-text {
   display: inline-block;
-  line-height: 2em;
-  margin: 0 .2em;
   float: left;
+  margin: 0 .2em;
   width: 75%;
   font-size: 1.2em;
+  line-height: 2em;
 }
 .row .responsive-block.involved .button {
-  width: 150px;
   margin: 10px auto 0;
-  height: 35px;
   padding: 0.5em 0.2em;
+  width: 150px;
+  height: 35px;
 }
 .row .responsive-block.involved .button a {
   line-height: 20px;
@@ -505,13 +506,13 @@ section .strip.photo .opaque {
 }
 .row .responsive-block.contact i.fa-adi-8x,
 .row .responsive-block.infra i.fa-adi-8x {
-  font-size: 8em;
   width: 100%;
+  font-size: 8em;
 }
 .row .responsive-block.contact .button-spacer,
 .row .responsive-block.infra .button-spacer {
-  height: 35px;
   display: block;
+  height: 35px;
 }
 .row .responsive-block.contact a,
 .row .responsive-block.infra a {
@@ -520,10 +521,10 @@ section .strip.photo .opaque {
 }
 .row .responsive-block.contact a .button,
 .row .responsive-block.infra a .button {
-  height: 35px;
-  display: none;
   bottom: 0;
+  display: none;
   padding: 0.5em 0.2em;
+  height: 35px;
 }
 .row .responsive-block.contact:hover .button-spacer,
 .row .responsive-block.infra:hover .button-spacer,
@@ -630,10 +631,10 @@ section .strip.photo .opaque {
   padding-top: 50px;
 }
 .post {
-  max-width: 800px;
-  width: 100%;
   margin: 0.5em auto;
   padding: 0.5em;
+  max-width: 800px;
+  width: 100%;
 }
 .post h2 {
   display: inline-block;
