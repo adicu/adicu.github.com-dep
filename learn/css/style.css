@@ -1,0 +1,367 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #F8F8F8;
+    padding-top: 50px;
+}
+.topic-content {
+    display: none;
+}
+
+.path-wrapper .description {
+   margin-bottom: 15px;
+}
+
+.path-name, .tips h2 {
+    margin-bottom: 10px;
+}
+
+.do {
+    padding: 1px 20px;
+    background: #EDFFED;
+    border-radius: 10px;
+}
+
+.do-not {
+    padding: 1px 20px;
+    background: #FFF0F0;
+    border-radius: 10px;
+}
+
+.resources {
+    width: 85%;
+    background: #f3f3f3;
+    padding: 5px 25px 20px 25px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.resources li {
+    margin-top: 10px;
+}
+
+.path-topics {
+    margin: 0px 0px 0px 35px;
+    display: block;
+}
+
+.topic {
+    cursor: pointer;
+    color: #76BFE5;
+}
+
+.topic:hover {
+    color: #777;
+}
+
+.topic .arrow {
+    background: url('../img/nav-arrow.png');
+    height: 7px;
+    width: 14px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.active .arrow {
+    background-position: 14px;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 450px;
+    background: url('../img/cover-photo.png') fixed center;
+    text-align: center;
+    text-shadow: 1px 1px 1px #666;
+}
+
+.jumbotron h1 {
+    opacity: 0;
+    font-style: italic;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    color: #fff;
+    font-size: 150px;
+    padding-top: 60px;
+    text-shadow: black 0 3px 3px;
+}
+
+.jumbotron p {
+    opacity: 0;
+    font-size: 15px;
+    width: 73%;
+    text-align: right;
+    color: #fff;
+    margin: 0;
+}
+
+.jumbotron img {
+    width: 75px;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 0px auto;
+    border-radius: 5px;
+    position: relative;
+    top: -65px;
+    background-color: #fff;
+    border: 1px #e6e6e6 solid;
+    padding: 0px 30px 50px 30px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #76BFE5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #999;
+}
+
+ a:visited {
+    color: none;
+ }
+
+.footer {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+.footer .links {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.footer li {
+    display: inline-block;
+}
+
+.twitter {
+    background: url('../img/twitter.png') no-repeat;
+    height: 35px;
+    width: 35px;
+    margin: 5px
+}
+
+.fb {
+    background: url('../img/facebook.png') no-repeat;
+    height: 35px;
+    width: 35px;
+    margin: 5px
+}
+
+.github {
+    background: url('../img/github.png') no-repeat;
+    height: 35px;
+    width: 35px;
+    margin: 5px
+}
+
+.active {
+    color: #777;
+}
+
+.modal-inner {
+    overflow: scroll;
+    height:  100%;
+}
+
+.modal-wrapper {
+    display:none;
+    z-index:40001;
+}
+
+.modal-overlay {
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:.5;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter:alpha(opacity=50);
+    z-index:40001;
+}
+
+.vertical-offset {
+    position:fixed;
+    top: 5%;
+    width:100%;
+    z-index:40002;
+}
+
+.modal {
+    width: 100%;
+    max-width:405px;
+    position:relative;
+    margin:0 auto;
+    background-color:white;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px #e6e6e6 solid;
+    padding: 20px;
+    height: 100%;
+}
+
+.modal h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+    height: 100%;
+}
+
+body.noscroll {
+    overflow:hidden;
+}
+
+#close-modal {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    z-index:40003;
+    cursor: pointer;
+}
+
+form {
+    width: 100%;
+    overflow: scroll;
+}
+
+form span {
+    color: red;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    padding-right: 15px;
+    display: block;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.select-group {
+    padding-right: 0px;
+}
+
+.desc-group {
+    padding-right: 26px;
+}
+
+form input, form select{
+    display: block;
+    padding-left: 12px;
+    width: 100%;
+    height: 30px;
+    font-size:14px;
+    line-height: 1.43;
+    color: #555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+form label {
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+
+form textarea {
+    display:block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.43;
+    padding: 6px 12px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+input[type=submit] {
+    width: 68px;
+    height: 32px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px #ccc solid;
+    color: black;
+}
+
+input[type=submit]:hover {
+    background-color: #ebebeb;
+    color: #333;
+    border-color: #adadad;
+}
+
+@media (max-height: 770px) {
+    .vertical-offset {
+        top:2%;
+        bottom: 2%;
+        height: 840px;
+        max-height: 90%;
+    }
+}
+
+@media (max-width: 760px) {
+    .jumbotron h1 {
+        font-size: 105px;
+    }
+}
+
+@media (max-width: 540px) {
+    .jumbotron h1 {
+        padding-top: 100px;
+        font-size: 75px;
+    }
+    .modal {
+        padding: 10px 0;
+    }
+    .modal-inner {
+        padding: 0 10px;
+    }
+    #close-modal {
+        right: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .jumbotron h1 {
+        padding-top: 120px;
+        font-size: 55px;
+    }
+
+    .jumbotron p {
+        width: 90%;
+    }
+}

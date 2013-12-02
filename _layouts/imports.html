@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <meta charset="utf-8" />
+  <meta property="og:image" content="http://adicu.com/img/logo.png" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>ADI - {{ page.title }}</title>
+
+  <link rel="canonical" href="{{ site.base }}{{ page.url }}" />
+  <link rel="alternate" href="http://adicu.com/atom.xml" type="application/atom+xml" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/bootstrap.css" />
+  <link rel="stylesheet" href="/css/kraken-buttons.css" />
+  <link rel="stylesheet" href="/css/social-sharing.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  {{ content }}
+  <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <!-- Asynchronous Google Analytics snippet -->
+  <script>
+    var _gaq = _gaq || [];
+    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', 'UA-18504951-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  <script src="/js/utils.js"></script>
+</body>
+<html>

@@ -1,0 +1,72 @@
+header {
+  height: 54%;
+  max-height: 500px;
+  width: 100%;
+  position:fixed;
+  top: 0;
+  z-index:0;
+  background: url("../img/columbia-street.jpg") no-repeat center center;
+
+  .adi-banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+  }
+
+  .adi-banner-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 3em auto;
+    min-height: 90%;
+    max-height: 500px;
+    width: 100%;
+    .logo {
+      max-width: 90%;
+      max-height: 50%;
+    }
+    .tagline {
+      color: @ltGray;
+      font-family: @headingFonts;
+      font-size: 2em;
+      font-weight: 300;
+      line-height: 1em;
+      margin: 0.4em 0 0.4em 0;
+    }
+    .newsletter {
+      margin: auto;
+      max-width: 500px;
+      width: 100%;
+      p {
+        color: @ltGray;
+        line-height: 1em;
+      }
+      input {
+        width: 70%;
+      }
+    }
+  }
+}
+
+.header-spacer {
+  width:100%;
+  height: 54%;
+  max-height: 500px;
+  z-index: -101;
+}
+
+/* Short Desktop Screens*/
+@media only screen and (max-height: 500px) and (min-width: 481px){
+  /* Squeeze everything into the banner */
+  .banner-tagline {
+    margin: 0;
+  }
+  .adi-banner-container {
+    margin:0 auto;
+  }
+
+}

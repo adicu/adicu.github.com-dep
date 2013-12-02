@@ -14,9 +14,11 @@ Installation
 
 3. Jekyll - The main event. Simply run the command, `bundle install` and you're good to go.
 
-4. Run the server by executing `jekyll serve --watch` in the root directory of the site.
+4. Grunt - run `npm install` and then `grunt` to concatenate and compile LESS. Use `grunt watch` to automatically update CSS files.
 
-5. Visit `http://localhost:4000/` in ~~Internet Explorer~~ your browser.
+5. Run the server by executing `jekyll serve --watch` in the root directory of the site.
+
+6. Visit `http://localhost:4000/` in ~~Internet Explorer~~ your browser.
 
 For more installation instructions and information, check out [jekyll's installation page][5], or
 this [Windows installation tutorial][6]. To learn more about jekyll, check out its [GitHub repo][7].
@@ -28,6 +30,24 @@ How to Post
    types in the \_templates directory.
 2. Fill out your post in the newly created file.
 3. Commit and push the file to `origin/master`.
+
+Event Resources
+---------------
+Events posted to Google Calendar should have the following format:
+
+```
+[short description]
+-----------
+[long description]
+-----------
+resource1 name-->resource1 link
+resource2 name-->resource2 link
+etc.
+```
+All of the resource links will be made available in a javascript object to implement features on the website. Resources currently used on the website are:
+1. image-->image link | A cover image for the events slider. If this is not provided a default image will be used.
+2. slides-->slides link | A link to presentation slides relevant to the event.
+
 
 [1]: http://jekyllrb.com/
 [2]: http://pages.github.com/

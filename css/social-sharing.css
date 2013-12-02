@@ -1,0 +1,102 @@
+/* =============================================================
+
+    Social Sharing v1.2
+    Social sharing links and buttons without the bloat by Chris Ferdinandi.
+    http://gomakethings.com
+
+    Free to use under the MIT License.
+    http://gomakethings.com/mit/
+
+ * ============================================================= */
+
+/*  Twitter button color */
+.ss-btn-tweet {
+    background-color: #41b7d8;
+    border-color: #41b7d8;
+}
+
+/*  Twitter button color on hover */
+.ss-btn-tweet:hover,
+a .ss-btn-tweet:hover {
+    background-color: #3697b2;
+    border-color: #3697b2;
+}
+
+/*  Facebook button color */
+.ss-btn-facebook {
+    background-color: #3b5997;
+    border-color: #3b5997;
+}
+
+/*  Facebook button color on hover */
+.ss-btn-facebook:hover,
+a .ss-btn-facebook:hover {
+    background-color: #2c4370;
+    border-color: #2c4370;
+}
+
+/*  Google button color */
+.ss-btn-google {
+    background-color: #d64937;
+    border-color: #d64937;
+}
+
+/*  Facebook button color on hover */
+.ss-btn-google:hover,
+a .ss-btn-google:hover {
+    background-color: #b03d2e;
+    border-color: #b03d2e;
+}
+
+/*  LinkedIn button color */
+.ss-btn-linkedin {
+    background-color: #0073b2;
+    border-color: #0073b2;
+}
+
+/*  LinkedIn button color on hover */
+.ss-btn-linkedin:hover,
+a .ss-btn-linkedin:hover {
+    background-color: #005b8c;
+    border-color: #005b8c;
+}
+
+/*  Pinterest button color */
+.ss-btn-pinterest {
+    background-color: #cb2027;
+    border-color: #cb2027;
+}
+
+/*  Pinterest button color on hover */
+.ss-btn-pinterest:hover,
+a .ss-btn-pinterest:hover {
+    background-color: #a61a20;
+    border-color: #a61a20;
+}
+
+/*  Github button color */
+.ss-btn-github {
+    background-color: #3a3838;
+    border-color: #3a3838;
+}
+
+/*  Github button color on hover */
+.ss-btn-github:hover,
+a .ss-btn-github:hover {
+    background-color: #1d1c1c;
+    border-color: #1d1c1c;
+}
+
+/*  Read more button color */
+.ss-btn-readmore {
+    background-color: #4fa8e2;
+    border-color: #4fa8e2;
+}
+
+/*  Read more button color on hover */
+.ss-btn-readmore:hover,
+a .ss-btn-readmore:hover {
+    background-color: #2D89C4;
+    border-color: #2D89C4;
+}
+
