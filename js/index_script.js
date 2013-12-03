@@ -3,6 +3,7 @@ var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov",
 var numSliderEvents = 20;
 
 $(document).ready(function() {
+
   var events = new Array();
 
   var now = new Date();
@@ -40,85 +41,85 @@ $(document).ready(function() {
 			}
 		});
 
-        events.sort(function(a, b){
+    events.sort(function(a, b){
 
-            var aDate = Date.parse(a.start.dateTime.substring(0, 10));
-            var bDate = Date.parse(b.start.dateTime.substring(0, 10));
+        var aDate = Date.parse(a.start.dateTime.substring(0, 10) + " " + a.start.dateTime.substring(11,16));
+        var bDate = Date.parse(b.start.dateTime.substring(0, 10) + " " + b.start.dateTime.substring(11,16));
 
-            if(aDate == NaN)
-                return 1;
-            if(bDate == NaN)
-                return -1;
+        if(aDate == NaN)
+            return 1;
+        if(bDate == NaN)
+            return -1;
 
-            return aDate - bDate;
-        });
+        return aDate - bDate;
+    });
 
-        var nowIndex = events.length;
-        for(var x=0; x<events.length; x++) {
-            if(Date.parse(events[x].start.dateTime) > new Date()) {
-                nowIndex = x;
-                break;
-            }
+    var nowIndex = events.length;
+    for(var x=0; x<events.length; x++) {
+        if(Date.parse(events[x].start.dateTime) > new Date()) {
+            nowIndex = x;
+            break;
+        }
+    }
+
+    var startIndex = nowIndex - numSliderEvents/2;
+    var outIndex = startIndex+numSliderEvents > events.length ? events.length : startIndex+numSliderEvents;
+
+    for(var x=startIndex; x<outIndex; x++) {
+        var month = events[x].start.dateTime.substring(5, 7);
+        var day = events[x].start.dateTime.substring(8, 10);
+
+        var startTime = formatDate(events[x].start.dateTime.substring(11,16));
+        var endTime = formatDate(events[x].end.dateTime.substring(11,16));
+
+        var image = "http://farm3.staticflickr.com/2825/9811069256_4613a2d22d_h.jpg";
+
+        if(events[x].resources != undefined) {
+            if(events[x].resources.image != undefined)
+                image = events[x].resources.image;
         }
 
-        var startIndex = nowIndex - numSliderEvents/2;
-        var outIndex = startIndex+numSliderEvents > events.length ? events.length : startIndex+numSliderEvents;
-
-        for(var x=startIndex; x<outIndex; x++) {
-            var month = events[x].start.dateTime.substring(5, 7);
-            var day = events[x].start.dateTime.substring(8, 10);
-
-            var startTime = formatDate(events[x].start.dateTime.substring(11,16));
-            var endTime = formatDate(events[x].end.dateTime.substring(11,16));
-
-            var image = "http://farm3.staticflickr.com/2825/9811069256_4613a2d22d_h.jpg";
-
-            if(events[x].resources != undefined) {
-                if(events[x].resources.image != undefined)
-                    image = events[x].resources.image;
-            }
-
-            var html =
-                '<li class="event">'+
-                  '<div class="event-header" style="background-image: url(' + image + ');">'+
-                    '<div class="event-opacity">'+
-                      '<div class="event-header-content">'+
-                        '<h2 class="event-title"><a href="' + events[x].htmlLink + '">' +  events[x].summary +'</a></h2>'+
-                      '</div>'+
-                    '</div>' +
+        var html =
+            '<li class="event">'+
+              '<div class="event-header" style="background-image: url(' + image + ');">'+
+                '<div class="event-opacity">'+
+                  '<div class="event-header-content">'+
+                    '<h2 class="event-title"><a href="' + events[x].htmlLink + '">' +  events[x].summary +'</a></h2>'+
                   '</div>'+
-                  (x < nowIndex ? '<ul class="past event-details">' : '<ul class="event-details">')
-                    +'<li class="event-detail">'+
-                      '<i class="event-deatil-icon fa fa-lg fa-calendar"></i>'+
-                      '<p class="event-detail-text">'+ months[month-1] +' '+ day +'</p>'+
-                    '</li>'+
-                    '<li class="event-detail">'+
-                      '<i class="event-detail-icon fa fa-lg fa-clock-o"></i>'+
-                      '<p class="event-detail-text">'+ startTime +' - '+ endTime +'</p>'+
-                    '</li>'+
-                    '<li class="event-detail">'+
-                      '<i class="event-detail-icon fa fa-lg fa-map-marker"></i>'+
-                      '<p class="event-detail-text">'+events[x].location+'</p>'+
-                    '</li>'+
-                  '</ul>'+
-                '</li>';
+                '</div>' +
+              '</div>'+
+              (x < nowIndex ? '<ul class="past event-details">' : '<ul class="event-details">')
+                +'<li class="event-detail">'+
+                  '<i class="event-deatil-icon fa fa-lg fa-calendar"></i>'+
+                  '<p class="event-detail-text">'+ months[month-1] +' '+ day +'</p>'+
+                '</li>'+
+                '<li class="event-detail">'+
+                  '<i class="event-detail-icon fa fa-lg fa-clock-o"></i>'+
+                  '<p class="event-detail-text">'+ startTime +' - '+ endTime +'</p>'+
+                '</li>'+
+                '<li class="event-detail">'+
+                  '<i class="event-detail-icon fa fa-lg fa-map-marker"></i>'+
+                  '<p class="event-detail-text">'+events[x].location+'</p>'+
+                '</li>'+
+              '</ul>'+
+            '</li>';
 
-            $(".events-carousel").append(html);
-        }
+        $(".events-carousel").append(html);
+    }
 
-    	  /* Configure bxSlider */
-      	var slider = $('.bxslider').bxSlider( {
-      		minSlides: 1,
-      		maxSlides: 10,
-      		slideWidth: 300,
-      		slideMargin: 10,
-      		pager: false,
-      		infiniteLoop: false,
-      		hideControlOnEnd: true
-      	});
-
-      	slider.goToSlide(parseInt((nowIndex-startIndex)/slider.getNumSlidesShowing()));
+	  /* Configure bxSlider */
+  	var slider = $('.bxslider').bxSlider( {
+  		minSlides: 1,
+  		maxSlides: 10,
+  		slideWidth: 300,
+  		slideMargin: 10,
+  		pager: false,
+  		infiniteLoop: false,
+  		hideControlOnEnd: true
   	});
+
+  	slider.goToSlide(parseInt((nowIndex-startIndex)/slider.getNumSlidesShowing()));
+  });
 });
 
 function formatDate(date) {
