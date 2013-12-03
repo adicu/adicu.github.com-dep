@@ -115,10 +115,13 @@ $(document).ready(function() {
   		slideMargin: 10,
   		pager: false,
   		infiniteLoop: false,
-  		hideControlOnEnd: true
+  		hideControlOnEnd: true,
+      speed:1
   	});
 
   	slider.goToSlide(parseInt((nowIndex-startIndex)/slider.getNumSlidesShowing()));
+    slider.setSpeed(500);
+
   });
 });
 

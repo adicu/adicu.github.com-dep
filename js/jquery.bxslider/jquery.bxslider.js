@@ -1084,6 +1084,9 @@
 		 */
 
 
+		 el.setSpeed = function(speed){
+		 	slider.settings.speed = speed;
+		 }
 
 		/**
 		 * Performs slide transition to the specified slide
