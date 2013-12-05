@@ -7,6 +7,7 @@ $(function(){
   var $banner = $('.adi-banner');
   var $navbar = $('.navbar');
   var $spacer = $('.navbar-spacer');
+  var $bannerLogo = $('.navbar-header').find('.logo');
   var $bannerListserv = $('.listserv');
   var $bottom = $('#bottom');
 
@@ -18,6 +19,7 @@ $(function(){
       $navbar.addClass("navbar-fixed-top");
       $bottom.removeClass("hidden");
       $bannerListserv.removeClass("hidden");
+      $bannerLogo.attr("src", "/img/logo.png");
 
     } else if ($navbar.hasClass('navbar-fixed-top')  && $win.scrollTop() < $spacer.offset().top){
       console.log("remove");
@@ -28,6 +30,7 @@ $(function(){
       if (! $bannerListserv.hasClass("open")) {
         $bannerListserv.addClass("hidden");
       }
+      $bannerLogo.attr("src", "/img/logo-bw.png");
     }
   });
 
