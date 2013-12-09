@@ -306,8 +306,8 @@ header .adi-banner-container .newsletter input {
 }
 #main-wrapper {
   position: relative;
-  width: 100%;
   z-index: 100;
+  width: 100%;
   background-color: white;
 }
 section {
@@ -418,13 +418,13 @@ section .strip.photo .opaque {
   background-image: url(/img/devfest/logos/devfest.png);
 }
 .row.bg-img.c-and-c {
-  background-image: url(/img/cookiesandcode.jpg);
+  background-image: url(/img/cookiesandcode.png);
 }
 .row.bg-img.jobfair {
-  background-image: url(/img/jobfair.jpg);
+  background-image: url(/img/jobfair.png);
 }
 .row.bg-img.weeklies {
-  background-image: url(/img/weeklies.jpg);
+  background-image: url(/img/weeklies.png);
 }
 .row .responsive-block {
   position: relative;
