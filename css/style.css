@@ -310,6 +310,9 @@ header .adi-banner-container .newsletter input {
   width: 100%;
   background-color: white;
 }
+#main-wrapper #main {
+  width: 100%;
+}
 section {
   position: relative;
   margin-top: -49px;
