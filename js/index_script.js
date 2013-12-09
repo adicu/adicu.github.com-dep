@@ -72,7 +72,7 @@ $(document).ready(function() {
         var startTime = formatDate(events[x].start.dateTime.substring(11,16));
         var endTime = formatDate(events[x].end.dateTime.substring(11,16));
 
-        var image = "http://farm3.staticflickr.com/2825/9811069256_4613a2d22d_h.jpg";
+        var image = "http://adicu.com/img/genericevent.png";
 
         if(events[x].resources != undefined) {
             if(events[x].resources.image != undefined)
