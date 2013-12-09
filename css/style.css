@@ -607,6 +607,9 @@ section .strip.photo .opaque {
 .navbar-spacer.spacer-active {
   height: 50px;
 }
+.navbar-spacer.spacer-active.spacer-tall {
+  height: 355px;
+}
 .external {
   margin-left: 5px;
 }

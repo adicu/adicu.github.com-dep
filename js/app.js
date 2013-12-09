@@ -6,6 +6,7 @@ $(function(){
   var $win = $(window);
   var $banner = $('.adi-banner');
   var $navbar = $('.navbar');
+  var $collapse = $('.navbar-collapse');
   var $spacer = $('.navbar-spacer');
   var $bannerLogo = $('.navbar-header').find('.logo');
   var $bannerListserv = $('.listserv');
@@ -32,10 +33,14 @@ $(function(){
       }
       $bannerLogo.attr("src", "/img/logo-bw.png");
     }
+    if($collapse.hasClass('in')) {
+      $spacer.addClass("spacer-tall");
+    } else if ($collapse.hasClass('collapse')){
+      $spacer.removeClass("spacer-tall");
+    }
   });
 
   function scrollToElement(selector, time, verticalOffset, completion) {
-    console.log("selector:", selector);
     time = typeof(time) != 'undefined' ? time : 1000;
     verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
     element = $(selector);
@@ -44,11 +49,14 @@ $(function(){
     $('html, body').animate({
         scrollTop: offsetTop
     }, time, completion);
-  };
+  }
 
   $('.scroll').on('click', function(event){
+    if ($(window).width() <= 768) {
+
+      $('.navbar-toggle').click();
+    }
     event.preventDefault();
-    console.log("target: ", $(this), $(this).attr("href"));
     var elem = '#' + $(this).attr("href").replace(/(^#|^\/#)/g, '');
     scrollToElement(elem, 500, 0);
   });
