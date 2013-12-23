@@ -3,35 +3,16 @@ layout: imports
 title: Home
 ---
 
-<div class="header-spacer">
-</div>
-<header>
-  <div class="adi-banner">
-    <div class="adi-banner-container">
-      <img class="logo" src="/img/adi-logo.png"/>
-      <p class="tagline">
-        All things tech at Columbia.
-        <a class="scroll" href="/#about">Learn more.</a>
-      </p>
-      <div class="newsletter">
-        <p class="info"><em>Sign up for our newsletter for info on workshops, social events, and more:</em></p>
-        <form action="http://adicu.us4.list-manage.com/subscribe/post?u=62d8b690f349b99dd7e0f3205&amp;id=01a495e6ed" method="post" id="gi-embedded-subscribe-form" name="gi-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <input class="banner-newsletter-email" type="email" value="" name="EMAIL" id="gi-EMAIL" type="text" placeholder="Email address..." />
-          <button type="submit" id="gi-embedded-subscribe" name="subscribe">Sign Up!</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</header>
-<div id="events" ></div>
+{% include header.html image_class="img-ny" content_id="home" %}
 <div id="main-wrapper">
   {% include navbar.html listserv_class="hidden" scroll="scroll" %}
   <div id="main">
-    <div class="events-carousel-wrapper">
-      <ul class="events-carousel bxslider">
-      </ul>
-    </div>
-
+    <section id="events">
+      <div class="events-carousel-wrapper">
+        <ul class="events-carousel bxslider">
+        </ul>
+      </div>
+    </section>
     <section id="about">
       <div class="blue strip">
         <div class="content">
@@ -107,7 +88,7 @@ title: Home
       </div>
     </section>
     <section>
-      <div class="photo strip">
+      <div class="photo strip img-ny bottom">
         <div class="opaque">
           <div class="content">
             <h1 class="section-title">Get Involved</h1>
@@ -185,13 +166,10 @@ title: Home
         </div>
       </div>
     </section>
-    <section class="contact-spacer">
-    </section>
   </div>
   {% include footer.html %}
 </div>
 
-<script type="text/javascript" src="/js/app.js"></script>
 <!-- bxSlider Javascript file -->
 <script src="/js/jquery.bxslider/jquery.bxslider.js"></script>
 <!-- bxSlider CSS file -->
