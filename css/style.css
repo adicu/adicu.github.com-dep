@@ -59,14 +59,26 @@ button,
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background: #4fa8e2;
-  color: #fff;
   font-weight: 300;
   cursor: pointer;
 }
-button:hover,
-.button:hover {
+button.button-blue,
+.button.button-blue {
+  background: #4fa8e2;
+  color: #fff;
+}
+button.button-blue:hover,
+.button.button-blue:hover {
   background: #7bbee9;
+}
+button.button-white,
+.button.button-white {
+  background: white;
+  color: black;
+}
+button.button-white:hover,
+.button.button-white:hover {
+  background: #eeeeee;
 }
 input {
   margin: 0 2px;
@@ -103,6 +115,53 @@ input {
 }
 .row .responsive-block.about .about-title {
   font-size: 2em;
+}
+.sponsors {
+  text-align: center;
+}
+.gold,
+.silver,
+.bronze {
+  display: inline-block;
+  margin: 10px;
+  padding: 0 10px;
+}
+.gold .wrapper-inner,
+.silver .wrapper-inner,
+.bronze .wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.gold .wrapper-inner a,
+.silver .wrapper-inner a,
+.bronze .wrapper-inner a {
+  height: 100%;
+}
+.gold .wrapper-inner a img,
+.silver .wrapper-inner a img,
+.bronze .wrapper-inner a img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+.gold,
+.silver {
+  width: 247px;
+  height: 120px;
+}
+.gold .wrapper-inner,
+.silver .wrapper-inner {
+  width: 247px;
+  height: 120px;
+}
+.bronze {
+  width: 200px;
+  height: 80px;
+}
+.bronze .wrapper-inner {
+  width: 200px;
+  height: 80px;
 }
 .events-carousel-wrapper {
   overflow-x: scroll;
@@ -269,7 +328,6 @@ header .adi-banner-container .tagline {
   color: #eeeeee;
   font-weight: 300;
   font-size: 2em;
-  font-family: "Roboto Slab", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
 }
 header .adi-banner-container .newsletter {
