@@ -1,0 +1,63 @@
+{
+	"gold": [
+		{
+			"id": "bloomberg",
+			"img": "bloom.png",
+			"url": "http://www.bloomberg.com/"
+		}
+	],
+	"silver": [
+		{
+			"id": "a16z",
+			"img": "a16z.png",
+			"url": "http://a16z.com/"
+		},
+		{
+			"id": "codecademy",
+			"img": "codecademy.png",
+			"url": "http://www.codecademy.com/"
+		},
+		{
+			"id": "yext",
+			"img": "yext.png",
+			"url": "http://www.yext.com/"
+		},
+		{
+			"id": "venmo",
+			"img": "venmo.png",
+			"url": "https://venmo.com/"
+		},
+		{
+			"id": "vimep",
+			"img": "vimeo.png",
+			"url": "https://vimeo.com/"
+		}
+	],
+	"bronze": [
+		{
+			"id": "bain",
+			"img": "bain.png",
+			"url": "http://www.baincapitalventures.com/"
+		},
+		{
+			"id": "twilio",
+			"img": "twilio.png",
+			"url": "http://www.twilio.com/"
+		},
+		{
+			"id": "google",
+			"img": "google.png",
+			"url": "http://www.google.com/"
+		},
+		{
+			"id": "microsoft",
+			"img": "microsoft.png",
+			"url": "http://www.microsoft.com/"
+		},
+		{
+			"id": "mongodb",
+			"img": "mongodb.png",
+			"url": "http://www.mongodb.com/"
+		}
+	]
+}
