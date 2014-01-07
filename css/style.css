@@ -115,6 +115,15 @@ input {
 }
 .row .responsive-block.about .about-title {
   font-size: 2em;
+  margin-bottom: 0;
+}
+.dev-event {
+  margin-left: 20px;
+}
+.schedule {
+  margin: 0 auto;
+  width: 98%;
+  max-width: 600px;
 }
 .sponsors {
   text-align: center;

@@ -1,0 +1,160 @@
+{
+	"days": [
+		{
+			"id": 1,
+			"name": "Saturday, Feb 1st",
+			"events": [
+				{
+					"name": "Lunch",
+					"timespan": "12pm - 1pm",
+					"location": "",
+					"description": ""
+				},
+				{
+					"name": "Kickoff",
+					"timespan": "12pm - 2pm",
+					"location": "",
+					"description": ""
+				},
+				{
+					"name": "Environment Setup",
+					"timespan": "2pm - 5pm",
+					"location": "",
+					"description": ""
+				},
+				{
+					"name": "Open Hacking",
+					"timespan": "2pm - 12am",
+					"location": "",
+					"description": ""
+				},
+				{
+					"name": "Introduction to Python",
+					"timespan": "5pm - 6pm",
+					"location": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Sunday, Feb 2nd",
+			"events": [
+				{
+					"name": "Open Hacking",
+					"timespan": "3pm - 5pm",
+					"location": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "Monday, Feb 3rd",
+			"events": [
+				{
+					"name": "Introduction to Flask",
+					"timespan": "8pm - 10pm",
+					"location": "",
+					"description": ""
+				},
+				{
+					"name": "Open Hacking",
+					"timespan": "8pm - 12am",
+					"location": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "Tuesday, Feb 4th",
+			"events": [
+				{
+					"name": "Introduction to APIs",
+					"timespan": "8pm - 10pm",
+					"location": "",
+					"description": ""
+				},
+				{
+					"name": "Open Hacking",
+					"timespan": "8pm - 12am",
+					"location": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "Wednesday, Feb 5th",
+			"events": [
+				{
+					"name": "Introduction to HTML and Templating",
+					"timespan": "8pm - 10pm",
+					"location": "",
+					"description": ""
+				},
+				{
+					"name": "Open Hacking",
+					"timespan": "8pm - 12am",
+					"location": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"id": 6,
+			"name": "Thursday, Feb 6th",
+			"events": [
+				{
+					"name": "Introduction to CSS",
+					"timespan": "8pm - 10pm",
+					"location": "",
+					"description": ""
+				},
+				{
+					"name": "Open Hacking",
+					"timespan": "8pm - 12am",
+					"location": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "Friday, Feb 7th",
+			"events": [
+				{
+					"name": "API Demos",
+					"timespan": "6pm - 7pm",
+					"location": "",
+					"description": ""
+				},
+				{
+					"name": "Dinner",
+					"timespan": "7pm - 8pm",
+					"location": "",
+					"description": ""
+				},
+				{
+					"name": "Hacking Starts",
+					"timespan": "8pm",
+					"location": "",
+					"description": ""
+				}
+			]
+		},
+		{
+			"id": 8,
+			"name": "Saturday, Feb 8th",
+			"events": [
+				{
+					"name": "Judging",
+					"timespan": "12pm - 3pm",
+					"location": "",
+					"description": ""
+				}
+			]
+		}
+	]
+}
