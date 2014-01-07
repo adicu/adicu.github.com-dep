@@ -1,16 +1,44 @@
 $(function(){
-    var $sponsors = $(".sponsors");
-    var baseurl = "../img/devfest/logos/";
-    var xhr = $.getJSON("sponsors.json").done(function(data) {
-    	console.log("done");
-        levels = ["gold", "silver", "bronze"];
+    // Parse the Schedule
+    $.getJSON("schedule.json").done(function(data) {
+        console.log("done.")
+        $schedule = $(".schedule");
+        data.days.forEach(function(day) {
+            console.log(day.name)
+            $wrapper = $("<div>", {
+                "class": day.id + "-wrapper"
+            }).append(
+                $("<h4>", {
+                    text: day.name
+                })
+            );
+            day.events.forEach(function(e){
+                $wrapper.append(
+                    $("<div>", {
+                        "class": "dev-event"
+                    }).append(
+                        $("<p>", {
+                            html: "<strong>" + e.name + "</strong> " + e.timespan
+                        })
+                    )
+                );
+            });
+            $schedule.append($wrapper);
+        });
+    });
+
+
+    // Parse the Sponsors
+    $.getJSON("sponsors.json").done(function(data) {
+        var $sponsors = $(".sponsors");
+        var baseurl = "../img/devfest/logos/";
+        var levels = ["gold", "silver", "bronze"];
+
         levels.forEach(function(level) {
-            console.log("Level: " + level)
             $wrapper = $("<div>", {
                 "class": level + "-wrapper"
             });
             data[level].forEach(function(company){
-            	console.log("Company: " + company["id"]);
                 $wrapper.append(
                     $("<div>", {
                         "class": level,
@@ -28,7 +56,7 @@ $(function(){
                             )
                         )
                     )
-                )
+                );
             });
             $sponsors.append($wrapper);
         });
