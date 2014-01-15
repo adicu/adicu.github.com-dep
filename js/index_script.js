@@ -64,7 +64,7 @@ $(document).ready(function() {
         }
     }
 
-    var startIndex = nowIndex - numSliderEvents/2;
+    var startIndex = nowIndex - numSliderEvents/2 < 0 ? 0 : nowIndex - numSliderEvents/2;
     var outIndex = startIndex+numSliderEvents > events.length ? events.length : startIndex+numSliderEvents;
 
     for(var x=startIndex; x<outIndex; x++) {
