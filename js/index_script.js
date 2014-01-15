@@ -18,6 +18,7 @@ $(document).ready(function() {
                     "&key=AIzaSyBztZfIH_qcLxRBsjcJN5Q5-7YAlfyLovE";
 
 	$.get(url, function(response) {
+
 		if (typeof response == 'string' || response instanceof String) {
 			response = $.parseJSON(response);
 		}
@@ -44,8 +45,8 @@ $(document).ready(function() {
 
     events.sort(function(a, b){
 
-        var aDate = Date.parse(a.start.dateTime.substring(0, 10) + " " + a.start.dateTime.substring(11,16));
-        var bDate = Date.parse(b.start.dateTime.substring(0, 10) + " " + b.start.dateTime.substring(11,16));
+        var aDate = Date.parse(a.start.dateTime);
+        var bDate = Date.parse(b.start.dateTime);
 
         if(isNaN(aDate))
             return 1;
