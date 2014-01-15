@@ -142,18 +142,6 @@ input {
   vertical-align: middle;
   text-align: center;
 }
-.gold .wrapper-inner a,
-.silver .wrapper-inner a,
-.bronze .wrapper-inner a {
-  height: 100%;
-}
-.gold .wrapper-inner a img,
-.silver .wrapper-inner a img,
-.bronze .wrapper-inner a img {
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0 auto;
-}
 .gold,
 .silver {
   width: 247px;
@@ -164,6 +152,17 @@ input {
   width: 247px;
   height: 120px;
 }
+.gold .wrapper-inner a,
+.silver .wrapper-inner a {
+  width: 247px;
+  height: 120px;
+}
+.gold .wrapper-inner a img,
+.silver .wrapper-inner a img {
+  max-width: 247px;
+  max-height: 120px;
+  margin: 0 auto;
+}
 .bronze {
   width: 200px;
   height: 80px;
@@ -171,6 +170,15 @@ input {
 .bronze .wrapper-inner {
   width: 200px;
   height: 80px;
+}
+.bronze .wrapper-inner a {
+  width: 200px;
+  height: 80px;
+}
+.bronze .wrapper-inner a img {
+  max-width: 200px;
+  max-height: 80px;
+  margin: 0 auto;
 }
 .events-carousel-wrapper {
   overflow-x: scroll;

@@ -4,17 +4,18 @@ var numSliderEvents = 20;
 
 $(document).ready(function() {
 
-  var events = new Array();
+  var events = [];
 
   var now = new Date();
   var lastMonth = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
   var lastMonthString = lastMonth.getFullYear() + "-" + lastMonth.getMonth() + "-" + lastMonth.getDate() + "T00:00:00.000Z";
 
-	var url = "https://www.googleapis.com/calendar/v3/calendars/adicu.com_tud5etmmo5mfmuvdfb54u733i4%40group.calendar.google.com/events"
-                    +"?maxResults=100"
-                    +"&singleEvents=true"
-                    +"&timeMin=" + lastMonthString
-                    +"&key=AIzaSyBztZfIH_qcLxRBsjcJN5Q5-7YAlfyLovE";
+	var url = "https://www.googleapis.com/calendar/v3/calendars/adicu.com_tud5etmmo5mfmuvdfb54u733i4%40group.calendar.google.com/events" +
+                    "?maxResults=100" +
+                    "&singleEvents=true" +
+                    "&timeMin=" +
+                    lastMonthString +
+                    "&key=AIzaSyBztZfIH_qcLxRBsjcJN5Q5-7YAlfyLovE";
 
 	$.get(url, function(response) {
 		if (typeof response == 'string' || response instanceof String) {
@@ -22,8 +23,8 @@ $(document).ready(function() {
 		}
 
 		response.items.forEach(function(event) {
-			if(event != undefined && event.start != undefined && event.start.dateTime != undefined && event.description != undefined) {
-			    var parts = event.description.split("---");
+			if(event !== undefined && event.start !== undefined && event.start.dateTime !== undefined && event.description !== undefined) {
+          var parts = event.description.split("---");
           event.description = parts[0];
 
           if(parts.length == 3) {
@@ -46,18 +47,18 @@ $(document).ready(function() {
         var aDate = Date.parse(a.start.dateTime.substring(0, 10) + " " + a.start.dateTime.substring(11,16));
         var bDate = Date.parse(b.start.dateTime.substring(0, 10) + " " + b.start.dateTime.substring(11,16));
 
-        if(aDate == NaN)
+        if(isNaN(aDate))
             return 1;
-        if(bDate == NaN)
+        if(isNaN(bDate))
             return -1;
 
         return aDate - bDate;
     });
 
     var nowIndex = events.length;
-    for(var x=0; x<events.length; x++) {
-        if(Date.parse(events[x].start.dateTime) > new Date()) {
-            nowIndex = x;
+    for(var y=0; y<events.length; y++) {
+        if(Date.parse(events[y].start.dateTime) > new Date()) {
+            nowIndey = y;
             break;
         }
     }
@@ -74,8 +75,8 @@ $(document).ready(function() {
 
         var image = "http://adicu.com/img/genericevent.png";
 
-        if(events[x].resources != undefined) {
-            if(events[x].resources.image != undefined)
+        if(events[x].resources !== undefined) {
+            if(events[x].resources.image !== undefined)
                 image = events[x].resources.image;
         }
 
@@ -88,8 +89,8 @@ $(document).ready(function() {
                   '</div>'+
                 '</div>' +
               '</div>'+
-              (x < nowIndex ? '<ul class="past event-details">' : '<ul class="event-details">')
-                +'<li class="event-detail">'+
+              (x < nowIndex ? '<ul class="past event-details">' : '<ul class="event-details">') +
+              '<li class="event-detail">'+
                   '<i class="event-deatil-icon fa fa-lg fa-calendar"></i>'+
                   '<p class="event-detail-text">'+ months[month-1] +' '+ day +'</p>'+
                 '</li>'+
@@ -107,19 +108,19 @@ $(document).ready(function() {
         $(".events-carousel").append(html);
     }
 
-	  /* Configure bxSlider */
-  	var slider = $('.bxslider').bxSlider( {
-  		minSlides: 1,
-  		maxSlides: 10,
-  		slideWidth: 300,
-  		slideMargin: 10,
-  		pager: false,
-  		infiniteLoop: false,
-  		hideControlOnEnd: true,
+    /* Configure bxSlider */
+    var slider = $('.bxslider').bxSlider( {
+      minSlides: 1,
+      maxSlides: 10,
+      slideWidth: 300,
+      slideMargin: 10,
+      pager: false,
+      infiniteLoop: false,
+      hideControlOnEnd: true,
       speed:1
-  	});
+    });
 
-  	slider.goToSlide(parseInt((nowIndex-startIndex)/slider.getNumSlidesShowing()));
+    slider.goToSlide(parseInt((nowIndex-startIndex)/slider.getNumSlidesShowing(), 10));
     slider.setSpeed(500);
 
   });
@@ -127,17 +128,17 @@ $(document).ready(function() {
 
 function formatDate(date) {
 
-    var hours = parseInt(date.split(":")[0]);
-    var minutes = parseInt(date.split(":")[1]);
+    var hours = parseInt(date.split(":")[0], 10);
+    var minutes = parseInt(date.split(":")[1], 10);
 
     var period = hours >= 12 ? "PM" : "AM";
 
     if(hours > 12) hours -= 12;
 
 
-    if(hours == 0 && minutes == 0)
+    if(hours === 0 && minutes === 0)
         return "Midnight";
-    if(hours == 12 && minutes == 0)
+    if(hours == 12 && minutes === 0)
         return "Noon";
 
 
