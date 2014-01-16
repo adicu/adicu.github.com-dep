@@ -33,8 +33,7 @@
 
 .gold, .silver, .bronze {
 	display: inline-block;
-	margin: 10px;
-	padding: 0 10px;
+	margin: 0 10px 10px 10px;
 
 	.wrapper-inner {
 		display: table-cell;
@@ -52,6 +51,25 @@
 		}
 	}
 }
+
+.gold-wrapper .sponsor-level {
+	color: #DAA520;
+}
+
+.silver-wrapper .sponsor-level {
+	color: #ACACAC;
+}
+
+.bronze-wrapper .sponsor-level {
+	color: #CD7F32;
+}
+
+.sponsor-level {
+	margin: 0 0 10px !important;
+	text-decoration: underline;
+}
+
+
 
 .gold, .silver{
 	width: 247px;
@@ -71,4 +89,15 @@
 		width: 200px;
 		height: 80px;
 	}
+}
+
+#about .responsive-block.about {
+	width: 33% !important;
+}
+
+/* Phones */
+@media only screen and (max-width: 480px) {
+  .fa-adi-8x {
+  	font-size: 4em !important;
+  }
 }
