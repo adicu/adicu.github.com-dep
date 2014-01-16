@@ -61,6 +61,7 @@ button,
   border-radius: 5px;
   font-weight: 300;
   cursor: pointer;
+  text-shadow: none;
 }
 button.button-blue,
 .button.button-blue {
@@ -194,12 +195,6 @@ input {
 }
 #about .responsive-block.about {
   width: 33% !important;
-}
-/* Phones */
-@media only screen and (max-width: 480px) {
-  .fa-adi-8x {
-    font-size: 4em !important;
-  }
 }
 .events-carousel-wrapper {
   overflow-x: scroll;
@@ -643,6 +638,20 @@ section .strip.photo .opaque {
 .row .responsive-block.infra.touch .button {
   display: block;
 }
+#devfest-callout {
+  z-index: 1000000;
+  text-align: center;
+}
+#devfest-callout a {
+  color: white;
+}
+#devfest-callout a p {
+  font-size: 3em;
+  margin: 0;
+}
+#devfest-callout .content {
+  padding: 1em !important;
+}
 /* Tablets */
 @media only screen and (max-width: 767px) {
   .row.bg-img {
@@ -667,6 +676,9 @@ section .strip.photo .opaque {
   header,
   .header-spacer {
     height: 75%;
+  }
+  .fa-adi-8x {
+    font-size: 4em !important;
   }
   .row .responsive-block {
     width: 100% !important;
