@@ -13,12 +13,7 @@ $(document).ready(function() {
 	var url = "https://www.googleapis.com/calendar/v3/calendars/adicu.com_tud5etmmo5mfmuvdfb54u733i4%40group.calendar.google.com/events" +
                     "?maxResults=100" +
                     "&singleEvents=true" +
-<<<<<<< HEAD
                     "&timeMin=" + lastMonthString +
-=======
-                    "&timeMin=" +
-                    lastMonthString +
->>>>>>> c439d0c5b0bfed557f3f6737ccce6f06b655f056
                     "&key=AIzaSyBztZfIH_qcLxRBsjcJN5Q5-7YAlfyLovE";
 
 	$.get(url, function(response) {
@@ -28,16 +23,8 @@ $(document).ready(function() {
 		}
 
 		response.items.forEach(function(event) {
-<<<<<<< HEAD
-
-			if(event !== undefined && event.start !== undefined && event.start.dateTime !== undefined && event.description !== undefined) {
-
-          var parts = event.description.split("---");
-
-=======
 			if(event !== undefined && event.start !== undefined && event.start.dateTime !== undefined && event.description !== undefined) {
           var parts = event.description.split("---");
->>>>>>> c439d0c5b0bfed557f3f6737ccce6f06b655f056
           event.description = parts[0];
 
           if(parts.length == 3) {
@@ -76,15 +63,7 @@ $(document).ready(function() {
         }
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     var startIndex = nowIndex - numSliderEvents/2 < 0 ? 0 : nowIndex - numSliderEvents/2;
-=======
-    var startIndex = nowIndex - numSliderEvents/2 < 0 ? 0 : nowIndex - numSliderEvents/2  ;
->>>>>>> fix index_script which I broke just now
-=======
-    var startIndex = nowIndex - numSliderEvents/2 < 0 ? 0 : nowIndex - numSliderEvents/2  ;
->>>>>>> c439d0c5b0bfed557f3f6737ccce6f06b655f056
     var outIndex = startIndex+numSliderEvents > events.length ? events.length : startIndex+numSliderEvents;
 
     for(var x=startIndex; x<outIndex; x++) {
@@ -129,21 +108,6 @@ $(document).ready(function() {
         $(".events-carousel").append(html);
     }
 
-<<<<<<< HEAD
-  /* Configure bxSlider */
-  var slider = $('.bxslider').bxSlider( {
-    minSlides: 1,
-    maxSlides: 10,
-    slideWidth: 300,
-    slideMargin: 10,
-    pager: false,
-    infiniteLoop: false,
-    hideControlOnEnd: true,
-    speed:1
-  });
-
-  slider.goToSlide(parseInt((nowIndex-startIndex)/slider.getNumSlidesShowing(), 10));
-=======
     /* Configure bxSlider */
     var slider = $('.bxslider').bxSlider( {
       minSlides: 1,
@@ -157,7 +121,6 @@ $(document).ready(function() {
     });
 
     slider.goToSlide(parseInt((nowIndex-startIndex)/slider.getNumSlidesShowing(), 10));
->>>>>>> c439d0c5b0bfed557f3f6737ccce6f06b655f056
     slider.setSpeed(500);
 
   });
