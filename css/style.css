@@ -639,7 +639,7 @@ section .strip.photo .opaque {
   display: block;
 }
 #devfest-callout {
-  z-index: 1000000;
+  z-index: 10000;
   text-align: center;
 }
 #devfest-callout a {
@@ -650,9 +650,8 @@ section .strip.photo .opaque {
   margin: 0;
 }
 #devfest-callout img {
-  width: 100%;
-  max-height: 100%;
   max-width: 100%;
+  max-height: 150px;
 }
 #devfest-callout .content {
   padding: 1em !important;
@@ -700,7 +699,7 @@ section .strip.photo .opaque {
   line-height: 0;
 }
 .navbar {
-  z-index: 10001;
+  z-index: 1000001;
   margin: 0;
   border-radius: 0 !important;
 }
@@ -709,6 +708,7 @@ section .strip.photo .opaque {
   height: 50px;
 }
 .navbar a {
+  z-index: 1000002;
   font-size: 1.1em;
 }
 .navbar .dropdown-menu {
