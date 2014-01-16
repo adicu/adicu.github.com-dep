@@ -1,10 +1,8 @@
 $(function(){
     // Parse the Schedule
     $.getJSON("schedule.json").done(function(data) {
-        console.log("done.")
         $schedule = $(".schedule");
         data.days.forEach(function(day) {
-            console.log(day.name)
             $wrapper = $("<div>", {
                 "class": day.id + "-wrapper"
             }).append(
@@ -37,7 +35,12 @@ $(function(){
         levels.forEach(function(level) {
             $wrapper = $("<div>", {
                 "class": level + "-wrapper"
-            });
+            }).append(
+                $("<h1>", {
+                    "class": "sponsor-level section-title",
+                    text: level.charAt(0).toUpperCase() + level.slice(1) + " Sponsors"
+                })
+            );
             data[level].forEach(function(company){
                 $wrapper.append(
                     $("<div>", {
@@ -58,7 +61,9 @@ $(function(){
                     )
                 );
             });
+            $wrapper.append($("<hr>"));
             $sponsors.append($wrapper);
+
         });
     });
 });

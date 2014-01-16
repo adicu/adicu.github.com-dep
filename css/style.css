@@ -132,8 +132,7 @@ input {
 .silver,
 .bronze {
   display: inline-block;
-  margin: 10px;
-  padding: 0 10px;
+  margin: 0 10px 10px 10px;
 }
 .gold .wrapper-inner,
 .silver .wrapper-inner,
@@ -141,6 +140,19 @@ input {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+}
+.gold-wrapper .sponsor-level {
+  color: #DAA520;
+}
+.silver-wrapper .sponsor-level {
+  color: #ACACAC;
+}
+.bronze-wrapper .sponsor-level {
+  color: #CD7F32;
+}
+.sponsor-level {
+  margin: 0 0 10px !important;
+  text-decoration: underline;
 }
 .gold,
 .silver {
@@ -179,6 +191,15 @@ input {
   max-width: 200px;
   max-height: 80px;
   margin: 0 auto;
+}
+#about .responsive-block.about {
+  width: 33% !important;
+}
+/* Phones */
+@media only screen and (max-width: 480px) {
+  .fa-adi-8x {
+    font-size: 4em !important;
+  }
 }
 .events-carousel-wrapper {
   overflow-x: scroll;
