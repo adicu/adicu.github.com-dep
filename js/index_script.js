@@ -66,7 +66,11 @@ $(document).ready(function() {
         }
     }
 
+<<<<<<< HEAD
     var startIndex = nowIndex - numSliderEvents/2 < 0 ? 0 : nowIndex - numSliderEvents/2;
+=======
+    var startIndex = nowIndex - numSliderEvents/2 < 0 ? 0 : nowIndex - numSliderEvents/2  ;
+>>>>>>> fix index_script which I broke just now
     var outIndex = startIndex+numSliderEvents > events.length ? events.length : startIndex+numSliderEvents;
 
     for(var x=startIndex; x<outIndex; x++) {
