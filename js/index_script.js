@@ -59,12 +59,12 @@ $(document).ready(function() {
     var nowIndex = events.length;
     for(var y=0; y<events.length; y++) {
         if(Date.parse(events[y].start.dateTime) > new Date()) {
-            nowIndey = y;
+            nowIndex = y;
             break;
         }
     }
 
-    var startIndex = nowIndex - numSliderEvents/2;
+    var startIndex = nowIndex - numSliderEvents/2 < 0 ? 0 : nowIndex - numSliderEvents/2  ;
     var outIndex = startIndex+numSliderEvents > events.length ? events.length : startIndex+numSliderEvents;
 
     for(var x=startIndex; x<outIndex; x++) {
