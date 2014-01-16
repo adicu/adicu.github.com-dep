@@ -1,3 +1,26 @@
+.img-ny {
+  background: url("../img/columbia-street.jpg") no-repeat center center;
+
+  &.bottom {
+    background-position: bottom center;
+  }
+}
+
+i.fa-adi-8x {
+  width: 100%;
+  font-size: 8em;
+}
+
+.button-large {
+  height: 2em;
+}
+.button-blue {
+
+}
+.button-white {
+
+}
+
 #main-wrapper {
   position: relative;
   z-index: 100;
@@ -69,10 +92,10 @@ section {
       }
     }
     &.photo {
-      background: url("../img/columbia-street.jpg") no-repeat bottom center ;
       color: white;
       .opaque {
         background: rgba(0, 0, 0, 0.5);
+        text-shadow: 1px 1px black;
       }
     }
   }
@@ -221,6 +244,8 @@ section {
       }
     }
 
+
+
     &.infra {
       width: 33.3333333333%;
 
@@ -231,11 +256,6 @@ section {
 
     &.contact, &.infra {
       border-radius: 4px;
-
-      i.fa-adi-8x {
-        width: 100%;
-        font-size: 8em;
-      }
 
       .button-spacer{
         display: block;
@@ -264,6 +284,26 @@ section {
         }
       }
     }
+  }
+}
+
+#devfest-callout {
+  z-index: 10000;
+  text-align: center;
+  a {
+    color: white;
+
+    p {
+      font-size: 3em;
+      margin: 0;
+    }
+  }
+  img {
+    max-width: 100%;
+    max-height: 150px;
+  }
+  .content {
+    padding: 1em !important;
   }
 }
 
@@ -301,6 +341,9 @@ section {
     height:75%;
   }
 
+  .fa-adi-8x {
+    font-size: 4em !important;
+  }
 
   .row {
     .responsive-block {

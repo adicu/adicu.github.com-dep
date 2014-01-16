@@ -1,20 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
-#eboard-roster {
-  border-collapse: collapse;
-}
-#eboard-roster td,
-#eboard-roster th {
-  padding: 10px 15px;
-  font-weight: 300;
-  font-size: 15px;
-}
-#eboard-roster tr {
-  border: 2px solid #E9E9E9;
-}
-#devfest-text li,
-#devfest-text p {
-  line-height: 25px;
-}
 @font-face {
   font-weight: 400;
   font-style: normal;
@@ -75,14 +59,27 @@ button,
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background: #4fa8e2;
-  color: #fff;
   font-weight: 300;
   cursor: pointer;
+  text-shadow: none;
 }
-button:hover,
-.button:hover {
+button.button-blue,
+.button.button-blue {
+  background: #4fa8e2;
+  color: #fff;
+}
+button.button-blue:hover,
+.button.button-blue:hover {
   background: #7bbee9;
+}
+button.button-white,
+.button.button-white {
+  background: white;
+  color: black;
+}
+button.button-white:hover,
+.button.button-white:hover {
+  background: #eeeeee;
 }
 input {
   margin: 0 2px;
@@ -107,6 +104,103 @@ input {
 }
 .even {
   background-color: #FFFFFF;
+}
+.img-devfest {
+  background: url("../img/hack.jpg") no-repeat center center;
+}
+.img-devfest.bottom {
+  background-position: bottom center;
+}
+.row .responsive-block.about {
+  width: 33%;
+}
+.row .responsive-block.about .about-title {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+.dev-event {
+  margin-left: 20px;
+}
+.schedule {
+  margin: 0 auto;
+  width: 98%;
+  max-width: 600px;
+}
+.sponsors {
+  text-align: center;
+}
+.gold,
+.silver,
+.bronze {
+  display: inline-block;
+  margin: 0 10px 10px 10px;
+}
+.gold .wrapper-inner,
+.silver .wrapper-inner,
+.bronze .wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.notice {
+  text-align: center;
+  font-size: 1.3em;
+  margin-top: 0;
+}
+.sponsor-level {
+  margin: 0 0 10px !important;
+  text-decoration: underline;
+}
+.gold-wrapper .sponsor-level {
+  color: #DAA520;
+}
+.silver-wrapper .sponsor-level {
+  color: #ACACAC;
+}
+.bronze-wrapper .sponsor-level {
+  color: #CD7F32;
+  margin-bottom: 30px !important;
+}
+.gold,
+.silver {
+  width: 247px;
+  height: 120px;
+}
+.gold .wrapper-inner,
+.silver .wrapper-inner {
+  width: 247px;
+  height: 120px;
+}
+.gold .wrapper-inner a,
+.silver .wrapper-inner a {
+  width: 247px;
+  height: 120px;
+}
+.gold .wrapper-inner a img,
+.silver .wrapper-inner a img {
+  max-width: 247px;
+  max-height: 120px;
+  margin: 0 auto;
+}
+.bronze {
+  width: 200px;
+  height: 80px;
+}
+.bronze .wrapper-inner {
+  width: 200px;
+  height: 80px;
+}
+.bronze .wrapper-inner a {
+  width: 200px;
+  height: 80px;
+}
+.bronze .wrapper-inner a img {
+  max-width: 200px;
+  max-height: 80px;
+  margin: 0 auto;
+}
+#about .responsive-block.about {
+  width: 33% !important;
 }
 .events-carousel-wrapper {
   overflow-x: scroll;
@@ -244,7 +338,6 @@ header {
   max-height: 500px;
   width: 100%;
   height: 54%;
-  background: url("../img/columbia-street.jpg") no-repeat center center;
 }
 header .adi-banner {
   position: relative;
@@ -263,6 +356,7 @@ header .adi-banner-container {
   min-height: 90%;
   max-height: 500px;
   width: 100%;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
 }
 header .adi-banner-container .logo {
   max-width: 90%;
@@ -273,7 +367,6 @@ header .adi-banner-container .tagline {
   color: #eeeeee;
   font-weight: 300;
   font-size: 2em;
-  font-family: "Roboto Slab", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
 }
 header .adi-banner-container .newsletter {
@@ -303,6 +396,19 @@ header .adi-banner-container .newsletter input {
   .adi-banner-container {
     margin: 0 auto;
   }
+}
+.img-ny {
+  background: url("../img/columbia-street.jpg") no-repeat center center;
+}
+.img-ny.bottom {
+  background-position: bottom center;
+}
+i.fa-adi-8x {
+  width: 100%;
+  font-size: 8em;
+}
+.button-large {
+  height: 2em;
 }
 #main-wrapper {
   position: relative;
@@ -364,11 +470,11 @@ section .strip.dark-gray .content {
   background-color: #cccccc;
 }
 section .strip.photo {
-  background: url("../img/columbia-street.jpg") no-repeat bottom center;
   color: white;
 }
 section .strip.photo .opaque {
   background: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px black;
 }
 #footer {
   bottom: 0;
@@ -509,11 +615,6 @@ section .strip.photo .opaque {
 .row .responsive-block.infra {
   border-radius: 4px;
 }
-.row .responsive-block.contact i.fa-adi-8x,
-.row .responsive-block.infra i.fa-adi-8x {
-  width: 100%;
-  font-size: 8em;
-}
 .row .responsive-block.contact .button-spacer,
 .row .responsive-block.infra .button-spacer {
   display: block;
@@ -543,6 +644,24 @@ section .strip.photo .opaque {
 .row .responsive-block.infra.touch .button {
   display: block;
 }
+#devfest-callout {
+  z-index: 10000;
+  text-align: center;
+}
+#devfest-callout a {
+  color: white;
+}
+#devfest-callout a p {
+  font-size: 3em;
+  margin: 0;
+}
+#devfest-callout img {
+  max-width: 100%;
+  max-height: 150px;
+}
+#devfest-callout .content {
+  padding: 1em !important;
+}
 /* Tablets */
 @media only screen and (max-width: 767px) {
   .row.bg-img {
@@ -568,6 +687,9 @@ section .strip.photo .opaque {
   .header-spacer {
     height: 75%;
   }
+  .fa-adi-8x {
+    font-size: 4em !important;
+  }
   .row .responsive-block {
     width: 100% !important;
   }
@@ -583,7 +705,7 @@ section .strip.photo .opaque {
   line-height: 0;
 }
 .navbar {
-  z-index: 10001;
+  z-index: 1000001;
   margin: 0;
   border-radius: 0 !important;
 }
@@ -592,6 +714,7 @@ section .strip.photo .opaque {
   height: 50px;
 }
 .navbar a {
+  z-index: 1000002;
   font-size: 1.1em;
 }
 .navbar .dropdown-menu {
