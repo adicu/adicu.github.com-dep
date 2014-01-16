@@ -23,11 +23,8 @@ $(document).ready(function() {
 		}
 
 		response.items.forEach(function(event) {
-
 			if(event !== undefined && event.start !== undefined && event.start.dateTime !== undefined && event.description !== undefined) {
-
           var parts = event.description.split("---");
-
           event.description = parts[0];
 
           if(parts.length == 3) {
@@ -111,19 +108,19 @@ $(document).ready(function() {
         $(".events-carousel").append(html);
     }
 
-  /* Configure bxSlider */
-  var slider = $('.bxslider').bxSlider( {
-    minSlides: 1,
-    maxSlides: 10,
-    slideWidth: 300,
-    slideMargin: 10,
-    pager: false,
-    infiniteLoop: false,
-    hideControlOnEnd: true,
-    speed:1
-  });
+    /* Configure bxSlider */
+    var slider = $('.bxslider').bxSlider( {
+      minSlides: 1,
+      maxSlides: 10,
+      slideWidth: 300,
+      slideMargin: 10,
+      pager: false,
+      infiniteLoop: false,
+      hideControlOnEnd: true,
+      speed:1
+    });
 
-  slider.goToSlide(parseInt((nowIndex-startIndex)/slider.getNumSlidesShowing(), 10));
+    slider.goToSlide(parseInt((nowIndex-startIndex)/slider.getNumSlidesShowing(), 10));
     slider.setSpeed(500);
 
   });
