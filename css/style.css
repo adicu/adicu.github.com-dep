@@ -142,6 +142,15 @@ input {
   vertical-align: middle;
   text-align: center;
 }
+.notice {
+  text-align: center;
+  font-size: 1.3em;
+  margin-top: 0;
+}
+.sponsor-level {
+  margin: 0 0 10px !important;
+  text-decoration: underline;
+}
 .gold-wrapper .sponsor-level {
   color: #DAA520;
 }
@@ -150,10 +159,7 @@ input {
 }
 .bronze-wrapper .sponsor-level {
   color: #CD7F32;
-}
-.sponsor-level {
-  margin: 0 0 10px !important;
-  text-decoration: underline;
+  margin-bottom: 30px !important;
 }
 .gold,
 .silver {
