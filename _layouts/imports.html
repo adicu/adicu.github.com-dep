@@ -3,7 +3,8 @@
 <head>
   <link rel="icon" type="image/png" href="../img/favicon.png">
   <meta charset="utf-8" />
-  <meta property="og:image" content="http://adicu.com/img/adi-logo-square.png" />
+  {% if page.title == "DevFest" %}<meta property="og:image" content="http://adicu.com/img/devfest-2014-square.png" />{% else %}
+  <meta property="og:image" content="http://adicu.com/img/adi-logo-square.png" />{% endif %}
   <meta property="og:title" content="{{ page.title }} | ADI" />
   <meta property="og:url" content="{{ site.base }}{{ page.url }}" />
   <meta property="og:description" content="{{ page.description }}" />

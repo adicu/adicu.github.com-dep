@@ -112,11 +112,14 @@ input {
   background-position: bottom center;
 }
 .row .responsive-block.about {
-  width: 33%;
+  width: 25% !important;
 }
 .row .responsive-block.about .about-title {
   font-size: 2em;
   margin-bottom: 0;
+}
+#about .description {
+  font-size: 1.5em;
 }
 .dev-event {
   margin-left: 20px;
@@ -125,6 +128,26 @@ input {
   margin: 0 auto;
   width: 98%;
   max-width: 600px;
+}
+.row:after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+.judges {
+  margin-top: 20px;
+}
+.judge {
+  height: 100%;
+  float: left;
+  width: 33%;
+  padding: 15px;
+  display: block;
+}
+.judge img {
+  width: 100%;
+  max-height: 300px;
+  max-width: 201px;
 }
 .sponsors {
   text-align: center;
@@ -142,6 +165,15 @@ input {
   vertical-align: middle;
   text-align: center;
 }
+.devfest-tagline .tagline {
+  display: inline-block;
+}
+.devfest-tagline .tagline:first-child {
+  margin-right: 5px;
+}
+.devfest-tagline .tagline:last-child {
+  margin-left: 5px;
+}
 .notice {
   text-align: center;
   font-size: 1.3em;
@@ -149,11 +181,9 @@ input {
 }
 .thanks {
   margin-bottom: 20px !important;
-  text-decoration: underline;
 }
 .sponsor-level {
   margin: 0 0 10px !important;
-  text-decoration: underline;
 }
 .gold-wrapper .sponsor-level {
   color: #DAA520;
@@ -202,9 +232,6 @@ input {
   max-width: 200px;
   max-height: 80px;
   margin: 0 auto;
-}
-#about .responsive-block.about {
-  width: 33% !important;
 }
 .events-carousel-wrapper {
   overflow-x: scroll;
@@ -676,6 +703,9 @@ section .strip.photo .opaque {
   }
   .row .responsive-block {
     width: 50% !important;
+  }
+  .row .responsive-block.judge {
+    width: 33% !important;
   }
   .row .responsive-block.involved .event-details {
     width: 100%;

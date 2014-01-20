@@ -25,6 +25,35 @@ $(function(){
         });
     });
 
+    // Parse the Sponsors
+    $.getJSON("judges.json").done(function(data) {
+        var $judges = $(".judges");
+        var baseurl = "../img/devfest/judges/";
+
+        data["judges"].forEach(function(rows) {
+            var $row = $('<div>', {
+                "class": "row"
+            });
+            rows.forEach(function(judge) {
+                $row.append(
+                    $("<div>", {
+                        "class": "judge responsive-block"
+                    }).append(
+                        $("<img>", {
+                            src: baseurl + judge["image"]
+                        }),
+                        $("<h4>", {
+                            text: judge["name"]
+                        }),
+                        $("<p>", {
+                            html: judge["bio"]
+                        })
+                    )
+                );
+            });
+            $judges.append($row);
+        });
+    });
 
     // Parse the Sponsors
     $.getJSON("sponsors.json").done(function(data) {
