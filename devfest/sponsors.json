@@ -58,6 +58,11 @@
 			"id": "mongodb",
 			"img": "mongodb.png",
 			"url": "http://www.mongodb.com/"
+		},
+		{
+			"id": "digitalocean",
+			"img": "digitalocean.png",
+			"url": "https://www.digitalocean.com/"
 		}
 	]
 }
