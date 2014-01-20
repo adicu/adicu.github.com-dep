@@ -61,9 +61,7 @@ $(function(){
                     )
                 );
             });
-            if (level != "bronze") {
-                $wrapper.append($("<hr>"));
-            }
+            $wrapper.append($("<hr>"));
             $sponsors.append($wrapper);
 
         });

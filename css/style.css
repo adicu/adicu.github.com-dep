@@ -147,6 +147,10 @@ input {
   font-size: 1.3em;
   margin-top: 0;
 }
+.thanks {
+  margin-bottom: 20px !important;
+  text-decoration: underline;
+}
 .sponsor-level {
   margin: 0 0 10px !important;
   text-decoration: underline;
