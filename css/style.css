@@ -116,7 +116,7 @@ input {
 }
 .row .responsive-block.about .about-title {
   font-size: 2em;
-  margin-bottom: 0;
+  margin: 0;
 }
 #about .description {
   font-size: 1.5em;
