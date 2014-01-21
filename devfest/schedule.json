@@ -164,7 +164,13 @@
 					"location": "Davis Auditorium",
 					"description": "",
 					"class": "blue"
-				}
+				},
+                {
+                    "name": "Post-Demos Celebration: DevFest Afterparty",
+                    "timespan": "3:30pm - 4:30pm",
+                    "location": "Lerner Party Space",
+                    "description": "Anyone & everyone who demoed is invited to come eat delicious food while mingling with the other talented participants, sponsoring companies, and our esteemed judges."
+               }
 			]
 		}
 	]
