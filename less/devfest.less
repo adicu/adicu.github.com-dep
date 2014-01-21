@@ -17,6 +17,17 @@
 	}
 }
 
+.faq a {
+	color: black;
+	text-decoration: underline;
+}
+
+.faq a:hover {
+	color: lighten(black, 10%);
+	text-decoration: underline;
+}
+
+
 #about .description {
 	font-size: 1.5em;
 }
@@ -151,3 +162,36 @@
 		}
 	}
 }
+
+
+/* Tablets */
+@media only screen and (max-width: 767px) {
+
+
+  .row {
+    .responsive-block {
+
+      &.judge {
+        width: 33% !important;
+      }
+
+      &.about {
+      	width: 50% !important;
+      }
+    }
+  }
+}
+
+/* Phones */
+@media only screen and (max-width: 480px) {
+
+  .row {
+    .responsive-block {
+      &.about, &.judge {
+    	width: 100% !important;
+      }
+
+    }
+  }
+}
+

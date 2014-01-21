@@ -118,6 +118,14 @@ input {
   font-size: 2em;
   margin: 0;
 }
+.faq a {
+  color: black;
+  text-decoration: underline;
+}
+.faq a:hover {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
 #about .description {
   font-size: 1.5em;
 }
@@ -232,6 +240,22 @@ input {
   max-width: 200px;
   max-height: 80px;
   margin: 0 auto;
+}
+/* Tablets */
+@media only screen and (max-width: 767px) {
+  .row .responsive-block.judge {
+    width: 33% !important;
+  }
+  .row .responsive-block.about {
+    width: 50% !important;
+  }
+}
+/* Phones */
+@media only screen and (max-width: 480px) {
+  .row .responsive-block.about,
+  .row .responsive-block.judge {
+    width: 100% !important;
+  }
 }
 .events-carousel-wrapper {
   overflow-x: scroll;
@@ -704,9 +728,6 @@ section .strip.photo .opaque {
   .row .responsive-block {
     width: 50% !important;
   }
-  .row .responsive-block.judge {
-    width: 33% !important;
-  }
   .row .responsive-block.involved .event-details {
     width: 100%;
   }
@@ -730,6 +751,9 @@ section .strip.photo .opaque {
   .row .responsive-block.infra,
   .row .responsive-block.contact {
     margin: 0.5em 0;
+  }
+  .content {
+    padding: 1em !important;
   }
 }
 .navbar-right {

@@ -25,7 +25,27 @@ $(function(){
         });
     });
 
-    // Parse the Sponsors
+    // Parse the FAQ
+    $.getJSON("faq.json").done(function(data) {
+        var $faqs = $(".faqs");
+
+        data["faqs"].forEach(function(faq) {
+            $faqs.append(
+                $("<div>", {
+                    "class": "faq"
+                }).append(
+                    $("<h4>", {
+                        text: faq["question"]
+                    }),
+                    $("<p>", {
+                        html: faq["answer"]
+                    })
+                )
+            );
+        });
+    });
+
+    // Parse the Judges
     $.getJSON("judges.json").done(function(data) {
         var $judges = $(".judges");
         var baseurl = "../img/devfest/judges/";
