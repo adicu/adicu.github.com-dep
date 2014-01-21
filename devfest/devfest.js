@@ -1,30 +1,102 @@
 $(function(){
     // Parse the Schedule
     $.getJSON("schedule.json").done(function(data) {
-        $schedule = $(".schedule");
-        data.days.forEach(function(day) {
-            $wrapper = $("<div>", {
-                "class": day.id + "-wrapper"
-            }).append(
-                $("<h4>", {
-                    text: day.name
-                })
+        $.each(data, function(column, days){
+            $column = $("."+column)
+            days.forEach(function(day) {
+                $wrapper = $("<div>", {
+                    "class": day.id + "-wrapper"
+                }).append(
+                    $("<h4>", {
+                        text: day.name
+                    })
+                );
+                day.events.forEach(function(e){
+                    $wrapper.append(
+                        $("<div>", {
+                            "class": "dev-event " + e["class"]
+                        }).append(
+                            $("<div>", {
+                                "class": "left-wrapper"
+                            }).append(
+                                $("<strong>", {
+                                    "class": "title",
+                                    text: e.name
+                                }),
+                                $("<p>", {
+                                    "class": "timespan",
+                                    text: e.timespan
+                                })
+                            ),
+                            $("<span>", {
+                                html:e["location"]
+                            }).prepend(
+                                $("<i>", {
+                                    "class": "fa fa-map-marker"
+                                })
+                            ),
+                            $("<p>", {
+                                "class": "desc",
+                                html: e["description"]
+                            })
+                        )
+                    );
+                });
+                $column.append($wrapper);
+            });
+
+        })
+    });
+
+    // Parse the FAQ
+    $.getJSON("faq.json").done(function(data) {
+        var $faqs = $(".faqs");
+
+        data["faqs"].forEach(function(faq) {
+            $faqs.append(
+                $("<div>", {
+                    "class": "faq"
+                }).append(
+                    $("<h4>", {
+                        text: faq["question"]
+                    }),
+                    $("<p>", {
+                        html: faq["answer"]
+                    })
+                )
             );
-            day.events.forEach(function(e){
-                $wrapper.append(
+        });
+    });
+
+    // Parse the Judges
+    $.getJSON("judges.json").done(function(data) {
+        var $judges = $(".judges");
+        var baseurl = "../img/devfest/judges/";
+
+        data["judges"].forEach(function(rows) {
+            var $row = $('<div>', {
+                "class": "row"
+            });
+            rows.forEach(function(judge) {
+                $row.append(
                     $("<div>", {
-                        "class": "dev-event"
+                        "class": "judge responsive-block"
                     }).append(
+                        $("<img>", {
+                            src: baseurl + judge["image"]
+                        }),
+                        $("<h4>", {
+                            text: judge["name"]
+                        }),
                         $("<p>", {
-                            html: "<strong>" + e.name + "</strong> " + e.timespan
+                            html: judge["bio"]
                         })
                     )
                 );
             });
-            $schedule.append($wrapper);
+            $judges.append($row);
         });
     });
-
 
     // Parse the Sponsors
     $.getJSON("sponsors.json").done(function(data) {

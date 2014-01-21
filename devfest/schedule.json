@@ -1,37 +1,38 @@
 {
-	"days": [
+	"workshops": [
 		{
 			"id": 1,
 			"name": "Saturday, Feb 1st",
 			"events": [
 				{
-					"name": "Lunch",
-					"timespan": "12pm - 1pm",
-					"location": "",
-					"description": ""
-				},
-				{
 					"name": "Kickoff",
 					"timespan": "12pm - 2pm",
-					"location": "",
+					"location": "Davis Auditorium",
+					"description": "",
+					"class": "blue"
+				},
+				{
+					"name": "Lunch",
+					"timespan": "12pm - 1pm",
+					"location": "Davis Auditorium",
 					"description": ""
 				},
 				{
 					"name": "Environment Setup",
 					"timespan": "2pm - 5pm",
-					"location": "",
+					"location": "CS Lounge",
 					"description": ""
 				},
 				{
 					"name": "Open Hacking",
 					"timespan": "2pm - 12am",
-					"location": "",
+					"location": "CS Lounge",
 					"description": ""
 				},
 				{
 					"name": "Introduction to Python",
 					"timespan": "5pm - 6pm",
-					"location": "",
+					"location": "CS Lounge",
 					"description": ""
 				}
 			]
@@ -43,7 +44,7 @@
 				{
 					"name": "Open Hacking",
 					"timespan": "3pm - 5pm",
-					"location": "",
+					"location": "CS Lounge",
 					"description": ""
 				}
 			]
@@ -55,13 +56,13 @@
 				{
 					"name": "Introduction to Flask",
 					"timespan": "8pm - 10pm",
-					"location": "",
+					"location": "CS Lounge",
 					"description": ""
 				},
 				{
 					"name": "Open Hacking",
 					"timespan": "8pm - 12am",
-					"location": "",
+					"location": "CS Lounge",
 					"description": ""
 				}
 			]
@@ -73,13 +74,13 @@
 				{
 					"name": "Introduction to APIs",
 					"timespan": "8pm - 10pm",
-					"location": "",
+					"location": "CS Lounge",
 					"description": ""
 				},
 				{
 					"name": "Open Hacking",
 					"timespan": "8pm - 12am",
-					"location": "",
+					"location": "CS Lounge",
 					"description": ""
 				}
 			]
@@ -91,13 +92,13 @@
 				{
 					"name": "Introduction to HTML and Templating",
 					"timespan": "8pm - 10pm",
-					"location": "",
+					"location": "CS Lounge",
 					"description": ""
 				},
 				{
 					"name": "Open Hacking",
 					"timespan": "8pm - 12am",
-					"location": "",
+					"location": "CS Lounge",
 					"description": ""
 				}
 			]
@@ -109,17 +110,19 @@
 				{
 					"name": "Introduction to CSS",
 					"timespan": "8pm - 10pm",
-					"location": "",
+					"location": "CS Lounge",
 					"description": ""
 				},
 				{
 					"name": "Open Hacking",
 					"timespan": "8pm - 12am",
-					"location": "",
+					"location": "CS Lounge",
 					"description": ""
 				}
 			]
-		},
+		}
+	],
+	"hackathon": [
 		{
 			"id": 7,
 			"name": "Friday, Feb 7th",
@@ -127,7 +130,7 @@
 				{
 					"name": "API Demos",
 					"timespan": "6pm - 7pm",
-					"location": "",
+					"location": "Davis Auditorium",
 					"description": ""
 				},
 				{
@@ -137,9 +140,16 @@
 					"description": ""
 				},
 				{
-					"name": "Hacking Starts",
+					"name": "Hacking Starts!",
 					"timespan": "8pm",
 					"location": "",
+					"description": "",
+					"class": "blue"
+				},
+				{
+					"name": "Late-night Surprise!",
+					"timespan": "??? - ???",
+					"location": "???",
 					"description": ""
 				}
 			]
@@ -151,8 +161,9 @@
 				{
 					"name": "Judging",
 					"timespan": "12pm - 3pm",
-					"location": "",
-					"description": ""
+					"location": "Davis Auditorium",
+					"description": "",
+					"class": "blue"
 				}
 			]
 		}
