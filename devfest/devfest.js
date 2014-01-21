@@ -1,28 +1,51 @@
 $(function(){
     // Parse the Schedule
     $.getJSON("schedule.json").done(function(data) {
-        $schedule = $(".schedule");
-        data.days.forEach(function(day) {
-            $wrapper = $("<div>", {
-                "class": day.id + "-wrapper"
-            }).append(
-                $("<h4>", {
-                    text: day.name
-                })
-            );
-            day.events.forEach(function(e){
-                $wrapper.append(
-                    $("<div>", {
-                        "class": "dev-event"
-                    }).append(
-                        $("<p>", {
-                            html: "<strong>" + e.name + "</strong> " + e.timespan
-                        })
-                    )
+        $.each(data, function(column, days){
+            $column = $("."+column)
+            days.forEach(function(day) {
+                $wrapper = $("<div>", {
+                    "class": day.id + "-wrapper"
+                }).append(
+                    $("<h4>", {
+                        text: day.name
+                    })
                 );
+                day.events.forEach(function(e){
+                    $wrapper.append(
+                        $("<div>", {
+                            "class": "dev-event " + e["class"]
+                        }).append(
+                            $("<div>", {
+                                "class": "left-wrapper"
+                            }).append(
+                                $("<strong>", {
+                                    "class": "title",
+                                    text: e.name
+                                }),
+                                $("<p>", {
+                                    "class": "timespan",
+                                    text: e.timespan
+                                })
+                            ),
+                            $("<span>", {
+                                html:e["location"]
+                            }).prepend(
+                                $("<i>", {
+                                    "class": "fa fa-map-marker"
+                                })
+                            ),
+                            $("<p>", {
+                                "class": "desc",
+                                html: e["description"]
+                            })
+                        )
+                    );
+                });
+                $column.append($wrapper);
             });
-            $schedule.append($wrapper);
-        });
+
+        })
     });
 
     // Parse the FAQ

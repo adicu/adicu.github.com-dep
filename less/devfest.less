@@ -33,13 +33,51 @@
 }
 
 .dev-event {
-	margin-left: 20px
+	background-color: #eee;
+	padding: 10px;
+	border-radius: 3px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	text-align: left;
+	&.blue {
+		background-color: @blue;
+		border: 1px solid darken(@blue, 10%);
+	}
+
+	.left-wrapper {
+		max-width: 60%;
+		display: inline-block;
+
+		.timespan {
+			margin-top: 0;
+		}
+		.title {
+			line-height: 1.4em;
+			font-size: 1.2em;
+			margin-right: 5px;
+		}
+	}
+
+	span {
+		float: right;
+		font-size: 1.2em;
+		line-height: 1.4em;
+		display: inline-block;
+		max-width: 40%;
+		text-align: right;
+
+		i {
+			margin-right: 5px;
+		}
+	}
 }
 
 .schedule {
-	margin: 0 auto;
-	width: 98%;
-	max-width: 600px
+	width: 50%;
+	padding: 1em !important;
+}
+.schedule:first-child {
+	border-right: 1px solid gray
 }
 
 .row:after {
@@ -175,7 +213,7 @@
         width: 33% !important;
       }
 
-      &.about {
+      &.about, .schedule {
       	width: 50% !important;
       }
     }
@@ -187,7 +225,7 @@
 
   .row {
     .responsive-block {
-      &.about, &.judge {
+      &.about, &.judge, &.schedule {
     	width: 100% !important;
       }
 

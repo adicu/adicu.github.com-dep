@@ -130,12 +130,46 @@ input {
   font-size: 1.5em;
 }
 .dev-event {
-  margin-left: 20px;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+.dev-event.blue {
+  background-color: #7bbee9;
+  border: 1px solid #4fa8e2;
+}
+.dev-event .left-wrapper {
+  max-width: 60%;
+  display: inline-block;
+}
+.dev-event .left-wrapper .timespan {
+  margin-top: 0;
+}
+.dev-event .left-wrapper .title {
+  line-height: 1.4em;
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+.dev-event span {
+  float: right;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  display: inline-block;
+  max-width: 40%;
+  text-align: right;
+}
+.dev-event span i {
+  margin-right: 5px;
 }
 .schedule {
-  margin: 0 auto;
-  width: 98%;
-  max-width: 600px;
+  width: 50%;
+  padding: 1em !important;
+}
+.schedule:first-child {
+  border-right: 1px solid #808080;
 }
 .row:after {
   clear: both;
@@ -246,14 +280,16 @@ input {
   .row .responsive-block.judge {
     width: 33% !important;
   }
-  .row .responsive-block.about {
+  .row .responsive-block.about,
+  .row .responsive-block .schedule {
     width: 50% !important;
   }
 }
 /* Phones */
 @media only screen and (max-width: 480px) {
   .row .responsive-block.about,
-  .row .responsive-block.judge {
+  .row .responsive-block.judge,
+  .row .responsive-block.schedule {
     width: 100% !important;
   }
 }
