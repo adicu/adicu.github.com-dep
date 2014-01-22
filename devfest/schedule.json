@@ -136,13 +136,13 @@
 				{
 					"name": "Dinner",
 					"timespan": "7pm - 8pm",
-					"location": "",
+					"location": "Davis Auditorium",
 					"description": ""
 				},
 				{
 					"name": "Hacking Starts!",
 					"timespan": "8pm",
-					"location": "",
+					"location": "Davis Auditorium",
 					"description": "",
 					"class": "blue"
 				},
