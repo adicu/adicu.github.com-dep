@@ -8,32 +8,32 @@
 					"name": "Kickoff",
 					"timespan": "12pm - 2pm",
 					"location": "Davis Auditorium",
-					"description": "",
+					"description": "LET THE GAMES BEGIN! Drink in the buzzing excitement of DevFest. Prepare yourselves for the start of an awesome week!",
 					"class": "blue"
 				},
 				{
 					"name": "Lunch",
 					"timespan": "12pm - 1pm",
 					"location": "Davis Auditorium",
-					"description": ""
+					"description": "Almuerzo, déjeuner, 午餐, hádegismatur, 점심, kwasemini, f00d. Time for some smackerels."
 				},
 				{
 					"name": "Environment Setup",
 					"timespan": "2pm - 5pm",
 					"location": "CS Lounge",
-					"description": ""
+					"description": "Come learn how to properly set up your computer for DevFest. All machines welcome (yes, even you, Windows). "
 				},
 				{
 					"name": "Open Hacking",
 					"timespan": "2pm - 12am",
 					"location": "CS Lounge",
-					"description": ""
+					"description": "Come hack with your peers and soak in the ambiance of the CS lounge while the space is still fresh and clean. SNACKS PRESENT"
 				},
 				{
 					"name": "Introduction to Python",
 					"timespan": "5pm - 6pm",
 					"location": "CS Lounge",
-					"description": ""
+					"description": "Learn about Python, a great programming language for beginners to advanced hackers. No previous experience required. No snakes were killed in the making of this language."
 				}
 			]
 		},
@@ -45,7 +45,7 @@
 					"name": "Open Hacking",
 					"timespan": "3pm - 5pm",
 					"location": "CS Lounge",
-					"description": ""
+					"description": "Some light hacking in the midst of the big sportsball game. Come hack with your peers and soak in the ambiance of the CS lounge while the space is still fresh and clean. SNACKS PRESENT"
 				}
 			]
 		},
@@ -57,13 +57,13 @@
 					"name": "Introduction to Flask",
 					"timespan": "8pm - 10pm",
 					"location": "CS Lounge",
-					"description": ""
+					"description": "Come learn about Flask and start creating your web app using Python. Flask is a microframework that's very easy to setup and has excellent documentation on its website."
 				},
 				{
 					"name": "Open Hacking",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
-					"description": ""
+					"description": "Come hack with your peers and soak in the ambiance of the CS lounge while the space is still fresh and clean. SNACKS PRESENT"
 				}
 			]
 		},
@@ -75,13 +75,13 @@
 					"name": "Introduction to APIs",
 					"timespan": "8pm - 10pm",
 					"location": "CS Lounge",
-					"description": ""
+					"description": "Prepare your brain so you know what's to come at API demos on Friday! This workshop will take a step aside from our Flask project to build a foundation of knowledge around APIs and how they are used. This workshop will be anything but RESTful -- pun intended, you shall understand in time, young grasshopper."
 				},
 				{
 					"name": "Open Hacking",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
-					"description": ""
+					"description": "Come hack with your peers and soak in the ambiance of the CS lounge. SNACKS PRESENT"
 				}
 			]
 		},
@@ -93,13 +93,13 @@
 					"name": "Introduction to HTML and Templating",
 					"timespan": "8pm - 10pm",
 					"location": "CS Lounge",
-					"description": ""
+					"description": "Conjure up websites in our workshop about HTML and templating. Share your important messages through the interwebs, like \"Hello World\" or pictures of your cat."
 				},
 				{
 					"name": "Open Hacking",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
-					"description": ""
+					"description": "Come hack with your peers and soak in the ambiance of the CS lounge. SNACKS PRESENT"
 				}
 			]
 		},
@@ -111,13 +111,13 @@
 					"name": "Introduction to CSS",
 					"timespan": "8pm - 10pm",
 					"location": "CS Lounge",
-					"description": ""
+					"description": "Our last workshop of the week before send you off into the world as a new hacker! CSS, or Cascading Style Sheets, is a styling language that is used to arrange and stylize HTML elements. Your websites will look better than your CS professors', guaranteed or your money back!"
 				},
 				{
 					"name": "Open Hacking",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
-					"description": ""
+					"description": "Come hack with your peers and soak in the ambiance of the CS lounge. Crunch time approaches! SNACKS PRESENT"
 				}
 			]
 		}
@@ -131,19 +131,19 @@
 					"name": "API Demos",
 					"timespan": "6pm - 7pm",
 					"location": "Davis Auditorium",
-					"description": ""
+					"description": "We have some amazing tech companies presenting their APIs. This is a great opportunity to figure out which APIs to incorporate into your app. Application programming interface? More like AMAZING programming interface!"
 				},
 				{
 					"name": "Dinner",
 					"timespan": "7pm - 8pm",
-					"location": "Davis Auditorium",
-					"description": ""
+					"location": "Watson Library, Uris",
+					"description": "DINNER NOMZ. The last meal until breakfast, second breakfast, elevenses..."
 				},
 				{
 					"name": "Hacking Starts!",
 					"timespan": "8pm",
-					"location": "Davis Auditorium",
-					"description": "",
+					"location": "Watson Library, Uris",
+					"description": "Hack till you drop (you can sleep later). Suggested song for the last hour: The Final Countdown. There will be food and caffeine to keep you up throughout the night. Good luck!",
 					"class": "blue"
 				},
 				{
@@ -162,7 +162,7 @@
 					"name": "Judging",
 					"timespan": "12pm - 3pm",
 					"location": "Davis Auditorium",
-					"description": "",
+					"description": "JUDGEMENT DAY. Don't worry, you won't be smote; the judges will understand that you're probably sleep deprived. The most important thing is to have fun and be proud of your creation!",
 					"class": "blue"
 				},
                 {
