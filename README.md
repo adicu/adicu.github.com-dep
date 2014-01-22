@@ -10,9 +10,9 @@ Installation
 ------------
 1. Ruby - Jekyll requires the ruby language. If you've got a Mac, you've most likely already got Ruby. If you open up the terminal application, and run the command `ruby --version` you can confirm this. Your Ruby version should begin with 1.9.3 or 2.0.0. If you've got that, you're all set. Skip to step #2. Otherwise, follow these [instructions](https://www.ruby-lang.org/en/downloads/) to install Ruby.
 
-2. Bundler - Bundler is a package manager that makes versioning Ruby software like Jekyll a heck of a lot easier and is highly recommended if you're going to be building GitHub Pages sites locally. If you don't already have Bunder installed, you can install it by running the command `gem install bundler`.
+2. Bundler - Bundler is a package manager that makes versioning Ruby software like Jekyll a heck of a lot easier and is highly recommended if you're going to be building GitHub Pages sites locally. If you don't already have Bunder installed, you can install it by running the command `gem install bundler` (use `sudo gem install bundler` if you get permission errors).
 
-3. Jekyll - The main event. Simply run the command, `bundle install` and you're good to go.
+3. Jekyll - The main event. Simply run the command, `bundle install` and you're good to go (use `sudo bundle install` if you get permission errors).
 
 4. Grunt - run `npm install` and then `grunt` to concatenate and compile LESS. Use `grunt watch` to automatically update CSS files.
 
