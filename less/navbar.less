@@ -6,6 +6,10 @@
   }
 }
 
+.navbar-header {
+  z-index: 1010;
+}
+
 .navbar {
   z-index: 1000001;
   margin: 0;
@@ -64,5 +68,12 @@
     &:hover {
       color: @blue;
     }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .navbar-nav > li > a {
+    padding: 14px 10px !important;
   }
 }
