@@ -111,10 +111,8 @@ input {
 .img-devfest.bottom {
   background-position: bottom center;
 }
-.row .responsive-block.about {
-  width: 25% !important;
-}
-.row .responsive-block.about .about-title {
+.about-title {
+  text-align: center;
   font-size: 2em;
   margin: 0;
 }
