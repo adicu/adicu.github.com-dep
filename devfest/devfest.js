@@ -1,4 +1,36 @@
 $(function(){
+
+    // Parse alerts
+    $.getJSON("alerts.json").done(function(data) {
+        if (data["active_alerts"].length > 0) {
+            $("#alerts").append(
+                $("<div>", {
+                    "class": "gray strip"
+                }).append(
+                    $("<div>", {
+                        "class": "content"
+                    })
+                )
+            );
+            $alerts = $("#alerts .content");
+            data["active_alerts"].forEach(function(alert) {
+                $alerts.append(
+                    $("<div>", {
+                        "class": "alert"
+                    }).append(
+                        $("<h3>", {
+                            text: alert["title"]
+                        }),
+                        $("<p>", {
+                            html: alert["message"]
+                        })
+                    )
+                );
+            });
+        }
+
+    });
+
     // Parse the Schedule
     $.getJSON("schedule.json").done(function(data) {
         $.each(data, function(column, days){

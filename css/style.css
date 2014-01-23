@@ -105,6 +105,23 @@ input {
 .even {
   background-color: #FFFFFF;
 }
+#alert .content {
+  padding: 1em !important;
+}
+.alert {
+  max-width: 600px;
+  width: 90%;
+  border: 7px solid #E8823C;
+  padding: 5px 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+.alert h3 {
+  font-size: 2.2em;
+}
+.alert p {
+  font-size: 1.2em;
+}
 .img-devfest {
   background: url("../img/hack.jpg") no-repeat center center;
 }
