@@ -35,11 +35,6 @@
 	],
 	"bronze": [
 		{
-			"id": "bain",
-			"img": "bain.png",
-			"url": "http://www.baincapitalventures.com/"
-		},
-		{
 			"id": "twilio",
 			"img": "twilio.png",
 			"url": "http://www.twilio.com/"
