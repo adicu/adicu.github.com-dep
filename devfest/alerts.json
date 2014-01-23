@@ -1,0 +1,14 @@
+{
+	"active_alerts": [
+	],
+	"inactive_alerts": [
+		{
+			"title": "Schedule Change!",
+			"message": "Our Wednesday Workshop has been moved.  It is now in <strong>Mudd 833</strong>, from 8-10pm."
+		},
+		{
+			"title": "Test Title",
+			"message": "This message is a test message.  It is an alert that will be really easy to see on the screen."
+		}
+	]
+}
