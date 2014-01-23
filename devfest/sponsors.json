@@ -58,6 +58,11 @@
 			"id": "digitalocean",
 			"img": "digitalocean.png",
 			"url": "https://www.digitalocean.com/"
+		},
+		{
+			"id": "facebook",
+			"img": "facebook.png",
+			"url": "https://www.facebook.com/"
 		}
 	]
 }
