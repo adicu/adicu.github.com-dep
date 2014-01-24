@@ -255,22 +255,37 @@ input {
   color: #CD7F32;
   margin-bottom: 30px !important;
 }
-.gold,
+.gold {
+  width: 600px;
+  height: 90px;
+  display: block;
+  margin: 20px auto 10px;
+}
+.gold .wrapper-inner {
+  width: 600px;
+  height: 90px;
+  margin: 0 auto;
+}
+.gold .wrapper-inner a {
+  height: 100px;
+}
+.gold .wrapper-inner a img {
+  max-width: 600px;
+  max-height: 100px;
+  margin: 0 auto;
+}
 .silver {
   width: 247px;
   height: 120px;
 }
-.gold .wrapper-inner,
 .silver .wrapper-inner {
   width: 247px;
   height: 120px;
 }
-.gold .wrapper-inner a,
 .silver .wrapper-inner a {
   width: 247px;
   height: 120px;
 }
-.gold .wrapper-inner a img,
 .silver .wrapper-inner a img {
   max-width: 247px;
   max-height: 120px;

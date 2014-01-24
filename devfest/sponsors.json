@@ -4,6 +4,11 @@
 			"id": "bloomberg",
 			"img": "bloom.png",
 			"url": "http://www.bloomberg.com/"
+		},
+		{
+			"id": "seas",
+			"img": "seas.png",
+			"url": "http://engineering.columbia.edu/"
 		}
 	],
 	"silver": [
