@@ -1,0 +1,31 @@
+---
+layout: post
+title: ADI Community Outreach
+category: blogpost
+---
+
+As an organization, ADI values sharing digital literacy and teaching others to
+use technology to make both in and out of the Columbia community. It's why our
+founder, Ryan Bubinski, founded [Codecademy](http://www.codecademy.com/): he
+wanted to teach the world to code. Most of our educational efforts happen in and
+around Columbia, but every once in a while we like to pop the Morningside
+bubble.
+
+Last academic year, a group of 15 ADI members gave up their spring breaks (while
+they could have been relaxing at the beach) to run an after-school camp for the
+mentees of [Project Rousseau](http://projectrousseau.org/). These students got a
+chance to learn basic programming skills, and walked away from the week with
+their very own web sites.
+
+In 2013-2014, ADI began to expand our outreach into a longer-term program at
+[Isaac Newton Middle School](http://schools.nyc.gov/SchoolPortals/04/M825/default.htm)
+in East Harlem. We sent students to teach a once-a-week programming curriculum
+that we developed ourselves to about 30 students during the spring semester. In
+this coming semester, we plan to work more closely with the students who were
+the most excited about this program to develop their technical skills.
+
+ADI's goal of creating a developer community extends beyond campus: it's
+important to our members that everyone, no matter what their background,
+understand the important role technology plays in the world today and how they
+can use it to their benefit. We look forward to continuing to expand out
+community outreach programs in the future.
