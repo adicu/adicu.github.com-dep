@@ -2,6 +2,7 @@
 layout: post
 title: ADI Community Outreach
 category: blogpost
+image: outreach/facebook.jpg
 ---
 
 As an organization, ADI values sharing digital literacy and teaching others to
