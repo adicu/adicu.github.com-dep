@@ -9,6 +9,11 @@
 			"id": "seas",
 			"img": "seas.png",
 			"url": "http://engineering.columbia.edu/"
+		},
+		{
+			"id": "venmo",
+			"img": "venmo.png",
+			"url": "https://venmo.com/"
 		}
 	],
 	"silver": [
@@ -26,11 +31,6 @@
 			"id": "yext",
 			"img": "yext.png",
 			"url": "http://www.yext.com/"
-		},
-		{
-			"id": "venmo",
-			"img": "venmo.png",
-			"url": "https://venmo.com/"
 		},
 		{
 			"id": "vimep",
