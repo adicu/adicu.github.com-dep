@@ -68,6 +68,11 @@
 			"id": "facebook",
 			"img": "facebook.png",
 			"url": "https://www.facebook.com/"
+		},
+		{
+			"id": "mashery",
+			"img": "mashery.png",
+			"url": "http://www.mashery.com/"
 		}
 	]
 }
