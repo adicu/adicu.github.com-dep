@@ -35,6 +35,10 @@
 		{
 			"question": "What if I just want time to develop or get help?",
 			"answer": "During “Open Hacking” times, we encourage you to practice what you learned during one of the technical workshops or work on your DevFest project!"
+		},
+		{
+			"question": "I am a vegetarian/vegan/lactose intolerant—will there be food for me?",
+			"answer": "We will make sure that there are vegan options available at every event with food. If you have any other dietary restrictions, please <a href='mailto:devfest@adicu.com'>email us</a> and we'll take care of you!"
 		}
 	]
 }
