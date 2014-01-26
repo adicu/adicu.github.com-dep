@@ -63,13 +63,13 @@ border-left: 0.5em #EEE solid;
 hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
 
 
-pre , code, kbd, samp {
-  color: #000;
-  font-family: monospace;
-  font-size: 0.88em;
+pre , code, kbd, samp { 
+  color: #000; 
+  font-family: monospace; 
+  font-size: 0.88em; 
   border-radius:3px;
   background-color: #F8F8F8;
-  border: 1px solid #CCC;
+  border: 1px solid #CCC; 
 }
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px 12px;}
 pre code { border: 0px !important; padding: 0;}
@@ -166,7 +166,7 @@ img.github {
 
 .top {
   float:right;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 /* "Responsive" */
@@ -345,14 +345,16 @@ pre .chunk {
 <p>This document contains a series of six sections, each of which explains a concept of Python that will be valuable to us in building our web application. Each section will end with a short exercise that will ask you to write a little bit of code that ties together what was learned in the previous section. You are not required to type out and run the sample code that we provide, but it will definitely help you to learn Python much more quickly if you do.</p>
 <h3 id="running-the-sample-code">Running the Sample Code</h3>
 <p>All of the code in this document can be either of two ways. It can be typed in the Python shell, which can be opened by simply typing 'python' into your command line interface once you have installed the language:</p>
-<pre><code>$ python
+<pre><code class="bash">$ python
 </code></pre>
 
 <p>Or, the code can be typed into a file with the ending '.py' and run from the command line like so:</p>
-<pre><code>$ python my_file.py
+<pre><code class="bash">$ python my_file.py
 </code></pre>
 
 <p>This is also the way you should write the code for the exercises. Perhaps individual files for each exercise will help you to separate your code based on the concepts it covers.</p>
+<h3 id="exercises">Exercises</h3>
+<p>There are Exercises at the end of each section, that attempt to summarize the important parts of the section in a programming challenge.  Solutions are available on <a href="https://github.com/adicu/devfest-webdev">Github</a>.</p>
 <p><a href="#top" class="top" id="table-of-contents">Top</a></p>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
@@ -416,8 +418,8 @@ pre .chunk {
 <p>Comments are like notes a programmer takes while writing code. Comments do not affect the code, and should be used liberally to ensure code can be easily understood later both by yourself and other developers.</p>
 <pre><code class="python"># If you only need one line for your comment, use a hash.
 
-&quot;&quot;&quot;
-If you want a comment that spans multiple lines,
+&quot;&quot;&quot; 
+If you want a comment that spans multiple lines, 
 you can use triple quotes at the beginning and end.
 &quot;&quot;&quot;
 </code></pre>
@@ -477,7 +479,6 @@ not False # true
 
 # Don't forget about chaining!
 1 &lt; 5 &lt; 10 # True
-
 </code></pre>
 
 <p>One more comparison can check the type of an object. This is with the keyword <code>is</code>. Use <code>is</code> when checking if an object is <code>None</code>.</p>
@@ -498,7 +499,6 @@ not False # true
 
 # Format them too!
 &quot;I like to eat %s and %s&quot; % (&quot;peas&quot;, &quot;carrots&quot;) # &quot;I like to eat peas and carrots&quot;
-
 </code></pre>
 
 <p><a id="print"></a></p>
@@ -510,6 +510,26 @@ print &quot;Here is a second way.&quot;
 
 <p><a id="exercise1"></a></p>
 <h3 id="16-exercise-1">1.6 Exercise 1</h3>
+<p>Start with the following template code. Modify the print statements so that they print appropriately.  Use only the following: </p>
+<ul>
+<li>Numbers <code>3</code> and <code>5</code></li>
+<li>Math symbols <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></li>
+<li>The comparison symbol <code>&lt;</code></li>
+<li>No string longer than 10 characters</li>
+</ul>
+<pre><code class="python"># 7
+print 
+
+# 122
+print
+
+# ADI is Awesome
+print 
+
+# True
+print 
+</code></pre>
+
 <p><a href="#top" class="top" id="variablescolls">Top</a></p>
 <h2 id="20-variables-and-collections">2.0 Variables and Collections</h2>
 <p>What happens if we want to use a value more than once? Or what happens if we want to store the result of, say, a comparison or an operation? Or, even better, what if we have the results of several operations that we want to store together? For these things, we use variables and collections.</p>
@@ -532,8 +552,7 @@ my_other_list = [1,5,9,6,7,8]
 my_other_list.append(6) # [1,5,9,6,7,8,6]
 
 # Remove an element from the end
-my_other_list.pop() # [1,5,9,6,7,8]
-
+my_other_list.pop() # 6
 </code></pre>
 
 <p>Access and remove elements at certain positions, or even ranges:</p>
@@ -555,7 +574,6 @@ my_other_list[9] # IndexError - there is no element at position 9
 
 <p>Add lists together:</p>
 <pre><code class="python">[&quot;first&quot;, &quot;second&quot;] + [&quot;third&quot;] # [&quot;first&quot;, &quot;second&quot;, &quot;third&quot;]
-
 </code></pre>
 
 <p>Check if an element is within a list:</p>
@@ -583,7 +601,7 @@ print var_1 + &quot; &quot; + var_2 # &quot;1 2&quot;
 <h3 id="24-dictionaries">2.4 Dictionaries</h3>
 <p>Think of a dictionary as a key and value pair. Each value has a key, which, instead of a numeric index, is a string that helps to identify a value. We can start with an empty list or a full list, and add elements at any time using a key.</p>
 <pre><code class="python">my_dict = {}
-my_other_dict = {&quot;first&quot; : 10, &quot;second&quot;, 7}
+my_other_dict = {&quot;first&quot; : 10, &quot;second&quot;: 7}
 my_dict[&quot;my_key&quot;] = &quot;my_value&quot; # {&quot;my_key&quot; : &quot;my_value&quot;}
 </code></pre>
 
@@ -599,6 +617,10 @@ my_other_dict.get(&quot;third&quot;) # = None, no error!
 <p>If we want all the keys or all the values in a dictionary, we can get these as lists:</p>
 <pre><code class="python">my_other_dict.keys() # [&quot;first&quot;, &quot;second&quot;]
 my_other_dict.values() # [10, 7]
+</code></pre>
+
+<p>We can find the length of a dictionary (the number of keys) using the <code>len()</code> function.</p>
+<pre><code class="python">len(my_other_dict) # 2
 </code></pre>
 
 <p>We can again use the <code>in</code> keyword to check to see if a key exists in a dictionary:</p>
@@ -626,12 +648,59 @@ my_union = {1,2,5} | {4,2,6} # {1,2,4,6}
 <pre><code class="python">my_difference = {1,2,3} - {2,4} # {1,3}
 </code></pre>
 
+<p>And find the length of a set</p>
+<pre><code class="python">len(my_difference) # 2
+</code></pre>
+
 <p>Or we can check if an element is in a set:</p>
 <pre><code class="python">1 in my_set # True
 </code></pre>
 
 <p><a id="exercise2"></a></p>
 <h3 id="26-exercise-2">2.6 Exercise 2</h3>
+<p>Modify the variables above the line so that all of the print statements print out <code>True</code>.</p>
+<pre><code class="python">a =
+b =
+c =
+d =
+e = 
+f =
+
+# Don't edit anything below this comment
+# --------------------------------------
+
+# Prints &quot;True&quot; if a is an int
+print type(a) is int
+print a &lt; 15
+
+# Prints &quot;True&quot; if b is a string
+print type(b) is str
+print b[5] == 'm' and b[0] == &quot;A&quot;
+
+# Prints &quot;True&quot; if c is a list
+print type(c) is list 
+print len(c) == 5
+print 5 in c
+
+# Prints &quot;True&quot; if d is a tuple
+print type(d) is tuple
+print d[2] == &quot;Python!&quot;
+
+# Prints &quot;True&quot; if e is a dictionary
+print type(e) is dict
+print &quot;star&quot; in e
+print 7 in e.values()
+print e.get(&quot;fish&quot;) == &quot;chips&quot;
+print len(e) == 3
+e[&quot;house&quot;] = &quot;cards&quot;
+print len(e) == 3
+
+# Prints &quot;True&quot; if f is a set
+print type(f) is set
+print len(f) == 4
+print len(f &amp; {2,5,7}) == 2
+</code></pre>
+
 <p><a href="#top" class="top" id="controlflow">Top</a></p>
 <h2 id="30-control-flow">3.0 Control Flow</h2>
 <p>What good is a program if we can't make decisions? Luckily, we have several tools are our disposal that allow us to make these decisions, which direct the way our program executes in such a way to make it meaningful.</p>
@@ -699,7 +768,6 @@ while x &lt; 4:
 # Infinite Loop, must make sure inner loop changes condition
 while True:
     print(&quot;This is an infinite loop.&quot;)
-
 </code></pre>
 
 <p><a id="tryexcept"></a></p>
@@ -728,6 +796,41 @@ except:
 <p>This can be vital to creating robust programs that DO NOT BREAK. They should be used whenever you are doing 'risky' manipulations, such as dealing with files or user input.</p>
 <p><a id="exercise3"></a></p>
 <h3 id="35-exercise-3">3.5 Exercise 3</h3>
+<p>Find a value for <code>a</code> such that all the print statements are <code>True</code>.</p>
+<pre><code class="python">a =
+
+# Will your &quot;a&quot; variable pass my evil tests?
+
+# Let's start off simple.  Is it the right type?
+# Muhahahahaha!
+if type(a) is list:
+    print True
+else:
+    print False
+
+# Didn't see this coming, did you?
+for x in a:
+    if not type(x) is int:
+        print False
+    else:
+        print True
+
+# And now, my evil for loop of evil testingness!
+for y in range(a[3]):
+    if y in a:
+        print False
+
+# Don't fall for my &quot;Python Infinite Pit&quot;!!!
+try:
+    a[5] = &quot;Trap!&quot;
+    while True:
+        print False
+except IndexError:
+    print True
+
+# Rats!  Foiled again!
+</code></pre>
+
 <p><a href="#top" class="top" id="functions">Top</a></p>
 <h2 id="40-functions">4.0 Functions</h2>
 <p>We've seen things like <code>len(my_list)</code> and <code>my_list.append(4)</code> that perform some action on a piece of data. In Python, we call these things functions.</p>
@@ -782,6 +885,21 @@ square = g(8) # = 64
 
 <p><a id="exercise4"></a></p>
 <h3 id="44-exercise-4">4.4 Exercise 4</h3>
+<p>Write the <code>square</code> function, which takes in a number and returns its square, and the <code>squarify</code> function which uses the <code>square</code> function to square all the numbers in a list.  All <code>print</code> statements</p>
+<pre><code class="python"># Write the &quot;square&quot; function here
+
+
+# Write the &quot;squarify&quot; function here
+
+
+# Don't edit anything below this comment
+# --------------------------------------
+
+print square(4) == 16
+print square(square(3)) == 81
+print squarify([3,4,9]) == [9, 16, 81]
+</code></pre>
+
 <p><a href="#top" class="top" id="classes">Top</a></p>
 <h2 id="50-classes">5.0 Classes</h2>
 <p>You may have heard the term 'Object-Oriented Programming.' If you are unfamiliar, this basically means that things should be represented as 'objects,' each of which stores data, called fields, and associated operations, called methods. In Python and other object-oriented programming languages, we instantiate objects by defining classes.</p>
@@ -824,7 +942,6 @@ animal_1.species # = &quot;Monkey&quot;
 # Change attributes
 animal_1.name = &quot;Sugar&quot;
 animal_1.name # = &quot;Sugar&quot;
-
 </code></pre>
 
 <p><a id="instance"></a></p>
@@ -874,13 +991,12 @@ animal.speak(&quot;woof&quot;) # = &quot;Butch says woof&quot;
 animal = Animal(&quot;Polly&quot;, &quot;Parrot&quot;)
 # Call our class method
 animal.get_kingdom() # = &quot;Animalia&quot;
-
 </code></pre>
 
 <p><a id="static"></a></p>
 <h3 id="56-static-methods">5.6 Static Methods</h3>
 <p>Static methods, unlike class methods or instance methods, need neither a class or an instance. They are called using the class name.</p>
-<pre><code>class Animal(object):
+<pre><code class="python">class Animal(object):
     # Class Attribute
     kingdom = &quot;Animalia&quot;
 
@@ -907,10 +1023,27 @@ Animal.boo() # = &quot;BOO!&quot;
 
 <p><a id="exercise5"></a></p>
 <h3 id="57-exercise-5">5.7 Exercise 5</h3>
+<p>Write a class called <code>Human</code>.  It should have a constructor that takes in a height and weight (in inches and pounds respectively), and they should be stored in instance variables.</p>
+<p>Write an instance method called <code>get_bmi</code> that returns the BMI of the human.  Note that BMI is <code>weight/(height^2) * 703</code>.</p>
+<blockquote>
+<p>Having a problem with division?  If you divide two integers in Python, the result will be rounded down to the nearest integer.  Try making the numerator a decimal using the float() function before dividing.</p>
+</blockquote>
+<pre><code class="python"># Write the &quot;Human&quot; class here
+
+
+# Don't edit anything below this comment
+# --------------------------------------
+
+my_human = Human(120, 67)
+print &quot;my_human's height and weight is %s and %s respectively, and it's BMI is %s.&quot; % (my_human.height, my_human.weight, my_human.get_bmi())
+
+# Should print &quot;my_human's height and weight is 120 and 67 respectively, and it's BMI is 3.27090277778.&quot;
+</code></pre>
+
 <p><a href="#top" class="top" id="goodies">Top</a></p>
 <h2 id="60-more-goodies">6.0 More Goodies</h2>
-<p>While the previous five sections provide a very thorough introduction to the basics of Python, this section will provide you with some extra information about the language. You will find many of these features to be very helpful to you when you start developing your web application and as your Python programs become more complex.
-<a id="modules"></a></p>
+<p>While the previous five sections provide a very thorough introduction to the basics of Python, this section will provide you with some extra information about the language. You will find many of these features to be very helpful to you when you start developing your web application and as your Python programs become more complex.</p>
+<p><a id="modules"></a></p>
 <h3 id="61-modules">6.1 Modules</h3>
 <p>As you start to write longer and more complex programs, you can imagine there will be lots of functions you want to be able to use. Along with that, your files will begin to get very long, to the point where you may lose control of your program. For this, we have modules.</p>
 <p>Modules are regular Python files that contain definitions of functions that can later be imported for use in another file. Many very important functions are given to us in the Python language, all we need to do is important them! For example, Python comes with a default module called <code>math</code>, which provides many important function for mathematical operations. If we wanted to use these functions, all we have to do is import it:</p>
@@ -922,7 +1055,7 @@ answer_2 = math.sqrt(4) # 2
 </code></pre>
 
 <p>If you don't want to have to say <code>math</code> everytime you use a function, you could import the specific functions you want to use:</p>
-<pre><code class="python">from math import pow, fabs
+<pre><code class="python">from math import pow, fabs 
 
 answer_1 = pow(4,2) # 16
 answer_2 = fabs(-5) # 5
@@ -1007,7 +1140,7 @@ with open('my_file', 'r') as f:
 
 decorated_function = mod_decorator(my_function)
 
-decorated_function()
+decorated_function() 
 # &quot;I have modified this function 1 times.&quot;
 # &quot;This is MY function.&quot;
 
@@ -1032,16 +1165,16 @@ pkg3
 </code></pre>
 
 <p>This file contains the names of all the packages needed for your application. For example, if we were writing a Flask application, we might need MySQL, a database program, followed by the required version number:</p>
-<pre><code>MySQL-python==1.2.3
+<pre><code class="bash">MySQL-python==1.2.3
 </code></pre>
 
 <p>Then, to install all of the packages in our <code>requirements.txt</code> folder, we would simply type in this command:</p>
-<pre><code>$ pip install -r requirements.txt
+<pre><code class="bash">$ pip install -r requirements.txt
 </code></pre>
 
 <p>Then all of your required packages are installed.</p>
 <p>But what do you put in your <code>requirements.txt</code>? A useful command to help you build these files is <code>pip freeze</code>, which can be used to print a list of installed packages in the correct format for your <code>requirements.txt</code> file. This output can then be copied and pasted into your file:</p>
-<pre><code>$ pip freeze
+<pre><code class="bash">$ pip freeze
 Jinja2==2.6
 Pygments==1.5
 Sphinx==1.1.3
@@ -1049,12 +1182,30 @@ docutils==0.9.1
 </code></pre>
 
 <p>A useful command in unix that can be used to copy these to your <code>requirements.txt</code> file is called a redirect. A redirect, in Unix, redirects the output of a command to another location, usually a text file. This is done using the '&gt;' character. To redirect our requirements to our <code>requirements.txt</code> file, we simply run this command:</p>
-<pre><code>$ pip freeze &gt; requirements.txt
+<pre><code class="bash">$ pip freeze &gt; requirements.txt
 </code></pre>
 
 <p>Once these requirements have been copied, we can then run our <code>pip install</code> command.</p>
 <p><a id="exercise6"></a></p>
 <h3 id="65-exercise-6">6.5 Exercise 6</h3>
+<p>Write a program called <code>sort.py</code> that takes in a string of numbers (like <code>36427478554</code>), and then prints the string out in the same format, but sorted.</p>
+<p>You can sort a list by calling <code>.sort()</code> on it: </p>
+<pre><code class="python">my_array = [3,1,2]
+my_array.sort() # [1,2,3]``
+</code></pre>
+
+<p>Also, the <code>int()</code> and <code>str()</code> functions convert to and from strings and ints:</p>
+<pre><code class="python">x = 7
+x_as_string = str(x)
+x == int(x_as_string) # True
+</code></pre>
+
+<p>Example terminal usage:</p>
+<pre><code class="bash">$ python sort.py 
+Enter the string of numbers: 555987654321
+123455556789
+</code></pre>
+
 <hr />
 <p><a href="#top" class="top" id="additionalresources">Top</a></p>
 <h2 id="additional-resources">Additional Resources</h2>
