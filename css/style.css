@@ -162,6 +162,7 @@ input {
 }
 .dev-event .left-wrapper .timespan {
   margin-top: 0;
+  margin-bottom: 0;
 }
 .dev-event .left-wrapper .title {
   line-height: 1.4em;
@@ -179,8 +180,25 @@ input {
 .dev-event span i {
   margin-right: 5px;
 }
-.dev-event .desc {
+.dev-event hr.dark {
+  border-color: #ccc;
+}
+.dev-event .sponsored-by {
   margin: 0;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
+  width: 600px;
+}
+.dev-event .sponsored-by p {
+  margin: 0 0 10px;
+}
+.dev-event .sponsored-by img {
+  max-width: 100%;
+}
+.dev-event .desc {
+  margin: 10px 0 0 0;
 }
 .schedule {
   width: 50%;
@@ -257,12 +275,14 @@ input {
 }
 .gold {
   width: 600px;
+  max-width: 100%;
   height: 90px;
   display: block;
   margin: 20px auto 10px;
 }
 .gold .wrapper-inner {
   width: 600px;
+  max-width: 100%;
   height: 90px;
   margin: 0 auto;
 }
@@ -270,7 +290,7 @@ input {
   height: 100px;
 }
 .gold .wrapper-inner a img {
-  max-width: 600px;
+  max-width: 100%;
   max-height: 100px;
   margin: 0 auto;
 }
