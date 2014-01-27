@@ -8,7 +8,7 @@
 					"name": "Kickoff",
 					"timespan": "12pm - 2pm",
 					"location": "Davis Auditorium",
-					"description": "LET THE GAMES BEGIN! Drink in the buzzing excitement of DevFest. Prepare yourselves for the start of an awesome week!",
+					"description": "LET THE GAMES BEGIN! Drink in the buzzing excitement of DevFest. Prepare yourselves for the start of an awesome week! Kickoff will include a pitchfest during which you can pitch your ideas to potential teammates and form teams.",
 					"class": "blue"
 				},
 				{
@@ -75,7 +75,7 @@
 					"name": "Introduction to APIs",
 					"timespan": "8pm - 10pm",
 					"location": "CS Lounge",
-					"description": "Prepare your brain so you know what's to come at API demos on Friday! This workshop will take a step aside from our Flask project to build a foundation of knowledge around APIs and how they are used. This workshop will be anything but RESTful -- pun intended, you shall understand in time, young grasshopper."
+					"description": "An API, or Application Programming Interface, is a way to get resources from another website. And boy, are there tons of APIs! Come prepare your brain so you know what's to come at API demos on Friday! This workshop will take a step aside from our Flask project to build a foundation of knowledge around APIs and how they are used. This workshop will be anything but RESTful -- pun intended, you shall understand in time, young grasshopper."
 				},
 				{
 					"name": "Open Hacking",
@@ -131,7 +131,7 @@
 					"name": "API Demos",
 					"timespan": "6pm - 7pm",
 					"location": "Davis Auditorium",
-					"description": "We have some amazing tech companies presenting their APIs. This is a great opportunity to figure out which APIs to incorporate into your app. Application programming interface? More like AMAZING programming interface!"
+					"description": "We have some amazing tech companies presenting their APIs. This is a great opportunity to figure out which APIs to incorporate into your app. Application programming interface? More like AMAZING programming interface! Remember to stick around after API Demos for team formation! Pitch your ideas to potential teammates or listen to what other people are interested in doing!"
 				},
 				{
 					"name": "Dinner",
