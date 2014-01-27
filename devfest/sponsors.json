@@ -73,6 +73,11 @@
 			"id": "sendgrid",
 			"img": "sendgrid.png",
 			"url": "http://sendgrid.com/"
+		},
+		{
+			"id": "mashery",
+			"img": "mashery.png",
+			"url": "http://www.mashery.com/"
 		}
 	]
 }
