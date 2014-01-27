@@ -63,6 +63,11 @@
 			"id": "facebook",
 			"img": "facebook.png",
 			"url": "https://www.facebook.com/"
+		},
+		{
+			"id": "sendgrid",
+			"img": "sendgrid.png",
+			"url": "http://sendgrid.com/"
 		}
 	]
 }
