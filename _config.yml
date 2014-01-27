@@ -1,9 +1,9 @@
 safe: true
-#source: https://github.com/adicu/adicu.github.com 
+#source: https://github.com/adicu/adicu.github.com
 #destination: ~/working/adicu.github.com/
 lsi: false
 permalink: /:month-:day-:year/:title.html
-exclude: [newpost.sh]
+exclude: [newpost.sh, .gitignore, gcal_template.md, Gemfile, Gemfile.lock, Gruntfile.coffee, package.json, README.md, less, node_modules]
 paginate: 10
 base: "http://adicu.com"
 paginate_path: "blog/page:num"
