@@ -33,51 +33,76 @@ $(function(){
 
     // Parse the Schedule
     $.getJSON("schedule.json").done(function(data) {
+        var baseurl = "../img/devfest/logos/";
+
         $.each(data, function(column, days){
-            $column = $("."+column)
+            $column = $("."+column);
             days.forEach(function(day) {
                 $wrapper = $("<div>", {
-                    "class": day.id + "-wrapper"
+                    "class": day["id"] + "-wrapper"
                 }).append(
                     $("<h4>", {
-                        text: day.name
+                        text: day["name"]
                     })
                 );
                 day.events.forEach(function(e){
-                    $wrapper.append(
+                    $event = $("<div>", {
+                        "class": "dev-event " + e["class"]
+                    }).append(
                         $("<div>", {
-                            "class": "dev-event " + e["class"]
+                            "class": "left-wrapper"
                         }).append(
-                            $("<div>", {
-                                "class": "left-wrapper"
-                            }).append(
-                                $("<strong>", {
-                                    "class": "title",
-                                    text: e.name
-                                }),
-                                $("<p>", {
-                                    "class": "timespan",
-                                    text: e.timespan
-                                })
-                            ),
-                            $("<span>", {
-                                html:e["location"]
-                            }).prepend(
-                                $("<i>", {
-                                    "class": "fa fa-map-marker"
-                                })
-                            ),
+                            $("<strong>", {
+                                "class": "title",
+                                text: e["name"]
+                            }),
                             $("<p>", {
-                                "class": "desc",
-                                html: e["description"]
+                                "class": "timespan",
+                                text: e["timespan"]
+                            })
+                        ),
+                        $("<span>", {
+                            html:e["location"]
+                        }).prepend(
+                            $("<i>", {
+                                "class": "fa fa-map-marker"
                             })
                         )
                     );
+                    $event.append(
+                        $("<p>", {
+                            "class": "desc",
+                            html: e["description"]
+                        })
+                    );
+                    if ("sponsor" in e) {
+                        $event.append(
+                            $("<hr>" ,{
+                                "class": "dark"
+                            }),
+                            $("<div>", {
+                                "class": "sponsored-by"
+                            }).append(
+                                $("<p>", {
+                                    text: "Sponsored by"
+                                }),
+                                $("<a>", {
+                                    "class": "scroll",
+                                    href: "#sponsors"
+                                }).append (
+                                    $("<img>", {
+                                        src: baseurl + e["sponsor"]["img"]
+                                    })
+                                )
+                            )
+                        );
+                    }
+                    $wrapper.append($event);
                 });
                 $column.append($wrapper);
             });
 
-        })
+        });
     });
 
     // Parse the FAQ
