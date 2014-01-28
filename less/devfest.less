@@ -1,10 +1,31 @@
-#alert .content {
+.stats {
+	display: table;
+	padding: 1em 0;
+	margin: 2em auto -1em;
+	line-height: 4em;
+	background-color: white;
+	border: 10px solid @ltBlue;
+	border-radius: 3px;
+	padding: 2em;
+	.count {
+		display:  table-cell;
+		vertical-align: middle;
+		font-size: 4em;
+	}
+	.participants {
+		padding-left: .5em;
+		display:  table-cell;
+		vertical-align: middle;
+	}
+}
+
+#alerts .strip .content {
 	padding: 1em !important;
 }
+
 .alert {
 	max-width: 600px;
 	width: 90%;
-	border: 7px solid #E8823C;
 	padding: 5px 15px;
 	margin: 0 auto;
 	text-align: center;
@@ -15,6 +36,11 @@
 	p {
 		font-size: 1.2em;
 	}
+}
+
+.stats {
+	text-align: center;
+	font-family: @defaultFonts;
 }
 
 .img-devfest {

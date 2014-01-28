@@ -5,7 +5,7 @@ $(function(){
         if (data["active_alerts"].length > 0) {
             $("#alerts").append(
                 $("<div>", {
-                    "class": "gray strip"
+                    "class": "orange strip"
                 }).append(
                     $("<div>", {
                         "class": "content"
@@ -194,5 +194,18 @@ $(function(){
             $sponsors.append($wrapper);
 
         });
+    });
+
+    $.ajax({
+        url: "http://courses.adicu.com/beta/stats.json",
+        jsonpCallback: "devfestStats",
+        dataType: "jsonp",
+        success: function(response) {
+            // Countdown
+            var start = 0;
+            var end = response.stats.num;
+            var studentCount = new countUp("student-count", start, end, 0, 2);
+            studentCount.start();
+        }
     });
 });
