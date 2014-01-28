@@ -63,7 +63,12 @@
 					"name": "Open Hacking",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
-					"description": "Come hack with your peers and soak in the ambiance of the CS lounge while the space is still fresh and clean. SNACKS PRESENT"
+					"description": "Come hack with your peers and soak in the ambiance of the CS lounge while the space is still fresh and clean. SNACKS PRESENT",
+					"sponsor": {
+						"id": "venmo",
+						"img": "venmo.png",
+						"url": "https://venmo.com/"
+					}
 				}
 			]
 		},
