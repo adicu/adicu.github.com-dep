@@ -5,7 +5,7 @@ $(function(){
         if (data["active_alerts"].length > 0) {
             $("#alerts").append(
                 $("<div>", {
-                    "class": "gray strip"
+                    "class": "orange strip"
                 }).append(
                     $("<div>", {
                         "class": "content"

@@ -105,13 +105,32 @@ input {
 .even {
   background-color: #FFFFFF;
 }
-#alert .content {
+.stats {
+  display: table;
+  padding: 1em 0;
+  margin: 2em auto -1em;
+  line-height: 4em;
+  background-color: white;
+  border: 10px solid #a7d4f0;
+  border-radius: 3px;
+  padding: 2em;
+}
+.stats .count {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 4em;
+}
+.stats .participants {
+  padding-left: .5em;
+  display: table-cell;
+  vertical-align: middle;
+}
+#alerts .strip .content {
   padding: 1em !important;
 }
 .alert {
   max-width: 600px;
   width: 90%;
-  border: 7px solid #E8823C;
   padding: 5px 15px;
   margin: 0 auto;
   text-align: center;
@@ -121,6 +140,10 @@ input {
 }
 .alert p {
   font-size: 1.2em;
+}
+.stats {
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .img-devfest {
   background: url("../img/hack.jpg") no-repeat center center;
@@ -581,6 +604,12 @@ section .strip.dark-gray {
 section .strip.dark-gray .content {
   background-color: #cccccc;
 }
+section .strip.orange {
+  background-color: #f1aa5d;
+}
+section .strip.orange .content {
+  background-color: #ed922e;
+}
 section .strip.photo {
   color: white;
 }
@@ -776,9 +805,6 @@ section .strip.photo .opaque {
 }
 /* Tablets */
 @media only screen and (max-width: 767px) {
-  .navbar-nav > li > a {
-    padding: 14px 10px !important;
-  }
   .row.bg-img {
     background-size: auto 100%;
   }
