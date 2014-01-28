@@ -1,23 +1,36 @@
 #blog-wrapper {
   padding-top:50px;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .page-title {
+    font-family: @headingFonts;
+  }
 }
 
 .post{
-  margin: 0.5em auto;
-  padding: 0.5em;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin: 2em auto;
+  padding: 1em;
   max-width: 800px;
-  width: 100%;
+  width: 95%;
 
-
-  h2 {
-    display: inline-block;
-    line-height: 0;
-  }
   .title {
+    margin: 0;
     color: @dkBlue;
+    width: 70%;
+    text-decoration: none !important;
   }
   .date {
+    margin: 0;
     color: @gray;
+    width: 70%;
   }
   a {
     color: #000;
@@ -26,14 +39,25 @@
       color: #7BBEE9;
       text-decoration: underline;
     }
+    width: 100%;
   }
+  .image {
+    text-align: center;
+  }
+
   img {
-    margin-bottom: 1em;
-    padding: 2px;
-    border: 1px solid #414142;
-  }
-  .social {
-    margin: 10px 0 10px -5px;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      padding: 2px;
+      border: 1px solid #414142;
+      height: auto;
+    }
+
+  .social.top {
+    width: 40%;
+    text-align: right;
+    float: right;
   }
 }
 
@@ -60,3 +84,47 @@
   display: block;
   margin: 1em 0;
 }
+
+.social.bottom {
+  display: none;
+}
+
+/* Tablets */
+@media only screen and (max-width: 767px) {
+
+  .post {
+    .social.top {
+      width: 20%;
+
+      a {
+        display: block;
+        margin-right: 0;
+        button {
+          margin: 0 0 5px;
+        }
+      }
+    }
+    .title {
+      width: 85%;
+    }
+  }
+}
+
+/* Phones */
+@media only screen and (max-width: 480px) {
+  .social.top {
+    display: none;
+  }
+  .post {
+    .title, .date {
+      width: 100%;
+    }
+  }
+  .social.bottom {
+    margin: 1em 0 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+

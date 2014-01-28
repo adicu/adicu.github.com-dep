@@ -25,18 +25,19 @@ h4 {
 }
 h1 {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3.3em;
 }
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 h4 {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 p {
+  font-size: 1.2em;
   line-height: 1.4em;
 }
 a:link,
@@ -588,7 +589,6 @@ section .strip .content {
 }
 section .strip .content h1.section-title {
   margin: 0;
-  font-size: 3.3em;
   font-family: "roboto slab";
 }
 section .strip .content h2.section-tagline {
@@ -922,37 +922,58 @@ section .strip.photo .opaque {
 #blog-wrapper {
   padding-top: 50px;
 }
-.post {
-  margin: 0.5em auto;
-  padding: 0.5em;
-  max-width: 800px;
-  width: 100%;
+#blog-wrapper p {
+  margin-bottom: 0;
 }
-.post h2 {
-  display: inline-block;
-  line-height: 0;
+#blog-wrapper .page-title {
+  font-family: "Roboto Slab", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.post {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin: 2em auto;
+  padding: 1em;
+  max-width: 800px;
+  width: 95%;
 }
 .post .title {
+  margin: 0;
   color: #4fa8e2;
+  width: 70%;
+  text-decoration: none !important;
 }
 .post .date {
+  margin: 0;
   color: #cccccc;
+  width: 70%;
 }
 .post a {
   color: #000;
   text-decoration: underline;
+  width: 100%;
 }
 .post a:hover {
   color: #7BBEE9;
   text-decoration: underline;
 }
+.post .image {
+  text-align: center;
+}
 .post img {
-  margin-bottom: 1em;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
   padding: 2px;
   border: 1px solid #414142;
+  height: auto;
 }
-.post .social {
-  margin: 10px 0 10px -5px;
+.post .social.top {
+  width: 40%;
+  text-align: right;
+  float: right;
 }
 #post-pagination {
   margin-bottom: 10px;
@@ -972,4 +993,39 @@ section .strip.photo .opaque {
 #post-pagination .archive {
   display: block;
   margin: 1em 0;
+}
+.social.bottom {
+  display: none;
+}
+/* Tablets */
+@media only screen and (max-width: 767px) {
+  .post .social.top {
+    width: 20%;
+  }
+  .post .social.top a {
+    display: block;
+    margin-right: 0;
+  }
+  .post .social.top a button {
+    margin: 0 0 5px;
+  }
+  .post .title {
+    width: 85%;
+  }
+}
+/* Phones */
+@media only screen and (max-width: 480px) {
+  .social.top {
+    display: none;
+  }
+  .post .title,
+  .post .date {
+    width: 100%;
+  }
+  .social.bottom {
+    margin: 1em 0 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }

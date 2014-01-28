@@ -4,10 +4,7 @@ layout: default
 
 <article class="post">
 
-  <h2 class="title">{{ page.title }}</h2>
-  <h2 class="date">{{ page.date | date_to_string }}</h2>
-
-  <div class="social">
+  <div class="social top">
     <a target="_blank" href="https://twitter.com/intent/tweet?text={{ post.title }}&url=http://adicu.com{{ post.url }}&via=adicu"><button class="ss-btn ss-btn-tweet">Tweet</button></a>
     <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-facebook">Share</button></a>
     <a target="_blank" href="https://plus.google.com/share?url=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-google">Google+</button></a>
@@ -15,9 +12,19 @@ layout: default
     <a target="_blank" href="https://github.com/{{ post.code }}"><button class='ss-btn ss-btn-github'>Github</button></a>
     {% endif %}
   </div>
-
+  <h2 class="title">{{ page.title }}</h2>
+  <h3 class="date">{{ page.date | date_to_string }}</h3>
   <div class="text-content">
     {{ content }}
+  </div>
+
+  <div class="social bottom">
+    <a target="_blank" href="https://twitter.com/intent/tweet?text={{ post.title }}&url=http://adicu.com{{ post.url }}&via=adicu"><button class="ss-btn ss-btn-tweet">Tweet</button></a>
+    <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-facebook">Share</button></a>
+    <a target="_blank" href="https://plus.google.com/share?url=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-google">Google+</button></a>
+    {% if post.code %}
+    <a target="_blank" href="https://github.com/{{ post.code }}"><button class='ss-btn ss-btn-github'>Github</button></a>
+    {% endif %}
   </div>
 
 </article>
