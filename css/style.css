@@ -377,6 +377,9 @@ input {
     display: block;
     margin-bottom: 1em;
   }
+  .stats h2 {
+    margin-bottom: 0;
+  }
   .stats .count {
     display: block;
   }
