@@ -1,9 +1,5 @@
 {
 	"active_alerts": [
-		{
-			"title": "Schedule Change!",
-			"message": "Our Wednesday Workshop has been moved.  It is now in <strong>Mudd 833</strong>, from 8-10pm."
-		}
 	],
 	"inactive_alerts": [
 		{
