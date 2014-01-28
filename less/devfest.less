@@ -1,5 +1,6 @@
 .stats {
 	display: table;
+	max-width: 90%;
 	padding: 1em 0;
 	margin: 2em auto -1em;
 	line-height: 4em;
@@ -292,7 +293,15 @@
 
 /* Tablets */
 @media only screen and (max-width: 767px) {
-
+  .stats {
+  	.count {
+  		font-size: 3em;
+  	}
+  	.participants {
+  		font-size: 1em;
+  	}
+  	margin-bottom: 0;
+  }
 
   .row {
     .responsive-block {
@@ -310,7 +319,17 @@
 
 /* Phones */
 @media only screen and (max-width: 480px) {
-
+  .stats {
+  	display: block;
+  	.count {
+  		display: block;
+  	}
+  	.participants {
+  		padding-left: 0;
+  		margin-top: 1em;
+  		display: block;
+  	}
+  }
   .row {
     .responsive-block {
       &.about, &.judge, &.schedule {

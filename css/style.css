@@ -107,6 +107,7 @@ input {
 }
 .stats {
   display: table;
+  max-width: 90%;
   padding: 1em 0;
   margin: 2em auto -1em;
   line-height: 4em;
@@ -353,6 +354,15 @@ input {
 }
 /* Tablets */
 @media only screen and (max-width: 767px) {
+  .stats {
+    margin-bottom: 0;
+  }
+  .stats .count {
+    font-size: 3em;
+  }
+  .stats .participants {
+    font-size: 1em;
+  }
   .row .responsive-block.judge {
     width: 33% !important;
   }
@@ -363,6 +373,17 @@ input {
 }
 /* Phones */
 @media only screen and (max-width: 480px) {
+  .stats {
+    display: block;
+  }
+  .stats .count {
+    display: block;
+  }
+  .stats .participants {
+    padding-left: 0;
+    margin-top: 1em;
+    display: block;
+  }
   .row .responsive-block.about,
   .row .responsive-block.judge,
   .row .responsive-block.schedule {
