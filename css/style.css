@@ -907,6 +907,9 @@ section .strip.photo .opaque {
   width: 180px;
   background: #080808;
 }
+.navbar * {
+  -webkit-transform: none;
+}
 .navbar-inverse .navbar-nav > li > a {
   padding: 14px;
 }
