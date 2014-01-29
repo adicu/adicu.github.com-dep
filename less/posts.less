@@ -4,9 +4,13 @@
   p {
     margin-bottom: 0;
   }
+}
 
-  .page-title {
-    font-family: @headingFonts;
+.page-title a {
+  color: black;
+
+  &:hover {
+    color: @dkBlue;
   }
 }
 
@@ -21,11 +25,16 @@
   max-width: 800px;
   width: 95%;
 
+
   .title {
     margin: 0;
-    color: @dkBlue;
     width: 70%;
+    color: black;
     text-decoration: none !important;
+
+  }
+  a.title:hover .title {
+    color: @dkBlue;
   }
   .date {
     margin: 0;
@@ -48,9 +57,9 @@
   img {
       max-width: 100%;
       display: block;
-      margin: 0 auto;
+      margin: 1em auto 0;
       padding: 2px;
-      border: 1px solid #414142;
+      // border: 1px solid #414142;
       height: auto;
     }
 
@@ -62,8 +71,12 @@
 }
 
 #post-pagination {
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
+  max-width: 800px;
+  width: 95%;
+  position: relative;
   text-align: center;
+  font-size: 1.2em;
 }
 
 #post-pagination * {
@@ -81,8 +94,11 @@
 }
 
 #post-pagination .archive {
-  display: block;
-  margin: 1em 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  float: right;
 }
 
 .social.bottom {
@@ -91,7 +107,13 @@
 
 /* Tablets */
 @media only screen and (max-width: 767px) {
-
+  #post-pagination .archive {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+  }
   .post {
     .social.top {
       width: 20%;

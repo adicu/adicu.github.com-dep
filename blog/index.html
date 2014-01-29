@@ -3,7 +3,9 @@ layout: default
 title: Blog
 ---
 
-<h1 class="page-title">{{page.title}}</h1>
+<h1 class="page-title top">
+  <a href="/blog">&lt;blog&gt;</a>
+</h1>
 
 {% for post in paginator.posts %}
 <article class="post">
@@ -25,7 +27,7 @@ title: Blog
     {% if post.image %}
     <div class="image">
       <a href="{{ post.url }}">
-        <img src="/img/{{ post.image }}" height=200px style="border-style: none"></img>
+        <img src="/img/{{ post.image }}" height=200px></img>
       </a>
     </div>
     {% endif %}
@@ -91,6 +93,10 @@ title: Blog
   </p>
   {% endif %}
 
-  <div class="archive">View our <a href="/archive.html">archives.</a></div>
+  <p class="archive">View our <a href="/archive">archives.</a></p>
 
 </div>
+
+<h1 class="page-title bottom">
+  <a href="/blog">&lt;/blog&gt;</a>
+</h1>
