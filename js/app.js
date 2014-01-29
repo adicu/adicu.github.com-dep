@@ -8,22 +8,18 @@ $(function(){
   var $navbar = $('.navbar');
   var $collapse = $('.navbar-collapse');
   var $spacer = $('.navbar-spacer');
-  var $bannerLogo = $('.navbar-header').find('.logo');
   var $bannerListserv = $('.listserv');
   var $bottom = $('#bottom');
 
   $win.scroll( function() {
     if(!$navbar.hasClass('navbar-fixed-top') && $win.scrollTop() > $navbar.offset().top){
-      console.log("add");
       $banner.addClass("spacer-active");
       $spacer.addClass("spacer-active");
       $navbar.addClass("navbar-fixed-top");
       $bottom.removeClass("hidden");
       $bannerListserv.removeClass("hidden");
-      $bannerLogo.attr("src", "/img/logo.png");
 
     } else if ($navbar.hasClass('navbar-fixed-top')  && $win.scrollTop() < $spacer.offset().top){
-      console.log("remove");
       $navbar.removeClass("navbar-fixed-top");
       $banner.removeClass("spacer-active");
       $spacer.removeClass("spacer-active");
@@ -31,7 +27,6 @@ $(function(){
       if (! $bannerListserv.hasClass("open")) {
         $bannerListserv.addClass("hidden");
       }
-      $bannerLogo.attr("src", "/img/logo-bw.png");
     }
     if($collapse.hasClass('in')) {
       $spacer.addClass("spacer-tall");

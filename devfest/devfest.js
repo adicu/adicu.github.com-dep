@@ -1,7 +1,9 @@
 $(function(){
 
     // Parse alerts
+    console.log("out");
     $.getJSON("alerts.json").done(function(data) {
+        console.log("in");
         if (data["active_alerts"].length > 0) {
             $("#alerts").append(
                 $("<div>", {
