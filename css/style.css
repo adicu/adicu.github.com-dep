@@ -907,6 +907,9 @@ section .strip.photo .opaque {
   width: 180px;
   background: #080808;
 }
+.navbar.navbar-fixed-top {
+  -webkit-transform: none !important;
+}
 .navbar * {
   -webkit-transform: none !important;
 }
