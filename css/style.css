@@ -118,7 +118,8 @@ input {
   margin: 0;
 }
 #devfest-callout img {
-  max-width: 400px;
+  width: 400px;
+  max-width: 100%;
   max-height: 150px;
   margin: 0.5em 0 0;
 }
