@@ -913,6 +913,9 @@ section .strip.photo .opaque {
   .header-spacer {
     height: 75%;
   }
+  section .strip .content h1.section-title {
+    font-size: 2.75em;
+  }
   .fa-adi-8x {
     font-size: 4em !important;
   }
