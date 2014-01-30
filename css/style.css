@@ -531,6 +531,8 @@ footer {
   padding: 45px 10px;
   width: 100%;
   color: #eeeeee;
+  position: absolute;
+  bottom: 0;
   text-align: center;
 }
 footer ul {
@@ -553,6 +555,11 @@ footer a {
 }
 footer a:hover {
   color: #7bbee9 !important;
+}
+.footer-spacer {
+  width: 100%;
+  margin-top: -2px;
+  height: 148px;
 }
 header {
   position: fixed;
@@ -1010,6 +1017,8 @@ section .strip.photo .opaque {
 }
 #blog-wrapper {
   padding-top: 50px;
+  position: relative;
+  min-height: 100%;
 }
 #blog-wrapper p {
   margin-bottom: 0;
