@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   var now = new Date();
   var lastMonth = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
-  var lastMonthString = lastMonth.getFullYear() + "-" + lastMonth.getMonth() + "-" + lastMonth.getDate() + "T00:00:00.000Z";
+  var lastMonthString = lastMonth.getFullYear() + "-" + (lastMonth.getMonth() + 1) + "-" + lastMonth.getDate() + "T00:00:00.000Z";
 
 	var url = "https://www.googleapis.com/calendar/v3/calendars/adicu.com_tud5etmmo5mfmuvdfb54u733i4%40group.calendar.google.com/events" +
                     "?maxResults=100" +
