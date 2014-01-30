@@ -592,8 +592,14 @@ header .adi-banner-container .newsletter input {
 }
 /* Phones */
 @media only screen and (max-width: 480px) {
+  header .adi-banner-container {
+    margin: 1em auto 3em;
+  }
   header .adi-banner-container .logo {
     max-height: 30%;
+  }
+  header .tagline {
+    font-size: 1.65em !important;
   }
 }
 /* Short Desktop Screens*/
