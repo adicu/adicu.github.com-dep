@@ -399,7 +399,7 @@ input {
 .events-carousel-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
-  padding: 2em 4em;
+  padding: 2em 3em;
   width: 100%;
   height: 460px;
   background-color: #eeeeee;
@@ -471,6 +471,15 @@ input {
 .events-carousel-wrapper .bx-wrapper .bx-prev {
   z-index: 0;
   margin-left: -50px !important;
+}
+/* Phones */
+@media only screen and (max-width: 480px) {
+  .events-carousel-wrapper .bx-wrapper .bx-viewport .events-carousel .event .event-header {
+    height: 60%;
+  }
+  .events-carousel-wrapper .bx-wrapper .bx-viewport .events-carousel .event .event-details {
+    height: 40%;
+  }
 }
 @media only screen and (min-width: 420px) {
   .bx-wrapper {
