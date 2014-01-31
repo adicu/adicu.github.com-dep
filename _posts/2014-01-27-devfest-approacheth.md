@@ -6,7 +6,7 @@ image: devfest-2014.png
 ---
 ![The DevFest Logo](/img/devfest-2014.png)
 
-It's that time of the year- DevFest is fast approaching!!
+It's that time of the year &mdash; DevFest is fast approaching!!
 
 For those of you who have been living under a rock for the past few years, DevFest is ADI's biggest and most important event of the year. At ADI, we find it really important to create a community of builders and teach people who aren't builders to not be afraid to try. Thus, DevFest was born in 2011. 
 
