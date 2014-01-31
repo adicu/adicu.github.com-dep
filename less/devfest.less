@@ -20,6 +20,14 @@
   }
 }
 
+.row .responsive-block.social {
+	width: 33%;
+	font-size: 1.4em;
+
+	h3 { margin-bottom: 0; }
+	p {margin: .5em 0 0; }
+}
+
 .stats {
 	display: table;
 	max-width: 90%;
@@ -191,6 +199,10 @@
 
 .sponsors {
 	text-align: center;
+
+	hr {
+		margin: 3em 0;
+	}
 }
 
 .gold, .silver, .bronze {
@@ -332,6 +344,11 @@
         width: 33% !important;
       }
 
+      &.social {
+      	width: 33% !important;
+      	font-size: 1em;
+      }
+
       &.about, .schedule {
       	width: 50% !important;
       }
@@ -345,6 +362,7 @@
   	display: block;
   	margin-bottom: 1em;
   	h2 {
+  		font-size: 2em;
   		margin-bottom: 0;
   	}
   	.count {
@@ -359,7 +377,7 @@
   }
   .row {
     .responsive-block {
-      &.about, &.judge, &.schedule {
+      &.about, &.judge, &.schedule, &.social {
     	width: 100% !important;
       }
 
