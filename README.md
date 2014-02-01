@@ -14,20 +14,28 @@ Installation
 
 3. Jekyll - The main event. Simply run the command, `bundle install` and you're good to go (use `sudo bundle install` if you get permission errors).
 
-4. Grunt - run `npm install` and then `grunt` to concatenate and compile LESS. Use `grunt watch` to automatically update CSS files.
+3. Node.js - Run `npm`.  If you see a message that starts with `Usage: npm <command>` then you can skip this step. Go to [Node Download Page](http://nodejs.org/download/) and run the installer that's appropriate for your computer.
 
-5. Run the server by executing `jekyll serve --watch` in the root directory of the site.
+5. Grunt - run `npm install` and then `grunt` to concatenate and compile LESS. Use `grunt watch` to automatically update CSS files.
 
-6. Visit `http://localhost:4000/` in ~~Internet Explorer~~ your browser.
+6. Run the server by executing `jekyll serve --watch` in the root directory of the site.
+
+7. Visit `http://localhost:4000/` in ~~Internet Explorer~~ your browser.
 
 For more installation instructions and information, check out [jekyll's installation page][5], or
 this [Windows installation tutorial][6]. To learn more about jekyll, check out its [GitHub repo][7].
 
 How to Post
 -----------
-1. Run `./newpost.sh title type` where title is the short title of your
-   post (which will be used in the URL), and type is one of the template
-   types in the \_templates directory.
+1. Run `./newpost.sh title type` where `title` is the short title of your
+   post (which will be used in the URL), and `type` is one of the template
+   types in the \_templates directory.  The `title` should be lowercase words separated by dashes, and the `type` should be a `.md` file.
+   ```
+   # Examples
+   ./newpost.sh my-cool-post blogpost.md
+   ./newpost.sh a-great-resource resource.md
+   ```
+
 2. Fill out your post in the newly created file.
 3. Commit and push the file to `origin/master`.
 

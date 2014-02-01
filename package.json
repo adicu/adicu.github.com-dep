@@ -1,5 +1,6 @@
 {
   "name": "adicu",
+  "version": "0.0.1",
   "description": "ADI's website hosted on GitHub Pages",
   "repository": {
     "type" : "git",

@@ -61,7 +61,6 @@ section {
       max-width: 1000px;
       h1.section-title {
         margin: 0;
-        font-size: 3.3em;
         font-family: "roboto slab";
       }
       h2.section-tagline {
@@ -95,6 +94,13 @@ section {
 
       .content {
         background-color: @gray;
+      }
+    }
+    &.orange {
+      background-color: @ltOrange;
+
+      .content {
+        background-color: @orange;
       }
     }
     &.photo {
@@ -293,26 +299,6 @@ section {
   }
 }
 
-#devfest-callout {
-  z-index: 10000;
-  text-align: center;
-  a {
-    color: white;
-
-    p {
-      font-size: 3em;
-      margin: 0;
-    }
-  }
-  img {
-    max-width: 100%;
-    max-height: 150px;
-  }
-  .content {
-    padding: 1em !important;
-  }
-}
-
 /* Tablets */
 @media only screen and (max-width: 767px) {
 
@@ -345,6 +331,10 @@ section {
 @media only screen and (max-width: 480px) {
   header, .header-spacer {
     height:75%;
+  }
+
+  section .strip .content h1.section-title {
+    font-size: 2.75em;
   }
 
   .fa-adi-8x {

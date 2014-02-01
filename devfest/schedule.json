@@ -5,23 +5,35 @@
 			"name": "Saturday, Feb 1st",
 			"events": [
 				{
-					"name": "Kickoff",
-					"timespan": "12pm - 2pm",
-					"location": "Davis Auditorium",
-					"description": "LET THE GAMES BEGIN! Drink in the buzzing excitement of DevFest. Prepare yourselves for the start of an awesome week!",
-					"class": "blue"
-				},
-				{
 					"name": "Lunch",
-					"timespan": "12pm - 1pm",
+					"timespan": "12pm - 12:30pm",
 					"location": "Davis Auditorium",
 					"description": "Almuerzo, déjeuner, 午餐, hádegismatur, 점심, kwasemini, f00d. Time for some smackerels."
 				},
 				{
+					"name": "Kickoff",
+					"timespan": "12:30pm - 1pm",
+					"location": "Davis Auditorium with Simulcast in 233 Mudd",
+					"description": "LET THE GAMES BEGIN! Drink in the buzzing excitement of DevFest. Prepare yourselves for the start of an awesome week!",
+					"class": "blue"
+				},
+				{
+					"name": "Pitchfest",
+					"timespan": "1pm - 2pm",
+					"location": "Davis Auditorium",
+					"description": "Pitch your ideas to potential teammates and form teams.  Saturday's Pitchfest is geared towards hackers who don't plan on attending the Environment Setup Workshop."
+				},
+				{
 					"name": "Environment Setup",
-					"timespan": "2pm - 5pm",
-					"location": "CS Lounge",
-					"description": "Come learn how to properly set up your computer for DevFest. All machines welcome (yes, even you, Windows). "
+					"timespan": "1pm - 4pm",
+					"location": "233 Mudd",
+					"description": "Come learn how to properly set up your computer for DevFest. All machines welcome (yes, even you, Windows).",
+					"buttons": [
+						{
+							"title": "Instructions",
+							"link": "http://squidarth.github.io/Devfest-Environment-Setup/"
+						}
+					]
 				},
 				{
 					"name": "Open Hacking",
@@ -31,9 +43,27 @@
 				},
 				{
 					"name": "Introduction to Python",
-					"timespan": "5pm - 6pm",
-					"location": "CS Lounge",
-					"description": "Learn about Python, a great programming language for beginners to advanced hackers. No previous experience required. No snakes were killed in the making of this language."
+					"timespan": "2:45pm - 4:45pm",
+					"location": "627 & 233 Mudd",
+					"description": "Learn about Python, a great programming language for beginners to advanced hackers. No previous experience required. No snakes were killed in the making of this language.",
+					"buttons": [
+						{
+							"title": "Tutorial",
+							"link": "http://adicu.com/intro-webdev/python/"
+						}
+					]
+				},
+				{
+					"name": "Introduction to Python",
+					"timespan": "5:00pm - 6:00pm",
+					"location": "627 Mudd",
+					"description": "Learn about Python, a great programming language for beginners to advanced hackers. No previous experience required. No snakes were killed in the making of this language.",
+					"buttons": [
+						{
+							"title": "Tutorial",
+							"link": "http://adicu.com/intro-webdev/python/"
+						}
+					]
 				}
 			]
 		},
@@ -56,14 +86,19 @@
 				{
 					"name": "Introduction to Flask",
 					"timespan": "8pm - 10pm",
-					"location": "CS Lounge",
+					"location": "627 & 233 Mudd",
 					"description": "Come learn about Flask and start creating your web app using Python. Flask is a microframework that's very easy to setup and has excellent documentation on its website."
 				},
 				{
 					"name": "Open Hacking",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
-					"description": "Come hack with your peers and soak in the ambiance of the CS lounge while the space is still fresh and clean. SNACKS PRESENT"
+					"description": "Come hack with your peers and soak in the ambiance of the CS lounge while the space is still fresh and clean. SNACKS PRESENT",
+					"sponsor": {
+						"id": "venmo",
+						"img": "venmo.png",
+						"url": "https://venmo.com/"
+					}
 				}
 			]
 		},
@@ -74,14 +109,19 @@
 				{
 					"name": "Introduction to APIs",
 					"timespan": "8pm - 10pm",
-					"location": "CS Lounge",
-					"description": "Prepare your brain so you know what's to come at API demos on Friday! This workshop will take a step aside from our Flask project to build a foundation of knowledge around APIs and how they are used. This workshop will be anything but RESTful -- pun intended, you shall understand in time, young grasshopper."
+					"location": "627 & 233 Mudd",
+					"description": "An API, or Application Programming Interface, is a way to get resources from another website. And boy, are there tons of APIs! Come prepare your brain so you know what's to come at API demos on Friday! This workshop will take a step aside from our Flask project to build a foundation of knowledge around APIs and how they are used. This workshop will be anything but RESTful -- pun intended, you shall understand in time, young grasshopper."
 				},
 				{
 					"name": "Open Hacking",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
-					"description": "Come hack with your peers and soak in the ambiance of the CS lounge. SNACKS PRESENT"
+					"description": "Come hack with your peers and soak in the ambiance of the CS lounge. SNACKS PRESENT",
+					"sponsor": {
+						"id": "bloomberg",
+						"img": "bloom.png",
+						"url": "http://www.bloomberg.com/"
+					}
 				}
 			]
 		},
@@ -92,7 +132,7 @@
 				{
 					"name": "Introduction to HTML and Templating",
 					"timespan": "8pm - 10pm",
-					"location": "CS Lounge",
+					"location": "627 & 233 Mudd",
 					"description": "Conjure up websites in our workshop about HTML and templating. Share your important messages through the interwebs, like \"Hello World\" or pictures of your cat."
 				},
 				{
@@ -110,7 +150,7 @@
 				{
 					"name": "Introduction to CSS",
 					"timespan": "8pm - 10pm",
-					"location": "CS Lounge",
+					"location": "627 & 233 Mudd",
 					"description": "Our last workshop of the week before send you off into the world as a new hacker! CSS, or Cascading Style Sheets, is a styling language that is used to arrange and stylize HTML elements. Your websites will look better than your CS professors', guaranteed or your money back!"
 				},
 				{
@@ -130,8 +170,8 @@
 				{
 					"name": "API Demos",
 					"timespan": "6pm - 7pm",
-					"location": "Davis Auditorium",
-					"description": "We have some amazing tech companies presenting their APIs. This is a great opportunity to figure out which APIs to incorporate into your app. Application programming interface? More like AMAZING programming interface!"
+					"location": "627 & 233 Mudd",
+					"description": "We have some amazing tech companies presenting their APIs. This is a great opportunity to figure out which APIs to incorporate into your app. Application programming interface? More like AMAZING programming interface! Remember to stick around after API Demos for team formation! Pitch your ideas to potential teammates or listen to what other people are interested in doing!"
 				},
 				{
 					"name": "Dinner",
@@ -161,7 +201,7 @@
 				{
 					"name": "Judging",
 					"timespan": "12pm - 3pm",
-					"location": "Davis Auditorium",
+					"location": "Havermeyer 309",
 					"description": "JUDGEMENT DAY. Don't worry, you won't be smote; the judges will understand that you're probably sleep deprived. The most important thing is to have fun and be proud of your creation!",
 					"class": "blue"
 				},
