@@ -1,5 +1,9 @@
 {
 	"active_alerts": [
+		{
+			"title": "Schedule Change!",
+			"message" :"We will be holding an additional Python session at 5:00pm at Mudd 627"
+		}
 	],
 	"inactive_alerts": [
 		{
