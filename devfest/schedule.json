@@ -13,7 +13,7 @@
 				{
 					"name": "Kickoff",
 					"timespan": "12:30pm - 1pm",
-					"location": "Davis Auditorium with Simulcast in 627 & 233 Mudd",
+					"location": "Davis Auditorium with Simulcast in 233 Mudd",
 					"description": "LET THE GAMES BEGIN! Drink in the buzzing excitement of DevFest. Prepare yourselves for the start of an awesome week!",
 					"class": "blue"
 				},
@@ -26,7 +26,7 @@
 				{
 					"name": "Environment Setup",
 					"timespan": "1pm - 4pm",
-					"location": "627 & 233 Mudd",
+					"location": "233 Mudd",
 					"description": "Come learn how to properly set up your computer for DevFest. All machines welcome (yes, even you, Windows). "
 				},
 				{
