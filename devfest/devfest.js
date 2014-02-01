@@ -77,6 +77,24 @@ $(function(){
                             html: e["description"]
                         })
                     );
+                    if ("buttons" in e) {
+                        $buttons = $("<div>", {
+                            "class": "buttons"
+                        });
+                        e["buttons"].forEach(function(button) {
+                            $buttons.append(
+                                $("<a>", {
+                                    "href": button["link"]
+                                }).append(
+                                    $("<button>", {
+                                        "class": "button-blue",
+                                        "html": button["title"]
+                                    })
+                                )
+                            );
+                        });
+                        $event.append($buttons)
+                    }
                     if ("sponsor" in e) {
                         $event.append(
                             $("<hr>" ,{

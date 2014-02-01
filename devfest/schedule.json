@@ -27,7 +27,13 @@
 					"name": "Environment Setup",
 					"timespan": "1pm - 4pm",
 					"location": "233 Mudd",
-					"description": "Come learn how to properly set up your computer for DevFest. All machines welcome (yes, even you, Windows). "
+					"description": "Come learn how to properly set up your computer for DevFest. All machines welcome (yes, even you, Windows).",
+					"buttons": [
+						{
+							"title": "Instructions",
+							"link": "http://squidarth.github.io/Devfest-Environment-Setup/"
+						}
+					]
 				},
 				{
 					"name": "Open Hacking",
