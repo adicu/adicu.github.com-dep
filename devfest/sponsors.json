@@ -78,6 +78,11 @@
 			"id": "mashery",
 			"img": "mashery.png",
 			"url": "http://www.mashery.com/"
+		},
+		{
+			"id": "cucs",
+			"img": "cucs.gif",
+			"url": "http://www.cs.columbia.edu/"
 		}
 	]
 }
