@@ -1,8 +1,8 @@
 {
 	"active_alerts": [
 		{
-			"title": "Schedule Changes!",
-			"message": "Due to a surge of interest in DevFest, we have made slight schedule changes for Saturday, Feb. 1st to accomodate higher attendance."
+			"title": "Schedule Change!",
+			"message" :"We will be holding an additional Python session at 5:00pm at Mudd 627"
 		}
 	],
 	"inactive_alerts": [
