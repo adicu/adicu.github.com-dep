@@ -45,7 +45,13 @@
 					"name": "Introduction to Python",
 					"timespan": "2:45pm - 4:45pm",
 					"location": "627 & 233 Mudd",
-					"description": "Learn about Python, a great programming language for beginners to advanced hackers. No previous experience required. No snakes were killed in the making of this language."
+					"description": "Learn about Python, a great programming language for beginners to advanced hackers. No previous experience required. No snakes were killed in the making of this language.",
+					"buttons": [
+						{
+							"title": "Tutorial",
+							"link": "http://adicu.com/intro-python/"
+						}
+					]
 				}
 			]
 		},
