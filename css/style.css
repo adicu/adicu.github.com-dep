@@ -327,6 +327,11 @@ input {
 .silver-wrapper .sponsor-level {
   color: #ACACAC;
 }
+.bronze-wrapper,
+.silver-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .bronze-wrapper .sponsor-level {
   color: #CD7F32;
   margin-bottom: 30px !important;
