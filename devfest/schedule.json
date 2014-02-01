@@ -87,7 +87,13 @@
 					"name": "Introduction to Flask",
 					"timespan": "8pm - 10pm",
 					"location": "627 & 233 Mudd",
-					"description": "Come learn about Flask and start creating your web app using Python. Flask is a microframework that's very easy to setup and has excellent documentation on its website."
+					"description": "Come learn about Flask and start creating your web app using Python. Flask is a microframework that's very easy to setup and has excellent documentation on its website.",
+					"buttons" : [
+						{
+							"title": "Tutorial",
+							"link": "http://adicu.com/intro-webdev/#flask"
+						}
+					]
 				},
 				{
 					"name": "Open Hacking",
@@ -110,7 +116,13 @@
 					"name": "Introduction to APIs",
 					"timespan": "8pm - 10pm",
 					"location": "627 & 233 Mudd",
-					"description": "An API, or Application Programming Interface, is a way to get resources from another website. And boy, are there tons of APIs! Come prepare your brain so you know what's to come at API demos on Friday! This workshop will take a step aside from our Flask project to build a foundation of knowledge around APIs and how they are used. This workshop will be anything but RESTful -- pun intended, you shall understand in time, young grasshopper."
+					"description": "An API, or Application Programming Interface, is a way to get resources from another website. And boy, are there tons of APIs! Come prepare your brain so you know what's to come at API demos on Friday! This workshop will take a step aside from our Flask project to build a foundation of knowledge around APIs and how they are used. This workshop will be anything but RESTful -- pun intended, you shall understand in time, young grasshopper.",
+					"buttons" : [
+						{
+							"title": "Tutorial",
+							"link": "http://adicu.com/intro-webdev/#apis"
+						}
+					]
 				},
 				{
 					"name": "Open Hacking",
@@ -133,7 +145,13 @@
 					"name": "Introduction to HTML and Templating",
 					"timespan": "8pm - 10pm",
 					"location": "627 & 233 Mudd",
-					"description": "Conjure up websites in our workshop about HTML and templating. Share your important messages through the interwebs, like \"Hello World\" or pictures of your cat."
+					"description": "Conjure up websites in our workshop about HTML and templating. Share your important messages through the interwebs, like \"Hello World\" or pictures of your cat.",
+					"buttons" : [
+						{
+							"title": "Tutorial",
+							"link": "http://adicu.com/intro-webdev/#html-and-css"
+						}
+					]
 				},
 				{
 					"name": "Open Hacking",
@@ -151,7 +169,13 @@
 					"name": "Introduction to CSS",
 					"timespan": "8pm - 10pm",
 					"location": "627 & 233 Mudd",
-					"description": "Our last workshop of the week before send you off into the world as a new hacker! CSS, or Cascading Style Sheets, is a styling language that is used to arrange and stylize HTML elements. Your websites will look better than your CS professors', guaranteed or your money back!"
+					"description": "Our last workshop of the week before send you off into the world as a new hacker! CSS, or Cascading Style Sheets, is a styling language that is used to arrange and stylize HTML elements. Your websites will look better than your CS professors', guaranteed or your money back!",
+					"buttons" : [
+						{
+							"title": "Tutorial",
+							"link": "http://adicu.com/intro-webdev/#css"
+						}
+					]
 				},
 				{
 					"name": "Open Hacking",
