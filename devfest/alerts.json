@@ -1,5 +1,9 @@
 {
 	"active_alerts": [
+		{
+			"title": "Schedule Changes!",
+			"message": "Due to a surge of interest in DevFest, we have made slight schedule changes for Saturday, Feb. 1st to accomodate higher attendance."
+		}
 	],
 	"inactive_alerts": [
 		{

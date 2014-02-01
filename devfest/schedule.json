@@ -5,22 +5,28 @@
 			"name": "Saturday, Feb 1st",
 			"events": [
 				{
-					"name": "Kickoff",
-					"timespan": "12pm - 2pm",
-					"location": "Davis Auditorium",
-					"description": "LET THE GAMES BEGIN! Drink in the buzzing excitement of DevFest. Prepare yourselves for the start of an awesome week! Kickoff will include a pitchfest during which you can pitch your ideas to potential teammates and form teams.",
-					"class": "blue"
-				},
-				{
 					"name": "Lunch",
-					"timespan": "12pm - 1pm",
+					"timespan": "12pm - 12:30pm",
 					"location": "Davis Auditorium",
 					"description": "Almuerzo, déjeuner, 午餐, hádegismatur, 점심, kwasemini, f00d. Time for some smackerels."
 				},
 				{
+					"name": "Kickoff",
+					"timespan": "12:30pm - 1pm",
+					"location": "Davis Auditorium & Mudd 833",
+					"description": "LET THE GAMES BEGIN! Drink in the buzzing excitement of DevFest. Prepare yourselves for the start of an awesome week!",
+					"class": "blue"
+				},
+				{
+					"name": "Pitchfest",
+					"timespan": "1pm - 2pm",
+					"location": "Davis Auditorium",
+					"description": "Pitch your ideas to potential teammates and form teams.  Saturday's Pitchfest is geared towards hackers who don't plan on attending the Environment Setup Workshop."
+				},
+				{
 					"name": "Environment Setup",
-					"timespan": "2pm - 5pm",
-					"location": "CS Lounge",
+					"timespan": "1pm - 4pm",
+					"location": "Mudd 833",
 					"description": "Come learn how to properly set up your computer for DevFest. All machines welcome (yes, even you, Windows). "
 				},
 				{
@@ -31,8 +37,8 @@
 				},
 				{
 					"name": "Introduction to Python",
-					"timespan": "5pm - 6pm",
-					"location": "CS Lounge",
+					"timespan": "4pm - 6pm",
+					"location": "Mudd 833",
 					"description": "Learn about Python, a great programming language for beginners to advanced hackers. No previous experience required. No snakes were killed in the making of this language."
 				}
 			]
