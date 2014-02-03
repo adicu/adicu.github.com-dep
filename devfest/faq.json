@@ -39,6 +39,10 @@
 		{
 			"question": "I am a vegetarian/vegan/lactose intolerant—will there be food for me?",
 			"answer": "We will make sure that there are vegan options available at every event with food. If you have any other dietary restrictions, please <a href='mailto:devfest@adicu.com'>email us</a> and we'll take care of you!"
+		},
+		{
+			"question": "Is there any limit on team size?",
+			"answer": "Nope!"
 		}
 	]
 }

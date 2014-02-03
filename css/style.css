@@ -1056,6 +1056,9 @@ section .strip.photo .opaque {
 .page-title a:hover {
   color: #4fa8e2;
 }
+.byline {
+  font-style: italic;
+}
 .post {
   background-color: #eee;
   border: 1px solid #ccc;

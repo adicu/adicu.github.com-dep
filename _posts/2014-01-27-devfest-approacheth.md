@@ -3,6 +3,7 @@ layout: post
 title: DevFest Approacheth!
 category: blogpost
 image: devfest-2014.png
+by: Angela Wang
 ---
 ![The DevFest Logo](/img/devfest-2014.png)
 
