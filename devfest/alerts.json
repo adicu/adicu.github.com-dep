@@ -2,7 +2,7 @@
 	"active_alerts": [
 		{
 			"title": "Schedule Changes!",
-			"message": "Due to larger-than-expected attendance at DevFest, the location for our weekday workshops is currently in flux.  Please check back for location updates."
+			"message": "Due to larger-than-expected attendance at DevFest, the location for our weekday workshops is currently in flux.  Please check back here and <a href=\"http://twitter.com/adicu\">on Twitter</a> for location updates."
 		}
 	],
 	"inactive_alerts": [
