@@ -3,6 +3,7 @@ layout: post
 title: In Honor of SuperBowl Season, It's Kickoff Time
 category: blogpost
 image: 1jackie.JPG
+by: Angela Wang
 ---
 DevFest hath begun!!
 
