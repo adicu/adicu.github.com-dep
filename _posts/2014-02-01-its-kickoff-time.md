@@ -2,7 +2,7 @@
 layout: post
 title: In Honor of SuperBowl Season, It's Kickoff Time
 category: blogpost
-image: /img/1jackie.JPG
+image: 1jackie.JPG
 ---
 DevFest hath begun!!
 
