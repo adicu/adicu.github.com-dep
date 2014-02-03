@@ -1,5 +1,9 @@
 {
 	"active_alerts": [
+		{
+			"title": "Schedule Changes!",
+			"message": "Due to larger-than-expected attendance at DevFest, the location for our weekday workshops is currently in flux.  Please check back for location updates."
+		}
 	],
 	"inactive_alerts": [
 		{
