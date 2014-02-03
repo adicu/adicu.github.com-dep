@@ -85,8 +85,8 @@
 			"events": [
 				{
 					"name": "Introduction to Flask",
-					"timespan": "8pm - 10pm",
-					"location": "TBA",
+					"timespan": "8:30pm - 10pm",
+					"location": "IAB 417",
 					"description": "Come learn about Flask and start creating your web app using Python. Flask is a microframework that's very easy to setup and has excellent documentation on its website.",
 					"buttons" : [
 						{
@@ -114,8 +114,8 @@
 			"events": [
 				{
 					"name": "Introduction to APIs",
-					"timespan": "8pm - 10pm",
-					"location": "TBA",
+					"timespan": "8:30pm - 10pm",
+					"location": "IAB 417",
 					"description": "An API, or Application Programming Interface, is a way to get resources from another website. And boy, are there tons of APIs! Come prepare your brain so you know what's to come at API demos on Friday! This workshop will take a step aside from our Flask project to build a foundation of knowledge around APIs and how they are used. This workshop will be anything but RESTful -- pun intended, you shall understand in time, young grasshopper.",
 					"buttons" : [
 						{
@@ -143,8 +143,8 @@
 			"events": [
 				{
 					"name": "Introduction to HTML and Templating",
-					"timespan": "8pm - 10pm",
-					"location": "TBA",
+					"timespan": "8:30pm - 10pm",
+					"location": "IAB 417",
 					"description": "Conjure up websites in our workshop about HTML and templating. Share your important messages through the interwebs, like \"Hello World\" or pictures of your cat.",
 					"buttons" : [
 						{
@@ -167,7 +167,7 @@
 			"events": [
 				{
 					"name": "Introduction to CSS",
-					"timespan": "8pm - 10pm",
+					"timespan": "8:30pm - 10pm",
 					"location": "TBA",
 					"description": "Our last workshop of the week before send you off into the world as a new hacker! CSS, or Cascading Style Sheets, is a styling language that is used to arrange and stylize HTML elements. Your websites will look better than your CS professors', guaranteed or your money back!",
 					"buttons" : [
