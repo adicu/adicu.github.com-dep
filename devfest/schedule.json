@@ -84,6 +84,12 @@
 			"name": "Monday, Feb 3rd",
 			"events": [
 				{
+					"name": "Dinner",
+					"timespan": "8pm - 8:30pm",
+					"location": "CS Lounge",
+					"description": "Come grab a delicious dinner before you head over to the Introduction to Flask workshop.  Or stick around for open hacking!"
+				},
+				{
 					"name": "Introduction to Flask",
 					"timespan": "8:30pm - 10pm",
 					"location": "IAB 417",
@@ -113,6 +119,12 @@
 			"name": "Tuesday, Feb 4th",
 			"events": [
 				{
+					"name": "Dinner",
+					"timespan": "8pm - 8:30pm",
+					"location": "CS Lounge",
+					"description": "Come grab a delicious dinner before you head over to the Introduction to APIs workshop.  Or stick around for open hacking!"
+				},
+				{
 					"name": "Introduction to APIs",
 					"timespan": "8:30pm - 10pm",
 					"location": "IAB 417",
@@ -141,6 +153,12 @@
 			"id": 5,
 			"name": "Wednesday, Feb 5th",
 			"events": [
+				{
+					"name": "Dinner",
+					"timespan": "8pm - 8:30pm",
+					"location": "CS Lounge",
+					"description": "Come grab a delicious dinner before you head over to the Introduction to HTML and Templating workshop.  Or stick around for open hacking!"
+				},
 				{
 					"name": "Introduction to HTML and Templating",
 					"timespan": "8:30pm - 10pm",
