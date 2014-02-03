@@ -170,6 +170,10 @@ input {
   margin: 0 auto;
   text-align: center;
 }
+.alert a {
+  color: black;
+  text-decoration: underline;
+}
 .alert h3 {
   font-size: 2.2em;
 }
