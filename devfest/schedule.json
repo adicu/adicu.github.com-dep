@@ -91,7 +91,7 @@
 				},
 				{
 					"name": "Introduction to Flask",
-					"timespan": "8:30pm - 10pm",
+					"timespan": "9:00pm - 10:30pm",
 					"location": "IAB 417",
 					"description": "Come learn about Flask and start creating your web app using Python. Flask is a microframework that's very easy to setup and has excellent documentation on its website.",
 					"buttons" : [
