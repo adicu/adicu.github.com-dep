@@ -284,6 +284,12 @@ input {
   padding: 15px;
   display: block;
 }
+.judge.margin-left {
+  margin-left: 16.666666666%;
+}
+.judge.margin-right {
+  margin-right: 16.666666666%;
+}
 .judge img {
   width: 100%;
   max-height: 300px;
