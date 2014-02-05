@@ -1107,6 +1107,12 @@ section .strip.photo .opaque {
   padding: 2px;
   height: auto;
 }
+.post blockquote {
+  margin: 1em 2em 1em 0.5em;
+  padding-left: 1em;
+  border-left: 0.5em solid #ccc;
+  font-style: italic;
+}
 .post .social.top {
   width: 40%;
   text-align: right;
