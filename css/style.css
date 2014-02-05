@@ -284,6 +284,12 @@ input {
   padding: 15px;
   display: block;
 }
+.judge.margin-left {
+  margin-left: 16.666666666%;
+}
+.judge.margin-right {
+  margin-right: 16.666666666%;
+}
 .judge img {
   width: 100%;
   max-height: 300px;
@@ -439,6 +445,11 @@ input {
     font-size: 0.75em;
     margin-top: 1em;
     display: block;
+  }
+  .judge.margin-right,
+  .judge.margin-left {
+    margin-left: 0;
+    margin-right: 0;
   }
   .row .responsive-block.about,
   .row .responsive-block.judge,

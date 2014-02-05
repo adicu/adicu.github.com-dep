@@ -157,7 +157,7 @@ $(function(){
             rows.forEach(function(judge) {
                 $row.append(
                     $("<div>", {
-                        "class": "judge responsive-block"
+                        "class": "judge responsive-block "+judge["class"]
                     }).append(
                         $("<img>", {
                             src: baseurl + judge["image"]
