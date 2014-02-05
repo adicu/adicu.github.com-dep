@@ -446,6 +446,11 @@ input {
     margin-top: 1em;
     display: block;
   }
+  .judge.margin-right,
+  .judge.margin-left {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .row .responsive-block.about,
   .row .responsive-block.judge,
   .row .responsive-block.schedule,

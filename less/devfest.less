@@ -1,23 +1,23 @@
 #devfest-callout {
-  z-index: 10000;
-  text-align: center;
-  a {
-    color: white;
+	z-index: 10000;
+	text-align: center;
+	a {
+		color: white;
 
-    p {
-      font-size: 3em;
-      margin: 0;
-    }
-  }
-  img {
-    width: 400px;
-    max-width: 100%;
-    max-height: 150px;
-    margin: 0.5em 0 0;
-  }
-  .content {
-    padding: 1.5em !important;
-  }
+		p {
+			font-size: 3em;
+			margin: 0;
+		}
+	}
+	img {
+		width: 400px;
+		max-width: 100%;
+		max-height: 150px;
+		margin: 0.5em 0 0;
+	}
+	.content {
+		padding: 1.5em !important;
+	}
 }
 
 .buttons button {
@@ -84,10 +84,10 @@
 }
 
 .img-devfest {
-  background: url("../img/hack.jpg") no-repeat center center;
-  &.bottom {
-  	background-position: bottom center;
-  }
+	background: url("../img/hack.jpg") no-repeat center center;
+	&.bottom {
+		background-position: bottom center;
+	}
 }
 
 .about-title {
@@ -348,61 +348,65 @@
 
 /* Tablets */
 @media only screen and (max-width: 767px) {
-  .stats {
-  	.count {
-  		font-size: 3em;
-  	}
-  	.participants {
-  		font-size: 1em;
-  	}
-  	margin-bottom: 0;
-  }
+	.stats {
+		.count {
+			font-size: 3em;
+		}
+		.participants {
+			font-size: 1em;
+		}
+		margin-bottom: 0;
+	}
 
-  .row {
-    .responsive-block {
+	.row {
+		.responsive-block {
 
-      &.judge {
-        width: 33% !important;
-      }
+			&.judge {
+				width: 33% !important;
+			}
 
-      &.social {
-      	width: 33% !important;
-      	font-size: 1em;
-      }
+			&.social {
+				width: 33% !important;
+				font-size: 1em;
+			}
 
-      &.about, .schedule {
-      	width: 50% !important;
-      }
-    }
-  }
+			&.about, .schedule {
+				width: 50% !important;
+			}
+		}
+	}
 }
 
 /* Phones */
 @media only screen and (max-width: 480px) {
-  .stats {
-  	display: block;
-  	margin-bottom: 1em;
-  	h2 {
-  		font-size: 2em;
-  		margin-bottom: 0;
-  	}
-  	.count {
-  		display: block;
-  	}
-  	.participants {
-  		padding-left: 0;
-  		font-size: 0.75em;
-  		margin-top: 1em;
-  		display: block;
-  	}
-  }
-  .row {
-    .responsive-block {
-      &.about, &.judge, &.schedule, &.social {
-    	width: 100% !important;
-      }
+	.stats {
+		display: block;
+		margin-bottom: 1em;
+		h2 {
+			font-size: 2em;
+			margin-bottom: 0;
+		}
+		.count {
+			display: block;
+		}
+		.participants {
+			padding-left: 0;
+			font-size: 0.75em;
+			margin-top: 1em;
+			display: block;
+		}
+	}
+	.judge.margin-right, .judge.margin-left{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.row {
+		.responsive-block {
+			&.about, &.judge, &.schedule, &.social {
+				width: 100% !important;
+			}
 
-    }
-  }
+		}
+	}
 }
 
