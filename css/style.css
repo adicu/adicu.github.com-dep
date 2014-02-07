@@ -515,7 +515,7 @@ input {
   .row .responsive-block.prize {
     width: 100% !important;
   }
-  .row.med-push-25 {
+  .row .responsive-block.med-push-25 {
     margin-left: 0 !important;
   }
 }
