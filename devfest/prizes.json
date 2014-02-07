@@ -2,21 +2,21 @@
 	"prizes": [
 		{
 			"title": "1st Prize",
-			"prize": "$1000"
+			"prize": "$1000 and $750 in DigitalOcean credits"
 		},
 		{
 			"title": "2nd Prize",
-			"prize": "$750"
+			"prize": "$750 and $500 in DigitalOcean credits"
 		},
 		{
 			"title": "3rd Prize",
-			"prize": "$500"
+			"prize": "$500 and $250 in DigitalOcean credits"
 		}
 	],
 	"sponsor-prizes": [
 		{
 			"title": "Best use of the Twilio API",
-			"prize": "TBA at API demos",
+			"prize": "Jawbone JAMBOX Wireless Speaker",
 			"sponsor": {
 				"id": "twilio",
 				"img": "twilio.png",
@@ -75,8 +75,7 @@
 				"id": "yext",
 				"img": "yext.png",
 				"url": "http://www.yext.com/"
-			},
-			"class": "med-push-16-66"
+			}
 		},
 		{
 			"title": "Best use of Bloomberg API",
@@ -86,6 +85,16 @@
 				"img": "bloom.png",
 				"url": "http://www.bloomberg.com/"
 			}
+		},
+		{
+			"title": "Best use of DigitalOcean API",
+			"prize": "$1000 in DigitalOcean credits",
+			"sponsor": {
+				"id": "digitalocean",
+				"img": "digitalocean.png",
+				"url": "https://www.digitalocean.com/"
+			},
+			"class": "med-push-25"
 		}
 	]
 }
