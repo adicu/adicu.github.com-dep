@@ -21,7 +21,9 @@ layout: default
   <div class="text-content">
     {{ content }}
   </div>
-
+  {% if page.by %}
+  <p class="byline">- {{ page.by }}</p>
+  {% endif %}
   <div class="social bottom">
     <a target="_blank" href="https://twitter.com/intent/tweet?text={{ post.title }}&url=http://adicu.com{{ post.url }}&via=adicu"><button class="ss-btn ss-btn-tweet">Tweet</button></a>
     <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-facebook">Share</button></a>

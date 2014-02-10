@@ -129,6 +129,38 @@ input {
 .buttons button {
   margin-top: 5px;
 }
+.row .responsive-block.prize {
+  width: 33%;
+  margin-top: 2em;
+}
+.row .responsive-block.prize h4 {
+  margin-bottom: 0;
+}
+.row .responsive-block.prize p {
+  margin: .5em 0 0;
+  font-size: 1.4em;
+}
+.row .responsive-block.prize.sponsor-prize {
+  height: 250px;
+}
+.row .responsive-block.prize.sponsor-prize .prize-sponsor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+}
+.row .responsive-block.prize.sponsor-prize .prize-sponsor .sponsored-by {
+  font-style: italic;
+  font-size: 1em;
+  padding-bottomr: 1em;
+}
+.row .responsive-block.prize.sponsor-prize .prize-sponsor img {
+  max-width: 100%;
+  height: 100px;
+  max-height: 60px;
+}
 .row .responsive-block.social {
   width: 33%;
   font-size: 1.4em;
@@ -170,6 +202,10 @@ input {
   margin: 0 auto;
   text-align: center;
 }
+.alert a {
+  color: black;
+  text-decoration: underline;
+}
 .alert h3 {
   font-size: 2.2em;
 }
@@ -190,6 +226,12 @@ input {
   text-align: center;
   font-size: 2em;
   margin: 0;
+}
+.faq p {
+  margin-top: 0;
+}
+.faq h4 {
+  margin-bottom: 0.25em;
 }
 .faq a {
   color: black;
@@ -279,6 +321,12 @@ input {
   width: 33%;
   padding: 15px;
   display: block;
+}
+.judge.margin-left {
+  margin-left: 16.666666666%;
+}
+.judge.margin-right {
+  margin-right: 16.666666666%;
 }
 .judge img {
   width: 100%;
@@ -416,6 +464,25 @@ input {
   .row .responsive-block .schedule {
     width: 50% !important;
   }
+  .row .responsive-block.place-prize {
+    width: 33% !important;
+  }
+  .row .responsive-block.sponsor-prize {
+    width: 50% !important;
+    height: 230px !important;
+  }
+  .row .responsive-block.sponsor-prize .prize-sponsor {
+    text-align: center;
+    position: relative !important;
+    width: 100%;
+  }
+  .row .responsive-block.sponsor-prize .prize-sponsor img {
+    max-width: 100%;
+    height: 40px;
+  }
+  .row .responsive-block.med-push-25 {
+    margin-left: 25%;
+  }
 }
 /* Phones */
 @media only screen and (max-width: 480px) {
@@ -436,11 +503,20 @@ input {
     margin-top: 1em;
     display: block;
   }
+  .judge.margin-right,
+  .judge.margin-left {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .row .responsive-block.about,
   .row .responsive-block.judge,
   .row .responsive-block.schedule,
-  .row .responsive-block.social {
+  .row .responsive-block.social,
+  .row .responsive-block.prize {
     width: 100% !important;
+  }
+  .row .responsive-block.med-push-25 {
+    margin-left: 0 !important;
   }
 }
 .events-carousel-wrapper {
@@ -1056,6 +1132,9 @@ section .strip.photo .opaque {
 .page-title a:hover {
   color: #4fa8e2;
 }
+.byline {
+  font-style: italic;
+}
 .post {
   background-color: #eee;
   border: 1px solid #ccc;
@@ -1099,6 +1178,12 @@ section .strip.photo .opaque {
   margin: 1em auto 0;
   padding: 2px;
   height: auto;
+}
+.post blockquote {
+  margin: 1em 2em 1em 0.5em;
+  padding-left: 1em;
+  border-left: 0.5em solid #ccc;
+  font-style: italic;
 }
 .post .social.top {
   width: 40%;

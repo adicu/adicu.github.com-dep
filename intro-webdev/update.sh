@@ -6,6 +6,7 @@ cd tmp
 # replace "](img/" with "](/img/intro-webdev/"
 sed -i -e 's/\](img\//\](\/img\/intro-webdev\//g' webdev_python_curriculum.md
 sed -i -e 's/\](img\//\](\/img\/intro-webdev\//g' webdev_curriculum.md
+sed -i -e 's/app\.run(/app\.run(host="0\.0\.0\.0"/g' */*.md
 
 ./build.sh
 

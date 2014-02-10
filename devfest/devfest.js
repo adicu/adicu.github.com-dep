@@ -157,7 +157,7 @@ $(function(){
             rows.forEach(function(judge) {
                 $row.append(
                     $("<div>", {
-                        "class": "judge responsive-block"
+                        "class": "judge responsive-block "+judge["class"]
                     }).append(
                         $("<img>", {
                             src: baseurl + judge["image"]
@@ -173,6 +173,67 @@ $(function(){
             });
             $judges.append($row);
         });
+    });
+
+    // Parse the prizes
+    $.getJSON("prizes.json").done(function(data) {
+        var $prizes = $(".prizes");
+        var baseurl = "../img/devfest/logos/";
+
+        var $placeprizes = $("<div>", {
+            "class": "place-prizes row"
+        });
+        data["prizes"].forEach(function(prize) {
+            $placeprizes.append(
+                $("<div>", {
+                    "class": "prize place-prize responsive-block"
+                }).append(
+                    $("<h3>", {
+                        text: prize["title"]
+                    }),
+                    $("<p>", {
+                        text: prize["prize"]
+                    })
+                )
+            )
+        });
+        $prizes.append($placeprizes);
+
+        var $sponsorprizes = $("<div>", {
+            "class": "sponsor-prizes row"
+        });
+        data["sponsor-prizes"].forEach(function(prize) {
+            $sponsorprizes.append(
+                $("<div>", {
+                    "class": "prize sponsor-prize responsive-block " + prize["class"]
+                }).append(
+                    $("<h4>", {
+                        text: prize["title"]
+                    }),
+                    $("<p>", {
+                        text: prize["prize"]
+                    }),
+                    $("<div>", {
+                        "class": "prize-sponsor"
+                    }).append(
+                        $("<p>", {
+                            "class":"sponsored-by",
+                            text:"Sponsored by:"
+                        }),
+                        $("<a>", {
+                            "class": "scroll",
+                            href: "#sponsors"
+                        }).append (
+                            $("<img>", {
+                                src: baseurl + prize["sponsor"]["img"]
+                            })
+                        )
+                    )
+                )
+            );
+        });
+
+        $prizes.append($sponsorprizes);
     });
 
     // Parse the Sponsors
