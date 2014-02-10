@@ -21,5 +21,5 @@ Shortly after, Pitchfest and environment setup began (if you would still like to
 
 For those who needed a crash course or a review on Python, we also held an Introduction to Python session while open hacking was occurring in the afternoon. The schedule for the rest of the week, which will be updated as it is subject to change, can be found [here](http://adicu.com/devfest/).
 
-Thanks to everyone who attended kickoff. We can’t wait to spend more time than necessary with all of you throughout the rest of this week!
+Thanks to everyone who attended kickoff. We can't wait to spend more time than necessary with all of you throughout the rest of this week!
 
