@@ -4,6 +4,10 @@
 	"inactive_alerts": [
 		{
 			"title": "Schedule Change!",
+			"message" :"We will be holding an additional Python session at 5:00pm at Mudd 627"
+		},
+		{
+			"title": "Schedule Change!",
 			"message": "Our Wednesday Workshop has been moved.  It is now in <strong>Mudd 833</strong>, from 8-10pm."
 		},
 		{
