@@ -15,7 +15,7 @@ After quite a few amazing tech companies demo-ed their APIs on Friday evening, t
 
 ![sandwiches being made](/img/4sandwiches.JPG)
 
-At noon Saturday, the RedBull-charged hackers piled into Havemeyer 309 to demo their last 16 hours' worth of sweat and tears. Hacks included everything from finding free study space at Columbia to playing a variably fierce Beyonce song on any phone. The winners after demo-ing are:
+At noon Saturday, the caffeinated (thanks Red Bull and 5-hour Energy!) hackers piled into Havemeyer 309 to demo their last 16 hours' worth of sweat and tears. Hacks included everything from finding free study space at Columbia to playing a variably fierce Beyonce song on any phone. The winners after demo-ing are:
 
 1st prize: Planmyny (Matthew Piccollela)
 
