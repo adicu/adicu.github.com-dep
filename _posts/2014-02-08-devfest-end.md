@@ -39,7 +39,7 @@ Most Useful Hack for Small Businesses: Barnstormer (Gilad Penn, Mimoun Cadosch)
 
 Best Financial App: Randamazon (Johan Mena)
 
-Best Use of Digital Ocean API: Where Should I Eat
+Best Use of Digital Ocean API: Where Should I Eat (Obed Espina)
 
 Judge's prize for creativity: Mechanical Poet (Mark Gorenstein)
 
