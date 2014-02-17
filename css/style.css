@@ -743,7 +743,7 @@ header .adi-banner-container .newsletter input {
   }
 }
 .img-ny {
-  background: url("../img/columbia-street.jpg") repeat center center;
+  background: url("../img/columbia-street.jpg") no-repeat center center;
   height: 230px;
 }
 .img-ny.bottom {
