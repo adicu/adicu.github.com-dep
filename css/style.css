@@ -1135,6 +1135,7 @@ section .strip.photo .opaque {
 .byline {
   font-style: italic;
 }
+
 .post {
   background-color: #eee;
   border: 1px solid #ccc;
@@ -1146,6 +1147,13 @@ section .strip.photo .opaque {
   max-width: 800px;
   width: 95%;
 }
+
+.latestpost {
+  border: none;
+  max-width: 900px;
+  width: 100%;
+}
+
 .post .title {
   margin: 0;
   width: 70%;
