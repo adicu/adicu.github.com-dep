@@ -32,6 +32,8 @@ sudo npm install
 apt-get -y install supervisor
 cp /vagrant/develop/grunt.conf /etc/supervisor/conf.d
 cp /vagrant/develop/jekyll.conf /etc/supervisor/conf.d
-service supervisor stop
+rm -f /etc/init.d/supervisor
+cp /vagrant/develop/supervisord.conf /etc/init/supervisord.conf
+stop supervisord
 sleep 3
-service supervisor start
+start supervisord
