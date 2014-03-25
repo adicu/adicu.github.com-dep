@@ -8,6 +8,7 @@ title: Blog
 </h1>
 
 {% for post in paginator.posts %}
+{% unless post.category contains 'resource' %}
 <article class="post">
 
   <div class="social top">
@@ -45,6 +46,7 @@ title: Blog
     {% endif %}
   </div>
 </article>
+{% endunless %}
 {% endfor %}
 
 <div id="post-pagination" class="pagination">

@@ -7,3 +7,8 @@ exclude: [newpost.sh, .gitignore, gcal_template.md, Gemfile, Gemfile.lock, Grunt
 paginate: 10
 base: "http://adicu.com"
 paginate_path: "blog/page:num"
+markdown: redcarpet
+pygments: true
+
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
