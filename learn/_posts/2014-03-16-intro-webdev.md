@@ -2,7 +2,6 @@
 layout: resource
 category: resource
 title: An Accelerated Introduction to Web Development
-date: 2014-03-16 17:04
 permalink: /learn/intro-webdev/
 ---
 {%raw%}
@@ -86,7 +85,7 @@ We will be building a web application throughout this series, called "Has it Bee
 		-	[4.2.2 Using Foundation](#using-foundation)
 		-	[4.2.3 Rewriting Templates](#rewriting-templates)
 
--------------------------
+--------------------------------
 
 <a id="flask"></a>
 # 1.0 Flask
@@ -349,7 +348,7 @@ def page_not_found(error):
 
 Again, the 404 error code tells the browser that the page was "Not Found".  Visit `localhost:5000/test` to see our custom message in action!
 
-------------------------
+--------------------------------
 
 <a id="apis"></a>
 # 2.0 APIs
@@ -367,7 +366,7 @@ This section will take a step aside from our Flask project to build a foundation
 API's let us access external data in an easy, standardized way.  In the webapp world, when we say API we usually mean [REST (or RESTful) API][rest-api], which can be effectively thought of as an API that is accessible at a series of URL addresses. An extremely simple example of a REST API is [placekitten.com](http://placekitten.com), an API that serves images of kitten.  Here's how it works.  If you point your browser to `http://placekitten.com/<width>/<height>`, it returns a picture of a kitten with that width and height. If you go to `/g/<width>/<height>` the image will be grayscale.  Go to these urls to see a very basic REST API in action.
 
 URL | Image
-------|-----
+--------------------------------
 [`http://placekitten.com/200/100`](http://placekitten.com/200/100) | ![http://placekitten.com/200/100](http://placekitten.com/200/100)
 [`http://placekitten.com/300/250`](http://placekitten.com/300/250) | ![http://placekitten.com/200/300](http://placekitten.com/300/250)
 [`http://placekitten.com/g/300/250`](http://placekitten.com/g/300/250) | ![http://placekitten.com/g/200/300](http://placekitten.com/g/300/250)
@@ -392,7 +391,7 @@ This URL breaks up into five parts:
 5.	The query string (`?q=tetris+language:assembly&sort=stars&order=desc`): is a series of key-value pairs of the form `<key>=<value>`. The query string starts with a `?` and each key-value pair is separated by `&`.  The key value pairs here are:
 
 	Key | Value
-	----|--------------------------
+	--------------------------------
 	`q` | `tetris+language:assembly`
 	`sort` | `stars`
 	`order` | `desc`
@@ -604,7 +603,7 @@ So how did we know that the array for `colors` held color objects and the array 
 Try out these other API calls (`http://colr.org<path>`) to see how colr.org used this JSON structure to return different types of results:
 
 Path | Description
-----|------------
+--------------------------------
 [`/json/color/e0d1dd`](http://www.colr.org/json/color/e0d1dd) | data for the color with hex value `e0d1dd`
 [`/json/colors/e0d1dd,95604a`](http://www.colr.org/json/colors/e0d1dd,95604a) | data for the colors `e0d1dd` and `95604a`
 [`/json/color/random`](http://www.colr.org/json/color/random) | data for random color
@@ -978,7 +977,7 @@ Generate a GitHub token using the script, add this token to a bash settings file
 Add the token to your app config on startup.
 Pass the token [as a parameter][github-token-auth] for each request.
 
--------------------------
+--------------------------------
 
 <a id="html-and-css"></a>
 # 3.0 HTML and Templating
@@ -1556,8 +1555,7 @@ Wrap each `{{ }}` statement in a Jinja2 `{% if %}`, checking if the variable exi
 
 Make these fixes.
 
-------------------------
-
+--------------------------------
 <a id="css"></a>
 # 4.0 CSS
 
@@ -1955,7 +1953,7 @@ You can set margins with the `margin-top`, `margin-right`, `margin-bottom`, and 
 The four margin and padding attributes can each be combined into `margin` and `padding`, and depending on how many arguments are provided, different of these properties will be set.  See the table for the details of how this works (`margin` is used, but the same goes for `padding`).
 
 CSS | Shorthand | `-top` | `-right` | `-bottom` | `-left`
-----|----|----|----|----|----
+--------------------------------
 `margin: 1px 2px 3px 4px` | `T R B L` | `1px` | `2px` | `3px` | `4px`
 `margin: 1px 2px 3px`     | `T R&L B` | `1px` | `2px` | `3px` | `2px`
 `margin: 1px 2px`         | `T&B R&L` | `1px` | `2px` | `1px` | `2px`

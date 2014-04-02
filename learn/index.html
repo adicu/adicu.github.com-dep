@@ -87,6 +87,51 @@ title: Resources
         </div>
         <div class='main-content'>
             <h1>ADI Resources Page</h1>
+            <hr>
+
+            {% for post in site.posts %}
+            {% if post.category contains 'resource' %}
+            <article class="post">
+
+              <div class="social top">
+                <a target="_blank" href="https://twitter.com/intent/tweet?text={{ post.title }}&url=http://adicu.com{{ post.url }}&via=adicu"><button class="ss-btn ss-btn-tweet">Tweet</button></a>
+                <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-facebook">Share</button></a>
+                <a target="_blank" href="https://plus.google.com/share?url=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-google">Google+</button></a>
+                {% if post.code %}
+                <a target="_blank" href="https://github.com/{{ post.code }}"><button class='ss-btn ss-btn-github'>Github</button></a>
+                {% endif %}
+              </div>
+
+              <a class="title" href="{{ post.url }}"><h2 class="title">{{ post.title }}</h2></a>
+              <h3 class="date">{{ post.date | date_to_string }}</h3>
+
+
+              <div class="text-content">
+                {% if post.image %}
+                <div class="image">
+                  <a href="{{ post.url }}">
+                    <img src="/img/{{ post.image }}" height=200px></img>
+                  </a>
+                </div>
+                {% endif %}
+                <p>
+                  {{ post.content | strip_html | truncatewords: 50 }} <a class="read-more" href="{{ post.url }}">Read more</a>
+                </p>
+              </div>
+
+              <div class="social bottom">
+                <a target="_blank" href="https://twitter.com/intent/tweet?text={{ post.title }}&url=http://adicu.com{{ post.url }}&via=adicu"><button class="ss-btn ss-btn-tweet">Tweet</button></a>
+                <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-facebook">Share</button></a>
+                <a target="_blank" href="https://plus.google.com/share?url=http://adicu.com{{ post.url }}"><button class="ss-btn ss-btn-google">Google+</button></a>
+                {% if post.code %}
+                <a target="_blank" href="https://github.com/{{ post.code }}"><button class='ss-btn ss-btn-github'>Github</button></a>
+                {% endif %}
+              </div>
+            </article>
+            {% endif %}
+            {% endfor %}
+
+            <hr>
 
             <p class='blurb'>
               There are tons of different technologies out there, each of which has
