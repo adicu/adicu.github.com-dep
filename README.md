@@ -27,13 +27,21 @@ this [Windows installation tutorial][6]. To learn more about jekyll, check out i
 
 How to Post
 -----------
-1. Run `./newpost.sh title type` where `title` is the short title of your
-   post (which will be used in the URL), and `type` is one of the template
-   types in the \_templates directory.  The `title` should be lowercase words separated by dashes, and the `type` should be a `.md` file.
-   ```
+1. Run `./newpost.sh type name` where `type` is one of the template
+   types in the `\_templates` directory, and `name` is the short title of your
+   post (which will be used in the URL).  The `name` should be lowercase words separated by dashes.
+   ```bash
    # Examples
-   ./newpost.sh my-cool-post blogpost.md
-   ./newpost.sh a-great-resource resource.md
+
+   # Create a new blog post
+   $ ./newpost.sh blogpost my-cool-post
+   
+   # Create a new resource
+   $ ./newpost.sh resource a-great-resource
+   
+   # View usage
+   $ ./newpost.sh
+   Usage: ...
    ```
 
 2. Fill out your post in the newly created file.

@@ -1,0 +1,43 @@
+---
+permalink: /learn/{{page.title}}/
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <meta charset="utf-8" />
+  <meta property="og:image" content="http://adicu.com/img/adi-logo-square.png" />
+  <meta property="og:title" content="{{ page.title }} | Resources | ADI" />
+  <meta property="og:url" content="{{ site.base }}{{ page.url }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{ page.title }} | Resources | ADI</title>
+
+  <link rel="canonical" href="{{ site.base }}{{ page.url }}" />
+  <link rel="stylesheet" type="text/css" href="/css/pygments/default.css">
+  <link rel="stylesheet" type="text/css" href="/css/markdown.css">
+</head>
+
+<body>
+
+  {{ content }}
+
+  <!-- Asynchronous Google Analytics snippet -->
+  <script>
+    var _gaq = _gaq || [];
+    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', 'UA-18504951-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body>
+<html>
