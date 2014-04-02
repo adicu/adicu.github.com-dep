@@ -3,8 +3,11 @@ layout: resource
 category: resource
 title: An Accelerated Introduction to Web Development
 permalink: /learn/intro-webdev/
+redirects:
+- /intro-webdev/
 ---
 {%raw%}
+<a href="https://github.com/adicu/devfest-webdev"><img class="github" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 <a id="top"></a>
 # An Accelerated Introduction to Web Development
  

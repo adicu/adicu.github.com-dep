@@ -41,7 +41,7 @@ INDEX=$(indexOfElement)
 if [[ "$#" -ne 2 || "$INDEX" -eq -1 ]];then
 	usage
 fi
-if ! [[ "$NAME" ~= "([a-z]|-)*" ]]; then
+if [[ "${NAME}" =~ "([a-z]|-)*" ]]; then
 	echo "Invalid name: $NAME"
 	usage
 fi
