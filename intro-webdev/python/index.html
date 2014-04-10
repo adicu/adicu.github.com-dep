@@ -703,7 +703,7 @@ print len(f &amp; {2,5,7}) == 2
 
 <p><a href="#top" class="top" id="controlflow">Top</a></p>
 <h2 id="30-control-flow">3.0 Control Flow</h2>
-<p>What good is a program if we can't make decisions? Luckily, we have several tools are our disposal that allow us to make these decisions, which direct the way our program executes in such a way to make it meaningful.</p>
+<p>What good is a program if we can't make decisions? Luckily, we have several tools at our disposal that allow us to make these decisions, which direct the way our program executes in such a way to make it meaningful.</p>
 <p><a id="ifelse"></a></p>
 <h3 id="31-ifelse">3.1 If/Else</h3>
 <p>We probably want the ability to do something if another condition is met. For this, we have <code>if</code>. It is here our boolean values become important:</p>
@@ -879,7 +879,7 @@ product = multiplier(8,7) # = 56
 </code></pre>
 
 <p>Also, what if you had a function that you only wanted to use once, and thus you didn't want to give it a name? These functions are called anonymous functions, and Python provides us with the word <code>lambda</code> to declare these:</p>
-<pre><code class="python">g = lambda x: return x * x
+<pre><code class="python">g = lambda x: x * x
 square = g(8) # = 64
 </code></pre>
 
@@ -984,13 +984,14 @@ animal.speak(&quot;woof&quot;) # = &quot;Butch says woof&quot;
         return &quot;%s says %s&quot; % (self.name, msg)
 
     # Class Method
-    def get_kingdom(cls):
+    @classmethod
+    def get_kingdom(cls):   # &quot;cls&quot; refers to the class that calls get_kingdom
         return cls.kingdom
 
 # Instantiate an Animal object
 animal = Animal(&quot;Polly&quot;, &quot;Parrot&quot;)
-# Call our class method
-animal.get_kingdom() # = &quot;Animalia&quot;
+# Call our class method w/ the class
+Animal.get_kingdom() # = &quot;Animalia&quot;
 </code></pre>
 
 <p><a id="static"></a></p>
@@ -1010,10 +1011,12 @@ animal.get_kingdom() # = &quot;Animalia&quot;
         return &quot;%s says %s&quot; % (self.name, msg)
 
     # Class Method
+    @classmethod
     def get_kingdom(cls):
         return cls.kingdom
 
     # Static Method
+    @staticmethod
     def boo():
         return &quot;BOO!&quot;
 
@@ -1211,12 +1214,10 @@ Enter the string of numbers: 555987654321
 <h2 id="additional-resources">Additional Resources</h2>
 <p>Along with this tutorial, there is a wealth of information available on Python all across the web. Below are some good places to start:</p>
 <p><a href="http://learnxinyminutes.com/docs/python/">Learn X in Y Minutes: X=Python</a></p>
-<p><a href="http://adicu.com/learn">Learn Python the Hard Way</a></p>
+<p><a href="http://learnpythonthehardway.org">Learn Python the Hard Way</a></p>
 <p><a href="http://docs.python.org/3/">Official Python Documentation</a></p>
 <p><a href="http://adicu.com/learn">ADI Resources</a></p>
 <p><a href="http://www.codecademy.com/tracks/python">Codecademy</a></p>
-<p><a href="http://www.trypython.org">TryPython</a></p>
-<p><a href="http://realpython.com">Real Python</a></p>
 <!-- Asynchronous Google Analytics snippet -->
 <script>
     var _gaq = _gaq || [];
