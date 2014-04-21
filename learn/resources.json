@@ -98,6 +98,16 @@
           "description": "Interactive, online tutorial to learn to JavaScript. Best taken after Codecademy's Web Fundamentals track."
         },
         {
+          "name": "codeschool JavaScript Road Trip",
+          "url": "https://www.codeschool.com/courses/javascript-road-trip-part-1",
+          "description": "An introduction to the very basics of the JavaScript language. Build a foundation of JavaScript syntax and learn how to use values, variables, and files."
+        },
+        {
+          "name": "LearnStreet beginner course on JavaScript",
+          "url": "https://www.learnstreet.com/lessons/study/javascript",
+          "description": "In this course, you'll learn how to code in JS, a flexible and powerful programming language used all over the web."
+        },
+        {
           "name": "Airbnb JavaScript Style Guide",
           "url": "https://github.com/airbnb/javascript",
           "description": "This page is Airbnb's JavaScript style guide, and is a great reference for writing quality JavaScript code.  They include suggestions for spacing, variable declarations, and pretty much everything else JavaScript."
@@ -127,6 +137,11 @@
           "name": "Codecademy jQuery Track",
           "url": "http://www.codecademy.com/tracks/jquery",
           "description": "Interactive, online tutorial to learn to jQuery. Best after taking the Javascript track."
+        },
+        {
+          "name": "Try jQuery",
+          "url": "http://try.jquery.com",
+          "description": "A combination of videos, interactive console challenges, and writing code in the browser. You'll need about 3 hours of time to make it through everything."
         }
       ]
     },
@@ -238,6 +253,11 @@
           "name": "Dive into Python",
           "url": "http://www.diveintopython.net",
           "description": "Dive into Python is a book about Python for people who already know how to program in another language."
+        },
+        {
+          "name": "LearnStreet beginner course on Python",
+          "url": "https://www.learnstreet.com/lessons/study/python",
+          "description": "Online intro to Python 2.7. Will teach you the key concepts in Python. No experience necessary."
         }
       ]
     },
@@ -278,6 +298,11 @@
           "description": "Part tutorial, part comic book, part really bizarre art, Why's (Poignant) Guide to Ruby is considered a classic way to learn the language."
         },
         {
+          "name": "Code School Ruby",
+          "url": "https://www.codeschool.com/courses/try-ruby",
+          "description": "Learn the basic building blocks of Ruby, all in the browser."
+        },
+        {
           "name": "Ruby User's Guide",
           "url": "http://www.rubyist.net/~slagell/ruby",
           "description": "Another, more traditional way to learn Ruby. Try this if Why's isn't your style."
@@ -291,6 +316,11 @@
           "name": "Mr. Neighborly's Humble Little Ruby Book",
           "url": "http://www.humblelittlerubybook.com",
           "description": "From the website: \"An up to date book on Ruby programming, written in a style described as 'a beautiful display of pragmatically chunky bacon, wrapped in a nutshell.' Or something like that.\""
+        },
+        {
+          "name": "LearnStreet Ruby for Beginners V3",
+          "url": "https://www.learnstreet.com/lessons/study/ruby",
+          "description": "In this course, you'll learn how to code in Ruby, a flexible yet powerful programming language that’s popular over the web."
         }
       ]
     },
@@ -307,6 +337,11 @@
           "name": "Rails Tutorials, Examples, and Starter Applications",
           "url": "http://railsapps.github.io/rails-examples-tutorials.html",
           "description": "A compilation of starter applications, tutorials, templates, and examples for different Rails libraries."
+        },
+        {
+          "name": "Code School Rails for Zombies",
+          "url": "https://www.codeschool.com/courses/rails-for-zombies-redux",        
+          "description": "Learn Ruby on Rails, an open-source framework for the Ruby programming language. Rails for Zombies will teach you all the Rails basics with a zombie flair."
         }
       ]
     },
@@ -451,6 +486,12 @@
       "name": "Objective-C",
       "description": "A superset of C, Objective-C is the language that iOS and Mac apps are written in.",
       "resources": [
+        {
+          "name": "codeschool Try Objective-C ",
+          "url": "https://www.codeschool.com/courses/try-objective-c",
+          "description": "Learn the language that powers iOS and Mac apps.  In this course, you'll learn the fundamental building blocks of Objective-C and explore the foundation of elegant and beautiful apps."
+        },
+        
         {
           "name": "Big Nerd Ranch Objective-C Programming Guide",
           "url": "http://www.bignerdranch.com/book/objective-c_programming_the_big_nerd_ranch_guide",
