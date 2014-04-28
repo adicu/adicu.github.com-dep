@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ADI Wins the Socially Responsible Engineering Award
+title: ADI Wins the Robert D. Lilley Award for Socially Responsible Engineering
 category: blogpost
 image: resposibleaward.JPG
 by: Angela Wang 
