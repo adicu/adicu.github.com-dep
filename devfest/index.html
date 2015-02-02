@@ -1,9 +1,30 @@
----
-layout: imports
-title: DevFest
-description: The Application Development Initiative seeks to nurture student creativity and technological aptitude by creating a community and resources for student developers of all talents and interests.
----
-{% include header.html content_id="devfest" image_class="img-devfest"%}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <meta charset="utf-8" />
+  <meta http-equiv="refresh" content="0; url=http://devfe.st">
+  <link rel="canonical" href="http://devfe.st" />
+  {% if page.title == "DevFest" %}<meta property="og:image" content="http://adicu.com/img/devfest-2014-square.png" />{% else %}
+  <meta property="og:image" content="http://adicu.com/img/adi-logo-square.png" />{% endif %}
+  <meta property="og:title" content="{{ page.title }} | ADI" />
+  <meta property="og:url" content="{{ site.base }}{{ page.url }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{ page.title }} | ADI</title>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/bootstrap.css" />
+  <link rel="stylesheet" href="/css/kraken-buttons.css" />
+  <link rel="stylesheet" href="/css/social-sharing.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+  {% include header.html content_id="devfest" image_class="img-devfest"%}
 <div id="main-wrapper">
   {% include navbar.html listserv_class="hidden" scroll="scroll" content_id="devfest" %}
   <div id="main">
@@ -118,3 +139,24 @@ description: The Application Development Initiative seeks to nurture student cre
 <script type="text/javascript" src="/devfest/devfest.js"></script>
 <script type="text/javascript" src="/js/app.js"></script>
 <script type="text/javascript" src="/devfest/lib.js"></script>
+
+  
+  <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/modernizr.custom.js"></script>
+  <!-- Asynchronous Google Analytics snippet -->
+  <script>
+    var _gaq = _gaq || [];
+    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', 'UA-18504951-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  <script src="/js/utils.js"></script>
+</body>
+<html>
