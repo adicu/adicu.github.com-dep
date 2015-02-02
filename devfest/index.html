@@ -12,155 +12,15 @@ description: The Application Development Initiative seeks to nurture student cre
   {% if page.title == "DevFest" %}<meta property="og:image" content="http://adicu.com/img/devfest-2014-square.png" />{% else %}
   <meta property="og:image" content="http://adicu.com/img/adi-logo-square.png" />{% endif %}
   <meta property="og:title" content="{{ page.title }} | ADI" />
-  <meta property="og:url" content="{{ site.base }}{{ page.url }}" />
+  <meta property="og:url" content="http://devfe.st" />
   <meta property="og:description" content="{{ page.description }}" />
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>{{ page.title }} | ADI</title>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/bootstrap.css" />
-  <link rel="stylesheet" href="/css/kraken-buttons.css" />
-  <link rel="stylesheet" href="/css/social-sharing.css" />
-  <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  
-  {% include header.html content_id="devfest" image_class="img-devfest"%}
-<div id="main-wrapper">
-  {% include navbar.html listserv_class="hidden" scroll="scroll" content_id="devfest" %}
-  <div id="main">
-    <section id="about">
-      <div class="blue strip">
-        <div class="content">
-          <h4 class="about-title">Workshops. Hackathon. Demos. Food</h4>
-          <p class="description">ADI's annual week-long app development bonanza &mdash; 5 days of workshops followed by a 24-hour hackathon. Learn, code, build something new and compete for awesome prizes. Oh, and there's food. Lots of it.</p>
-          <div class="stats">
-            <h2>
-              <span class="count" id="student-count">
-                500+
-              </span>
-              <span class="participants">
-                PARTICIPANTS
-              </span>
-            </h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="alerts">
-
-    </section>
-    <section id="social">
-      <div class="gray strip">
-        <div class="content">
-          <h1 class="section-title">Get the Latest Updates</h1>
-            <div class="row">
-              <div class="responsive-block social">
-                <h3><a href="https://twitter.com/adicu">@adicu</a></h3>
-                <p>On Twitter</p>
-              </div>
-              <div class="responsive-block social">
-                <h3><a href="https://piazza.com/columbia/spring2014/devfest2014/home">DevFest 2014</a></h3>
-                <p>On Piazza</p>
-              </div>
-              <div class="responsive-block social">
-                <h3><a href="https://www.facebook.com/ADICU">/adicu</a></h3>
-                <p>On Facebook</p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="schedule">
-      <div class="strip">
-        <div class="content">
-          <h1 class="section-title">Schedule</h1>
-          <p class="notice">Subject to change.</p>
-          <div class="row">
-            <div class="responsive-block schedule workshops">
-              <h2 class="section-title">Kickoff &amp; Workshops</h2>
-            </div>
-            <div class="responsive-block schedule hackathon">
-              <h2 class="section-title">Hackathon &amp; Judging</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="judges">
-      <div class="gray strip">
-        <div class="content">
-          <h1 class="section-title">Judges</h1>
-          <div class="judges"></div>
-        </div>
-      </div>
-    </section>
-    <section id="faqs">
-      <div class="blue strip">
-        <div class="content">
-          <h1 class="section-title">FAQs</h1>
-          <div class="faqs"></div>
-        </div>
-      </div>
-    </section>
-    <section id="prizes">
-      <div class="gray strip">
-        <div class="content">
-          <h1 class="section-title">Prizes</h1>
-          <div class="prizes"></div>
-        </div>
-      </div>
-    </section>
-    <section id="sponsors">
-      <div class="strip">
-        <div class="content">
-          <div class="sponsors"></div>
-          <h1 class="section-title thanks">Special Thanks</h1>
-          <p class="notice">Space for DevFest's Hackathon 2014 generously provided by Columbia University Libraries/Information Services.</p>
-          <p class="notice"> Thanks to Remi Moss, Jessica Rosa, and the entire Computer Science Department for supporting DevFest and providing us with the CS Lounge as a working space throughout the week</p>
-        </div>
-      </div>
-    </section>
-    <section id="register">
-      <div class="blue strip">
-        <div class="content">
-          <h1 class="section-title">Register</h1>
-          <h2 class="sub-section-tagline">Join us from February 1-8.</h2>
-          <h2 class="sub-section-tagline">
-            <a href="http://bit.ly/devfest2015">
-              <button class="button button-large button-white">Register Today</button>
-            </a>
-          </h2>
-        </div>
-      </div>
-    </section>
-  </div>
-  {% include footer.html %}
-</div>
-<script type="text/javascript" src="/devfest/devfest.js"></script>
-<script type="text/javascript" src="/js/app.js"></script>
-<script type="text/javascript" src="/devfest/lib.js"></script>
-
-  
-  <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/js/modernizr.custom.js"></script>
-  <!-- Asynchronous Google Analytics snippet -->
-  <script>
-    var _gaq = _gaq || [];
-    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-    _gaq.push(['_setAccount', 'UA-18504951-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-  <script src="/js/utils.js"></script>
+  <h1>This page has been moved to <a href="http://devfe.st">devfe.st</a>.</h1>
 </body>
 <html>
